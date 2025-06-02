@@ -2,31 +2,39 @@ rm(list = ls(all = TRUE))
 library(haven)
 library(dplyr)
 library(openxlsx)
+library(writexl)
 library(naniar)#for replace_with_na fx
 library(sjlabelled) #for fx set_label
+library(DHS.rates) #for functions like chmort
+library(data.table) #for tables from mort calculations
+library(beepr)
  
  #laod WI data for 1990 DHS
+#laod WI data for 1990 DHS
 WI <- read_dta("/Users/matthewnicholson/DHS/Nigeria\ DHS\'s/NG_1990_DHS_04072025_2113_219655/NGWI21DT/NGWI21FL.DTA")
 WI <- WI %>% 
   select(-wlthindf) %>% 
-  rename(whhid, hhid = whhid)
-  
+  rename(whhid, hhid = whhid) %>% 
+  mutate(hhid = as.numeric(gsub(" ", "", hhid)))
+
 BR <- read_dta("/Users/matthewnicholson/DHS/Nigeria\ DHS\'s/NG_1990_DHS_04072025_2113_219655/NGBR21DT/NGBR21FL.dta")
 BR <- BR %>% 
   mutate(gsub('.{2}$', '', BR$caseid)) %>% 
   rename(`gsub(".{2}$", "", BR$caseid)`, hhid = `gsub(".{2}$", "", BR$caseid)`) %>% 
-  left_join(WI, by = "hhid") %>% 
+  mutate(hhid = as.numeric(gsub(" ", "", hhid))) %>% 
+  left_join(WI %>% distinct(hhid, wlthind5), join_by(hhid), 
+            relationship = "many-to-many") %>% 
   rename(v190 = wlthind5)
-  #this doesn't work perfectly but can try
-sum(!is.na(BR$v190))
+  
+
   #set filepaths for all files in used in the loop
   file_paths <- c(
     "/Users/matthewnicholson/DHS/Nigeria\ DHS\'s/NG_1990_DHS_04072025_2113_219655/NGBR21DT/NGBR21FL.dta",
     "/Users/matthewnicholson/DHS/Nigeria\ DHS\'s/NG_2003_DHS_04072025_2113_219655/NGBR4BDT/NGBR4BFL.dta",
     "/Users/matthewnicholson/DHS/Nigeria\ DHS\'s/NG_2008_DHS_04072025_2113_219655/NGBR53DT/NGBR53FL.DTA",
-    "/Users/matthewnicholson/DHS/Nigeria\ DHS\'s/NG_2010_MIS_04072025_2114_219655/NGBR61DT/NGBR61FL.DTA",
-    "/Users/matthewnicholson/DHS/Nigeria\ DHS\'s/NG_2013_DHS_04072025_2114_219655/NGHR6ADT/NGHR6AFL.DTA",
-    "/Users/matthewnicholson/DHS/NGBR7BDT/NGBR7BFL.DTA"
+    # "/Users/matthewnicholson/DHS/Nigeria\ DHS\'s/NG_2010_MIS_04072025_2114_219655/NGBR61DT/NGBR61FL.DTA",#MIS excluded as missing birth size data
+    "/Users/matthewnicholson/DHS/Nigeria\ DHS\'s/NG_2013_DHS_04072025_2114_219655/NGBR6ADT/NGBR6AFL.DTA", 
+    "/Users/matthewnicholson/DHS/Nigeria\ DHS\'s/NG_2018_DHS_04072025_2116_219655/NGBR7BDT/NGBR7BFL.DTA" #only this DHS uses "SHSTATE" notation
   )
   
   #begin the for loop
@@ -36,10 +44,15 @@ sum(!is.na(BR$v190))
     #for ith iteration need to read "BR" instead of BRData 
     if(i == 1){
       BRdata <- BR
-      }
-  
+      } else{
+        #forget objects used to calculate mortality each loop
+        rm(BRdata, BRdata_CMORT, BRdata_CMORT1, BRdata_CMORT2, 
+           BRdata_CMORT_wealth, resn1, resn2, resn3, resc, res_wealth,
+           CHMORT, state_var)
     #read the household file
     BRdata <- read_dta(file_paths[i])
+      }
+    
     BRdata <- BRdata %>%
       mutate(child_sex = b4) %>%
       mutate(child_sex = set_label(child_sex, label = "Sex of child"))  %>%
@@ -86,9 +99,16 @@ sum(!is.na(BR$v190))
     ##################################################################################
     # MORTALITY RATES ################################################################
     ##################################################################################
+    state_var <- if (i > 1) {
+      "sstate"
+    }
+    else {
+      NULL
+    }
     
     BRdata_CMORT <- (BRdata[, c("v021", "v022","v024", "v025", "v005", "v008","v011", 
-                                "b3", "b7", "v106", "v190", "child_sex", "mo_age_at_birth", "birth_order", "prev_bint","birth_size")])
+                                "b3", "b7", "v106", "v190", "child_sex", "mo_age_at_birth", 
+                                "birth_order", "prev_bint","birth_size", state_var)]) #account for deprecated naming conventions
     
     # NNMR, PNNMR, IMR, CMR & U5MR
     # TABLES 8.1, 8.2 and 8.3
@@ -130,12 +150,9 @@ sum(!is.na(BR$v190))
     num_repeats <- ceiling(num_rows / length(row.names(resn1)))  # Calculate how many times to repeat
     rownames(CHMORT) <- paste(seq(1:num_rows), rep(row.names(resn1), num_repeats)[1:num_rows])
     
-    write.xlsx(CHMORT, "Tables_child_mort_", 0 + i,".xlsx", sheetName = "CMR",append=TRUE)
+    write.xlsx(CHMORT, paste0("Tables_child_mort_", 0 + i, ".xlsx"), asTable = TRUE, append = TRUE, overwrite = FALSE)
     
     ########################################################################################
-    # Load necessary libraries
-    
-    # Assuming BRdata is already loaded and processed
     
     #Convert the wealth index to a factor
     BRdata <- BRdata %>%
@@ -153,6 +170,36 @@ sum(!is.na(BR$v190))
     res_wealth <- as.data.frame(chmort(BRdata_CMORT_wealth, Class = "wealth_index", Period = 120))
     
     # Export to Excel
-    write.xlsx(res_wealth, "Tables_child_mort_by_wealth_", 0 + i,".xlsx")
+    write.xlsx(res_wealth, paste0("Tables_child_mort_by_wealth", 0 + i, ".xlsx"), asTable = T, append = T, overwrite = F)
+   
+     ########################################################################################
+    #write chmort tables by state (only works 2003 onwards, different var naming)
 
+    # Proceed with the logic that requires state_var
+    if (!is.null(state_var)) {
+      # Ensure that state_var is a valid column name in BRdata
+      if (state_var %in% names(BRdata)) {
+        BRdata <- BRdata %>%
+          mutate(state = as_factor(get(state_var)))  # Use get() to dynamically reference the variable
+      } else {
+        warning(paste("Column", state_var, "does not exist in BRdata."))
+      }
+      
+      # Check state is factor
+      BRdata_CMORT_state <- BRdata %>% 
+        select(v021, v022, v024, v025, v005, v008, v011, # Subset
+               b3, b7, v106, v190, child_sex, mo_age_at_birth, 
+               birth_order, prev_bint, birth_size, state) %>%
+        filter(!is.na(state) & !is.na(v021) & !is.na(v022) & !is.na(v024) & !is.na(v025)) # Remove NA
+      
+      res_state <- as.data.frame(chmort(BRdata_CMORT_state, Class = "state", Period = 120)) # Create chmort table by state
+      
+      write.xlsx(res_state, paste0("Tables_child_mort_by_state", 0 + i, ".xlsx"), asTable = TRUE, append = TRUE, overwrite = FALSE) # Write to Excel
+    }
+    else {
+      # If state_var is NULL, skip to the next iteration
+      warning("state_var is NULL. Skipping iteration.")
+      next  # Skip to the next iteration of the loop
+    }
+    beep(0) #play a random beep after each iteration
   }
