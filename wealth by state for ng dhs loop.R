@@ -5,13 +5,14 @@ library(sf)
 library(ggplot2)
 library(viridis)
 
+#need to fix the reprojection issue
 suppressWarnings({
 #read in shape file and state mapping 
 state_mapping <- read.csv("/Users/matthewnicholson/Downloads/state encoding.csv")
 SF <- read_sf("/Users/matthewnicholson/Downloads/nigeria-lgas/new_lga_nigeria_2003.shp")
 #merge state-mapping and sf
 SF <- SF %>% 
-  left_join(state_mapping, by c('STATE' = 'STATE'))
+  left_join(state_mapping, by = "STATE")
 
 
 #set filepaths for all files in used in the loop
