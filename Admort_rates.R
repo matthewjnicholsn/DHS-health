@@ -27,6 +27,52 @@
 # mLTR	"lifetime risk of maternal death"
 # ----------------------------------------------------------------------------*/
 
+## IMPORTANT: NEED TO RUN THIS BEFORE RUNNING ANYTHING IN THIS FILE
+library(dplyr)
+library(stringr)
+
+DataPrepareM_GFR <- DHS.rates:::DataPrepareM_GFR
+
+indicator_list <- c("asmr", "aamr", "asmmr", "aammr", "asprmr", 
+                    "aaprmr", "prmr", "mmr" 
+                    # ,"aagfr"
+) %>% str_to_upper()
+
+for (i in seq_along(indicator_list)) {
+  
+  
+  indicator <- indicator_list[[i]]
+  # get the function for each indicator
+  fun <- get(indicator, envir = asNamespace("DHS.rates"))
+  
+  # Convert function body to text
+  fun_lines <- deparse(body(fun))
+  
+  # Find the line starting with 'dstrat'
+  dstrat_line <- grep("^\\s*dstrat", fun_lines)[1]
+  
+  # The line to insert
+  insert_line <- "DeathEx <- subset(DeathEx, !is.na(v021) & !is.na(v022) & !is.na(rweight))"
+  
+  # Insert your line before the dstrat line
+  if (!is.na(dstrat_line)) {
+    fun_lines <- append(fun_lines, insert_line, after = dstrat_line - 1)
+  } else {
+    warning(paste("No dstrat line found in", indicator))
+  }
+  
+  # Reconstruct the function with the same arguments as the original
+  # Get the arguments from the original function
+  args <- paste(names(formals(fun)), collapse = ", ")
+  fun_def <- sprintf("function(%s) {\n%s\n}", args, paste(fun_lines, collapse = "\n"))
+  new_fun <- eval(parse(text = fun_def))
+  
+  # Assign the new function to the environment with the same name as the indicator 
+  assign(indicator, new_fun, envir = .GlobalEnv)
+}
+
+
+
 IRdata_AMORT <- IRdata
 
 TFR7 <- as.data.frame(fert(IRdata_AMORT,Indicator="tfr", Period = 84, EverMW = "Yes", AWFact = "awfactt"))[1]
@@ -43,16 +89,22 @@ varlist <- c("asmr", "aamr", "asprmr", "aaprmr", "prmr")
 
 for (i in seq_along(varlist)) {
   
-  ADMORT[[i]]  <- as.data.frame(admort(IRdata_AMORT,Indicator=varlist[i]))
+  ADMORT[[i]]  <- as.data.frame(simplified_admort_func(IRdata_AMORT,Indicator=varlist[i]))
   
 }
 
-write.xlsx(ADMORT[[1]], "Tables_AM.xlsx", sheetName = "ASMR",append=TRUE)
-write.xlsx(ADMORT[[2]], "Tables_AM.xlsx", sheetName = "AAMR",append=TRUE)
-write.xlsx(ADMORT[[3]], "Tables_AM.xlsx", sheetName = "ASPRMR",append=TRUE) #pregnancy-related death
-write.xlsx(ADMORT[[3]][,1:2], "Tables_AM.xlsx", sheetName = "PMDF_PRMR",append=TRUE)  #pregnancy-related death
-write.xlsx(ADMORT[[4]], "Tables_AM.xlsx", sheetName = "AAPRMR",append=TRUE)  #pregnancy-related death
-write.xlsx(ADMORT[[5]], "Tables_AM.xlsx", sheetName = "PRMRatio",append=TRUE)  #pregnancy-related death
+admort_wb <- createWorkbook() #need to fix the line below, sheetName can only be length of 1
+addWorksheet(admort_wb, sheetName = "ASMR", "AAMR", "ASPRMR", "PMDF_PRMR", "AAPRMR", 
+             "PRMRatio", "q_15_to_50", "prLTR", "ASMMR", "PMDF_MMR", "AAMMR", 
+             "MMRatio", "mLTR")
+writeData(admort_wb, sheet = "ASMR",    x = ADMORT[[1]])
+writeData(admort_wb, sheet = "AAMR",    x = ADMORT[[2]])
+writeData(admort_wb, sheet = "ASPRMR",  x = ADMORT[[3]])  # pregnancy-related death
+writeData(admort_wb, sheet = "PMDF_PRMR", x = ADMORT[[3]][,1:2])  # pregnancy-related death
+writeData(admort_wb, sheet = "AAPRMR",  x = ADMORT[[4]])  # pregnancy-related death
+writeData(admort_wb, sheet = "PRMRatio", x = ADMORT[[5]])  # pregnancy-related death
+
+saveWorkbook(admort_wb, "ADMORT.xlsx")
 
 
 # probability of dying between ages 15 and 50 ##################################
@@ -64,7 +116,7 @@ RESULTSq <- matrix(0, nrow = 1, ncol = 2)
 dimnames(RESULTSq) <- list(NULL, c("q_15_to_50_women", "q_15_to_50_men") )
 RESULTSq[1, ] <- c(as.numeric(q_15[1]), as.numeric(q_15[2]))
 
-write.xlsx(RESULTSq, "Tables_AM.xlsx", sheetName = "q_15_to_50",append=TRUE)
+write.xlsx(RESULTSq, admort_wb, sheetName = "q_15_to_50",append=TRUE)
 
 
 # lifetime risk of pregnancy-related death #####################################
@@ -74,11 +126,11 @@ RESULTS <- matrix(0, nrow = 1, ncol = 3)
 dimnames(RESULTS) <- list(NULL, c("TFR", "PRMRatio", "prLTR") )
 RESULTS[1, ] <- c(as.numeric(TFR7), as.numeric(ADMORT[[5]][,2]), as.numeric(prLTR))
 
-write.xlsx(RESULTS, "Tables_AM.xlsx", sheetName = "prLTR",append=TRUE)
+write.xlsx(RESULTS, admort_wb, sheetName = "prLTR",append=TRUE)
 
 
 ################################################################################
-
+#maternal death needs same treatment as previous for debugging
 # maternal death ###############################################################
 # Note: this part produces maternal death: mm9 is 2, 3, or 5,    and mm16=0 
 # check if mm16: exist
@@ -99,10 +151,10 @@ if (check==1) {
     
   }
   
-  write.xlsx(ADMORT2[[1]], "Tables_AM.xlsx", sheetName = "ASMMR",append=TRUE) # maternal death
-  write.xlsx(ADMORT2[[1]][,1:2], "Tables_AM.xlsx", sheetName = "PMDF_MMR",append=TRUE) # maternal death
-  write.xlsx(ADMORT2[[2]], "Tables_AM.xlsx", sheetName = "AAMMR",append=TRUE) # maternal death
-  write.xlsx(ADMORT2[[3]], "Tables_AM.xlsx", sheetName = "MMRatio",append=TRUE) # maternal death
+  write.xlsx(ADMORT2[[1]], admort_wb, sheetName = "ASMMR",append=TRUE) # maternal death
+  write.xlsx(ADMORT2[[1]][,1:2], admort_wb, sheetName = "PMDF_MMR",append=TRUE) # maternal death
+  write.xlsx(ADMORT2[[2]], admort_wb, sheetName = "AAMMR",append=TRUE) # maternal death
+  write.xlsx(ADMORT2[[3]], admort_wb, sheetName = "MMRatio",append=TRUE) # maternal death
   
   # lifetime risk of maternal death
   mLTR <- 1 - (1- ADMORT2[[3]][,2]/100000)^TFR7[1]
@@ -111,6 +163,6 @@ if (check==1) {
   dimnames(RESULTS) <- list(NULL, c("TFR", "MMRatio", "mLTR") )
   RESULTS[1, ] <- c(as.numeric(TFR7), as.numeric(ADMORT2[[3]][,2]), as.numeric(mLTR))
   
-  write.xlsx(RESULTS, "Tables_AM.xlsx", sheetName = "mLTR",append=TRUE)
+  write.xlsx(RESULTS, admort_wb, sheetName = "mLTR",append=TRUE)
   
 }
