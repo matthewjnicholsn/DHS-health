@@ -30,6 +30,10 @@
 ## IMPORTANT: NEED TO RUN THIS BEFORE RUNNING ANYTHING IN THIS FILE
 library(dplyr)
 library(stringr)
+library(DHS.rates)
+library(haven)
+library(survey)
+library(openxlsx)
 
 DataPrepareM_GFR <- DHS.rates:::DataPrepareM_GFR
 
@@ -93,7 +97,31 @@ for (i in seq_along(varlist)) {
   
 }
 
-admort_wb <- createWorkbook() #need to fix the line below, sheetName can only be length of 1
+worksheet_names <- c("ASMR", "AAMR", "ASPRMR", "PMDF_PRMR", "AAPRMR", 
+                     "PRMRatio", "q_15_to_50", "prLTR", "ASMMR", "PMDF_MMR", "AAMMR", 
+                     "MMRatio", "mLTR")
+rm(admort_wb)
+admort_wb <- createWorkbook()
+for(i in seq_along(worksheet_names)){
+  ith_name <- worksheet_names[[i]]
+  addWorksheet(admort_wb, sheetName = ith_name)
+  
+  if(i < 4) {
+    writeData(admort_wb, sheet = ith_name, x = ADMORT[[i]])
+  }
+  
+  if(i == 4){
+    writeData(admort_wb, sheet = ith_name, x = ADMORT[[3]][,1:2])
+  }
+  if(i > 4) {
+    writeData(admort_wb, sheet = ith_name, x = ADMORT[[i - 1]])
+  }
+  if(i > 5){break}
+}
+
+saveWorkbook(admort_wb, "ADMORT_results.xlsx")
+
+ #need to fix the line below, sheetName can only be length of 1 
 addWorksheet(admort_wb, sheetName = "ASMR", "AAMR", "ASPRMR", "PMDF_PRMR", "AAPRMR", 
              "PRMRatio", "q_15_to_50", "prLTR", "ASMMR", "PMDF_MMR", "AAMMR", 
              "MMRatio", "mLTR")
@@ -147,7 +175,7 @@ if (check==1) {
   
   for (i in seq_along(varlist)) {
     
-    ADMORT2[[i]]  <- as.data.frame(admort(IRdata_AMORT,Indicator=varlist[i]))
+    ADMORT2[[i]]  <- as.data.frame(simplified_admort_func(IRdata_AMORT,Indicator=varlist[i]))
     
   }
   
