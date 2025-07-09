@@ -194,3 +194,7 @@ if (check==1) {
   write.xlsx(RESULTS, admort_wb, sheetName = "mLTR",append=TRUE)
   
 }
+IRdata_AMORT <- IRdata_AMORT %>% 
+  rename(wealth = v190) %>% 
+  rename(state = sstate)
+ASMR_grouped_results <- as.data.frame(ASMR_grouped(Data.Name = IRdata_AMORT, group_var = c("state", "wealth")))
