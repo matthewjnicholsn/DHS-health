@@ -1,16 +1,7 @@
-ASMR <- DHS.rates:::ASMR 
-AAMR <- DHS.rates:::AAMR
-ASMMR <- DHS.rates:::ASMMR
-AAMR <- DHS.rates:::AAMR
-ASPRMR <- DHS.rates:::ASPRMR
-PRMR <- DHS.rates:::PRMR
-MMR <- DHS.rates:::MMR
-AAGFR <- DHS.rates:::AAGFR
-AAMMR <- DHS.rates:::AAMMR
-AAPRMR <- DHS.rates:::AAPRMR
+
 DataPrepareM <- DHS.rates:::DataPrepareM
-
-
+# 
+# 
 
 
 simplified_admort_func <- function(
@@ -64,3 +55,4 @@ simplified_admort_func <- function(
   result <- do.call(fun_list[[Indicator]], args_list[[Indicator]])
   return(result[[1]])
 }
+

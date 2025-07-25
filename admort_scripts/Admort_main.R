@@ -10,7 +10,7 @@ rm(list = ls(all = TRUE))
 
 # install the following library if needed.
 library(haven)
-library(xlsx)
+library(openxlsx)
 library(DHS.rates)
 library(here)
 
@@ -18,17 +18,17 @@ library(here)
 here()
 
 # Path for this chapter. This is also where the data is stored
-chap <- "Chap17_AM"
+chap <- "/Users/matthewnicholson/DHS"
 
 #####################################################################################
 ## Define datasets
 
 # IR Files
-IRdatafile <- "ZWIR72FL.DTA"
+IRdatafile <- "Nigeria\ DHS\'s/NG_2018_DHS_04072025_2116_219655/NGIR7BDT/NGIR7BFL.DTA"
 
 #####################################################################################
 
 IRdata <-  read_dta(here(chap,IRdatafile))
 
 # Code and tables for adult mortality rates 
-source(here(paste0(chap,"/AM_rates.R")))
+source(here(paste0(chap,"/Admort_rates.R")))
