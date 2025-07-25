@@ -1,6 +1,6 @@
 ## This a-script is a gonna be one a spicy meatball! (it will be a loop that runs mort calcs on every cycle of Ng DHS)
 ## load libraries
-rm(list = ls())
+rm(list =)
 package_list <- c("haven", "dplyr", "tidyr", "stringr", "survey", "openxlsx")
 lapply(package_list, require, character.only = T)
 

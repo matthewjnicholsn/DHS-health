@@ -8,6 +8,7 @@ library(survey)
 IRdata <- read_dta("/Users/matthewnicholson/DHS/Nigeria\ DHS\'s/NG_2018_DHS_04072025_2116_219655/NGIR7BDT/NGIR7BFL.DTA")
 
 
+
 IRdata_AMORT <- IRdata
 
 TFR7 <- as.data.frame(fert(IRdata_AMORT,Indicator="tfr", Period = 84, EverMW = "Yes", AWFact = "awfactt"))[1]
@@ -17,8 +18,9 @@ source("/Users/matthewnicholson/DHS/admort_scripts/simplified_admort_func.R")
 AAGFR <- DHS.rates:::AAGFR
 DataPrepareM_GFR <- DHS.rates:::DataPrepareM_GFR
 
-indicator_list <- c("asmr", "aamr", "asmmr", "aammr", "asprmr", 
-                    "aaprmr", "prmr", "mmr" 
+indicator_list <- c("asmr", "aamr"
+                    , "asmmr", "aammr", "asprmr",
+                    "aaprmr", "prmr", "mmr"
                     # ,"aagfr"
 ) %>% str_to_upper()
 
@@ -57,7 +59,9 @@ for (i in seq_along(indicator_list)) {
 
 ADMORT <- vector("list", 5)
 
-varlist <- c("asmr", "aamr", "asprmr", "aaprmr", "prmr")
+varlist <- c("asmr", "aamr"
+             , "asprmr", "aaprmr", "prmr"
+             )
 
 for (i in seq_along(varlist)) {
   
