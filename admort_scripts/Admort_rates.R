@@ -35,6 +35,7 @@ library(haven)
 library(survey)
 library(openxlsx)
 
+AAGFR <- DHS.rates:::AAGFR
 DataPrepareM_GFR <- DHS.rates:::DataPrepareM_GFR
 
 indicator_list <- c("asmr", "aamr", "asmmr", "aammr", "asprmr", 
@@ -119,7 +120,7 @@ for(i in seq_along(worksheet_names)){
   if(i > 5){break}
 }
 
-saveWorkbook(admort_wb, "ADMORT_results.xlsx")
+saveWorkbook(admort_wb, "ADMORT_results_test.xlsx")
 
  #need to fix the line below, sheetName can only be length of 1 
 addWorksheet(admort_wb, sheetName = "ASMR", "AAMR", "ASPRMR", "PMDF_PRMR", "AAPRMR", 

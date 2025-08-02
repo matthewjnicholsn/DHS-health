@@ -1,6 +1,6 @@
 ## This a-script is a gonna be one a spicy meatball! (it will be a loop that runs mort calcs on every cycle of Ng DHS)
 ## load libraries
-rm(list =)
+rm(list = ls())
 package_list <- c("haven", "dplyr", "tidyr", "stringr", "survey", "openxlsx")
 lapply(package_list, require, character.only = T)
 
@@ -8,6 +8,8 @@ lapply(package_list, require, character.only = T)
 source("/Users/matthewnicholson/DHS/admort_scripts/simplified_admort_func.R")
 source("/Users/matthewnicholson/DHS/admort_scripts/debug_helper_funs_loop.R")
 source("/Users/matthewnicholson/DHS/admort_scripts/DataPrepareGrpM_func.R")
+AAGFR <- DHS.rates:::AAGFR
+DataPrepareM_GFR <- DHS.rates:::DataPrepareM_GFR
 #blank list for results
 admort_results <- list()
 #file list
@@ -27,6 +29,7 @@ for(i in seq_along(file_list)){
   ir_data_file <- file_list[i]
   ir_data <- read_dta(ir_data_file) 
   
+  TFR7 <- as.data.frame(fert(ir_data,Indicator="tfr", Period = 84, EverMW = "Yes", AWFact = "awfactt"))[1]
   #runs admort
   for (i in seq_along(varlist)) {
     
