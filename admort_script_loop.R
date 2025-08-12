@@ -4,18 +4,7 @@ lib_list <- c("haven", "dplyr", "stringr", "survey", "beepr")
 #apply require to list 
 lapply(lib_list, require, character.only = T)
 #list of files to apply mortality function to
-file_list <- c(
-  # "/Users/matthewnicholson/DHS/Nigeria\ DHS\'s/NG_1990_DHS_04072025_2113_219655/NGIR21DT/NGIR21FL.DTA", 
-  # "/Users/matthewnicholson/DHS/Nigeria\ DHS\'s/NG_2003_DHS_04072025_2113_219655/NGIR4BDT/NGIR4BFL.DTA", 
-  # "/Users/matthewnicholson/DHS/Nigeria\ DHS\'s/NG_2008_DHS_04072025_2113_219655/NGBR53DT/NGBR53FL.DTA", 
-  # "/Users/matthewnicholson/DHS/Nigeria\ DHS\'s/NG_2013_DHS_04072025_2114_219655/NGIR6ADT/NGIR6AFL.DTA", 
-  # "/Users/matthewnicholson/DHS/Nigeria\ DHS\'s/NG_2018_DHS_04072025_2116_219655/NGIR7BDT/NGIR7BFL.DTA",
-  # '/Users/matthewnicholson/DHS/Ethiopia DHS/ET_2016_DHS_07292025_1528_219655/ETIR71DT/ETIR71FL.DTA',
-  # '/Users/matthewnicholson/DHS/Ethiopia DHS/ET_2019_INTERIMDHS_07292025_1529_219655/ETIR81DT/ETIR81FL.DTA',
-  '/Users/matthewnicholson/DHS/Kenya DHS/KE_2014_DHS_07292025_1529_219655/KEIR72DT/KEIR72FL.DTA',
-  '/Users/matthewnicholson/DHS/Kenya DHS/KE_2022_DHS_07292025_1530_219655/KEIR8CDT/KEIR8CFL.DTA',
-  '/Users/matthewnicholson/DHS/Ghana DHS/GH_2014_DHS_07292025_1527_219655/GHIR72DT/GHIR72FL.DTA',
-  '/Users/matthewnicholson/DHS/Ghana DHS/GH_2022_DHS_07292025_1528_219655/GHIR8CDT/GHIR8CFL.DTA'
+file_list <- c("/Users/matthewnicholson/DHS/DHS_surveys_rds_organized/DRC_DHS/2013-14/CDIR61DT/DRC_DHS_CD_2013-14_DHS_08072025_1920_219655_CDIR61DT_CDIR61FL.Rds"
 )
 #load the mortality function
 source("/Users/matthewnicholson/DHS/admort_scripts/simplified_admort_func.R")
@@ -25,7 +14,7 @@ indicator_list <- c("asmr", "aamr", "asmmr", "aammr", "asprmr",
                     # ,"aagfr"
 )
 
-source("patch_dhsrate_functions.R")
+source("/Users/matthewnicholson/DHS/patch_dhsrate_functions.R")
 patch_dhsrate_functions(str_to_upper(indicator_list))
 
 
@@ -39,7 +28,7 @@ for(i in add_indicators){
 all_results <- list()
 #intiate loop
 for(i in seq_along(file_list)){
-  ir_data <- read_dta(file_list[i])
+  ir_data <- readRDS(file = file_list[i])
   # TFR7 <- as.data.frame(fert(ir_data, Indicator = "tfr", Period = 84, EverMW = "Yes",
   #                            AWFact = "awfactt"))[1]
   admort_results <- list()
