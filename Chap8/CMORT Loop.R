@@ -1,4 +1,5 @@
 rm(list = ls(all = TRUE))
+
 library(haven)
 library(dplyr)
 library(openxlsx)
@@ -9,6 +10,7 @@ library(DHS.rates) #for functions like chmort
 library(data.table) #for tables from mort calculations
 library(beepr)
  
+source("/Users/matthewnicholson/DHS/get_file_function.R")
  #laod WI data for 1990 DHS
 #laod WI data for 1990 DHS
 WI <- readRDS(file = "/Users/matthewnicholson/DHS/DHS_surveys_rds_organized/Nigeria_DHS/1990/NGWI21DT/Nigeria_DHS_NG_1990_DHS_04072025_2113_219655_NGWI21DT_NGWI21FL.Rds")
