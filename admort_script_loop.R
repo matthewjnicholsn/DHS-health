@@ -1,4 +1,5 @@
 rm(list = ls())
+
 #list of libraries to require
 lib_list <- c("haven", "dplyr", "stringr", "survey", "beepr")
 #apply require to list 
