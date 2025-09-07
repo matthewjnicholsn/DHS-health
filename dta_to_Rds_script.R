@@ -7,7 +7,7 @@ output_root <- "/Users/matthewnicholson/DHS/DHS_surveys_rds"
 dir_create(output_root)
 
 # get .dta files
-dta_files <- dir_ls(input_root, recurse = TRUE, glob = "*.DTA")
+dta_files <- dir_ls(input_root, recurse = TRUE, regexp = "\\.[dD][tT][aA]$")
 
 for (dta_file in dta_files) {
   # Split the path to extract components

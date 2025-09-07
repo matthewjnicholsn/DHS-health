@@ -1,4 +1,5 @@
 rm(list = ls(all = TRUE))
+
 library(haven)
 library(dplyr)
 library(openxlsx)
@@ -9,15 +10,16 @@ library(DHS.rates) #for functions like chmort
 library(data.table) #for tables from mort calculations
 library(beepr)
  
+source("/Users/matthewnicholson/DHS/get_file_function.R")
  #laod WI data for 1990 DHS
 #laod WI data for 1990 DHS
-WI <- read_dta("/Users/matthewnicholson/DHS/Nigeria\ DHS\'s/NG_1990_DHS_04072025_2113_219655/NGWI21DT/NGWI21FL.DTA")
+WI <- readRDS(file = "/Users/matthewnicholson/DHS/DHS_surveys_rds_organized/Nigeria_DHS/1990/NGWI21DT/Nigeria_DHS_NG_1990_DHS_04072025_2113_219655_NGWI21DT_NGWI21FL.Rds")
 WI <- WI %>% 
   select(-wlthindf) %>% 
   rename(whhid, hhid = whhid) %>% 
   mutate(hhid = as.numeric(gsub(" ", "", hhid)))
 
-BR <- read_dta("/Users/matthewnicholson/DHS/Nigeria\ DHS\'s/NG_1990_DHS_04072025_2113_219655/NGBR21DT/NGBR21FL.dta")
+BR <- readRDS("/Users/matthewnicholson/DHS/DHS_surveys_rds_organized/Nigeria_DHS/1990/NGBR21DR/Nigeria_DHS_NG_1990_DHS_04072025_2113_219655_NGBR21DT_NGBR21FL.Rds")
 BR <- BR %>% 
   mutate(gsub('.{2}$', '', BR$caseid)) %>% 
   rename(`gsub(".{2}$", "", BR$caseid)`, hhid = `gsub(".{2}$", "", BR$caseid)`) %>% 
@@ -26,16 +28,12 @@ BR <- BR %>%
             relationship = "many-to-many") %>% 
   rename(v190 = wlthind5)
   
+#try using the get_file function to generate a list of files to path through the ch mort function
+years <- c(1990, 2003, 2008, 2010, 2013,2015, 2018, 2021)
+
+file_paths <- get_file("Nigeria_DHS", years, "BR")
 
   #set filepaths for all files in used in the loop
-  file_paths <- c(
-    "/Users/matthewnicholson/DHS/Nigeria\ DHS\'s/NG_1990_DHS_04072025_2113_219655/NGBR21DT/NGBR21FL.dta",
-    "/Users/matthewnicholson/DHS/Nigeria\ DHS\'s/NG_2003_DHS_04072025_2113_219655/NGBR4BDT/NGBR4BFL.dta",
-    "/Users/matthewnicholson/DHS/Nigeria\ DHS\'s/NG_2008_DHS_04072025_2113_219655/NGBR53DT/NGBR53FL.DTA",
-    # "/Users/matthewnicholson/DHS/Nigeria\ DHS\'s/NG_2010_MIS_04072025_2114_219655/NGBR61DT/NGBR61FL.DTA",#MIS excluded as missing birth size data
-    "/Users/matthewnicholson/DHS/Nigeria\ DHS\'s/NG_2013_DHS_04072025_2114_219655/NGBR6ADT/NGBR6AFL.DTA", 
-    "/Users/matthewnicholson/DHS/Nigeria\ DHS\'s/NG_2018_DHS_04072025_2116_219655/NGBR7BDT/NGBR7BFL.DTA" #only this DHS uses "SHSTATE" notation
-  )
   
   #begin the for loop
   
@@ -50,7 +48,7 @@ BR <- BR %>%
            BRdata_CMORT_wealth, resn1, resn2, resn3, resc, res_wealth,
            CHMORT, state_var)
     #read the household file
-    BRdata <- read_dta(file_paths[i])
+    BRdata <- readRDS(file = file_paths[i])
       }
     
     BRdata <- BRdata %>%
