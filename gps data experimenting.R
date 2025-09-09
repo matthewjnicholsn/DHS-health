@@ -18,13 +18,17 @@ et_hr <- et_hr %>%
             relationship = "many-to-many") 
 
 wealth_cluster <- aggregate(wlthind5 ~ DHSCLUST, data = et_hr, FUN = mean) %>% 
-  left_join(et_sf, wealth_cluster, by = "DHSCLUST")
+  left_join(wealth_cluster, et_sf, by = "DHSCLUST")
+class(wealth_cluster)
+
+wealth_cluster <- st_as_sf(wealth_cluster)
 
 
-p1 <- ggplot(data = wealth_cluster) +
-  geom_sf(aes(fill = wlthind5), color = "black")+
-  scale_fill_viridis(option = "viridis")
-plot(p1)
+ggplot(data = wealth_cluster) +
+  geom_sf(aes(color = wlthind5.x), size = 3) +
+  scale_color_viridis(option = "viridis", name = "Mean Wealth Index") +
+  theme_minimal() +
+  labs(title = "Cluster-level Mean Wealth Index (Ethiopia 2000)")
 # +
 #   theme_void()+
 #   scale_fill_viridis(option = "viridis")
