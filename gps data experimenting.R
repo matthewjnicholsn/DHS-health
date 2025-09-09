@@ -17,9 +17,13 @@ et_hr <- et_hr %>%
   left_join(et_sf %>% distinct(DHSCLUST, geometry), join_by(DHSCLUST), 
             relationship = "many-to-many") 
 
+wealth_cluster <- aggregate(wlthind5 ~ DHSCLUST, data = et_hr, FUN = mean) %>% 
+  left_join(et_sf, wealth_cluster, by = "DHSCLUST")
 
-p1 <- ggplot(data = et_hr) +
-  geom_sf(aes(fill = ), color = "black")
+
+p1 <- ggplot(data = wealth_cluster) +
+  geom_sf(aes(fill = wlthind5), color = "black")+
+  scale_fill_viridis(option = "viridis")
 plot(p1)
 # +
 #   theme_void()+
