@@ -1,0 +1,214 @@
+﻿                                                   KEFW8AFL
+                                                KEFW8AFL_DICT
+
+                  C:\Users\21429\ICF\Data Archive - Documents\Export Menu\KE8A\KEFW8AFL.DCF
+                                    Last Modified:  6/26/2023  5:37:45 PM
+
+--------------------------------------------------------------------------------------------------------------
+Level Name                    Level Label                                                  Type            Rec
+  Record Name                   Record Label                                              Value  Req  Max  Len
+--------------------------------------------------------------------------------------------------------------
+LEVEL_1                       Level 1
+  FWRECORD                      Fieldworker record                                               Yes    1   48
+Level: Level 1                                         Record: Fieldworker record
+--------------------------------------------------------------------------------------------------------------
+                                                                                 Data Item            Dec Zero
+Item Name              Item Label                                     Start  Len Type Type  Occ  Dec Char Fill
+--------------------------------------------------------------------------------------------------------------
+                         (record type)                                    0    0   AN    I    1    0   No   No
+FW101             (id) Fieldworker code                                   1    4    N    I    1    0   No  Yes
+FW000                  Country code and phase                             5    3   AN    I    1    0   No   No
+FW102                  Fieldworker region of residence                    8    2    N    I    1    0   No  Yes
+                               1   Mombasa
+                               2   Kwale
+                               3   Kilifi
+                               4   Tana River
+                               5   Lamu
+                               6   Taita Taveta
+                               7   Garissa
+                               8   Wajir
+                               9   Mandera
+                               10  Marsabit
+                               11  Isiolo
+                               12  Meru
+                               13  Tharaka-Nithi
+                               14  Embu
+                               15  Kitui
+                               16  Machakos
+                               17  Makueni
+                               18  Nyandarua
+                               19  Nyeri
+                               20  Kirinyaga
+                               21  Murang'a
+                               22  Kiambu
+                               23  Turkana
+                               24  West Pokot
+                               25  Samburu
+                               26  Trans Nzoia
+                               27  Uasin Gishu
+                               28  Elgeyo-Marakwet
+                               29  Nandi
+                               30  Baringo
+                               31  Laikipia
+                               32  Nakuru
+                               33  Narok
+                               34  Kajiado
+                               35  Kericho
+                               36  Bomet
+                               37  Kakamega
+                               38  Vihiga
+                               39  Bungoma
+                               40  Busia
+                               41  Siaya
+                               42  Kisumu
+                               43  Homa Bay
+                               44  Migori
+                               45  Kisii
+                               46  Nyamira
+                               47  Nairobi
+                           (m) 99  Missing
+FW103                  Fieldworker type of place of residence            10    1    N    I    1    0   No  Yes
+                               1  City (Nairobi, Kisumu, Mombasa, Nakuru) .
+                               2  Town
+                               3  Rural area
+                           (m) 9  Missing
+FW104                  Fieldworker age                                   11    2    N    I    1    0   No  Yes
+                               15:65  
+                           (m) 99     Missing
+FW105                  Fieldworker sex                                   13    1    N    I    1    0   No  Yes
+                               1  Male
+                               2  Female
+                           (m) 9  Missing
+FW106                  Fieldworker marital status                        14    1    N    I    1    0   No  Yes
+                               1  Currently married
+                               2  Living with a man/woman
+                               3  Widowed
+                               4  Divorced
+                               5  Separated
+                               6  Never married or lived with a man/woman
+                           (m) 9  Missing
+FW107                  Fieldworker number of living children             15    2    N    I    1    0   No  Yes
+                               0:24  
+                           (m) 99    Missing
+FW108                  Fieldworker ever had a child who died             17    1    N    I    1    0   No  Yes
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+FW109                  Highest level of school attended by fieldworker   18    1    N    I    1    0   No  Yes
+                               1  Primary
+                               2  Secondary/"A" level
+                               3  Middle level college (certificate/diploma)
+                               4  University
+                               5  Vocational
+                               6  Informal education (madrasa/adult basic)
+                           (m) 9  Missing
+FW110                  Highest grade/form/year at that level completed   19    2    N    I    1    0   No  Yes
+                               0     Less than one year
+                               1:12  
+                           (m) 99    Missing
+FW111                  Fieldworker religion                              21    2    N    I    1    0   No  Yes
+                               1   Catholic
+                               2   Protestant
+                               3   Evangelical churches
+                               4   African instituted churches
+                               5   Orthodox
+                               6   Other Christian
+                               7   Islam
+                               8   Hindu
+                               9   Traditionists
+                               95  No religion
+                               96  Other
+                           (m) 99  Missing
+FW112                  Fieldworker ethnicity                             23    3    N    I    1    0   No  Yes
+                               1   Embu
+                               2   Kalenjin
+                               3   Kamba
+                               4   Kikuyu
+                               5   Kisii
+                               6   Luhya
+                               7   Luo
+                               8   Maasai
+                               9   Meru
+                               10  Mijikenda/Swahili
+                               11  Somali
+                               12  Taita/Taveta
+                               96  Other
+                           (m) 99  Missing
+FW113A                 English                                           26    1   AN    I    1    0   No   No
+                               A  English
+                               ?  Missing
+FW113B                 Kiswahili                                         27    1   AN    I    1    0   No   No
+                               B  Kiswahili
+FW113C                 Borana                                            28    1   AN    I    1    0   No   No
+                               C  Borana
+FW113D                 Embu                                              29    1   AN    I    1    0   No   No
+                               D  Embu
+FW113E                 Kalenjin                                          30    1   AN    I    1    0   No   No
+                               E  Kalenjin
+FW113F                 Kamba                                             31    1   AN    I    1    0   No   No
+                               F  Kamba
+FW113G                 Kikuyu                                            32    1   AN    I    1    0   No   No
+                               G  Kikuyu
+FW113H                 Kisii                                             33    1   AN    I    1    0   No   No
+                               H  Kisii
+FW113I                 Luhya                                             34    1   AN    I    1    0   No   No
+                               I  Luhya
+FW113J                 Maragoli                                          35    1   AN    I    1    0   No   No
+                               J  Maragoli
+FW113K                 Luo                                               36    1   AN    I    1    0   No   No
+                               K  Luo
+FW113L                 Maasai                                            37    1   AN    I    1    0   No   No
+                               L  Maasai
+FW113M                 Meru                                              38    1   AN    I    1    0   No   No
+                               M  Meru
+FW113X                 Other language                                    39    1   AN    I    1    0   No   No
+                               X  Other language
+FW113Y                 No other language                                 40    1   AN    I    1    0   No   No
+                               Y  No other language
+FW114                  Fieldworker's mother tongue/native language       41    2    N    I    1    0   No  Yes
+                               1   English
+                               2   Kiswahili
+                               3   Borana
+                               4   Embu
+                               5   Kalenjin
+                               6   Kamba
+                               7   Kikuyu
+                               8   Kisii
+                               9   Luhya
+                               10  Maragoli
+                               11  Luo
+                               12  Maasai
+                               13  Meru
+                               14  Mijkenda
+                               15  Pokot
+                               16  Somali
+                               17  Turkana
+                               96  Other
+                           (m) 99  Missing
+FW115A                 Has fieldworker ever worked on a DHS prior to t   43    1    N    I    1    0   No  Yes
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+FW115B                 Has fieldworker ever worked on an MIS prior to    44    1    N    I    1    0   No  Yes
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+FW115C                 Has fieldworker ever worked on any other survey   45    1    N    I    1    0   No  Yes
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+FW116                  Was fieldworker working for implementing agency   46    1    N    I    1    0   No  Yes
+                               1  Yes, KNBS
+                               3  No
+                           (m) 9  Missing
+FW117                  Is fieldworker a permanent or temporary employe   47    1    N    I    1    0   No  Yes
+                               1  Permanent
+                               2  Temporary
+                           (m) 9  Missing
+FW118                  Does fieldworker has any comments                 48    1    N    I    1    0   No  Yes
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+--------------------------------------------------------------------------------------------------------------
+Relation Name         Primary               Linked by             Secondary             Linked by
+--------------------------------------------------------------------------------------------------------------

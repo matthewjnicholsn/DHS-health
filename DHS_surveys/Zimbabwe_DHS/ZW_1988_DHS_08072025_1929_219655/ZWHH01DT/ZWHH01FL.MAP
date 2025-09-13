@@ -1,0 +1,721 @@
+
+               I S S A     D i c t i o n a r y     R e p o r t
+
+
+                  IIIIIIIIII     SSSSSSS       SSSSSSS            A
+                 IIIIIIIIII    SSSSSSSSSS    SSSSSSSSSS          AA
+                   IIII       SSSS          SSSS               AAAA
+                  IIII       SSSS          SSSS              AAAAAA
+                 IIII       SSSS          SSSS             AAA  AAA
+                IIII       SSSSSSSS      SSSSSSSS         AAA  AAA 
+               IIII         SSSSSSSS      SSSSSSSS      AAA    AAA 
+              IIII             SSSS          SSSS      AAAAAAAAAA  
+             IIII             SSSS          SSSS     AAAAAAAAAAAA  
+            IIII             SSSS          SSSS     AAA      AAA   
+        IIIIIIIIII    SSSSSSSSSS    SSSSSSSSSS    AAAA      AAAA   
+       IIIIIIIIII      SSSSSSS       SSSSSSS     AAAA      AAAA    
+
+  I n t e g r a t e d   S y s t e m   f o r    S u r v e y   A n a l y s i s
+
+--------------------------------------------------------------------------------
+
+Dictionary Name   : ZWHH01   (file 'ZWHH01.DIC', 4064 bytes)
+
+Dictionary Label  : Individual Questionnaires     
+
+Owner             : Trevor Croft                  
+
+Country           : Zimbabwe                      
+
+Creation Date     : Jan 8, 1988 
+
+Last Update       : Apr 26, 1990      * 1 hierarchical level
+
+* Main index: not defined
+
+* No secondary indexes defined
+
+* Index summary: no index key lengths measured
+
+* Estimated case-data-area size: 262 bytes (2 sections, 20 variables)
+
+Report date & time: 08-08-2006 at 13:58:11 hrs.
+
+                             SECTION DESCRIPTION                       
+                                                                      08-08-2006
+                                                                        13:58:11
+--------------------------------------------------------------------------------
+Section     Length      Occurs   ---  Group  ---  
+ name   Loc.     Class  Min Max    Max Loc Len    Section Label
+--------------------------------------------------------------------------------
+
+SEC01      1   28  S     1   1   -without group-  Household Interview Info
+
+SEC02     29  234  M     0  26   -without group-  Household schedule
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC01                                                     08-08-2006
+                                                                        13:58:11
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+HPROV        1    1    0     N      S    Province                      
+                                         values:   value  label
+                                                       0  Manicaland                                                  
+                                                       1  Mashonaland Central                                         
+                                                       2  Mashonaland East                                            
+                                                       3  Mashonaland West                                            
+                                                       4  Matabeleland North                                          
+                                                       5  Matabeleland South                                          
+                                                       6  Midlands                                                    
+                                                       7  Masvingo                                                    
+                                                       8  Harare/Chitungwiza                                          
+                                                       9  Bulawayo                                                    
+                                         ranges:   lower   upper
+                                                       0       9
+
+HSTRATA      2    1    0     N      S    Strata                        
+                                         values:   value  label
+                                                       1  Communal                                                    
+                                                       2  Large Commercial Fms                                        
+                                                       3  Urban                                                       
+                                                       4  Resettlement                                                
+                                                       5  Small Commercial Fms                                        
+                                         ranges:   lower   upper
+                                                       1       5
+
+HSEGMENT     3    3    0     N      S    Segment number                
+                                         ranges:   lower   upper
+                                                       1     722
+
+HHNUMBER     6    4    0     N      S    Household number              
+                                         ranges:   lower   upper
+                                                       1    9999
+
+HMONTH      10    2    0     N      S    Month of interview            
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       9      12
+
+HYEAR       12    2    0     N      S    Year of interview             
+                                         ranges:   lower   upper
+                                                      88      89
+
+HINTNUM     14    2    0     N      S    Interviewer number            
+                                         ranges:   lower   upper
+                                                       1      79
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC01                                                     08-08-2006
+                                                                        13:58:11
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+HRESULT     16    1    0     N      S    Result of household interview 
+                                         values:   value  label
+                                                       1  Completed                                                   
+                                                       2  No respondent home                                          
+                                                       3  Household absent                                            
+                                                       4  Postponed                                                   
+                                                       5  Refused                                                     
+                                                       6  Dwelling vacant                                             
+                                                       7  Dwelling destroyed                                          
+                                                       8  Dwelling not found                                          
+                                                       9  Other                                                       
+                                         ranges:   lower   upper
+                                                       1       9
+
+HVISITS     17    1    0     N      S    Number of household visits    
+                                         ranges:   lower   upper
+                                                       1       3
+
+HMEMBERS    18    2    0     N      S    Total in household            
+                                         ranges:   lower   upper
+                                                       0      50
+
+HWOMEN      20    2    0     N      S    Total eligible women          
+                                         ranges:   lower   upper
+                                                       0      10
+
+HLANG       22    1    0     N      S    Language                      
+                                         values:   value  label
+                                                       1  Shona                                                       
+                                                       2  Ndebele                                                     
+                                                       3  English                                                     
+                                                       4  Other                                                       
+                                                       5  Venda                                                       
+                                                       6  Nambia                                                      
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       6
+
+HKEYER      23    2    0     N      S    Data entry operator           
+                                         ranges:   lower   upper
+                                                       1       6
+
+DOHC        25    4    0     N      S    CMC Data of interview         
+                                         values:   value  label
+                                                   BLANK  Not applicable value
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC02                                                     08-08-2006
+                                                                        13:58:11
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+HLINE       29    2    0     N      M    Line number of member         
+                                         ranges:   lower   upper
+                                                       1      50
+
+HLIVES      31    1    0     N      M    Member lives in household     
+                                         values:   value  label
+                                                       1  Yes                                                         
+                                                       2  No                                                          
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+
+HSLEPT      32    1    0     N      M    Member slept in household     
+                                         values:   value  label
+                                                       1  Yes                                                         
+                                                       2  No                                                          
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+
+HSEX        33    1    0     N      M    Sex of member                 
+                                         values:   value  label
+                                                       1  Male                                                        
+                                                       2  Female                                                      
+                                         ranges:   lower   upper
+                                                       1       2
+
+HAGE        34    2    0     N      M    Age of member                 
+                                         values:   value  label
+                                                      99  Missing value
+                                         ranges:   lower   upper
+                                                       0      98
+
+HELIG       36    2    0     N      M    Woman eligible                
+                                         values:   value  label
+                                                       0  Not eligible                                                
+                                         ranges:   lower   upper
+                                                       0      50
+
+
+                             SECTION MAP                               
+Section   : SEC01                                                     08-08-2006
+                                                                        13:58:11
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+   1| N |  HPROV         Province                                                    ___
+   2| N |  HSTRATA       Strata                                                      ___
+   3| N |  HSEGMENT      Segment number                                         
+    | N |
+    | N |     ___
+   6| N |  HHNUMBER      Household number                                       
+    | N |
+    | N |
+    | N |     ___
+  10| N |  HMONTH        Month of interview                                     
+    | N |     ___
+  12| N |  HYEAR         Year of interview                                      
+    | N |     ___
+  14| N |  HINTNUM       Interviewer number                                     
+    | N |     ___
+  16| N |  HRESULT       Result of household interview                               ___
+  17| N |  HVISITS       Number of household visits                                  ___
+  18| N |  HMEMBERS      Total in household                                     
+    | N |     ___
+  20| N |  HWOMEN        Total eligible women                                   
+    | N |     ___
+  22| N |  HLANG         Language                              9   BLANK             ___
+  23| N |  HKEYER        Data entry operator                                    
+    | N |     ___
+  25| N |  DOHC          CMC Data of interview                     BLANK        
+    | N |
+    | N |
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:58:11
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+  29| N |  HLINE     (1) Line number of member                                  
+    | N |     ___
+  31| N |  HLIVES    (1) Member lives in household             9                     ___
+  32| N |  HSLEPT    (1) Member slept in household             9                     ___
+  33| N |  HSEX      (1) Sex of member                                               ___
+  34| N |  HAGE      (1) Age of member                        99                
+    | N |     ___
+  36| N |  HELIG     (1) Woman eligible                                         
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:58:11
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+  38| N |  HLINE     (2) Line number of member                                  
+    | N |     ___
+  40| N |  HLIVES    (2) Member lives in household             9                     ___
+  41| N |  HSLEPT    (2) Member slept in household             9                     ___
+  42| N |  HSEX      (2) Sex of member                                               ___
+  43| N |  HAGE      (2) Age of member                        99                
+    | N |     ___
+  45| N |  HELIG     (2) Woman eligible                                         
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:58:11
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+  47| N |  HLINE     (3) Line number of member                                  
+    | N |     ___
+  49| N |  HLIVES    (3) Member lives in household             9                     ___
+  50| N |  HSLEPT    (3) Member slept in household             9                     ___
+  51| N |  HSEX      (3) Sex of member                                               ___
+  52| N |  HAGE      (3) Age of member                        99                
+    | N |     ___
+  54| N |  HELIG     (3) Woman eligible                                         
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:58:11
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+  56| N |  HLINE     (4) Line number of member                                  
+    | N |     ___
+  58| N |  HLIVES    (4) Member lives in household             9                     ___
+  59| N |  HSLEPT    (4) Member slept in household             9                     ___
+  60| N |  HSEX      (4) Sex of member                                               ___
+  61| N |  HAGE      (4) Age of member                        99                
+    | N |     ___
+  63| N |  HELIG     (4) Woman eligible                                         
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:58:11
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+  65| N |  HLINE     (5) Line number of member                                  
+    | N |     ___
+  67| N |  HLIVES    (5) Member lives in household             9                     ___
+  68| N |  HSLEPT    (5) Member slept in household             9                     ___
+  69| N |  HSEX      (5) Sex of member                                               ___
+  70| N |  HAGE      (5) Age of member                        99                
+    | N |     ___
+  72| N |  HELIG     (5) Woman eligible                                         
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:58:11
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+  74| N |  HLINE     (6) Line number of member                                  
+    | N |     ___
+  76| N |  HLIVES    (6) Member lives in household             9                     ___
+  77| N |  HSLEPT    (6) Member slept in household             9                     ___
+  78| N |  HSEX      (6) Sex of member                                               ___
+  79| N |  HAGE      (6) Age of member                        99                
+    | N |     ___
+  81| N |  HELIG     (6) Woman eligible                                         
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:58:11
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+  83| N |  HLINE     (7) Line number of member                                  
+    | N |     ___
+  85| N |  HLIVES    (7) Member lives in household             9                     ___
+  86| N |  HSLEPT    (7) Member slept in household             9                     ___
+  87| N |  HSEX      (7) Sex of member                                               ___
+  88| N |  HAGE      (7) Age of member                        99                
+    | N |     ___
+  90| N |  HELIG     (7) Woman eligible                                         
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:58:11
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+  92| N |  HLINE     (8) Line number of member                                  
+    | N |     ___
+  94| N |  HLIVES    (8) Member lives in household             9                     ___
+  95| N |  HSLEPT    (8) Member slept in household             9                     ___
+  96| N |  HSEX      (8) Sex of member                                               ___
+  97| N |  HAGE      (8) Age of member                        99                
+    | N |     ___
+  99| N |  HELIG     (8) Woman eligible                                         
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:58:11
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 101| N |  HLINE     (9) Line number of member                                  
+    | N |     ___
+ 103| N |  HLIVES    (9) Member lives in household             9                     ___
+ 104| N |  HSLEPT    (9) Member slept in household             9                     ___
+ 105| N |  HSEX      (9) Sex of member                                               ___
+ 106| N |  HAGE      (9) Age of member                        99                
+    | N |     ___
+ 108| N |  HELIG     (9) Woman eligible                                         
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:58:11
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 110| N |  HLINE    (10) Line number of member                                  
+    | N |     ___
+ 112| N |  HLIVES   (10) Member lives in household             9                     ___
+ 113| N |  HSLEPT   (10) Member slept in household             9                     ___
+ 114| N |  HSEX     (10) Sex of member                                               ___
+ 115| N |  HAGE     (10) Age of member                        99                
+    | N |     ___
+ 117| N |  HELIG    (10) Woman eligible                                         
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:58:11
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 119| N |  HLINE    (11) Line number of member                                  
+    | N |     ___
+ 121| N |  HLIVES   (11) Member lives in household             9                     ___
+ 122| N |  HSLEPT   (11) Member slept in household             9                     ___
+ 123| N |  HSEX     (11) Sex of member                                               ___
+ 124| N |  HAGE     (11) Age of member                        99                
+    | N |     ___
+ 126| N |  HELIG    (11) Woman eligible                                         
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:58:11
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 128| N |  HLINE    (12) Line number of member                                  
+    | N |     ___
+ 130| N |  HLIVES   (12) Member lives in household             9                     ___
+ 131| N |  HSLEPT   (12) Member slept in household             9                     ___
+ 132| N |  HSEX     (12) Sex of member                                               ___
+ 133| N |  HAGE     (12) Age of member                        99                
+    | N |     ___
+ 135| N |  HELIG    (12) Woman eligible                                         
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:58:11
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 137| N |  HLINE    (13) Line number of member                                  
+    | N |     ___
+ 139| N |  HLIVES   (13) Member lives in household             9                     ___
+ 140| N |  HSLEPT   (13) Member slept in household             9                     ___
+ 141| N |  HSEX     (13) Sex of member                                               ___
+ 142| N |  HAGE     (13) Age of member                        99                
+    | N |     ___
+ 144| N |  HELIG    (13) Woman eligible                                         
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:58:11
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 146| N |  HLINE    (14) Line number of member                                  
+    | N |     ___
+ 148| N |  HLIVES   (14) Member lives in household             9                     ___
+ 149| N |  HSLEPT   (14) Member slept in household             9                     ___
+ 150| N |  HSEX     (14) Sex of member                                               ___
+ 151| N |  HAGE     (14) Age of member                        99                
+    | N |     ___
+ 153| N |  HELIG    (14) Woman eligible                                         
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:58:11
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 155| N |  HLINE    (15) Line number of member                                  
+    | N |     ___
+ 157| N |  HLIVES   (15) Member lives in household             9                     ___
+ 158| N |  HSLEPT   (15) Member slept in household             9                     ___
+ 159| N |  HSEX     (15) Sex of member                                               ___
+ 160| N |  HAGE     (15) Age of member                        99                
+    | N |     ___
+ 162| N |  HELIG    (15) Woman eligible                                         
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:58:11
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 164| N |  HLINE    (16) Line number of member                                  
+    | N |     ___
+ 166| N |  HLIVES   (16) Member lives in household             9                     ___
+ 167| N |  HSLEPT   (16) Member slept in household             9                     ___
+ 168| N |  HSEX     (16) Sex of member                                               ___
+ 169| N |  HAGE     (16) Age of member                        99                
+    | N |     ___
+ 171| N |  HELIG    (16) Woman eligible                                         
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:58:11
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 173| N |  HLINE    (17) Line number of member                                  
+    | N |     ___
+ 175| N |  HLIVES   (17) Member lives in household             9                     ___
+ 176| N |  HSLEPT   (17) Member slept in household             9                     ___
+ 177| N |  HSEX     (17) Sex of member                                               ___
+ 178| N |  HAGE     (17) Age of member                        99                
+    | N |     ___
+ 180| N |  HELIG    (17) Woman eligible                                         
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:58:11
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 182| N |  HLINE    (18) Line number of member                                  
+    | N |     ___
+ 184| N |  HLIVES   (18) Member lives in household             9                     ___
+ 185| N |  HSLEPT   (18) Member slept in household             9                     ___
+ 186| N |  HSEX     (18) Sex of member                                               ___
+ 187| N |  HAGE     (18) Age of member                        99                
+    | N |     ___
+ 189| N |  HELIG    (18) Woman eligible                                         
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:58:11
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 191| N |  HLINE    (19) Line number of member                                  
+    | N |     ___
+ 193| N |  HLIVES   (19) Member lives in household             9                     ___
+ 194| N |  HSLEPT   (19) Member slept in household             9                     ___
+ 195| N |  HSEX     (19) Sex of member                                               ___
+ 196| N |  HAGE     (19) Age of member                        99                
+    | N |     ___
+ 198| N |  HELIG    (19) Woman eligible                                         
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:58:11
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 200| N |  HLINE    (20) Line number of member                                  
+    | N |     ___
+ 202| N |  HLIVES   (20) Member lives in household             9                     ___
+ 203| N |  HSLEPT   (20) Member slept in household             9                     ___
+ 204| N |  HSEX     (20) Sex of member                                               ___
+ 205| N |  HAGE     (20) Age of member                        99                
+    | N |     ___
+ 207| N |  HELIG    (20) Woman eligible                                         
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:58:11
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 209| N |  HLINE    (21) Line number of member                                  
+    | N |     ___
+ 211| N |  HLIVES   (21) Member lives in household             9                     ___
+ 212| N |  HSLEPT   (21) Member slept in household             9                     ___
+ 213| N |  HSEX     (21) Sex of member                                               ___
+ 214| N |  HAGE     (21) Age of member                        99                
+    | N |     ___
+ 216| N |  HELIG    (21) Woman eligible                                         
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:58:11
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 218| N |  HLINE    (22) Line number of member                                  
+    | N |     ___
+ 220| N |  HLIVES   (22) Member lives in household             9                     ___
+ 221| N |  HSLEPT   (22) Member slept in household             9                     ___
+ 222| N |  HSEX     (22) Sex of member                                               ___
+ 223| N |  HAGE     (22) Age of member                        99                
+    | N |     ___
+ 225| N |  HELIG    (22) Woman eligible                                         
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:58:11
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 227| N |  HLINE    (23) Line number of member                                  
+    | N |     ___
+ 229| N |  HLIVES   (23) Member lives in household             9                     ___
+ 230| N |  HSLEPT   (23) Member slept in household             9                     ___
+ 231| N |  HSEX     (23) Sex of member                                               ___
+ 232| N |  HAGE     (23) Age of member                        99                
+    | N |     ___
+ 234| N |  HELIG    (23) Woman eligible                                         
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:58:11
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 236| N |  HLINE    (24) Line number of member                                  
+    | N |     ___
+ 238| N |  HLIVES   (24) Member lives in household             9                     ___
+ 239| N |  HSLEPT   (24) Member slept in household             9                     ___
+ 240| N |  HSEX     (24) Sex of member                                               ___
+ 241| N |  HAGE     (24) Age of member                        99                
+    | N |     ___
+ 243| N |  HELIG    (24) Woman eligible                                         
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:58:11
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 245| N |  HLINE    (25) Line number of member                                  
+    | N |     ___
+ 247| N |  HLIVES   (25) Member lives in household             9                     ___
+ 248| N |  HSLEPT   (25) Member slept in household             9                     ___
+ 249| N |  HSEX     (25) Sex of member                                               ___
+ 250| N |  HAGE     (25) Age of member                        99                
+    | N |     ___
+ 252| N |  HELIG    (25) Woman eligible                                         
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:58:11
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 254| N |  HLINE    (26) Line number of member                                  
+    | N |     ___
+ 256| N |  HLIVES   (26) Member lives in household             9                     ___
+ 257| N |  HSLEPT   (26) Member slept in household             9                     ___
+ 258| N |  HSEX     (26) Sex of member                                               ___
+ 259| N |  HAGE     (26) Age of member                        99                
+    | N |     ___
+ 261| N |  HELIG    (26) Woman eligible                                         
+    | N |     ___
+
+... Report of Dictionary ZWHH01 normally ended

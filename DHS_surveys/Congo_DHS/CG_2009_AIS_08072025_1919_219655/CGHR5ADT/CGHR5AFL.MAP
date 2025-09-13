@@ -1,0 +1,970 @@
+                                                   CGHR5AFL
+                                                CGHR5AFL_DICT
+
+                                        CGHR5AFL.DCF
+                                    Last Modified:  5/6/2010  12:27:19 PM
+
+--------------------------------------------------------------------------------------------------------------
+Level Label                                                 Level Name                     Type            Rec
+  Record Label                                                Record Name                 Value  Req  Max  Len
+--------------------------------------------------------------------------------------------------------------
+HOUSEHOLD                                                   HOUSEHOLD
+  RECORD1                                                     RECORD1                            Yes    1 1706
+Level: HOUSEHOLD                                       Record: RECORD1
+--------------------------------------------------------------------------------------------------------------
+                                                                                 Data Item            Dec Zero
+Item Label                                     Item Name              Start  Len Type Type  Occ  Dec Char Fill
+--------------------------------------------------------------------------------------------------------------
+  (record type)                                                           0    0   AN    I    1    0   No   No
+Case Identification                       (id) HHID                       1   12   AN    I    1    0   No   No
+Country code and phase                         HV000                     13    3   AN    I    1    0   No   No
+Cluster number                                 HV001                     16    8    N    I    1    0   No   No
+Household number                               HV002                     24    4    N    I    1    0   No   No
+Respondent's line number                       HV003                     28    3    N    I    1    0   No   No
+        1:999  
+Ultimate area unit                             HV004                     31    4    N    I    1    0   No   No
+Sample weight                                  HV005                     35    8    N    I    1    0   No   No
+Month of interview                             HV006                     43    2    N    I    1    0   No   No
+        1:12  
+Year of interview                              HV007                     45    4    N    I    1    0   No   No
+        2009  
+Date of interview (CMC)                        HV008                     49    4    N    I    1    0   No   No
+Number of household members                    HV009                     53    2    N    I    1    0   No   No
+        0:90  
+Number of eligible women in HH                 HV010                     55    2    N    I    1    0   No   No
+        0:20  
+Number of eligible men in HH                   HV011                     57    2    N    I    1    0   No   No
+        0:20  
+Number of de jure members                      HV012                     59    2    N    I    1    0   No   No
+        0:90  
+Number of de facto members                     HV013                     61    2    N    I    1    0   No   No
+        0:90  
+Number of children 5 and under                 HV014                     63    2    N    I    1    0   No   No
+        0:20  
+Result of household interview                  HV015                     65    1    N    I    1    0   No   No
+        1  Completed
+        2  HH present, no resp
+        3  HH absent
+        4  Postponed
+        5  Refused
+        6  Dwelling vacant
+        7  Dwelling destroyed
+        8  Dwelling not found
+        9  Other
+Day of interview                               HV016                     66    2    N    I    1    0   No   No
+        1:31  
+Number of visits                               HV017                     68    1    N    I    1    0   No   No
+        1:5  
+Interviewer identification                     HV018                     69    3    N    I    1    0   No   No
+Keyer identification                           HV019                     72    2    N    I    1    0   No   No
+Ever-married sample                            HV020                     74    1    N    I    1    0   No   No
+        0  All woman sample
+        1  Ever married sample
+Primary sampling unit                          HV021                     75    4    N    I    1    0   No   No
+Sample stratum number                          HV022                     79    4    N    I    1    0   No   No
+Sample domain                                  HV023                     83    2    N    I    1    0   No   No
+        0  National
+        1  Country specific
+Region                                         HV024                     85    2    N    I    1    0   No   No
+        1   Kouilou
+        2   Niari
+        3   Lékoumou
+        4   Bouénza
+        5   Pool
+        6   Plateaux
+        7   Cuvette
+        8   Cuvette-Ouest
+        9   Sangha
+        10  Likouala
+        11  Brazzaville
+        12  Pointe-Noire
+Type of place of residence                     HV025                     87    1    N    I    1    0   No   No
+        1  Urban
+        2  Rural
+Place of residence                             HV026                     88    1    N    I    1    0   No   No
+        0  Capital, large city
+        1  Small city
+        2  Town
+        3  Countryside
+    (m) 9  Missing
+Selection for male/husb. int.                  HV027                     89    1    N    I    1    0   No   No
+        0  Not selected
+        1  Men's survey
+        2  Husband's survey
+Sample weight for male subsamp                 HV028                     90    8    N    I    1    0   No   No
+Field supervisor                               HV030                     98    3    N    I    1    0   No   No
+NA - Field editor                              HV031                    101    3    N    I    1    0   No   No
+Office editor                                  HV032                    104    2    N    I    1    0   No   No
+NA - Ultimate area selection prob.             HV033                    106    8    N    I    1    0   No   No
+NA - Number of eligible children for height & wHV035                    114    2    N    I    1    0   No   No
+  Number of eligible children for height & weight(HV035_VS1)
+        0:20  
+NA - Cluster altitude in meters                HV040                    116    4    N    I    1    0   No   No
+NA - Total adults measured                     HV041                    120    2    N    I    1    0   No   No
+  Total adults measured                          (HV041_VS1)
+        0:15  
+NA - Selection for hemoglobin                  HV042                    122    1    N    I    1    0   No   No
+  Selection for hemoglobin                       (HV042_VS1)
+        0  Not selected
+        1  Selected
+NA - Selection for women's status module       HV043                    123    1    N    I    1    0   No   No
+  Selection for women's status module            (HV043_VS1)
+        0  Household not selected
+        1  Household selected
+   (na)    NotAppl
+NA - Selection for domestic violence module    HV044                    124    1    N    I    1    0   No   No
+  Selection for domestic violence module         (HV044_VS1)
+        0  Household not selected
+        1  Household selected
+   (na)    NotAppl
+Source of drinking water                       HV201                    125    2    N    I    1    0   No   No
+        10     PIPED WATER
+        11     Piped into dwelling
+        12     Piped to yard/plot
+        13     Public tap/standpipe
+        11:19  
+        20     TUBE WELL WATER
+        21     Tube well or borehole
+        21:29  
+        30     DUG WELL (OPEN/PROTECTED)
+        31     Protected well
+        32     Unprotected well
+        31:39  
+        40     SURFACE WATER
+        41     Protected spring
+        42     Unprotected spring
+        43     River/dam/lake/ponds/stream/canal/irirgation channel
+        41:44  
+        51     Rainwater
+        61     Tanker truck
+        62     Cart with small tank
+        71     Bottled water
+        96     Other
+    (m) 99     Missing
+   (na)        NotAppl
+NA - Source of non-drinking water              HV202                    127    2    N    I    1    0   No   No
+  Source of non-drinking water                   (HV202_VS1)
+        10     PIPED WATER
+        11     Piped into dwelling
+        12     Piped to yard/plot
+        13     Public tap/standpipe
+        11:19  
+        20     TUBE WELL WATER
+        21     Tube well or borehole
+        21:29  
+        30     DUG WELL (OPEN/PROTECTED)
+        31     Protected well
+        32     Unprotected well
+        31:39  
+        40     SURFACE WATER
+        41     Protected spring
+        42     Unprotected spring
+        43     River/dam/lake/ponds/stream/canal/irirgation channel
+        41:44  
+        51     Rainwater
+        61     Tanker truck
+        62     Cart with small tank
+        71     Bottled water
+        96     Other
+    (m) 99     Missing
+   (na)        NotAppl
+NA - Time to get to water source               HV204                    129    3    N    I    1    0   No   No
+  Time to get to water source                    (HV204_VS1)
+        1:500  
+        996    On premises
+    (m) 999    Missing
+   (na)        NotAppl
+Type of toilet facility                        HV205                    132    2    N    I    1    0   No   No
+        10     FLUSH TOILET
+        11     Flush toilet
+        20     PIT TOILET LATRINE
+        21     Improved pit latrine
+        22     Traditional pit toilet
+        21:29  
+        30     NO FACILITY
+        31     No facility, bush, field
+        96     OTHER
+    (m) 99     Missing
+   (na)        NotAppl
+Has electricity                                HV206                    134    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Has radio                                      HV207                    135    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Has television                                 HV208                    136    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Has refrigerator                               HV209                    137    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Has bicycle                                    HV210                    138    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Has motorcycle/scooter                         HV211                    139    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Has car/truck                                  HV212                    140    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Main floor material                            HV213                    141    2    N    I    1    0   No   No
+        10  NATURAL
+        11  Earth, sand
+        20  RUDIMENTARY
+        21  Wood planks
+        30  FINISHED
+        31  Parquet, polished wood
+        32  Vinyl, linoleum
+        33  Ceramic tiles
+        34  Cement
+        35  Carpet
+        96  OTHER
+    (m) 99  Missing
+   (na)     NotAppl
+Main wall material                             HV214                    143    2    N    I    1    0   No   No
+        10  NATURAL
+        11  Sand
+        20  RUDIMENTARY
+        21  Wood planks
+        22  Sand bricks
+        23  Metal
+        30  FINISHED
+        31  Bricks
+        32  Cement
+        96  OTHER
+    (m) 99  Missing
+   (na)     NotAppl
+Main roof material                             HV215                    145    2    N    I    1    0   No   No
+        10  NATURAL
+        11  Grass
+        30  FINISHED
+        31  Metal
+        32  Roofing shingles
+        96  OTHER
+    (m) 99  Missing
+   (na)     NotAppl
+Rooms used for sleeping                        HV216                    147    2    N    I    1    0   No   No
+        0:24  
+    (m) 99    Missing
+   (na)       Not applicable
+Relationship structure                         HV217                    149    1    N    I    1    0   No   No
+        0  No adults
+        1  One adult
+        2  Two adults, opp. sex
+        3  Two adults, same sex
+        4  Three+ related adult
+        5  Unrelated adults
+Line number of head of househ.                 HV218                    150    2    N    I    1    0   No   No
+        1:90  
+Sex of head of household                       HV219                    152    1    N    I    1    0   No   No
+        1  Male
+        2  Female
+    (m) 9  Missing
+Age of head of household                       HV220                    153    2    N    I    1    0   No   No
+        0:96  
+        97    97+
+        98    DK
+    (m) 99    Missing
+Has telephone                                  HV221                    155    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Share toilet with other households             HV225                    156    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Type of cooking fuel                           HV226                    157    2    N    I    1    0   No   No
+        1   Electricity
+        2   LPG
+        3   Natural gas
+        4   Biogas
+        5   Kerosene
+        6   Coal, lignite
+        7   Charcoal
+        8   Wood
+        9   Straw / shrubs / grass
+        10  Agricultural crop
+        11  Animal dung
+        95  No food cooked in HH
+        96  Other
+    (m) 99  Missing
+NA - Have bednet for sleeping                  HV227                    159    1    N    I    1    0   No   No
+  Have bednet for sleeping                       (HV227_VS1)
+        0  No
+        1  Yes
+    (m) 9  Missing
+NA - Children under 5 slept under bednet last nHV228                    160    1    N    I    1    0   No   No
+  Children under 5 slept under bednet last night (HV228_VS1)
+        0  No
+        1  All children
+        2  Some children
+        3  No bednet in HH
+    (m) 9  Missing
+   (na)    NotAppl
+NA - Test salt for Iodine                      HV234                    161    3    N    I    1    0   No   No
+  Test salt for Iodine                           (HV234_VS1)
+        0    0 PPM (No Iodine)
+        7    Below 15 PPM
+        15   15 PPM and above
+        30   30 PPM
+        994  Salt not tested
+        995  No salt in household
+    (m) 999  Missing
+   (na)      NotAppl
+NA - Location of source for water              HV235                    164    1    N    I    1    0   No   No
+  Location of source for water                   (HV235_VS1)
+        1  In own dwelling
+        2  In own yard/plot
+        3  Elsewhere
+    (m) 9  Missing
+   (na)    Not applicable
+NA - Person fetching water                     HV236                    165    1    N    I    1    0   No   No
+  Person fetching water                          (HV236_VS1)
+        1  Adult woman
+        2  Adult man
+        3  Female child under 15 years old
+        4  Male child under 15 years old
+        6  Other
+    (m) 9  Missing
+   (na)    Not applicable
+NA - Anything done to water to make safe to driHV237                    166    1    N    I    1    0   No   No
+  Anything done to water to make safe to drink   (HV237_VS1)
+        0  No
+        1  Yes
+        8  Don't know
+    (m) 9  Missing
+   (na)    Not applicable
+NA - Water usually treated by: boil            HV237A                   167    1    N    I    1    0   No   No
+  Water usually treated by: boil                 (HV237A_VS1)
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+NA - Water usually treated by: add bleach/chlorHV237B                   168    1    N    I    1    0   No   No
+  Water usually treated by: add bleach/chlorine  (HV237B_VS1)
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+NA - Water usually treated by: strain through aHV237C                   169    1    N    I    1    0   No   No
+  Water usually treated by: strain through a clot(HV237C_VS1)
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+NA - Water usually treated by: use water filterHV237D                   170    1    N    I    1    0   No   No
+  Water usually treated by: use water filter     (HV237D_VS1)
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+NA - Water usually treated by: solar disinfectiHV237E                   171    1    N    I    1    0   No   No
+  Water usually treated by: solar disinfection   (HV237E_VS1)
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+NA - Water usually treated by: let it stand andHV237F                   172    1    N    I    1    0   No   No
+  Water usually treated by: let it stand and sett(HV237F_VS1)
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+NA - Water usually treated by: CS              HV237G                   173    1    N    I    1    0   No   No
+  Water usually treated by: CS                   (HV237G_VS1)
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+NA - Water usually treated by: CS              HV237H                   174    1    N    I    1    0   No   No
+  Water usually treated by: CS                   (HV237H_VS1)
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+NA - Water usually treated by: CS              HV237I                   175    1    N    I    1    0   No   No
+  Water usually treated by: CS                   (HV237I_VS1)
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+NA - Water usually treated by: CS              HV237J                   176    1    N    I    1    0   No   No
+  Water usually treated by: CS                   (HV237J_VS1)
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+NA - Water usually treated by: CS              HV237K                   177    1    N    I    1    0   No   No
+  Water usually treated by: CS                   (HV237K_VS1)
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+NA - Water usually treated by: other           HV237X                   178    1    N    I    1    0   No   No
+  Water usually treated by: other                (HV237X_VS1)
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+NA - Water usually treated by: don't know      HV237Z                   179    1    N    I    1    0   No   No
+  Water usually treated by: don't know           (HV237Z_VS1)
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+NA - Number of households sharing toilet       HV238                    180    2    N    I    1    0   No   No
+  Number of households sharing toilet            (HV238_VS1)
+        2:9  
+        95   10 or more households
+        98   Don't know
+    (m) 99   Missing
+   (na)      Not applicable
+NA - Food cooked on stove or open fire         HV239                    182    1    N    I    1    0   No   No
+  Food cooked on stove or open fire              (HV239_VS1)
+        1  Open fire
+        2  Open stove
+        3  Closed stove with chimney
+        6  Other
+    (m) 9  Missing
+   (na)    Not applicable
+NA - Household has a chimney, hood or neither  HV240                    183    1    N    I    1    0   No   No
+  Household has a chimney, hood or neither       (HV240_VS1)
+        0  Neither chimney or hood
+        1  Chimney
+        2  Hood
+    (m) 9  Missing
+   (na)    Not applicable
+NA - Food cooked in the house / in separate buiHV241                    184    1    N    I    1    0   No   No
+  Food cooked in the house / in separate building(HV241_VS1)
+        1  In the house
+        2  In a separate building
+        3  Outdoors
+        6  Other
+    (m) 9  Missing
+   (na)    Not applicable
+NA - Household has separate room used as kitcheHV242                    185    1    N    I    1    0   No   No
+  Household has separate room used as kitchen    (HV242_VS1)
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+Has a mobile telephone                         HV243A                   186    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+Has a watch                                    HV243B                   187    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+NA - Has an animal-drawn cart                  HV243C                   188    1    N    I    1    0   No   No
+  Has an animal-drawn cart                       (HV243C_VS1)
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+Has a boat with a motor                        HV243D                   189    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+NA - Own land usable for agriculture           HV244                    190    1    N    I    1    0   No   No
+  Own land usable for agriculture                (HV244_VS1)
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+NA - Hectares for agricultural land            HV245                    191    2    N    I    1    0   No   No
+  Hectares for agricultural land                 (HV245_VS1)
+        0:90  
+        95    More than 95
+        98    Unknown
+    (m) 99    Missing
+   (na)       Not applicable
+NA - Livestock, herds or farm animals          HV246                    193    1    N    I    1    0   No   No
+  Livestock, herds or farm animals               (HV246_VS1)
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+NA - Cattle own                                HV246A                   194    2    N    I    1    0   No   No
+  Cattle own                                     (HV246A_VS1)
+        0     None
+        1:94  
+        95    More than 95
+        98    Unknown
+    (m) 99    Missing
+   (na)       Not applicable
+NA - Cows, bulls own                           HV246B                   196    2    N    I    1    0   No   No
+  Cows, bulls own                                (HV246B_VS1)
+        0     None
+        1:94  
+        95    More than 95
+        98    Unknown
+    (m) 99    Missing
+   (na)       Not applicable
+NA - Horses, donkeys, mules own                HV246C                   198    2    N    I    1    0   No   No
+  Horses, donkeys, mules own                     (HV246C_VS1)
+        0     None
+        1:94  
+        95    More than 95
+        98    Unknown
+    (m) 99    Missing
+   (na)       Not applicable
+NA - Goats own                                 HV246D                   200    2    N    I    1    0   No   No
+  Goats own                                      (HV246D_VS1)
+        0     None
+        1:94  
+        95    More than 95
+        98    Unknown
+    (m) 99    Missing
+   (na)       Not applicable
+NA - Sheep own                                 HV246E                   202    2    N    I    1    0   No   No
+  Sheep own                                      (HV246E_VS1)
+        0     None
+        1:94  
+        95    More than 95
+        98    Unknown
+    (m) 99    Missing
+   (na)       Not applicable
+NA - Chickens own                              HV246F                   204    2    N    I    1    0   No   No
+  Chickens own                                   (HV246F_VS1)
+        0     None
+        1:94  
+        95    More than 95
+        98    Unknown
+    (m) 99    Missing
+   (na)       Not applicable
+NA - CS own                                    HV246G                   206    2    N    I    1    0   No   No
+  CS own                                         (HV246G_VS1)
+        0     None
+        1:94  
+        95    More than 95
+        98    Unknown
+    (m) 99    Missing
+   (na)       Not applicable
+NA - CS own                                    HV246H                   208    2    N    I    1    0   No   No
+  CS own                                         (HV246H_VS1)
+        0     None
+        1:94  
+        95    More than 95
+        98    Unknown
+    (m) 99    Missing
+   (na)       Not applicable
+NA - CS own                                    HV246I                   210    2    N    I    1    0   No   No
+  CS own                                         (HV246I_VS1)
+        0     None
+        1:94  
+        95    More than 95
+        98    Unknown
+    (m) 99    Missing
+   (na)       Not applicable
+NA - CS own                                    HV246J                   212    2    N    I    1    0   No   No
+  CS own                                         (HV246J_VS1)
+        0     None
+        1:94  
+        95    More than 95
+        98    Unknown
+    (m) 99    Missing
+   (na)       Not applicable
+NA - CS own                                    HV246K                   214    2    N    I    1    0   No   No
+  CS own                                         (HV246K_VS1)
+        0     None
+        1:94  
+        95    More than 95
+        98    Unknown
+    (m) 99    Missing
+   (na)       Not applicable
+NA - Owns a bank account                       HV247                    216    1    N    I    1    0   No   No
+  Owns a bank account                            (HV247_VS1)
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+NA - Number of sick people 18-59               HV248                    217    2    N    I    1    0   No   No
+  Number of sick people 18-59                    (HV248_VS1)
+        0:20  
+   (na)       Not applicable
+NA - Member of the HH died last 12 months      HV249                    219    1    N    I    1    0   No   No
+  Member of the HH died last 12 months           (HV249_VS1)
+        0  No
+        1  Yes
+        8  DK
+        9  Missing
+   (na)    Not applicable
+NA - Number of members who died last 12 months HV250                    220    2    N    I    1    0   No   No
+  Number of members who died last 12 months      (HV250_VS1)
+        1:7  
+        8    DK
+    (m) 9    Missing
+   (na)      Not applicable
+NA - Number of orphans and vulnerable children HV251                    222    2    N    I    1    0   No   No
+Wealth index                                   HV270                    224    1    N    I    1    0   No   No
+        1  Poorest
+        2  Poorer
+        3  Middle
+        4  Richer
+        5  Richest
+Wealth index factor score (5 decimals)         HV271                    225    8    N    I    1    0   No   No
+NA - Number of mosquito nets                   HML1                     233    2    N    I    1    0   No   No
+  Number of mosquito nets                        (HML1_VS1)
+        0:97  
+        98    Don't know
+    (m) 99    Missing
+   (na)       NotAppl
+NA - Number of mosquito nets with specific infoHML1A                    235    1    N    I    1    0   No   No
+  Number of mosquito nets with specific informati(HML1A_VS1)
+        0:6  
+   (na)      NotAppl
+NA - Number of children under bednet previous nHML2                     236    2    N    I    1    0   No   No
+  Number of children under bednet previous night (HML2_VS1)
+        0:50  
+    (m) 99    Missing
+   (na)       NotAppl
+District of residence                          SHDISTR                  238    2    N    I    1    0   No   No
+Arrondissement of residence                    SHARROND                 240    2    N    I    1    0   No   No
+   (na)     Not applicable
+Region                                         SHREG                    242    1    N    I    1    0   No   No
+        1  Brazzaville
+        2  Pointe-Noire
+        3  Sud
+        4  Nord
+Eleven cities                                  SHVILLES                 243    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+Urban/semi-urban/rural                         SHURBRUR                 244    1    N    I    1    0   No   No
+        1  Urban
+        2  Semi-urban
+        3  Rural
+Source of drinking water                       SH101                    245    2    N    I    1    0   No   No
+        11  Piped into dwelling
+        12  Piped to yard/plot
+        13  Piped out of yard/plot
+        21  Protected well into dwelling
+        22  Tube well or borehole
+        31  Unprotected well into dwelling
+        32  Public unprotected well
+        41  Protected spring
+        42  Unprotected spring
+        43  River/dam/lake/ponds/stream
+        51  Rainwater
+        52  Tanker truck
+        53  Bottled water
+        96  Other
+    (m) 99  Missing
+   (na)     Not applicable
+Has a computer                                 SH104F                   247    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+Has gas stove                                  SH104H                   248    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+Has oil stove                                  SH104I                   249    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+Has a boat without motor                       SH110E                   250    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+Line number                                    HVIDX                    251    2    N    I   26    0   No   No
+        1:90  
+Relationship to head                           HV101                    303    2    N    I   26    0   No   No
+        1   Head
+        2   Wife or husband
+        3   Son/daughter
+        4   Son/daughter-in-law
+        5   Grandchild
+        6   Parent
+        7   Parent-in-law
+        8   Brother/sister
+        9   Co-spouse
+        10  Other relative
+        11  Adopted/foster child
+        12  Not related
+        13  Niece/nephew by blood
+        14  Niece/nephew by marriage
+        98  DK
+    (m) 99  Missing
+Usual resident                                 HV102                    355    1    N    I   26    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+Slept last night                               HV103                    381    1    N    I   26    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+Sex of household member                        HV104                    407    1    N    I   26    0   No   No
+        1  Male
+        2  Female
+    (m) 9  Missing
+Age of household members                       HV105                    433    2    N    I   26    0   No   No
+        0:96  
+        97    97+
+        98    DK
+    (m) 99    Missing
+Highest educational level                      HV106                    485    1    N    I   26    0   No   No
+        0  No education, preschool
+        1  Primary
+        2  Secondary
+        3  Higher
+        8  DK
+    (m) 9  Missing
+Highest year of education                      HV107                    511    2    N    I   26    0   No   No
+        0:20  
+        98    DK
+    (m) 99    Missing
+   (na)       NotAppl
+Education in single years                      HV108                    563    2    N    I   26    0   No   No
+        0:20  
+        97    Inconsistent
+        98    DK
+    (m) 99    Missing
+Educational attainment                         HV109                    615    1    N    I   26    0   No   No
+        0  No education
+        1  Incomplete primary
+        2  Complete primary
+        3  Incomplete secondary
+        4  Complete secondary
+        5  Higher
+        8  DK
+    (m) 9  Missing
+NA - Member still in school                    HV110                    641    1    N    I   26    0   No   No
+  Member still in school                         (HV110_VS1)
+        0  No
+        1  Yes
+    (m) 9  Missing
+Mother alive                                   HV111                    667    1    N    I   26    0   No   No
+        0  No
+        1  Yes
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+Mother's line number                           HV112                    693    2    N    I   26    0   No   No
+        0     Mother not in HH
+        1:90  
+    (m) 99    Missing
+   (na)       NotAppl
+Father alive                                   HV113                    745    1    N    I   26    0   No   No
+        0  No
+        1  Yes
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+Father's line number                           HV114                    771    2    N    I   26    0   No   No
+        0     Father not in HH
+        1:90  
+    (m) 99    Missing
+   (na)       NotAppl
+Current marital status                         HV115                    823    1    N    I   26    0   No   No
+        0  Never married
+        1  Married
+        2  Living together
+        3  Widowed
+        4  Divorced
+        5  Not living together
+    (m) 9  Missing
+   (na)    NotAppl
+Currently, formerly, never m.                  HV116                    849    1    N    I   26    0   No   No
+        0  Never married
+        1  Currently married
+        2  Formerly/ever marr.
+    (m) 9  Missing
+   (na)    NotAppl
+Eligibility for female interview               HV117                    875    1    N    I   26    0   No   No
+        0  Not eligible
+        1  Eligible
+   (na)    NotAppl
+Eligibility for male interview                 HV118                    901    1    N    I   26    0   No   No
+        0  Not eligible
+        1  Eligible
+   (na)    NotAppl
+Children eligibility for height/weight and hemoHV120                    927    1    N    I   26    0   No   No
+        0  Not eligible
+        1  Eligible
+   (na)    NotAppl
+Member attended school during current school yeHV121                    953    1    N    I   26    0   No   No
+        0  No
+        1  Currently attending
+        2  Attended at some time
+    (m) 9  Missing
+   (na)    NotAppl
+NA - Educational level during current school yeHV122                    979    1    N    I   26    0   No   No
+  Educational level during current school year   (HV122_VS1)
+        0  No education, preschool
+        1  Primary
+        2  Secondary
+        3  Higher
+        8  DK
+    (m) 9  Missing
+NA - Grade of education during current school yHV123                   1005    2    N    I   26    0   No   No
+  Grade of education during current school year  (HV123_VS1)
+        0:20  
+        98    DK
+    (m) 99    Missing
+   (na)       NotAppl
+NA - Education in single years - current schoolHV124                   1057    2    N    I   26    0   No   No
+  Education in single years - current school year(HV124_VS1)
+        0:20  
+        97    Inconsistent
+        98    DK
+    (m) 99    Missing
+NA - Member attended school during previous schHV125                   1109    1    N    I   26    0   No   No
+  Member attended school during previous school y(HV125_VS1)
+        0  No
+        1  Yes
+    (m) 9  Missing
+NA - Educational level during previous school yHV126                   1135    1    N    I   26    0   No   No
+  Educational level during previous school year  (HV126_VS1)
+        0  No education, preschool
+        1  Primary
+        2  Secondary
+        3  Higher
+        8  DK
+    (m) 9  Missing
+NA - Grade of education during previous school HV127                   1161    2    N    I   26    0   No   No
+  Grade of education during previous school year (HV127_VS1)
+        0:20  
+        98    DK
+    (m) 99    Missing
+   (na)       NotAppl
+NA - Education in single years - previous schooHV128                   1213    2    N    I   26    0   No   No
+  Education in single years - previous school yea(HV128_VS1)
+        0:20  
+        97    Inconsistent
+        98    DK
+    (m) 99    Missing
+NA - School attendance status                  HV129                   1265    1    N    I   26    0   No   No
+  School attendance status                       (HV129_VS1)
+        0  Never attended
+        1  Entered school
+        2  Advanced
+        3  Repeating
+        4  Dropout
+        5  Left school 2+ years ago
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+NA - Member has been very sick for 3+ months laHV130                   1291    1    N    I   26    0   No   No
+  Member has been very sick for 3+ months last ye(HV130_VS1)
+        0  No
+        1  Yes
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+NA - Mother has been very sick for 3+ months laHV131                   1317    1    N    I   26    0   No   No
+  Mother has been very sick for 3+ months last ye(HV131_VS1)
+        0  No
+        1  Yes
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+NA - Father has been very sick for 3+ months laHV132                   1343    1    N    I   26    0   No   No
+  Father has been very sick for 3+ months last ye(HV132_VS1)
+        0  No
+        1  Yes
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+NA - Mother/father dead or been very sick for 3HV133                   1369    1    N    I   26    0   No   No
+  Mother/father dead or been very sick for 3+ mon(HV133_VS1)
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+NA - Both parents alive                        HV134                   1395    1    N    I   26    0   No   No
+  Both parents alive                             (HV134_VS1)
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+NA - Has brothers/sisters under 18 of the same HV135                   1421    1    N    I   26    0   No   No
+  Has brothers/sisters under 18 of the same fathe(HV135_VS1)
+        0  No
+        1  Yes
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+NA - Brothers/sisters under 18 that don't live HV136                   1447    1    N    I   26    0   No   No
+  Brothers/sisters under 18 that don't live in ho(HV136_VS1)
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+NA - Member has a blanket                      HV137                   1473    1    N    I   26    0   No   No
+  Member has a blanket                           (HV137_VS1)
+        0  No
+        1  Yes
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+NA - Member has a pair of shoes                HV138                   1499    1    N    I   26    0   No   No
+  Member has a pair of shoes                     (HV138_VS1)
+        0  No
+        1  Yes
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+NA - Member has 2+ sets of clothes             HV139                   1525    1    N    I   26    0   No   No
+  Member has 2+ sets of clothes                  (HV139_VS1)
+        0  No
+        1  Yes
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+NA - Member has a birth certificate            HV140                   1551    1    N    I   26    0   No   No
+  Member has a birth certificate                 (HV140_VS1)
+        0  Neither certificate or registered
+        1  Has certificate
+        2  Registered
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+Index to household schedule                    IDXH4                   1577    2    N    I   26    0   No   No
+        1:90  
+Attended school                                SH14                    1629    1    N    I   26    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+Level of education                             SH15A                   1655    1    N    I   26    0   No   No
+        0  Pre-school
+        1  Primary
+        2  Secondary I
+        3  Secondary II
+        4  Higher
+        8  DK
+    (m) 9  Missing
+   (na)    Not applicable
+Highest grade completed                        SH15B                   1681    1    N    I   26    0   No   No
+        0    < 1 year completed
+        1:6  
+        8    DK
+    (m) 9    Missing
+   (na)      Not applicable
+--------------------------------------------------------------------------------------------------------------
+Relation Name         Primary               Linked by             Secondary             Linked by
+--------------------------------------------------------------------------------------------------------------

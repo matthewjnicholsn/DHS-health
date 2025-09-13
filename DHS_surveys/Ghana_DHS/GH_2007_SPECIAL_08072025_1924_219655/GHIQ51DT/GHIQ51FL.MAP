@@ -1,0 +1,2025 @@
+                                                   GHIQ51FL
+                                                GHIQ51FL_DICT
+
+                                C:\COUNTRIES\GHMMS2007\export\IQ\GHIQ51FL.DCF
+                                    Last Modified:  5/27/2009  7:32:39 PM
+
+--------------------------------------------------------------------------------------------------------------
+Level Name                    Level Label                                                  Type            Rec
+  Record Name                   Record Label                                              Value  Req  Max  Len
+--------------------------------------------------------------------------------------------------------------
+HOUSEHOLD                     Household
+  RECORD1                       RECORD1                                                          Yes    1 1858
+Level: Household                                       Record: RECORD1
+--------------------------------------------------------------------------------------------------------------
+                                                                                 Data Item            Dec Zero
+Item Name              Item Label                                     Start  Len Type Type  Occ  Dec Char Fill
+--------------------------------------------------------------------------------------------------------------
+                         (record type)                                    0    0   AN    I    1    0   No   No
+QCLUSTER          (id) Cluster number                                     1    4    N    I    1    0   No   No
+                          (na)       Not applicable
+QNUMHH            (id) Household number                                   5    3    N    I    1    0   No   No
+                          (na)      Not applicable
+QLINE             (id) Line number of woman                               8    2    N    I    1    0   No   No
+                               1:50  
+                          (na)       Not applicable
+QSTRUC                 Structure number                                  10    3    N    I    1    0   No   No
+QREGION                Region of residence                               13    2    N    I    1    0   No   No
+                               1   Western
+                               2   Central
+                               3   Greater Accra
+                               4   Volta
+                               5   Eastern
+                               6   Ashanti
+                               7   Brong Ahafo
+                               8   Northern
+                               9   Upper East
+                               10  Upper West
+                          (na)     Not applicable
+QDISTR                 District                                          15    2    N    I    1    0   No   No
+QLOCAL                 City\Town\Countryside                             17    1    N    I    1    0   No   No
+                               1  Large city
+                               2  Small city
+                               3  Town
+                               4  Rural
+                          (na)    Not applicable
+QINTD                  Day of interview                                  18    2    N    I    1    0   No  Yes
+                               1:31  
+                          (na)       Not applicable
+QINTM                  Month of interview                                20    2    N    I    1    0   No  Yes
+                               1:12  
+                          (na)       Not applicable
+QINTY                  Year of interview                                 22    4    N    I    1    0   No  Yes
+                               2005:2008  
+                          (na)            Not applicable
+QINTNUM                Interviewer number                                26    3    N    I    1    0   No   No
+QRESULT                Result of individual interview                    29    1    N    I    1    0   No   No
+                               1  Completed
+                               2  Not at home
+                               3  Postponed
+                               4  Refused
+                               5  Partly completed
+                               6  Incapacitated
+                               7  Other
+                          (na)    Not applicable
+QVISITS                Total number of visits                            30    1    N    I    1    0   No   No
+                               1:3  
+                           (m) 9    Missing
+                          (na)      Not applicable
+QLANGQ                 Language of questionnaire                         31    1    N    I    1    0   No   No
+                               1  ENGLISH
+                               2  AKAN
+                               3  GA
+                               4  EWE
+                               5  NZEMA
+                               6  DAGBANI
+                               7  OTHER
+QLANGI                 Language of interview                             32    1    N    I    1    0   No   No
+                               1  ENGLISH
+                               2  AKAN
+                               3  GA
+                               4  EWE
+                               5  NZEMA
+                               6  DAGBANI
+                               7  OTHER
+QLANGR                 Language of respondent                            33    1    N    I    1    0   No   No
+                               1  ENGLISH
+                               2  AKAN
+                               3  GA
+                               4  EWE
+                               5  NZEMA
+                               6  DAGBANI
+                               7  OTHER
+QTRANS                 Translator used                                   34    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+QSUPERV                Supervisor number                                 35    3    N    I    1    0   No   No
+                          (na)      Not applicable
+QFEDIT                 Field editor number                               38    3    N    I    1    0   No   No
+                          (na)      Not applicable
+QOEDIT                 Office editor number                              41    2    N    I    1    0   No   No
+                          (na)     Not applicable
+QKEYER                 Data entry clerk                                  43    2    N    I    1    0   No   No
+                          (na)     Not applicable
+QINTC                  Date of interview (CMC)                           45    4    N    I    1    0   No   No
+                          (na)       Not applicable
+QWEIGHT                Sample weight (6 decimals)                        49    8    N    I    1    0   No   No
+                          (na)           Not applicable
+QURBRUR                Urban / rural                                     57    1    N    I    1    0   No   No
+                               1  Urban
+                               2  Rural
+                          (na)    Not applicable
+QR3M                   R3M region (Eastern, Ashanti, Greater Accra)      58    1    N    I    1    0   No   No
+                               1  R3M region (Eastern, Ashanti, Gr. Accra)
+                               2  Other regions
+Q102H                  Start of interview (hour)                         59    2    N    I    1    0   No  Yes
+                               1:23  
+                               97    Inconsistent
+                           (m) 99    Missing
+                          (na)       Not applicable
+Q102M                  Start of interview (minutes)                      61    2    N    I    1    0   No  Yes
+                               0:59  
+                               97    Inconsistent
+                           (m) 99    Missing
+                          (na)       Not applicable
+Q103M                  Month of birth                                    63    2    N    I    1    0   No  Yes
+                               1:12  
+                               97    Inconsistent
+                               98    DK month
+                           (m) 99    Missing
+                          (na)       Not applicable
+Q103Y                  Year of birth                                     65    4    N    I    1    0   No  Yes
+                               1955:1994  
+                               9997       Inconsistent
+                               9998       DK year
+                           (m) 9999       Missing
+                          (na)            Not applicable
+Q104                   Current age of respondent                         69    2    N    I    1    0   No   No
+                               15:49  
+                               97     Inconsistent
+                               98     DK
+                           (m) 99     Missing
+                          (na)        Not applicable
+Q105                   Ever attended school                              71    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q106                   Highest educational level                         72    1    N    I    1    0   No   No
+                               1  Primary
+                               2  Middle/JSS
+                               3  Secondary/SSS
+                               4  Higher
+                          (na)    Not applicable
+Q107                   Highest grade at that level                       73    2    N    I    1    0   No   No
+                               0:30  
+                           (m) 99    Missing
+                          (na)       Not applicable
+Q108                   Reads newspaper                                   75    1    N    I    1    0   No   No
+                               1  Almost every day
+                               2  At least once a week
+                               3  Less than once a week
+                               4  Not at all
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q109                   Listens to radio                                  76    1    N    I    1    0   No   No
+                               1  Almost every day
+                               2  At least once a week
+                               3  Less than once a week
+                               4  Not at all
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q110                   Watches television                                77    1    N    I    1    0   No   No
+                               1  Almost every day
+                               2  At least once a week
+                               3  Less than once a week
+                               4  Not at all
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q111                   Religion                                          78    2    N    I    1    0   No   No
+                               1   Catholic
+                               2   Protestant
+                               3   Methodist
+                               4   Presbyterian
+                               5   Pentacostal/charismatic
+                               6   Other christian
+                               7   Moslem
+                               8   Traditional/spiritualist
+                               9   No religion
+                               96  Other
+                           (m) 99  Missing
+                          (na)     Not applicable
+Q112                   Ethnicity                                         80    2    N    I    1    0   No   No
+                               1   Akan
+                               2   Ga/Dangme
+                               3   Ewe
+                               4   Guan
+                               5   Mole-dagbani
+                               6   Grussi
+                               7   Gruma
+                               8   Hausa
+                               96  Other
+                           (m) 99  Missing
+                          (na)     Not applicable
+Q103C                  Imputed date of birth (CMC)                       82    4    N    I    1    0   No   No
+                          (na)       Not applicable
+Q103F                  Date flag for Q103C                               86    1    N    I    1    0   No   No
+                               1  Month and year
+                               2  Month and age -y imp
+                               3  Year and age - m imp
+                               4  Y & age - y ignored
+                               5  Year - a, m imp
+                               6  Age - y, m imp
+                               7  Month - a, y imp
+                               8  None - all imp
+                          (na)    Not applicable
+Q104C                  Age of respondent calculated                      87    2    N    I    1    0   No   No
+                          (na)     Not applicable
+Q201                   Ever given birth                                  89    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                          (na)    Not applicable
+Q202                   Sons or daughters living with                     90    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                          (na)    Not applicable
+Q203A                  Sons at home                                      91    2    N    I    1    0   No   No
+                               0:20  
+                          (na)       Not applicable
+Q203B                  Daughters at home                                 93    2    N    I    1    0   No   No
+                               0:20  
+                          (na)       Not applicable
+Q204                   Sons or daughters living away                     95    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                          (na)    Not applicable
+Q205A                  Sons living elsewhere                             96    2    N    I    1    0   No   No
+                               0:20  
+                          (na)       Not applicable
+Q205B                  Daughters living elsewhere                        98    2    N    I    1    0   No   No
+                               0:20  
+                          (na)       Not applicable
+Q206                   Sons or daughters who died                       100    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                          (na)    Not applicable
+Q207A                  Boys who died                                    101    2    N    I    1    0   No   No
+                               0:20  
+                          (na)       Not applicable
+Q207B                  Girls who died                                   103    2    N    I    1    0   No   No
+                               0:20  
+                          (na)       Not applicable
+Q208                   Ever had miscarriage                             105    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+Q209                   Number of miscarriages                           106    2    N    I    1    0   No   No
+                               0:20  
+                          (na)       Not applicable
+Q210                   Done something to end you pregnancy              108    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+Q211                   Number of abortions                              109    2    N    I    1    0   No   No
+                               0:20  
+                          (na)       Not applicable
+Q212                   Ever had a still birth                           111    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+Q213                   Number of stillbirths                            112    2    N    I    1    0   No   No
+                               0:20  
+                          (na)       Not applicable
+Q214                   Total number of pregnancies                      114    2    N    I    1    0   No   No
+                               0:50  
+                          (na)       Not applicable
+Q218                   Line number of child                             116    2    N    I   16    0   No   No
+                               1:24  
+                          (na)       Not applicable
+Q219                   Single or Multiple Birth                         148    1    N    I   16    0   No   No
+                               1  Single
+                               2  Multiple
+                          (na)    Not applicable
+Q220                   Birth status                                     164    1    N    I   16    0   No   No
+                               1  Born alive
+                               2  Born dead
+                               3  Miscarriage
+                               4  Abortion
+                          (na)    Not applicable
+Q221                   Did baby cry, move or breathe                    180    1    N    I   16    0   No   No
+                               1  Yes
+                               2  No
+                          (na)    Not applicable
+Q223                   Sex of child                                     196    1    N    I   16    0   No   No
+                               1  Male
+                               2  Female
+                          (na)    Not applicable
+Q224M                  Month of birth                                   212    2    N    I   16    0   No  Yes
+                               1:12  
+                               97    Inconsistent
+                               98    DK
+                           (m) 99    Missing
+                          (na)       Not applicable
+Q224Y                  Year of birth                                    244    4    N    I   16    0   No  Yes
+                               1960:2008  
+                               9997       Inconsistent
+                               9998       DK
+                           (m) 9999       Missing
+                          (na)            Not applicable
+Q225                   Child is still alive                             308    1    N    I   16    0   No   No
+                               1  Yes
+                               2  No
+                          (na)    Not applicable
+Q226                   Current age of child                             324    2    N    I   16    0   No   No
+                               0:40  
+                               97    Inconsistent
+                               98    DK
+                           (m) 99    Missing
+                          (na)       Not applicable
+Q227U                  Age at death (units)                             356    1    N    I   16    0   No  Yes
+                               1  Days
+                               2  Months
+                               3  Years
+                               9  Special answers
+                          (na)    Not applicable
+Q227N                  Age at death (number)                            372    2    N    I   16    0   No  Yes
+                               0:40  
+                               97    Inconsistent
+                               98    DK
+                           (m) 99    Missing
+                          (na)       Not applicable
+Q228M                  Month of death                                   404    2    N    I   16    0   No  Yes
+                               1:12  
+                               97    Inconsistent
+                               98    DK
+                           (m) 99    Missing
+                          (na)       Not applicable
+Q228Y                  Year of death                                    436    4    N    I   16    0   No  Yes
+                               1960:2008  
+                               9997       Inconsistent
+                               9998       DK
+                           (m) 9999       Missing
+                          (na)            Not applicable
+Q229M                  Month pregnancy ended                            500    2    N    I   16    0   No  Yes
+                               1:12  
+                               97    Inconsistent
+                               98    DK
+                           (m) 99    Missing
+                          (na)       Not applicable
+Q229Y                  Year pregnancy ended                             532    4    N    I   16    0   No  Yes
+                               1960:2008  
+                               9997       Inconsistent
+                               9998       DK
+                           (m) 9999       Missing
+                          (na)            Not applicable
+Q230                   Duration of pregnancy in months                  596    2    N    I   16    0   No   No
+                               0:11  
+                           (m) 99    Missing
+                          (na)       Not applicable
+Q231                   Did something to end pregnancy                   628    1    N    I   16    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q232                   Live birth between births                        644    1    N    I   16    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q224C                  Imputed date of birth of child (CMC)             660    4    N    I   16    0   No   No
+                          (na)       Not applicable
+Q224F                  Date flag for Q224C                              724    1    N    I   16    0   No   No
+                               1  Month and year
+                               2  Month and age -y imp
+                               3  Year and age - m imp
+                               4  Y & age - y ignored
+                               5  Year - a, m imp
+                               6  Age - y, m imp
+                               7  Month - a, y imp
+                               8  None - all imp
+                          (na)    Not applicable
+Q227C                  Imputed age at death in months                   740    3    N    I   16    0   No   No
+                          (na)      Not applicable
+Q227F                  Date flag for Q227C                              788    1    N    I   16    0   No   No
+                               0  No flag
+                               1  > interview
+                               2  < breastfeeding
+                               3  < age supplemented
+                               4  < first breastfed
+                               5  < last vaccination
+                               6  Outside range
+                               7  Imputed, units given
+                               8  Imputed, no units
+                          (na)    Not applicable
+Q220C                  Computed birth status                            804    1    N    I   16    0   No   No
+                               1  Born alive
+                               2  Born dead
+                               3  Miscarriage
+                               4  Abortion
+                               5  Ambiguous
+                          (na)    Not applicable
+Q229C                  Imputed date pregnancy ended (CMC)               820    4    N    I   16    0   No   No
+Q229F                  Date flag for Q229C                              884    1    N    I   16    0   No   No
+                               1  Month and year
+                               2  Month and age -y imp
+                               3  Year and age - m imp
+                               4  Y & age - y ignored
+                               5  Year - a, m imp
+                               6  Age - y, m imp
+                               7  Month - a, y imp
+                               8  None - all imp
+                          (na)    Not applicable
+Q233                   Pregnancy between last & interview               900    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q235                   Abortions since January 2002                     901    1    N    I    1    0   No   No
+                               0:6  
+                          (na)      Not applicable
+Q236                   Miscarriages since January 2002                  902    1    N    I    1    0   No   No
+                               0:6  
+                          (na)      Not applicable
+Q237                   Births since January 2002                        903    1    N    I    1    0   No   No
+                               0:6  
+                          (na)      Not applicable
+Q238                   Currently pregnant                               904    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Unsure
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q239                   Duration of current pregnancy                    905    2    N    I    1    0   No   No
+                               1:10  
+                               98    DK
+                           (m) 99    Missing
+                          (na)       Not applicable
+Q240                   Time wanted pregnancy                            907    1    N    I    1    0   No   No
+                               1  Then
+                               2  Later
+                               3  Not at all
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q241U                  Time since last period (unit)                    908    1    N    I    1    0   No  Yes
+                               1  Days ago
+                               2  Weeks ago
+                               3  Months ago
+                               4  Years ago
+                               9  Special answers
+                          (na)    Not applicable
+Q241N                  Time since last period (number)                  909    2    N    I    1    0   No  Yes
+                               0:90  
+                               94    In menopause, had hysterectomy
+                               95    Before last birth
+                               96    Never menstruated
+                               97    Inconsistent
+                               98    DK
+                           (m) 99    Missing
+                          (na)       Not applicable
+Q239C                  Imputed date of conception (CMC)                 911    4    N    I    1    0   No   No
+                          (na)       Not applicable
+Q239F                  Date flag for Q239C                              915    1    N    I    1    0   No   No
+                               7  Month - exact date
+                               8  None - imputed
+                          (na)    Not applicable
+Q241F                  Flag for Q241                                    916    1    N    I    1    0   No   No
+                               0  
+                               1  N > int. since birth
+                               2  N + amen. > interval
+                               3  N, but per. not ret.
+                               4  95, but no birth
+                               5  95, but per.returned
+                               6  96, but per.returned
+                               7  N, last per. in preg
+                               8  96, had children
+                               9  N, per.bef.last birt
+                          (na)    Not applicable
+Q302                   Line number of last abortion since 2002          917    2    N    I    1    0   No   No
+                               1:24  
+                           (m) 99    Missing
+                          (na)       Not applicable
+Q304                   Main reason for abortion                         919    2    N    I    1    0   No   No
+                               1   Health of mother
+                               2   Risk of birth defect
+                               3   No money to take care of baby
+                               4   Too  young to have child
+                               5   Not ready to be a mother
+                               6   Wanted to continue schooling
+                               7   Did not love the father
+                               8   Wanted to delay childrearing
+                               9   Wanted to continue working
+                               10  Did not want to stay with the father
+                               11  Wanted to space child
+                               12  Partner did not want child/denied the pregnancy
+                               13  Child's sex
+                               14  Because of rape
+                               15  To avoid shame
+                               16  Afraid of parents
+                               17  No one to help me look after the child
+                               18  Parents insisted
+                               19  Father of child died
+                               96  Other
+                           (m) 99  Missing
+                          (na)     Not applicable
+Q305                   Partner's attitude toward abortion               921    2    N    I    1    0   No   No
+                               1   Favored
+                               2   Opposed
+                               3   Neutral
+                               4   He did not know
+                               5   Don't know/don't remember
+                           (m) 99  Missing
+                          (na)     Not applicable
+Q306                   Multiple steps to end pregnancy                  923    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q307U                  Time between first attempt and final - units     924    1    N    I    1    0   No   No
+                               1  Days
+                               2  Weeks
+                               9  Special answers
+                          (na)    Not applicable
+Q307N                  Time between first attempt and final - number    925    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or more
+                               98    Don't know
+                           (m) 99    Missing
+                          (na)       Not applicable
+Q308                   First action to end pregnancy                    927    2    N    I    1    0   No   No
+                               1   Drank milk/coffee/other w/ lots of sugar
+                               2   Drank herbal concotion
+                               3   Drank other home remedies
+                               4   Used any herbal anema
+                               5   Inserted herb/object/other substance in vagina
+                               6   Took tablets
+                               7   Heavy massage
+                               8   D & C
+                               9   Manual vacuum aspiration
+                               10  Injection
+                               11  Saline instillation
+                               12  Cytotec tablets (Misoprostol)
+                               13  Oxytocin
+                               14  Catheter
+                               15  Excessive physical activity
+                               16  Other
+                           (m) 99  Missing
+                          (na)     Not applicable
+Q309                   Provider for first step to end pregnancy         929    2    N    I    1    0   No   No
+                               1   Doctor
+                               2   Nurse/midwife
+                               3   Auxiliary midwife
+                               4   Pharmacist/chemical seller
+                               5   Traditional birth attendant
+                               6   Community health worker
+                               7   Relative/friend
+                               8   Traditional practitioner
+                               9   Other
+                               10  No one
+                           (m) 99  Missing
+                          (na)     Not applicable
+Q310                   Source for first step to end pregnancy           931    2    N    I    1    0   No   No
+                               11  Govt. hospital/polyclinic
+                               12  Govt. heatlh center
+                               13  Govt. health post/clinic
+                               14  Public mobile clinic
+                               15  Other public
+                               21  Private hospital/clinic
+                               22  Private mobile clinic
+                               23  Private maternity home
+                               24  Private pharmacy/chemist/drug store
+                               25  Other private medical
+                               31  Respondent's home
+                               32  Other home
+                               33  TBA's home
+                               96  Other
+                           (m) 99  Missing
+                          (na)     Not applicable
+Q311                   Person who paid for first step to end pregnancy  933    7   AN    I    1    0   No   No
+                               A        Respondent
+                               B        Partner
+                               C        Mother
+                               D        Father
+                               E        Other family member
+                               F        Friend
+                               X        Other
+                               Y        No one
+Q312                   Bleeding from first step to end pregnancy        940    1    N    I    1    0   No   No
+                               1  Mild
+                               2  Moderate
+                               3  Severe
+                               4  Did not have bleeding
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q313                   Pain from first step to end pregnancy            941    1    N    I    1    0   No   No
+                               1  Mild
+                               2  Moderate
+                               3  Severe
+                               4  Did not have pain
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q314                   Fever from first step to end pregnancy           942    1    N    I    1    0   No   No
+                               1  Mild
+                               2  Moderate
+                               3  Severe
+                               4  Did not have fever
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q315                   Injury/perforation from first step to end pregn  943    1    N    I    1    0   No   No
+                               1  Mild
+                               2  Moderate
+                               3  Severe
+                               4  Did not have injury
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q316                   Vaginal discharge from first step to end pregna  944    1    N    I    1    0   No   No
+                               1  Mild
+                               2  Moderate
+                               3  Severe
+                               4  Did not have discharge
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q317                   Any other problems from first step to end pregn  945    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  DK
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q318A                  Other problems #1 from first step to end pregna  946    1    N    I    1    0   No   No
+                               0  No more
+                               1  Mild
+                               2  Moderate
+                               3  Severe
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q318B                  Other problems #2 from first step to end pregna  947    1    N    I    1    0   No   No
+                               0  No more
+                               1  Mild
+                               2  Moderate
+                               3  Severe
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q318C                  Other problems #3 from first step to end pregna  948    1    N    I    1    0   No   No
+                               0  No more
+                               1  Mild
+                               2  Moderate
+                               3  Severe
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q318D                  Other problems #4 from first step to end pregna  949    1    N    I    1    0   No   No
+                               0  No more
+                               1  Mild
+                               2  Moderate
+                               3  Severe
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q319                   Given pain relievers after first step to end pr  950    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  DK
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q320                   Last action to end pregnancy                     951    2    N    I    1    0   No   No
+                               1   Drank milk/coffee/other w/ lots of sugar
+                               2   Drank herbal concotion
+                               3   Drank other home remedies
+                               4   Used any herbal anema
+                               5   Inserted herb/object/other substance in vagina
+                               6   Took tablets
+                               7   Heavy massage
+                               8   D & C
+                               9   Manual vacuum aspiration
+                               10  Injection
+                               11  Saline instillation
+                               12  Cytotec tablets (Misoprostol)
+                               13  Oxytocin
+                               14  Catheter
+                               15  Excessive physical activity
+                               16  Other
+                           (m) 99  Missing
+                          (na)     Not applicable
+Q321                   Provider for last step to end pregnancy          953    2    N    I    1    0   No   No
+                               1   Doctor
+                               2   Nurse/midwife
+                               3   Auxiliary midwife
+                               4   Pharmacist/chemical seller
+                               5   Traditional birth attendant
+                               6   Community health worker
+                               7   Relative/friend
+                               8   Traditional practitioner
+                               9   Other
+                               10  No one
+                           (m) 99  Missing
+                          (na)     Not applicable
+Q322                   Source for last step to end pregnancy            955    2    N    I    1    0   No   No
+                               11  Govt. hospital/polyclinic
+                               12  Govt. heatlh center
+                               13  Govt. health post/clinic
+                               14  Public mobile clinic
+                               15  Other public
+                               21  Private hospital/clinic
+                               22  Private mobile clinic
+                               23  Private maternity home
+                               24  Private pharmacy/chemist/drug store
+                               25  Other private medical
+                               31  Respondent's home
+                               32  Other home
+                               33  TBA's home
+                               96  Other
+                           (m) 99  Missing
+                          (na)     Not applicable
+Q323                   Person who paid for last step to end pregnancy   957    7   AN    I    1    0   No   No
+                               A        Respondent
+                               B        Partner
+                               C        Mother
+                               D        Father
+                               E        Other family member
+                               F        Friend
+                               X        Other
+                               Y        No one
+Q324                   Took antibiotics after abortion                  964    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  DK
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q325                   Given pain relievers after last step to end pre  965    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  DK
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q326                   Local anasthesia for abortion                    966    1    N    I    1    0   No   No
+                               1  Local
+                               2  General
+                               3  Neither
+                               8  DK
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q327                   Health problems in first month after abortion    967    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  DK
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q328                   Bleeding in first month after abortion           968    1    N    I    1    0   No   No
+                               1  Mild
+                               2  Moderate
+                               3  Severe
+                               4  Did not have bleeding
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q329                   Pain in first month after abortion               969    1    N    I    1    0   No   No
+                               1  Mild
+                               2  Moderate
+                               3  Severe
+                               4  Did not have pain
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q330                   Fever in first month after abortion              970    1    N    I    1    0   No   No
+                               1  Mild
+                               2  Moderate
+                               3  Severe
+                               4  Did not have fever
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q331                   Injury/perforation in first month after abortio  971    1    N    I    1    0   No   No
+                               1  Mild
+                               2  Moderate
+                               3  Severe
+                               4  Did not have injury/perforation
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q332                   Foul-smelling discharge in first month after ab  972    1    N    I    1    0   No   No
+                               1  Mild
+                               2  Moderate
+                               3  Severe
+                               4  Did not have discharge
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q333                   Any other problems in first month after abortio  973    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  DK
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q334A                  Other problems #1 in first month after abortion  974    1    N    I    1    0   No   No
+                               0  No more
+                               1  Mild
+                               2  Moderate
+                               3  Severe
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q334B                  Other problems #2 in first month after abortion  975    1    N    I    1    0   No   No
+                               0  No more
+                               1  Mild
+                               2  Moderate
+                               3  Severe
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q334C                  Other problems #3 in first month after abortion  976    1    N    I    1    0   No   No
+                               0  No more
+                               1  Mild
+                               2  Moderate
+                               3  Severe
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q334D                  Other problems #4 in first month after abortion  977    1    N    I    1    0   No   No
+                               0  No more
+                               1  Mild
+                               2  Moderate
+                               3  Severe
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q335                   Received treatment for health problems due to a  978    4   AN    I    1    0   No   No
+                               A     Operation
+                               B     Blood transfusion
+                               C     Antibiotics
+                               X     Other
+                               Y     No treatment
+Q336                   Source of treatment for health problems due to   982   14   AN    I    1    0   No   No
+                               A               Govt. hospital/polyclinic
+                               B               Govt. heatlh center
+                               C               Govt. health post/clinic
+                               D               Public mobile clinic
+                               E               Other public
+                               F               Private hospital/clinic
+                               G               Private mobile clinic
+                               H               Private maternity home
+                               I               Private pharmacy/chemist/drug store
+                               J               Other private medical
+                               K               Respondent's home
+                               L               Other home
+                               M               TBA's home
+                               X               Other
+Q337                   Nights at health facility in first month after   996    2    N    I    1    0   No   No
+                               0:31  
+                               97    Inconsistent
+                               98    DK
+                           (m) 99    Missing
+                          (na)       Not applicable
+Q338                   Visited by doctor or health worker after aborti  998    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  DK
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q339                   Any health problems six months after abortion    999    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               3  Not yet six months
+                               8  DK
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q340                   Health problems six months after abortion       1000    7   AN    I    1    0   No   No
+                               A        Abdominal pain
+                               B        Sterility
+                               C        Infection
+                               D        Lack of period
+                               E        Irregular period
+                               F        More painful period
+                               X        Other
+Q341                   Using contraception at the time she became preg 1007    2    N    I    1    0   No   No
+                               1   Female Sterilization
+                               2   Male Sterilization
+                               3   Pill
+                               4   IUD
+                               5   Injectables
+                               6   Implants
+                               7   Male condom
+                               8   Female condom
+                               9   Diaphragm
+                               10  Foam/jelly
+                               11  Lactational amen. method
+                               12  Rhythm method
+                               13  Withdrawal
+                               14  Not using a method
+                               96  Other
+                           (m) 99  Missing
+                          (na)     Not applicable
+Q342                   Health professional spoke about contraception b 1009    1    N    I    1    0   No   No
+                               1  Yes before the abortion
+                               2  Yes after the abortion
+                               3  Both before and after the abortion
+                               4  No
+                               8  DK
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q343                   Health worker gave FP advice after abortion     1010    1    N    I    1    0   No   No
+                               1  Yes gave method
+                               2  Yes prescribed a method
+                               3  Yes gave referral
+                               4  No
+                               8  DK
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q345                   Ever heard of abortion                          1011    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q346                   Could get herself an abortion                   1012    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  DK
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q347                   Knows where to get an abortion                  1013    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  DK
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q348                   Where to go for abortion                        1014   18   AN    I    1    0   No   No
+                               A                   Govt. hospital/polyclinic
+                               B                   Govt. heatlh center
+                               C                   Govt. health post/clinic
+                               D                   Public mobile clinic
+                               E                   Public fieldworker
+                               F                   Other public
+                               G                   Private hospital/clinic
+                               H                   Private doctor
+                               I                   Private mobile clinic
+                               J                   Private pharmacy/chemist/drug store
+                               K                   Private fieldworker
+                               L                   Private FP/PPAG clinic
+                               M                   Private maternity home
+                               N                   Other private medical
+                               O                   Shop
+                               P                   Church
+                               Q                   Friend/relative
+                               X                   Other
+Q349                   Abortion legal in Ghana                         1032    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  DK
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q350                   Conditions of legal abortion in Ghana           1033   10   AN    I    1    0   No   No
+                               A           Rape
+                               B           Incest
+                               C           Life of mother in danger
+                               D           Risk to physical health of mother
+                               E           Risk to mental health of mother
+                               F           Foetal abnormality
+                               G           During first trimester only
+                               H           Up to the second trimester
+                               I           Mother mentally not sound
+                               Z           Don't konw
+Q402                   Line number of last miscarriage after 2002      1043    2    N    I    1    0   No   No
+                               1:24  
+                           (m) 99    
+                          (na)       Not applicable
+Q404                   Cause of miscarriage                            1045    2    N    I    1    0   No   No
+                               1   Accident
+                               2   Ate something
+                               3   Someone hurt me
+                               4   Spontaneous
+                               6   Other
+                               98  DK
+                           (m) 99  Missing
+                          (na)     Not applicable
+Q405                   Where miscarriage occurred                      1047    2    N    I    1    0   No   No
+                               11  Govt. hospital/polyclinic
+                               12  Govt. heatlh center
+                               13  Govt. health post/clinic
+                               14  Public mobile clinic
+                               15  Other public
+                               21  Private hospital/clinic
+                               22  Private mobile clinic
+                               23  Private maternity home
+                               24  Private pharmacy/chemist/drug store
+                               25  Other private medical
+                               31  Respondent's home
+                               32  Other home
+                               33  TBA's home
+                               96  Other
+                           (m) 99  Missing
+                          (na)     Not applicable
+Q406                   Sought help for miscarriage                     1049    9   AN    I    1    0   No   No
+                               A          Doctor
+                               B          Nurse/midwife
+                               C          Auxiliary midwife
+                               D          Pharmacist/chemical seller
+                               E          Traditional birth attendant
+                               F          Community health worker
+                               G          Relative/friend
+                               H          Traditional practitioner
+                               X          Other
+                               Y          No one
+Q407                   Uterus cleaned after miscarriage                1058    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q408                   Method to clean uterus                          1059    2    N    I    1    0   No   No
+                               1   D & C
+                               2   Manual vacuum aspiration
+                               3   Tablets for insertion
+                               4   Herbal mixture insertion
+                               5   Oxytocin
+                               7   Catheter
+                               6   Other
+                               98  Don't know
+                           (m) 99  Missing
+                          (na)     Not applicable
+Q409                   Anesthesia for miscarriage                      1061    1    N    I    1    0   No   No
+                               1  Local
+                               2  General
+                               3  Neither
+                               8  DK
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q410                   Given pain relievers for miscarriage            1062    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  DK
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q411                   Took antibiotics after miscarriage              1063    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  DK
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q412                   Any health problems due to miscarriage          1064    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  DK
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q413                   Bleeding from miscarriage                       1065    1    N    I    1    0   No   No
+                               1  Mild
+                               2  Moderate
+                               3  Severe
+                               4  Did not have bleeding
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q414                   Pain from miscarriage                           1066    1    N    I    1    0   No   No
+                               1  Mild
+                               2  Moderate
+                               3  Severe
+                               4  Did not have pain
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q415                   Fever from miscarriage                          1067    1    N    I    1    0   No   No
+                               1  Mild
+                               2  Moderate
+                               3  Severe
+                               4  Did not have fever
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q416                   Injury/perforation from miscarriage             1068    1    N    I    1    0   No   No
+                               1  Mild
+                               2  Moderate
+                               3  Severe
+                               4  Did not have injury
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q417                   Vaginal discharge from miscarriage              1069    1    N    I    1    0   No   No
+                               1  Mild
+                               2  Moderate
+                               3  Severe
+                               4  Did not have discharge
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q418                   Any other problems from miscarriage             1070    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  DK
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q419A                  Other problems #1 from miscarriage              1071    1    N    I    1    0   No   No
+                               0  No more
+                               1  Mild
+                               2  Moderate
+                               3  Severe
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q419B                  Other problems #2 from miscarriage              1072    1    N    I    1    0   No   No
+                               0  No more
+                               1  Mild
+                               2  Moderate
+                               3  Severe
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q419C                  Other problems #3 from miscarriage              1073    1    N    I    1    0   No   No
+                               0  No more
+                               1  Mild
+                               2  Moderate
+                               3  Severe
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q419D                  Other problems #4 from miscarriage              1074    1    N    I    1    0   No   No
+                               0  No more
+                               1  Mild
+                               2  Moderate
+                               3  Severe
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q420                   Received treatment for health problems due to m 1075    4   AN    I    1    0   No   No
+                               A     Operation
+                               B     Blood transfusion
+                               C     Antibiotics
+                               X     Other
+                               Y     No treatment
+Q421                   Source of treatment for health problems due to  1079   14   AN    I    1    0   No   No
+                               A               Govt. hospital/polyclinic
+                               B               Govt. heatlh center
+                               C               Govt. health post/clinic
+                               D               Public mobile clinic
+                               E               Other public
+                               F               Private hospital/clinic
+                               G               Private mobile clinic
+                               H               Private maternity home
+                               I               Private pharmacy/chemist/drug store
+                               J               Other private medical
+                               K               Respondent's home
+                               L               Other home
+                               M               TBA's home
+                               X               Other
+Q422                   Nights at health facility in first month after  1093    2    N    I    1    0   No   No
+                               0:31  
+                               97    Inconsistent
+                               98    DK
+                           (m) 99    Missing
+                          (na)       Not applicable
+Q423                   Visited by doctor or health worker after miscar 1095    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  DK
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q424                   Any health problems six months after miscarriag 1096    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               3  Not yet six months
+                               8  DK
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q425                   Health problems six months after miscarriage    1097    7   AN    I    1    0   No   No
+                               A        Abdominal pain
+                               B        Sterility
+                               C        Infection
+                               D        Lack of period
+                               E        Irregular period
+                               F        More painful period
+                               X        Other
+Q426                   Using contraception at the time she became preg 1104    2    N    I    1    0   No   No
+                               1   Female Sterilization
+                               2   Male Sterilization
+                               3   Pill
+                               4   IUD
+                               5   Injectables
+                               6   Implants
+                               7   Male condom
+                               8   Female condom
+                               9   Diaphragm
+                               10  Foam/jelly
+                               11  Lactational amen. method
+                               12  Rhythm method
+                               13  Withdrawal
+                               14  Not using a method
+                               96  Other
+                           (m) 99  Missing
+                          (na)     Not applicable
+Q427                   Health professional spoke about contraception b 1106    1    N    I    1    0   No   No
+                               1  Yes before the miscarriage
+                               2  Yes after the miscarriage
+                               3  Both before and after the miscarriage
+                               4  No
+                               8  DK
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q428                   Health worker gave FP advice after miscarriage  1107    1    N    I    1    0   No   No
+                               1  Yes gave method
+                               2  Yes prescribed a method
+                               3  Yes gave referral
+                               4  No
+                               8  DK
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q503                   Line number                                     1108    2    N    I    1    0   No   No
+                               1:24  
+                           (m) 99    Missing
+                          (na)       Not applicable
+Q506                   Antenatal care for pregnancy                    1110    6   AN    I    1    0   No   No
+                               A       Doctor
+                               B       Nurse, midwife
+                               C       Auxiliary midwife
+                               D       Trained traditional birth attendant
+                               E       Untrained traditional birth attendant
+                               X       Other
+                               Y       No one
+Q507                   Reason for not receiving antenatal care         1116   16   AN    I    1    0   No   No
+                               A                 Not necessary
+                               B                 Not customary
+                               C                 Lack of money
+                               D                 Too far
+                               E                 Transportation problem
+                               F                 No one to accompany
+                               G                 Good service not available
+                               H                 Not permitted by family
+                               I                 Better service at home
+                               J                 Did not know where to go
+                               K                 No female doctor available
+                               L                 Inconvenient service hour
+                               M                 Afraid to go
+                               N                 Long waiting time
+                               O                 Religious reason
+                               X                 Other
+Q508                   Reason for seeking antenatal care               1132    1    N    I    1    0   No   No
+                               1  Because of a problem
+                               2  Just for checkup
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q509                   Problems when first receiving antenatal care    1133   13   AN    I    1    0   No   No
+                               A              Headache
+                               B              Blurry vision
+                               C              Edema/pre-eclamsia
+                               D              Vaginal bleeding
+                               E              Convulsions/eclamsia
+                               F              Tetanus
+                               G              Foul-smelling discharge
+                               H              Lower abdominal pain
+                               I              Fell down
+                               J              Baby movement was low
+                               K              Varicose vein
+                               L              Excessive vomitting
+                               X              Other
+Q510                   Where antenatal care took place                 1146   12   AN    I    1    0   No   No
+                               A             Respondent's home
+                               B             Other home
+                               C             Govt. hospital/polyclinic
+                               D             Govt. health center
+                               E             Govt. health post/clinic
+                               F             Public mobile clinic
+                               G             Other public
+                               H             Private hospital/clinic
+                               I             Private mobile clinic
+                               J             Private maternity home
+                               K             Other private medical
+                               X             Other
+Q511                   Months pregnant at first antenatal visit        1158    2    N    I    1    0   No   No
+                               0:11  
+                               98    Don't know
+                           (m) 99    Missing
+                          (na)       Not applicable
+Q512                   Antenatal visits during pregnancy               1160    2    N    I    1    0   No   No
+                               1:90  
+                               98    Don't know
+                           (m) 99    Missing
+                          (na)       Not applicable
+Q513A                  Antenatal care: Weight                          1162    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q513B                  Antenatal care: Blood pressure                  1163    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q513C                  Antenatal care: Urine sample                    1164    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q513D                  Antenatal care: Blood sample                    1165    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q514                   Told about signs of complications               1166    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q515                   Told about sources of care for complications    1167    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q516                   Tetanus injection during pregnancy              1168    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q517                   Number of tetanus injections                    1169    2    N    I    1    0   No   No
+                               1:90  
+                               98    Don't know
+                           (m) 99    Missing
+                          (na)       Not applicable
+Q519                   Tetanus injections before pregnancy             1171    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q520                   Number of tetanus injections before pregnancy   1172    2    N    I    1    0   No   No
+                               1:6  
+                               7    7 or more
+                               98   Don't know
+                           (m) 99   Missing
+                          (na)      Not applicable
+Q521M                  Month of last tetanus injection before pregnanc 1174    2    N    I    1    0   No  Yes
+                               1:12  
+                               97    Inconsistent
+                               98    Don't know month
+                           (m) 99    Missing
+                          (na)       Not applicable
+Q521Y                  Year of last tetanus injection before pregnancy 1176    4    N    I    1    0   No  Yes
+                               1965:2008  
+                               9997       Inconsistent
+                               9998       Don't know year
+                           (m) 9999       Missing
+                          (na)            Not applicable
+Q522                   Years ago received last tetanus injection befor 1180    2    N    I    1    0   No   No
+                               0:40  
+                           (m) 99    Missing
+                          (na)       Not applicable
+Q523                   Iron tablets during pregnancy                   1182    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q524                   Number of days took iron tablets                1183    3    N    I    1    0   No   No
+                               0:325  
+                               998    Don't know
+                           (m) 999    Missing
+                          (na)        Not applicable
+Q525                   Drugs for intestinal parasites                  1186    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  DK
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q526                   Assistance at delivery                          1187    7   AN    I    1    0   No   No
+                               A        Doctor
+                               B        Nurse, midwife
+                               C        Auxiliary midwife
+                               D        Trained traditional birth attendant
+                               E        Untrained traditional birth attendant
+                               F        Relative, friend
+                               X        Other
+                               Y        No one
+Q527                   Place of delivery                               1194    2    N    I    1    0   No   No
+                               1   Respondent's home
+                               2   Other home
+                               3   Government hospital/polyclinic
+                               4   Government health center
+                               5   Government health post/clinic
+                               6   Other public
+                               7   Private hospital/clinic
+                               8   Private maternity home
+                               9   Other private medical
+                               10  Other
+                           (m) 99  Missing
+                          (na)     Not applicable
+Q528                   Reason not delivered in health facility         1196   16   AN    I    1    0   No   No
+                               A                 Not necessary
+                               B                 Not customary
+                               C                 Lack of money
+                               D                 Too far
+                               E                 Transportation problem
+                               F                 No one to accompany
+                               G                 Good service not available
+                               H                 Not permitted by family
+                               I                 Better service at home
+                               J                 Did not know where to go
+                               K                 No female doctor available
+                               L                 Inconvenient service hour
+                               M                 Afraid to go
+                               N                 Long waiting time
+                               O                 Religious reason
+                               X                 Other
+Q529A                  Forceps used in delivery                        1212    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  DK
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q529B                  Received blood transfusions during delivery     1213    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  DK
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q529C                  Received IV fluids during delivery              1214    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  DK
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q530                   Problems just before, during or after delivery  1215   17   AN    I    1    0   No   No
+                               A                  Headache
+                               B                  Blurry vision
+                               C                  Edema/pre-eclamsia
+                               D                  Excessive bleeding
+                               E                  Convulsions/eclamsia
+                               F                  Tetanus
+                               G                  Foul-smelling discharge
+                               H                  Baby movement was low
+                               I                  Baby's hands/feet came out first
+                               J                  Prolonged labor
+                               K                  Obstructed labor
+                               L                  Torn uterus
+                               M                  Placenta previa/retained
+                               N                  High fever
+                               O                  Fistula
+                               P                  Did not have any problems
+                               X                  Other
+Q531                   Sought care for problems with delivery          1232    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q532                   Reason for not receiving care for problems with 1233   17   AN    I    1    0   No   No
+                               A                  Not necessary
+                               B                  Not customary
+                               C                  Lack of money
+                               D                  Too far
+                               E                  Transportation problem
+                               F                  No one to accompany
+                               G                  Good service not available
+                               H                  Not permitted by family
+                               I                  Better service at home
+                               J                  Did not know where to go
+                               K                  No female doctor available
+                               L                  Inconvenient service hour
+                               M                  Afraid to go
+                               N                  Long waiting time
+                               O                  Religious reason
+                               P                  Not life threatening
+                               X                  Other
+Q533                   Provider of care for problems with delivery     1250    7   AN    I    1    0   No   No
+                               A        Doctor
+                               B        Nurse, midwife
+                               C        Auxiliary midwife
+                               D        Trained traditional birth attendant
+                               E        Untrained traditional birth attendant
+                               F        Relative, friend
+                               X        Other
+                               Y        No one
+Q534                   Source of treatment for problems with delivery  1257   10   AN    I    1    0   No   No
+                               A           Respondent's home
+                               B           Other home
+                               C           Government hospital/polyclinic
+                               D           Government health center
+                               E           Government health post/clinic
+                               F           Other public
+                               G           Private hospital/clinic
+                               H           Private maternity home
+                               I           Other private medical
+                               X           Other
+Q535                   Change in condition after treatment             1267    1    N    I    1    0   No   No
+                               1  No change
+                               2  Improved
+                               3  Worsened
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q536                   Referred to another place for treatment         1268    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q537                   Place of referral for problems with delivery    1269    2    N    I    1    0   No   No
+                               1   Government hospital/polyclinic
+                               2   Government health center
+                               3   Government health post/clinic
+                               4   Other public
+                               5   Private hospital/clinic
+                               6   Private maternity home
+                               7   Other private medical
+                               16  Other
+                           (m) 99  Missing
+                          (na)     Not applicable
+Q538                   Went to referral place                          1271    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q539                   Reason for not going to referral place          1272   17   AN    I    1    0   No   No
+                               A                  Not necessary
+                               B                  Not customary
+                               C                  Lack of money
+                               D                  Too far
+                               E                  Transportation problem
+                               F                  No one to accompany
+                               G                  Good service not available
+                               H                  Not permitted by family
+                               I                  Better service at home
+                               J                  Did not know where to go
+                               K                  No female doctor available
+                               L                  Inconvenient service hour
+                               M                  Afraid to go
+                               N                  Long waiting time
+                               O                  Religious reason
+                               P                  Not life threatening
+                               X                  Other
+Q541U                  Time spent at place of delivery (unit)          1289    1    N    I    1    0   No  Yes
+                               1  Hours after delivery
+                               2  Days after delivery
+                               3  Weeks after delivery
+                               9  Special answers
+                          (na)    Not applicable
+Q541N                  Time spent at place of delivery (number)        1290    2    N    I    1    0   No  Yes
+                               0:90  
+                               98    Don't know
+                           (m) 99    Missing
+                          (na)       Not applicable
+Q542                   Delivery by caesarian section                   1292    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q543                   Postnatal check before discharge                1293    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q544U                  When received first postnatal check (units)     1294    1    N    I    1    0   No  Yes
+                               1  Hours after delivery
+                               2  Days after delivery
+                               3  Weeks after delivery
+                               9  Special answers
+                          (na)    Not applicable
+Q544N                  When received first postnatal check (number)    1295    2    N    I    1    0   No  Yes
+                               0:90  
+                               98    Don't know
+                           (m) 99    Missing
+                          (na)       Not applicable
+Q545                   Person performing first postnatal checkup       1297    2    N    I    1    0   No   No
+                               1   Doctor
+                               2   Nurse/midwife
+                               3   Auxiliary midwife
+                               4   Trained traditional birth attendant
+                               5   Untrained traditional birth attendant
+                               6   Relative/friend
+                               7   Other
+                               8   No one
+                           (m) 99  Missing
+                          (na)     Not applicable
+Q548                   Place of first postnatal check                  1299    2    N    I    1    0   No   No
+                               1   Respondent's home
+                               2   Other home
+                               3   Government hospital/clinic
+                               4   Government health center
+                               5   Government health post
+                               6   Other public
+                               7   Private hospital, clinic
+                               8   Private maternity home
+                               9   Other private medical
+                               10  Other
+                           (m) 99  Missing
+                          (na)     Not applicable
+Q601N                  Contraceptive method                            1301    2    N    I   14    0   No   No
+                               1   Female Sterilization
+                               2   Male Sterilization
+                               3   Pill
+                               4   IUD
+                               5   Injectables
+                               6   Implants
+                               7   Male condom
+                               8   Female condom
+                               9   Lactational amenorrhea (LAM)
+                               10  Rhythm, Periodic abstinence
+                               11  Withdrawal
+                               12  Emergency contraception
+                               13  Other (1)
+                               14  Other (2)
+                          (na)     Not applicable
+Q601                   Heard of method                                 1329    1    N    I   14    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q602                   Ever used method                                1343    1    N    I   14    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q604                   Ever used a contraceptive method                1357    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q606                   Living children at first use                    1358    2    N    I    1    0   No   No
+                               0:24  
+                           (m) 99    Missing
+                          (na)       Not applicable
+Q609                   Currently using any method                      1360    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q610                   Current contraceptive method                    1361   14   AN    I    1    0   No   No
+    Note: Does not allow missing 
+                               A               Female Sterilization
+                               B               Male Sterilization
+                               C               Pill
+                               D               IUD
+                               E               Injectables
+                               F               Implants
+                               G               Male condom
+                               H               Female condom
+                               I               Diaphragm
+                               J               Foam/jelly
+                               K               Lactational amenorrhea
+                               L               Rhythm
+                               M               Withdrawal
+                               X               Other
+Q611                   Know source for FP                              1375    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q612                   Source for FP                                   1376   19   AN    I    1    0   No   No
+                               A                    Government hospital/polyclinic
+                               B                    Government health center
+                               C                    Government health post/clinic
+                               D                    Public FP clinic
+                               E                    Public mobile clinic
+                               F                    Public fieldworker
+                               G                    Other public
+                               H                    Private hospital/clinic
+                               I                    Private doctor
+                               J                    Private mobile clinic
+                               K                    Private pharmacy/chemist/drugstore
+                               L                    Private fieldworker
+                               M                    Private FP/PPAG clinic
+                               N                    Private maternity home
+                               O                    Other private medical
+                               P                    Shop
+                               Q                    Church
+                               R                    Friend/relative
+                               X                    Other
+Q610N                  Current contraceptive method (major method)     1395    2    N    I    1    0   No   No
+                               1   Female Sterilization
+                               2   Male Sterilization
+                               3   Pill
+                               4   IUD
+                               5   Injectables
+                               6   Implants
+                               7   Male condom
+                               8   Female condom
+                               9   Diaphragm
+                               10  Foam, jelly
+                               11  Lactational amenorrhea
+                               12  Rhythm method
+                               13  Withdrawal
+                               96  Other
+                          (na)     Not applicable
+Q701                   Currently in union                              1397    1    N    I    1    0   No   No
+                               1  Currently married
+                               2  Living with a man
+                               3  Not in union
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q702                   Have ever been married or lived with a man      1398    1    N    I    1    0   No   No
+                               1  Formerly married
+                               2  Lived with a man
+                               3  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q703                   Current marital status                          1399    1    N    I    1    0   No   No
+                               1  Widowed
+                               2  Divorced
+                               3  Separated
+                          (na)    Not applicable
+Q704                   Partner living with respondent                  1400    1    N    I    1    0   No   No
+                               1  Lives with her
+                               2  Staying elsewhere
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q705                   In union more than once                         1401    1    N    I    1    0   No   No
+                               1  Once
+                               2  More than once
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q706M                  Time of first union (month)                     1402    2    N    I    1    0   No  Yes
+                               1:12  
+                               97    Inconsistent
+                               98    Don't know month
+                           (m) 99    Missing
+                          (na)       Not applicable
+Q706Y                  Time of first union (year)                      1404    4    N    I    1    0   No  Yes
+                               1964:2008  
+                               9997       Inconsistent
+                               9998       Don't know year
+                           (m) 9999       Missing
+                          (na)            Not applicable
+Q707                   Age at first union                              1408    2    N    I    1    0   No   No
+                               8:49  
+                               97    Inconsistent
+                               98    Don't know
+                           (m) 99    Missing
+                          (na)       Not applicable
+Q709                   Age at first intercourse                        1410    2    N    I    1    0   No   No
+                               0     Never
+                               8:49  
+                               95    When started cohabiting
+                               97    Inconsistent
+                               98    Don't know
+                           (m) 99    Missing
+                          (na)       Not applicable
+Q711                   Intends to postpone intercourse until marriage  1412    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know / unsure
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q712U                  Time since last intercourse (unit)              1413    1    N    I    1    0   No  Yes
+                               1  Days ago
+                               2  Weeks ago
+                               3  Months ago
+                               4  Years ago
+                               9  Special answers
+                          (na)    Not applicable
+Q712N                  Time since last intercourse (number)            1414    2    N    I    1    0   No  Yes
+                               0:90  
+                               97    Inconsistent
+                               98    Don't know
+                           (m) 99    Missing
+                          (na)       Not applicable
+Q706C                  Imputed date of first union (CMC)               1416    4    N    I    1    0   No   No
+                          (na)       Not applicable
+Q706F                  Date flag for Q706C                             1420    1    N    I    1    0   No   No
+                               1  Month and year
+                               2  Month and age -y imp
+                               5  Year - a, m imp
+                               6  Age - y, m imp
+                               7  Month - a, y imp
+                               8  None - all imp
+                          (na)    Not applicable
+Q707C                  Age at first union (calculated)                 1421    2    N    I    1    0   No   No
+                          (na)     Not applicable
+Q709F                  Flag for Q709                                   1423    1    N    I    1    0   No   No
+                               0  No flag
+                               1  After interview
+                               2  After concep >= 1 yr
+                               3  After concep < 1 yr
+                               4  At marr, never marr
+                               5  At marr,after concep
+                               6  After marriage
+                          (na)    Not applicable
+Q712F                  Flag for Q712                                   1424    1    N    I    1    0   No   No
+                               0  No flag
+                               1  N > int. since birth
+                               2  N + abst. > interval
+                               3  N, but sex not res.
+                               4  96, but no birth
+                               5  96, but curr.preg.
+                               6  96, but resumed sex
+                               7  N, last sex bef preg
+                               8  N, inconsis 4 weeks
+                               9  N, sex bef last birt
+                          (na)    Not applicable
+Q801                   Mother's children ever born                     1425    2    N    I    1    0   No   No
+                               1     Respondent only
+                               2:20  
+                           (m) 99    Missing
+                          (na)       Not applicable
+Q803                   Children born before respond.                   1427    2    N    I    1    0   No   No
+                               0:19  
+                          (na)       Not applicable
+Q814H                  Time at end of interview (hour)                 1429    2    N    I    1    0   No  Yes
+                               1:23  
+                               97    Inconsistent
+                           (m) 99    Missing
+                          (na)       Not applicable
+Q814M                  Time at end of interview (minutes)              1431    2    N    I    1    0   No  Yes
+                               0:59  
+                               97    Inconsistent
+                           (m) 99    Missing
+                          (na)       Not applicable
+Q804                   Column number                                   1433    2    N    I   17    0   No   No
+                               1:20  
+                          (na)       Not applicable
+Q805                   Sex of sibling                                  1467    1    N    I   17    0   No   No
+                               1  Male
+                               2  Female
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q806                   Sibling alive                                   1484    1    N    I   17    0   No   No
+                               1  Yes
+                               2  No
+                               8  DK
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q807                   Age of sibling                                  1501    2    N    I   17    0   No   No
+                               0:90  
+                               98    
+                           (m) 99    Missing
+                          (na)       Not applicable
+Q808                   Years since siblings death                      1535    2    N    I   17    0   No   No
+                               0:75  
+                               98    DK
+                           (m) 99    Missing
+                          (na)       Not applicable
+Q809                   Age of sibling at death                         1569    2    N    I   17    0   No   No
+                               0:75  
+                               98    DK
+                           (m) 99    Missing
+                          (na)       Not applicable
+Q810                   Died while pregnant                             1603    1    N    I   17    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q811                   Died during childbirth                          1620    1    N    I   17    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q812                   Died within 2 months of delivery                1637    1    N    I   17    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+Q813                   Children gave birth to                          1654    2    N    I   17    0   No   No
+                               0:19  
+                           (m) 99    Missing
+                          (na)       Not applicable
+Q807C                  Imputed date of birth of sibling (CMC)          1688    4    N    I   17    0   No   No
+                          (na)       Not applicable
+Q808C                  Imputed date of death of sibling (CMC)          1756    4    N    I   17    0   No   No
+                          (na)       Not applicable
+QH10                   Source of drinking water                        1824    2    N    I    1    0   No   No
+                               11  Piped water
+                               21  Water from open well or borehole
+                               31  Water from covered well or borehole
+                               41  Spring - protected
+                               42  Spring - unprotected
+                               51  Surface water (river/dam/lake/pond/stream/canal/irrigation channel
+                               61  Rainwater
+                               71  Tanker truck
+                               81  Bottled/sachet water
+                               96  Other
+                           (m) 99  Missing
+                          (na)     Not applicable
+QH11                   Type of toilet facility                         1826    2    N    I    1    0   No   No
+                               11  Flush or pour flush toilet
+                               21  Pit latrine - ventilated improved pit (VIP)
+                               22  Pit latrine - with slab
+                               23  Pit latrine - without slab / open pit
+                               41  Bucket/pan toilet
+                               61  No facility/bush/field
+                               96  Other
+                           (m) 99  Missing
+                          (na)     Not applicable
+QH12                   Share facilities with other households          1828    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+QH13A                  Electricity                                     1829    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+QH13B                  Radio                                           1830    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+QH13C                  Television                                      1831    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+QH13D                  Mobile telephone                                1832    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+QH13E                  Telephone (non-mobile)                          1833    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+QH13F                  Freezer                                         1834    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+QH13G                  Refrigerator                                    1835    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+QH13H                  Computer                                        1836    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+QH13I                  Clock                                           1837    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+QH13J                  Water pump                                      1838    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+QH13K                  Table                                           1839    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+QH13L                  Chair                                           1840    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+QH13M                  Sofa                                            1841    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+QH13N                  Cupboard                                        1842    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+QH13O                  Bed                                             1843    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+QH13P                  Kerosene lantern                                1844    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+QH13Q                  Video deck/DVD                                  1845    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+QH14                   Type of cooking fuel                            1846    2    N    I    1    0   No   No
+                               1   Electricity
+                               2   LPG
+                               3   Natural gas
+                               4   Kerosene
+                               5   Coal, lignite
+                               6   Charcoal
+                               7   Firewood
+                               8   Straw / shrubs / grass
+                               95  No food cooked in HH
+                               96  Other
+                           (m) 99  Missing
+                          (na)     Not applicable
+QH15                   Main material of floor                          1848    2    N    I    1    0   No   No
+                               11  Earth/sand/mud
+                               12  Mud mixed with dung
+                               21  Wood planks
+                               22  Palm/bamboo
+                               31  Parquet or polished wood
+                               32  Linoleum
+                               33  Ceramic tiles
+                               34  Cement
+                               35  Carpet
+                               36  Terrazzo
+                               96  Other
+                           (m) 99  Missing
+                          (na)     Not applicable
+QH16                   Number of rooms used for sleeping               1850    2    N    I    1    0   No   No
+                               0:90  
+                           (m) 99    Missing
+                          (na)       Not applicable
+QH17A                  Watch                                           1852    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+QH17B                  Bicycle                                         1853    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+QH17C                  Motorcycle or Scooter                           1854    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+QH17D                  Animal-drawn cart                               1855    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+QH17E                  Car or Truck                                    1856    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+QH17F                  Canoe                                           1857    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+QH17G                  Tractor                                         1858    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+--------------------------------------------------------------------------------------------------------------
+Relation Name         Primary               Linked by             Secondary             Linked by
+--------------------------------------------------------------------------------------------------------------

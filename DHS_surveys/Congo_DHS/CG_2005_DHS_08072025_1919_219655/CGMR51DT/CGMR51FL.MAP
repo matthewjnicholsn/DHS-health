@@ -1,0 +1,2934 @@
+                                                   CGMR51FL
+                                                CGMR51FL_DICT
+
+                                        CGMR51FL.DCF
+                                    Last Modified:  2/16/2010  9:14:49 AM
+
+--------------------------------------------------------------------------------------------------------------
+Level Label                                                 Level Name                     Type            Rec
+  Record Label                                                Record Name                 Value  Req  Max  Len
+--------------------------------------------------------------------------------------------------------------
+HOUSEHOLD                                                   HOUSEHOLD
+  RECORD1                                                     RECORD1                            Yes    1 1503
+Level: HOUSEHOLD                                       Record: RECORD1
+--------------------------------------------------------------------------------------------------------------
+                                                                                 Data Item            Dec Zero
+Item Label                                     Item Name              Start  Len Type Type  Occ  Dec Char Fill
+--------------------------------------------------------------------------------------------------------------
+  (record type)                                                           0    0   AN    I    1    0   No   No
+Case Identification                       (id) MCASEID                    1   15   AN    I    1    0   No   No
+Country code and phase                         MV000                     16    3   AN    I    1    0   No   No
+Cluster number                                 MV001                     19    8    N    I    1    0   No   No
+Household number                               MV002                     27    4    N    I    1    0   No   No
+Respondent's line number                       MV003                     31    3    N    I    1    0   No   No
+Ultimate area unit                             MV004                     34    4    N    I    1    0   No   No
+Sample weight                                  MV005                     38    8    N    I    1    0   No   No
+Month of interview                             MV006                     46    2    N    I    1    0   No   No
+        1:12  
+Year of interview                              MV007                     48    4    N    I    1    0   No   No
+        2005  
+Date of interview (CMC)                        MV008                     52    4    N    I    1    0   No   No
+Respondent's month of birth                    MV009                     56    2    N    I    1    0   No   No
+        1:12  
+   (na)       NotAppl
+Respondent's year of birth                     MV010                     58    4    N    I    1    0   No   No
+        1945:1990  
+   (na)            NotAppl
+Date of birth (CMC)                            MV011                     62    4    N    I    1    0   No   No
+   (na)       NotAppl
+Current age - respondent                       MV012                     66    2    N    I    1    0   No   No
+        15:64  
+   (na)        NotAppl
+Age 5-year groups                              MV013                     68    2    N    I    1    0   No   No
+        1   15-19
+        2   20-24
+        3   25-29
+        4   30-34
+        5   35-39
+        6   40-44
+        7   45-49
+        8   50-54
+        9   55-59
+        10  60-64
+   (na)     NotAppl
+Completeness of information                    MV014                     70    1    N    I    1    0   No   No
+        1  Month and year
+        2  Month and age -y imp
+        3  Year and age - m imp
+        4  Y & age - y ignored
+        5  Year - a, m imp
+        6  Age - y, m imp
+        7  Month - a, y imp
+        8  None - all imp
+   (na)    NotAppl
+Result of individual interview                 MV015                     71    1    N    I    1    0   No   No
+        1  Completed
+        2  Not at home
+        3  Postponed
+        4  Refused
+        5  Partly completed
+        6  Incapacitated
+        7  Other
+    (m) 9  Missing
+Day of interview                               MV016                     72    2    N    I    1    0   No   No
+        1:31  
+Primary sampling unit                          MV021                     74    4    N    I    1    0   No   No
+Sample stratum number                          MV022                     78    4    N    I    1    0   No   No
+Sample domain                                  MV023                     82    2    N    I    1    0   No   No
+        0  National
+        1  Brazzaville
+        2  Pointe Noire
+        3  Sud
+        4  Nord
+Region                                         MV024                     84    2    N    I    1    0   No   No
+        1  Brazzaville
+        2  Pointe Noire
+        3  Sud
+        4  Nord
+Type of place of residence                     MV025                     86    1    N    I    1    0   No   No
+        1  Urban
+        2  Rural
+De facto place of residence                    MV026                     87    1    N    I    1    0   No   No
+        0  Capital, large city
+        1  Small city
+        2  Town
+        3  Countryside
+    (m) 9  Missing
+Number of visits                               MV027                     88    1    N    I    1    0   No   No
+        1:5  
+Interviewer identification                     MV028                     89    3    N    I    1    0   No   No
+    (m) 999  Missing
+Keyer identification                           MV029                     92    2    N    I    1    0   No   No
+    (m) 99  Missing
+Field supervisor                               MV030                     94    3    N    I    1    0   No   No
+    (m) 999  Missing
+   (na)      NotAppl
+Field editor                                   MV031                     97    3    N    I    1    0   No   No
+    (m) 999  Missing
+   (na)      NotAppl
+Office editor                                  MV032                    100    2    N    I    1    0   No   No
+    (m) 99  Missing
+   (na)     NotAppl
+Ultimate area selection prob.                  MV033                    102    8    N    I    1    0   No   No
+Line numbers of wives, partners                MV034                    110    2    N    I    8    0   No   No
+        0     Wife not in HH
+        1:90  
+    (m) 99    Missing
+   (na)       NotAppl
+Wife or partner {NA}                           MV034A                   126    1    N    I    8    0   No   No
+        1  Wife
+        2  Partner
+    (m) 9  Missing
+   (na)    NotAppl
+Age of wife/partner                            MV034B                   134    2    N    I    8    0   No   No
+        0:90  
+    (m) 99    Missing
+Number of wives, partners                      MV035                    150    1    N    I    1    0   No   No
+        0    No wives/partners
+        1:8  
+    (m) 9    Missing
+   (na)      NotAppl
+Time interview started                         MV801                    151    4    N    I    1    0   No   No
+    (m) 9999  Missing
+   (na)       NotAppl
+Time interview ended                           MV802                    155    4    N    I    1    0   No   No
+    (m) 9999  Missing
+   (na)       NotAppl
+Length of interview in minutes                 MV803                    159    2    N    I    1    0   No   No
+        0:94  
+        95    95+
+        96    2+ visits
+        97    Inconsistent
+    (m) 99    Missing
+   (na)       NotAppl
+Region                                         MV101                    161    2    N    I    1    0   No   No
+        1  Brazzaville
+        2  Pointe Noire
+        3  Sud
+        4  Nord
+Type of place of residence                     MV102                    163    1    N    I    1    0   No   No
+        1  Urban
+        2  Rural
+Childhood place of residence {NA}              MV103                    164    1    N    I    1    0   No   No
+        0  Capital, large city
+        1  City
+        2  Town
+        3  Countryside
+        4  Abroad
+    (m) 9  Missing
+Years lived in place of res. {NA}              MV104                    165    2    N    I    1    0   No   No
+        0:90  
+        95    Always
+        96    Visitor
+        97    Inconsistent
+        98    Don't know
+    (m) 99    Missing
+Type of place of previous res. {NA}            MV105                    167    1    N    I    1    0   No   No
+        0  Capital, large city
+        1  City
+        2  Town
+        3  Countryside
+        4  Abroad
+    (m) 9  Missing
+   (na)    NotAppl
+Highest educational level                      MV106                    168    1    N    I    1    0   No   No
+        0  No education
+        1  Primary
+        2  Secondary
+        3  Higher
+    (m) 9  Missing
+Highest year of education                      MV107                    169    2    N    I    1    0   No   No
+    (m) 99  Missing
+   (na)     NotAppl
+Religion                                       MV130                    171    2    N    I    1    0   No   No
+        1   Catholique
+        2   Protestant
+        3   Musulman
+        4   Kimbanguiste
+        5   Arm‚e du Salut
+        6   Zephirin/Matsouaniste/Ngunza
+        7   Adventiste/Jehova
+        8   Animiste
+        10  None
+        96  Other
+    (m) 99  Missing
+   (na)     NotAppl
+Ethnicity                                      MV131                    173    2    N    I    1    0   No   No
+        1   Babémbé
+        2   Badondo
+        3   Bahangala
+        4   Bakamba
+        5   Bakongo
+        6   Bakuni
+        7   Balari
+        8   Balumbu
+        9   Basundi
+        10  Basundi-Kimongo
+        11  Bavili
+        12  Bayombé
+        13  Kabinda
+        14  Mayanga
+        15  Minkengué
+        16  Autres Kongo
+        17  Baboma
+        18  Bakukuya
+        19  Balali
+        20  Bangangoulou
+        21  Bangwengwel
+        22  Batéké
+        23  Batéké-Alima
+        24  Batéké-Kali
+        25  Batsayé
+        26  Batsintséké
+        27  Bakaya
+        28  Mfumu
+        29  Ndziku
+        30  Tégé
+        31  Autres Batékés
+        32  Akwa
+        33  Babéza
+        34  Bamsani
+        35  Bobangui
+        36  Bonga
+        37  Bwéni
+        38  Koyo
+        39  Likuba
+        40  Likwala
+        41  Mboko
+        42  Mbosi
+        43  Moyi
+        44  Ngaré
+        45  Autres Mbosi
+        46  Akélé
+        47  Bambama
+        48  Bandzabi
+        49  Bangélé
+        50  Mbéré
+        51  Autres Mbétis
+        52  Bahumbu
+        53  Bakotas
+        54  Bambamba
+        55  Bandasa
+        56  Bokita
+        57  Autres Kotas
+        58  Balobé
+        59  Bandja
+        60  Bangala
+        61  Bayélé
+        62  Bomasa
+        63  Bomitaba
+        64  Bondongo
+        65  Bongili
+        66  Ikinga
+        67  Isongo
+        68  Kaka
+        69  Mbondjo
+        70  Muzombo
+        71  Ngundi
+        72  Pomo
+        73  Autres Sangha-Likwala
+        74  Békwil
+        75  Bomwali
+        76  Lino
+        77  Ndongonyama
+        78  Autres Makaa-Djem
+        79  Babwisi
+        80  Bapunu
+        81  Batsangui
+        82  Eshira
+        83  Autres Eshira
+        84  Pygmée
+        85  Naturalisé
+        86  Congolais, ethnie non déclaré
+        87  Afrique Centrale
+        88  Afrique de l'Ouest
+        89  Afrique Orientale et Australe
+        90  Afrique du Nord
+        91  Autres pays africains sans sp‚cifier
+        92  Amérique et Caraïbes
+        93  Asie
+        94  Europe et Océanie
+        96  Autre non classifiable
+    (m) 99  Missing
+   (na)     NotAppl
+Education in single years                      MV133                    175    2    N    I    1    0   No   No
+        0:20  
+        97    Inconsistent
+    (m) 99    Missing
+De facto place of residence                    MV134                    177    1    N    I    1    0   No   No
+        0  Capital, large city
+        1  Small city
+        2  Town
+        3  Countryside
+    (m) 9  Missing
+Usual resident or visitor                      MV135                    178    1    N    I    1    0   No   No
+        1  Usual resident
+        2  Visitor
+    (m) 9  Missing
+Number of household members                    MV136                    179    2    N    I    1    0   No   No
+Number of eligible men in HH                   MV138                    181    2    N    I    1    0   No   No
+Educational attainment                         MV149                    183    1    N    I    1    0   No   No
+        0  No education
+        1  Incomplete primary
+        2  Complete primary
+        3  Incomplete secondary
+        4  Complete secondary
+        5  Higher
+    (m) 9  Missing
+Relationship to household head                 MV150                    184    2    N    I    1    0   No   No
+        1   Head
+        2   Husband
+        3   Son
+        4   Son-in-law
+        5   Grand-son
+        6   Father
+        7   Father-in-law
+        8   Brother
+        9   
+        10  Other relative
+        11  Adopted/foster child
+        12  Not related
+        15  Son/daughter of wife or husband {CG}
+        98  DK
+    (m) 99  Missing
+Sex of household head                          MV151                    186    1    N    I    1    0   No   No
+        1  Male
+        2  Female
+Age of household head                          MV152                    187    2    N    I    1    0   No   No
+        0:96  
+        97    97+
+        98    DK
+    (m) 99    Missing
+Literacy                                       MV155                    189    1    N    I    1    0   No   No
+        0  Cannot read at all
+        1  Able to read only parts of sentence
+        2  Able to read whole sentence
+        3  No card with required language
+        4  Blind/visually impaired
+    (m) 9  Missing
+Ever participated in a literacy program outsideMV156                    190    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Frequency of reading newpaper or magazine      MV157                    191    1    N    I    1    0   No   No
+        0  Not at all
+        1  Less than once a week
+        2  At least once a week
+        3  Almost every day
+    (m) 9  Missing
+   (na)    NotAppl
+Frequency of listening to radio                MV158                    192    1    N    I    1    0   No   No
+        0  Not at all
+        1  Less than once a week
+        2  At least once a week
+        3  Almost every day
+    (m) 9  Missing
+Frequency of watching television               MV159                    193    1    N    I    1    0   No   No
+        0  Not at all
+        1  Less than once a week
+        2  At least once a week
+        3  Almost every day
+    (m) 9  Missing
+Times away from home in last 12 months {NA}    MV167                    194    2    N    I    1    0   No   No
+        0:50  
+        97    Inconsistent
+        98    DK
+    (m) 99    Missing
+Away for more than one month {NA}              MV168                    196    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Wealth index                                   MV190                    197    1    N    I    1    0   No   No
+        1  Poorest
+        2  Poorer
+        3  Middle
+        4  Richer
+        5  Richest
+   (na)    Not Applicable
+Wealth index factor score (5 decimals)         MV191                    198    8    N    I    1    0   No   No
+   (na)           Not Applicable
+Total children ever born                       MV201                    206    2    N    I    1    0   No   No
+        0:50  
+Sons at home                                   MV202                    208    2    N    I    1    0   No   No
+        0:40  
+Daughters at home                              MV203                    210    2    N    I    1    0   No   No
+        0:40  
+Sons elsewhere                                 MV204                    212    2    N    I    1    0   No   No
+        0:40  
+Daughters elsewhere                            MV205                    214    2    N    I    1    0   No   No
+        0:40  
+Sons who have died                             MV206                    216    2    N    I    1    0   No   No
+        0:20  
+Daughters who have died                        MV207                    218    2    N    I    1    0   No   No
+        0:20  
+Age of respondent at 1st birth {NA}            MV212                    220    2    N    I    1    0   No   No
+        10:64  
+    (m) 99     Missing
+   (na)        NotAppl
+Partner currently pregnant {NA}                MV213                    222    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  Unsure
+    (m) 9  Missing
+   (na)    NotAppl
+Knowledge of ovulatory cycle {NA}              MV217                    223    1    N    I    1    0   No   No
+        1  During her period
+        2  After period ended
+        3  Middle of the cycle
+        4  Before period begins
+        5  At any time
+        6  Other
+        8  Don't know
+    (m) 9  Missing
+Number of living children                      MV218                    224    2    N    I    1    0   No   No
+        0:40  
+Current pregnancy wanted {NA}                  MV225                    226    1    N    I    1    0   No   No
+        1  Then
+        2  Later
+        3  Not at all
+    (m) 9  Missing
+   (na)    NotAppl
+Women fathered children with {NA}              MV245                    227    2    N    I    1    0   No   No
+        0:20  
+    (m) 99    Missing
+Married to mother when first child was born {NAMV246                    229    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Age of youngest child {NA}                     MV247                    230    2    N    I    1    0   No   No
+        0:41  
+    (m) 99    Missing
+   (na)       Not applicalbe
+Antenatal check-ups for the mother for youngestMV248                    232    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK
+    (m) 9  Missing
+   (na)    Not applicable
+Respondent present during check-ups for youngesMV249                    233    1    N    I    1    0   No   No
+        0  Not present
+        1  Present
+    (m) 9  Missing
+   (na)    Not applicable
+Place of birth of youngest child {NA}          MV250                    234    1    N    I    1    0   No   No
+        1  Hospital, health facility
+        2  Other
+    (m) 9  Missing
+   (na)    Not applicable
+Reason for not delivering youngest child in heaMV251                    235    2    N    I    1    0   No   No
+        1   Cost too much
+        2   Facility closed
+        3   Too far/no transportation
+        4   Don't trust facility/poor quality service
+        5   No female provider
+        6   Not the first child
+        7   Mother did not think necessary
+        8   Respondent did not think necessary
+        9   Family did not think necessary
+        96  Other
+        98  DK
+    (m) 99  Missing
+   (na)     Not applicable
+Drinking pattern when child has diarrhea {NA}  MV252                    237    1    N    I    1    0   No   No
+        0  Nothing to drink
+        2  Much less
+        3  Somewhat less
+        4  About the same
+        5  More
+        8  Don't know
+    (m) 9  Missing
+   (na)    NotAppl
+Knowledge of any method {NA}                   MV301                    238    1    N    I    1    0   No   No
+        0  Knows no method
+        1  Knows only folkloric
+        2  Knows only trad. mth
+        3  Knows modern method
+Ever use of any method {NA}                    MV302                    239    1    N    I    1    0   No   No
+        0  Never used
+        1  Used only folkloric
+        2  Used only trad. meth
+        3  Used modern method
+Type of method {NA}                            M304A                    240    1    N    I   20    0   No   No
+        1  Modern method
+        2  Traditional method
+        3  Folkloric method
+Knows method {NA}                              MV304                    260    1    N    I   20    0   No   No
+        0  No
+        1  Yes
+        8  Not asked
+    (m) 9  Missing
+Ever used method {NA}                          MV305                    280    1    N    I   20    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Method currently used {NA}                     MV307                    300    1    N    I   20    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Current contraceptive method {NA}              MV312                    320    2    N    I    1    0   No   No
+        0   Not using
+        1   Pill
+        2   IUD
+        3   Injections
+        4   Diaphragm
+        5   Condom
+        6   Female Sterilization
+        7   Male Sterilization
+        8   Periodic Abstinence
+        9   Withdrawal
+        10  Other
+        11  Norplant
+        12  Abstinence
+        13  Lactational amenorrhea
+        14  Female condom
+        15  Foam or jelly
+        16  
+        17  Specific method 1
+        18  Specific method 2
+        19  Specific method 3
+        20  Specific method 4
+        98  Don't know
+    (m) 99  Missing
+Current use by method type {NA}                MV313                    322    1    N    I    1    0   No   No
+        0  No method
+        1  Folkloric method
+        2  Traditional method
+        3  Modern method
+        8  Don't know
+    (m) 9  Missing
+Brand of condom used {NA}                      MV323A                   323    2    N    I    1    0   No   No
+        98  Don't know
+    (m) 99  Missing
+   (na)     NotAppl
+Cost of condoms last time obtained {NA}        MV325B                   325    7    N    I    1    0   No   No
+        9999995  Free
+        9999998  Don't know
+    (m) 9999999  Missing
+   (na)          NotAppl
+Shown condom package {NA}                      MV372A                   332    1    N    I    1    0   No   No
+        0  Package not seen
+        1  Package seen
+    (m) 9  Missing
+   (na)    NotAppl
+Heard FP on radio last months {NA}             MV384A                   333    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+Heard FP on TV last months {NA}                MV384B                   334    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+Heard FP newspaper last months {NA}            MV384C                   335    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+Discuused FP with health worker last few monthsMV395                    336    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        2  Depends
+        8  DK
+    (m) 9  Missing
+Can a woman who is breastfeeding get pregnant {MV396                    337    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        2  Depends
+        8  DK
+    (m) 9  Missing
+How many condoms did get last time {NA}        MV3A09B                  338    3    N    I    1    0   No   No
+        998  Don't know
+    (m) 999  Missing
+   (na)      NotAppl
+Source of condoms {NA}                         MV3B17                   341    2    N    I    1    0   No   No
+        10  PUBLIC SECTOR
+        11  Government hospital
+        12  Government health center
+        13  FP clinic
+        14  Mobile clinic
+        15  Field worker
+        16  Other public
+        20  PRIVATE MEDICAL SECTOR
+        21  Private hospital, clinic
+        22  Pharmacy
+        23  Private doctor
+        24  Mobile clinic
+        25  Field worker
+        26  Other private medical
+        30  OTHER SOURCE
+        31  Shop
+        32  Church
+        33  Friend, relative
+        34  School
+        96  OTHER
+    (m) 99  Missing
+   (na)     NotAppl
+Contraception is woman's business, man should nMV3B25A                  343    1    N    I    1    0   No   No
+        0  Disagree
+        1  Agree
+        8  DK
+    (m) 9  Missing
+Women who use contraception become promiscuous MV3B25B                  344    1    N    I    1    0   No   No
+        0  Disagree
+        1  Agree
+        8  DK
+    (m) 9  Missing
+Smokes cigarettes {NA}                         MV463A                   345    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Smokes pipe {NA}                               MV463B                   346    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Cheweing  tobacco {NA}                         MV463C                   347    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Smokes Snuff {NA}                              MV463D                   348    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Smokes country specific {NA}                   MV463E                   349    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Smokes country specific {NA}                   MV463F                   350    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Smokes country specific {NA}                   MV463G                   351    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Smokes other {NA}                              MV463X                   352    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Smokes nothing {NA}                            MV463Z                   353    1    N    I    1    0   No   No
+        0  No
+        1  Yes, smokes nothing
+    (m) 9  Missing
+   (na)    NotAppl
+Number of cigarettes in last 24 hours {NA}     MV464                    354    2    N    I    1    0   No   No
+        0:95  
+        98    
+    (m) 99    Missing
+   (na)       NotAppl
+Heard of Tuberculosis or TB {NA}               MV474                    356    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+Tuberculosis spread by: air when coughing or snMV474A                   357    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+Tuberculosis spread by: sharing utensils {NA}  MV474B                   358    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+Tuberculosis spread by: touching a person with MV474C                   359    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+Tuberculosis spread through food {NA}          MV474D                   360    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+Tuberculosis spread by: sexual contact {NA}    MV474E                   361    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+Tuberculosis spread by: mosquito bites {NA}    MV474F                   362    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+Tuberculosis spread by: CS {NA}                MV474G                   363    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+Tuberculosis spread by: CS {NA}                MV474H                   364    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+Tuberculosis spread by: CS {NA}                MV474I                   365    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+Tuberculosis spread by: CS {NA}                MV474J                   366    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+Tuberculosis spread by: other {NA}             MV474X                   367    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+Tuberculosis spread by: don't know {NA}        MV474Z                   368    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+Can tuberculosis be cured {NA}                 MV475                    369    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  Don't know
+    (m) 9  Missing
+   (na)    Not applicable
+Keep secret when family member gets TB {NA}    MV476                    370    1    N    I    1    0   No   No
+        0  No
+        1  Yes, remain a secret
+        8  Don't know / not sure / depends
+   (na)    Not applicable
+Number of injections in last 12 months {CG: in MV477                    371    2    N    I    1    0   No   No
+        0     None
+        1:89  
+        90    90+
+        98    Don't know
+    (m) 99    Missing
+   (na)       Not applicable
+Injections administered by a health worker     MV478                    373    2    N    I    1    0   No   No
+        0     None
+        1:89  
+        90    90+
+        98    Don't know
+    (m) 99    Missing
+   (na)       Not applicable
+Source for injection by health worker          MV479                    375    2    N    I    1    0   No   No
+        10  PUBLIC SECTOR
+        11  Government hospital
+        12  Government health center
+        16  Other public
+        20  PRIVATE MEDICAL
+        21  Private hospital/clinic/doctor
+        22  Dental clinic/office
+        23  Pharmacy
+        24  Office or home of nurse/health worker
+        26  Other private medical
+        30  OTHERS NON-MEDICAL
+        31  Other place at home
+        36  Other non-medical {CG: added}
+        96  Other
+    (m) 99  Missing
+   (na)     Not applicable
+Syinge and needle from new, unopened package   MV480                    377    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  Don't know
+    (m) 9  Missing
+   (na)    Not applicable
+Covered by health insurance {NA}               MV481                    378    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+Health insurance type: mutual/community organizMV481A                   379    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+Health insurance type: provided by employer {NAMV481B                   380    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+Health insurance type: social security {NA}    MV481C                   381    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+Health insurance type: private/commercial purchMV481D                   382    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+Health insurance type: CS {NA}                 MV481E                   383    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+Health insurance type: CS {NA}                 MV481F                   384    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+Health insurance type: CS {NA}                 MV481G                   385    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+Health insurance type: CS {NA}                 MV481H                   386    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+Health insurance type: other {NA}              MV481X                   387    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+Arrange care of biological children under age 1MV482A                   388    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  Unsure
+    (m) 9  Missing
+   (na)    Not applicable
+Primary caregiver of children under age 18 {NA}MV482B                   389    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+Arrange care of non-biological children < 18 {NMV482C                   390    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  Unsure
+    (m) 9  Missing
+   (na)    Not applicable
+Is respondent circumcised {NA}                 MV483                    391    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  Don't know
+    (m) 9  Missing
+   (na)    Not applicable
+Current marital status                         MV501                    392    1    N    I    1    0   No   No
+        0  Never married
+        1  Married
+        2  Living together
+        3  Widowed
+        4  Divorced
+        5  Not living together
+    (m) 9  Missing
+Currently/formerly/never marr.                 MV502                    393    1    N    I    1    0   No   No
+        0  Never married
+        1  Currently married
+        2  Formerly married
+    (m) 9  Missing
+Number of unions                               MV503                    394    1    N    I    1    0   No   No
+        1  Once
+        2  More than once
+    (m) 9  Missing
+   (na)    NotAppl
+Wife/partner lives with respondent             MV504                    395    1    N    I    1    0   No   No
+        1  Living with him
+        2  Staying elsewhere
+    (m) 9  Missing
+   (na)    NotAppl
+Number of wives, partners                      MV505                    396    2    N    I    1    0   No   No
+        0:20  
+    (m) 99    Missing
+   (na)       NotAppl
+Month of first marriage                        MV507                    398    2    N    I    1    0   No   No
+        1:12  
+   (na)       NotAppl
+Year of first marriage                         MV508                    400    4    N    I    1    0   No   No
+        1944:2005  
+   (na)            NotAppl
+Date of first marriage (CMC)                   MV509                    404    4    N    I    1    0   No   No
+   (na)       NotAppl
+Completeness of date inform.                   MV510                    408    1    N    I    1    0   No   No
+        1  Month and year
+        2  Month and age -y imp
+        3  Year and age - m imp
+        4  
+        5  Year - a, m imp
+        6  Age - y, m imp
+        7  Month - a, y imp
+        8  None - all imp
+   (na)    NotAppl
+Age at first marriage                          MV511                    409    2    N    I    1    0   No   No
+        10:64  
+   (na)        NotAppl
+Years since first marriage                     MV512                    411    2    N    I    1    0   No   No
+        0:54  
+   (na)       NotAppl
+Marital duration (grouped)                     MV513                    413    1    N    I    1    0   No   No
+        0  Never married
+        1  0-4
+        2  5-9
+        3  10-14
+        4  15-19
+        5  20-24
+        6  25-29
+        7  30+
+Age at first intercourse                       MV525                    414    2    N    I    1    0   No   No
+        0     Not had intercourse
+        1:49  
+        96    At first union
+        97    Inconsistent
+        98    Don't know
+    (m) 99    Missing
+Time since last intercourse                    MV527                    416    3    N    I    1    0   No   No
+        100      <1 day ago
+        101      Days: 1
+        102:130  
+        201      Weeks: 1
+        202:218  
+        301      Months: 1
+        302:311  
+        401      Years: 1
+        402:430  
+        995      Within last 4 weeks
+        996      Before last birth
+        997      Inconsistent
+        998      Don't know
+    (m) 999      Missing
+   (na)          NotAppl
+Time since last intercourse(g)                 MV528                    419    2    N    I    1    0   No   No
+        0:30  
+        31    31+ days
+        95    Within last 4 weeks
+        96    Before last birth
+        97    Inconsistent
+        98    Don't know
+    (m) 99    Missing
+   (na)       NotAppl
+Time since last intercourse(imputed)           MV529                    421    3    N    I    1    0   No   No
+        0:500  
+        995    Within last 4 weeks
+        996    Before last birth
+        997    Inconsistent
+        998    Don't know
+    (m) 999    Missing
+   (na)        NotAppl
+Age at first intercourse (imp)                 MV531                    424    2    N    I    1    0   No   No
+        0     Not had intercourse
+        1:64  
+        97    Inconsistent
+        98    Don't know
+    (m) 99    Missing
+Flag for MV531                                 MV532                    426    1    N    I    1    0   No   No
+        0  No flag
+        1  After interview
+        2  After concep >= 1 yr
+        3  After concep < 1 yr
+        4  At marr, never marr
+        5  At marr,after concep
+        6  After marriage
+   (na)    NotAppl
+Have ever been married                         MV535                    427    1    N    I    1    0   No   No
+        0  No
+        1  Formerly married
+        2  Lived with a woman
+        3  Both, formerly married and lived with a woman
+    (m) 9  Missing
+   (na)    NotAppl
+Recent sexual activity                         MV536                    428    1    N    I    1    0   No   No
+        0  Never had intercourse
+        1  Active in last 4 weeks
+        3  Not active in last 4 weeks
+    (m) 9  Missing
+Intend to wait until married to have sex       MV541                    429    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  Don't know
+    (m) 9  Missing
+   (na)    NotAppl
+Fertility preference {NA}                      MV602                    430    1    N    I    1    0   No   No
+        1  Have another
+        2  Undecided
+        3  No more
+        4  Sterilized
+        5  Wife declared infecund
+        6  Never had sex
+        7  Man declared infecund
+        8  Man has no partner
+    (m) 9  Missing
+   (na)    NotAppl
+Preferred waiting time {NA}                    MV603                    431    3    N    I    1    0   No   No
+        100:199  
+        200:299  
+        993      After marriage
+        994      Soon, now
+        995      
+        996      Other, Non-numeric
+        997      Inconsistent
+        998      Don't know
+    (m) 999      Missing
+   (na)          NotAppl
+Preferred waiting time (grpd) {NA}             MV604                    434    1    N    I    1    0   No   No
+        0  <12 months
+        1  1 year
+        2  2 years
+        3  3 years
+        4  4 years
+        5  5 years
+        6  6+ years
+        7  Non-numeric
+        8  Don't know
+    (m) 9  Missing
+   (na)    NotAppl
+Desire for more children {NA}                  MV605                    435    1    N    I    1    0   No   No
+        1  Wants within 2 years
+        2  Wants after 2+ years
+        3  Wants, unsure timing
+        4  Undecided
+        5  Wants no more
+        6  Sterilized
+        7  Declared infecund
+        8  Never had sex
+    (m) 9  Missing
+   (na)    NotAppl
+Ideal number of children                       MV613                    436    2    N    I    1    0   No   No
+        0:50  
+        96    Non-numeric response
+        98    DK
+    (m) 99    Missing
+Ideal number of children (grp)                 MV614                    438    1    N    I    1    0   No   No
+        0:5  
+        6    6+
+        7    Non-numeric response
+Time for future birth {NA}                     MV616                    439    3    N    I    1    0   No   No
+        100:299  
+        993      After marriage
+        994      Soon/now
+        995      Can't get pregnant
+        996      Other
+        998      DK
+    (m) 999      Missing
+   (na)          NotAppl
+Wifes desire for children {NA}                 MV621                    442    1    N    I    1    0   No   No
+        1  Both want same
+        2  Wife wants more
+        3  Wife wants fewer
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+Ideal number of boys                           MV627                    443    2    N    I    1    0   No   No
+        0:50  
+        96    Other
+        97    
+        98    DK
+    (m) 99    Missing
+Ideal number of girls                          MV628                    445    2    N    I    1    0   No   No
+        0:50  
+        96    Other
+        97    
+        98    DK
+    (m) 99    Missing
+Ideal number of either sex                     MV629                    447    2    N    I    1    0   No   No
+        0:50  
+        96    Other
+        97    
+        98    DK
+    (m) 99    Missing
+Problem if became pregnant {NA}                MV631                    449    1    N    I    1    0   No   No
+        1  Big problem
+        2  Small problem
+        3  No problem
+        4  Says she can't get pregnant /not having sex
+    (m) 9  Missing
+   (na)    NotAppl
+Reason for not having sex: Husband has STD {NA}MV633A                   450    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK
+    (m) 9  Missing
+Reason for not having sex: Husband has other woMV633B                   451    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK
+    (m) 9  Missing
+Reason for not having sex: Recent birth {NA}   MV633C                   452    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK
+    (m) 9  Missing
+Reason for not having sex: Tired, mood {NA}    MV633D                   453    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK
+    (m) 9  Missing
+Reason for not having sex: CS {NA}             MV633E                   454    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+Reason for not having sex: CS {NA}             MV633F                   455    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+Reason for not having sex: CS {NA}             MV633G                   456    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+Husband has right to: get angry {NA}           MV634A                   457    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK, Depends
+    (m) 9  Missing
+Husband has right to: refuse financial support MV634B                   458    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK, Depends
+    (m) 9  Missing
+Husband has right to: use force for unwanted seMV634C                   459    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK, Depends
+    (m) 9  Missing
+Husband has right to: have sex with another womMV634D                   460    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK, Depends
+    (m) 9  Missing
+Respondent currently working                   MV714                    461    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+Have a job from which respondent was absent {NAMV714A                   462    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+Respondent's occupation                        MV716                    463    3    N    I    1    0   No   No
+        0    Not working {CG: Sans occupation, retraite, etc}
+        11   Membres de l'exécutif et des corps législatifs, et cadres supérieurs de l'administration publique
+        12   Directeurs de société
+        13   Dirigeants et gérants
+        21   Spécialistes des sciences physiques, mathématiques et techniques
+        22   Spécialistes des sciences de la vie et de la santé
+        23   Spécialistes de l'enseignement
+        24   Autres spécialistes des professions intellectuelles et scientifiques
+        31   Professions intermédiaires des sciences physiques et techniques
+        32   Professions intermédiaires des sciences de la vie et de la santé
+        33   Professions intermédiaires de l'enseignement
+        34   Autres professions intermédiaires
+        41   Employés de bureau
+        42   Employés de réception, caissiers, guichetiers et assimilés
+        51   Personnel des services directs aux particuliers et des services de protection et de sécurité
+        52   Vendeurs, démonstrateurs et modèles
+        61   Agriculteurs et ouvriers qualifiés de l'agriculture
+        62   Agriculteurs et ouvriers non qualifiés de l'agriculture
+        63   Pêcheurs et autres occupations assimilées
+        71   Artisans et ouvriers des métiers de l'extraction et du bâtiment
+        72   Artisans et ouvriers des métiers de la métallurgie, de la construction mécanique et assimilés
+        73   Artisans et ouvriers de la mécanique de précision, des métiers d'art, de l'imprimerie et assimilé
+        74   Autres artisans et ouvriers des métiers de type artisanal
+        81   Conducteurs d'installations et de matériels fixes et assimilés
+        82   Conducteurs de machines et ouvriers de l'assemblage
+        83   Conducteurs de véhicules et d'engins lourds de levage et de manœuvre
+        91   Employés non qualifiés des services de la vente
+        92   Manœuvres de l'agriculture, de la pêche et assimilés
+        93   Manœuvres des mines, du bâtiment et des travaux publics, des industries manufacturières et des tr
+        95   Forces armées
+        996  Other
+    (m) 999  Missing
+Respondent's occupation                        MV717                    466    2    N    I    1    0   No   No
+        0   Not working
+        1   Prof., Tech., Manag.
+        2   Clerical
+        3   Sales
+        4   Agric-self employed
+        5   Agric-employee
+        6   Household & domestic
+        7   Services
+        8   Skilled manual
+        9   Unskilled manual
+        98  Don't know
+    (m) 99  Missing
+   (na)     NotAppl
+Work for family, others, self                  MV719                    468    1    N    I    1    0   No   No
+        1  For family member
+        2  For someone else
+        3  Self-employed
+    (m) 9  Missing
+   (na)    NotAppl
+Works at home or away {NA}                     MV721                    469    1    N    I    1    0   No   No
+        1  At home
+        2  Away
+    (m) 9  Missing
+   (na)    NotAppl
+Worked in last 12 months                       MV731                    470    1    N    I    1    0   No   No
+        0  No
+        1  In the past year
+        2  Currently working
+    (m) 9  Missing
+Employment all year/seasonal                   MV732                    471    1    N    I    1    0   No   No
+        1  All year
+        2  Seasonal
+        3  Occasional
+    (m) 9  Missing
+   (na)    NotAppl
+Who decides how to spend money {NA}            MV739                    472    1    N    I    1    0   No   No
+        1  Respondent alone
+        2  Respondent and husband/partner
+        3  Respondent and other person
+        4  Husband/partner alone
+        5  Someone else
+    (m) 9  Missing
+   (na)    NotAppl
+Type of land where resp. works                 MV740                    473    1    N    I    1    0   No   No
+        0  Own land
+        1  Family land
+        2  Someone else's land
+        3  Rented land
+        5  Community land {CG: added!}
+        8  Don't know
+    (m) 9  Missing
+   (na)    NotAppl
+Type of earnings for work                      MV741                    474    1    N    I    1    0   No   No
+        0  Not paid
+        1  Cash only
+        2  Cash and kind
+        3  In kind only
+    (m) 9  Missing
+   (na)    NotAppl
+Final say on own health care {NA}              MV743A                   475    1    N    I    1    0   No   No
+        1  Respondent alone
+        2  Respondent and wife/partner
+        3  Respondent and other person
+        4  Wife/partner alone
+        5  Someone else
+        6  Decision not made/not applicable
+        8  DK/depends
+    (m) 9  Missing
+   (na)    NotAppl
+Final say on making large household purchases {MV743B                   476    1    N    I    1    0   No   No
+        1  Respondent alone
+        2  Respondent and wife/partner
+        3  Respondent and other person
+        4  Wife/partner alone
+        5  Someone else
+        6  Decision not made/not applicable
+        8  DK/depends
+    (m) 9  Missing
+Final say on making household purchases for daiMV743C                   477    1    N    I    1    0   No   No
+        1  Respondent alone
+        2  Respondent and wife/partner
+        3  Respondent and other person
+        4  Wife/partner alone
+        5  Someone else
+        6  Decision not made/not applicable
+        8  DK/depends
+    (m) 9  Missing
+Final say on visits to family or relatives {NA}MV743D                   478    1    N    I    1    0   No   No
+        1  Respondent alone
+        2  Respondent and wife/partner
+        3  Respondent and other person
+        4  Wife/partner alone
+        5  Someone else
+        6  Decision not made/not applicable
+        8  DK/depends
+    (m) 9  Missing
+Final say on food to be cooked each day {NA}   MV743E                   479    1    N    I    1    0   No   No
+        1  Respondent alone
+        2  Respondent and wife/partner
+        3  Respondent and other person
+        4  Wife/partner alone
+        5  Someone else
+        6  Decision not made/not applicable
+        8  DK/depends
+    (m) 9  Missing
+Final say on deciding what to do with money wifMV743F                   480    1    N    I    1    0   No   No
+        1  Respondent alone
+        2  Respondent and wife/partner
+        3  Respondent and other person
+        4  Wife/partner alone
+        5  Someone else
+        6  Decision not made/not applicable
+        8  DK/depends
+    (m) 9  Missing
+Final say on deciding how many children to haveMV743G                   481    1    N    I    1    0   No   No
+        1  Respondent alone
+        2  Respondent and wife/partner
+        3  Respondent and other person
+        4  Wife/partner alone
+        5  Someone else
+        6  Decision not made/not applicable
+        8  DK/depends
+    (m) 9  Missing
+Wife beating justified if she goes out without MV744A                   482    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  Don't know
+    (m) 9  Missing
+Wife beating justified if she neglects the chilMV744B                   483    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  Don't know
+    (m) 9  Missing
+Wife beating justified if she argues with him {MV744C                   484    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  Don't know
+    (m) 9  Missing
+Wife beating justified if she refuses to have sMV744D                   485    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  Don't know
+    (m) 9  Missing
+Wife beating justified if she burns the food {NMV744E                   486    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  Don't know
+    (m) 9  Missing
+Childbearing is a woman's concern {NA}         MV747A                   487    1    N    I    1    0   No   No
+        0  Disagree
+        1  Agree
+        8  Don't know
+    (m) 9  Missing
+   (na)    Not applicable
+Important for mother/child health to get assistMV747B                   488    1    N    I    1    0   No   No
+        0  Disagree
+        1  Agree
+        8  Don't know
+    (m) 9  Missing
+   (na)    Not applicable
+Heard sexual transmit. disease                 MV750                    489    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK
+    (m) 9  Missing
+Ever heard of AIDS                             MV751                    490    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+Reduce risk of getting AIDS by not having sex aMV754BP                  491    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  Don't know
+    (m) 9  Missing
+   (na)    Not applicable
+Reduce chances of AIDS by always using condoms MV754CP                  492    1    N    I    1    0   No   No
+        0  No
+        1  Reduce chances of AIDS by always using condoms during sex
+        8  Don't know
+    (m) 9  Missing
+   (na)    NotAppl
+Reduce chance of AIDS: have 1 sex partner with MV754DP                  493    1    N    I    1    0   No   No
+        0  No
+        1  Reduce chance of AIDS: have 1 sex partnr with no oth partner
+        8  Don't know
+    (m) 9  Missing
+   (na)    NotAppl
+Get AIDS from mosquito bites                   MV754JP                  494    1    N    I    1    0   No   No
+        0  No
+        1  Get AIDS from mosquito bites
+        8  Don't know
+    (m) 9  Missing
+   (na)    NotAppl
+Get AIDS by sharing food with person who has AIMV754WP                  495    1    N    I    1    0   No   No
+        0  No
+        1  Get AIDS by sharing food with person who has AIDS
+        8  Don't know
+    (m) 9  Missing
+   (na)    NotAppl
+Can a healthy person have AIDS                 MV756                    496    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+Last intercourse used condom                   MV761                    497    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+Intercourse with other woman (1) used condom   MV761B                   498    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+Intercourse with other woman (2) used condom   MV761C                   499    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+Source for condoms: Government hospital        MV762AA                  500    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Government hospital
+    (m) 9  Missing
+   (na)    NotAppl
+Source for condoms: Government health center/PMMV762AB                  501    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Government health center/post
+    (m) 9  Missing
+   (na)    NotAppl
+Source for condoms: Family planning clinic {NA}MV762AC                  502    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Family planning clinic
+    (m) 9  Missing
+   (na)    NotAppl
+Source for condoms: Mobile clinic {NA}         MV762AD                  503    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Mobile clinic
+    (m) 9  Missing
+   (na)    NotAppl
+Source for condoms: Public field worker {NA}   MV762AE                  504    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Public field worker
+    (m) 9  Missing
+   (na)    NotAppl
+Source for condoms: Other public {NA}          MV762AF                  505    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Other public
+    (m) 9  Missing
+   (na)    NotAppl
+Source for condoms: Public CS {NA}             MV762AG                  506    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Public CS
+    (m) 9  Missing
+   (na)    NotAppl
+Source for condoms: Public CS {CG: Poste de sanMV762AH                  507    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Public CS
+    (m) 9  Missing
+   (na)    NotAppl
+Source for condoms: Public CS {NA}             MV762AI                  508    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Public CS
+    (m) 9  Missing
+   (na)    NotAppl
+Source for condoms: Private hosp, clinic       MV762AJ                  509    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Private hosp, clinic
+    (m) 9  Missing
+   (na)    NotAppl
+Source for condoms: Pharmacy                   MV762AK                  510    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Pharmacy
+    (m) 9  Missing
+   (na)    NotAppl
+Source for condoms: Private doctor {CG: CabinetMV762AL                  511    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Private doctor
+    (m) 9  Missing
+   (na)    NotAppl
+Source for condoms: Private mobile clinic {NA} MV762AM                  512    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Private mobile clinic
+    (m) 9  Missing
+   (na)    NotAppl
+Source for condoms: Private field worker {NA}  MV762AN                  513    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Private field worker
+    (m) 9  Missing
+   (na)    NotAppl
+Source for condoms: Other private {NA}         MV762AO                  514    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Other private
+    (m) 9  Missing
+   (na)    NotAppl
+Source for condoms: Private CS {CG: Cabinet soiMV762AP                  515    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Private CS
+    (m) 9  Missing
+   (na)    NotAppl
+Source for condoms: Private CS {CG: Centre mediMV762AQ                  516    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Private CS
+    (m) 9  Missing
+   (na)    NotAppl
+Source for condoms: Private CS {CG: Ass. CongolMV762AR                  517    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Private CS
+    (m) 9  Missing
+   (na)    NotAppl
+Source for condoms: Shop {NA}                  MV762AS                  518    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Shop
+    (m) 9  Missing
+   (na)    NotAppl
+Source for condoms: Church {NA}                MV762AT                  519    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Church
+    (m) 9  Missing
+   (na)    NotAppl
+Source for condoms: Friends, relatives         MV762AU                  520    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Friends, relatives
+    (m) 9  Missing
+   (na)    NotAppl
+Source for condoms: CS/Other seudo-medical sourMV762AV                  521    1    N    I    1    0   No   No
+        0  No
+        1  Yes: CS/Other seudo-medical sources {CG: Tradi-therapeute, Centre medicine spirituelle}
+    (m) 9  Missing
+   (na)    NotAppl
+Source for condoms: CS/Other local shopping souMV762AW                  522    1    N    I    1    0   No   No
+        0  No
+        1  Yes: CS/Other local shopping sources {CG: Vendeur ambulant/pharmacie par terre, Boutique/marche, Ba
+    (m) 9  Missing
+   (na)    NotAppl
+Source for condoms: Other                      MV762AX                  523    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Other
+    (m) 9  Missing
+   (na)    NotAppl
+Source for condoms: DK source for condom       MV762AZ                  524    1    N    I    1    0   No   No
+        0  No
+        1  Yes: DK source for condom
+    (m) 9  Missing
+   (na)    NotAppl
+Source for female condoms: Government hospital MV762BA                  525    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Government hospital
+    (m) 9  Missing
+   (na)    NotAppl
+Source for female condoms: Government health ceMV762BB                  526    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Government health center/post
+    (m) 9  Missing
+   (na)    NotAppl
+Source for female condoms: Family planning clinMV762BC                  527    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Family planning clinic
+    (m) 9  Missing
+   (na)    NotAppl
+Source for female condoms: Mobile clinic {NA}  MV762BD                  528    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Mobile clinic
+    (m) 9  Missing
+   (na)    NotAppl
+Source for female condoms: Public field worker MV762BE                  529    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Public field worker
+    (m) 9  Missing
+   (na)    NotAppl
+Source for female condoms: Other public {NA}   MV762BF                  530    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Other public
+    (m) 9  Missing
+   (na)    NotAppl
+Source for female condoms: Public CS {NA}      MV762BG                  531    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Public CS
+    (m) 9  Missing
+   (na)    NotAppl
+Source for female condoms: Public CS {NA}      MV762BH                  532    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Public CS
+    (m) 9  Missing
+   (na)    NotAppl
+Source for female condoms: Public CS {NA}      MV762BI                  533    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Public CS
+    (m) 9  Missing
+   (na)    NotAppl
+Source for female condoms: Private hosp, clinicMV762BJ                  534    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Private hosp, clinic
+    (m) 9  Missing
+   (na)    NotAppl
+Source for female condoms: Pharmacy {NA}       MV762BK                  535    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Pharmacy
+    (m) 9  Missing
+   (na)    NotAppl
+Source for female condoms: Private doctor {NA} MV762BL                  536    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Private doctor
+    (m) 9  Missing
+   (na)    NotAppl
+Source for female condoms: Private mobile cliniMV762BM                  537    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Private mobile clinic
+    (m) 9  Missing
+   (na)    NotAppl
+Source for female condoms: Private field workerMV762BN                  538    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Private field worker
+    (m) 9  Missing
+   (na)    NotAppl
+Source for female condoms: Other private {NA}  MV762BO                  539    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Other private
+    (m) 9  Missing
+   (na)    NotAppl
+Source for female condoms: Private CS {NA}     MV762BP                  540    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Private CS
+    (m) 9  Missing
+   (na)    NotAppl
+Source for female condoms: Private CS {NA}     MV762BQ                  541    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Private CS
+    (m) 9  Missing
+   (na)    NotAppl
+Source for female condoms: Private CS {NA}     MV762BR                  542    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Private CS
+    (m) 9  Missing
+   (na)    NotAppl
+Source for female condoms: Shop {NA}           MV762BS                  543    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Shop
+    (m) 9  Missing
+   (na)    NotAppl
+Source for female condoms: Church {NA}         MV762BT                  544    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Church
+    (m) 9  Missing
+   (na)    NotAppl
+Source for female condoms: Friends, relatives {MV762BU                  545    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Friends, relatives
+    (m) 9  Missing
+   (na)    NotAppl
+Source for female condoms: CS {NA}             MV762BV                  546    1    N    I    1    0   No   No
+        0  No
+        1  Yes: CS
+    (m) 9  Missing
+   (na)    NotAppl
+Source for female condoms: CS {NA}             MV762BW                  547    1    N    I    1    0   No   No
+        0  No
+        1  Yes: CS
+    (m) 9  Missing
+   (na)    NotAppl
+Source for female condoms: Other {NA}          MV762BX                  548    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Other
+    (m) 9  Missing
+   (na)    NotAppl
+Source for female condoms: DK source for condomMV762BZ                  549    1    N    I    1    0   No   No
+        0  No
+        1  Yes: DK source for female condom
+    (m) 9  Missing
+   (na)    NotAppl
+Had any STD in last 12 months                  MV763A                   550    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+Had genital sore/ulcer in last 12 months       MV763B                   551    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+Had genital discharge in last 12 months        MV763C                   552    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+Last 12 months had CS STD {NA}                 MV763D                   553    1    N    I    1    0   No   No
+        0  No
+        1  Country specific
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+Last 12 months had CS STD {NA}                 MV763E                   554    1    N    I    1    0   No   No
+        0  No
+        1  Country specific
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+Last 12 months had CS STD {NA}                 MV763F                   555    1    N    I    1    0   No   No
+        0  No
+        1  Country specific
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+Last 12 months had CS STD {NA}                 MV763G                   556    1    N    I    1    0   No   No
+        0  No
+        1  Country specific
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+No. other than wife had sex in last 12 months  MV766A                   557    2    N    I    1    0   No   No
+        0:95  
+        98    DK
+    (m) 99    Missing
+No. had sex including wife in last 12 months   MV766B                   559    2    N    I    1    0   No   No
+        0:95  
+        98    DK
+    (m) 99    Missing
+Relationship with last sex partner             MV767A                   561    2    N    I    1    0   No   No
+        1   Spouse/cohabiting partner
+        2   Girlfriend/fiancee
+        3   Other friend
+        4   Casual acquaintance
+        5   Relative
+        6   Commercial sex worker
+        7   Live-in partner {CG: GMO - added!}
+        96  Other
+    (m) 99  Missing
+   (na)     NotAppl
+Relationship with other sex partner (1)        MV767B                   563    2    N    I    1    0   No   No
+        1   Spouse/cohabiting partner
+        2   Girlfriend/fiancee
+        3   Other friend
+        4   Casual acquaintance
+        5   Relative
+        6   Commercial sex worker
+        7   Live-in partner {CG: GMO - added!}
+        96  Other
+    (m) 99  Missing
+   (na)     NotAppl
+Relationship with other sex partner (2)        MV767C                   565    2    N    I    1    0   No   No
+        1   Spouse/cohabiting partner
+        2   Girlfriend/fiancee
+        3   Other friend
+        4   Casual acquaintance
+        5   Relative
+        6   Commercial sex worker
+        7   Live-in partner {CG: GMO - added!}
+        96  Other
+    (m) 99  Missing
+   (na)     NotAppl
+Length of time knows last partner              MV768A                   567    3    N    I    1    0   No   No
+        101      One day
+        102:200  
+        201      One week
+        202:300  
+        301      One month
+        302:400  
+        401      One year
+        402:499  
+    (m) 999      Missing
+   (na)          NotAppl
+Length of time knows other partner (1)         MV768B                   570    3    N    I    1    0   No   No
+        101      One day
+        102:200  
+        201      One week
+        202:300  
+        301      One month
+        302:400  
+        401      One year
+        402:499  
+    (m) 999      Missing
+   (na)          NotAppl
+Length of time knows other partner (2)         MV768C                   573    3    N    I    1    0   No   No
+        101      One day
+        102:200  
+        201      One week
+        202:300  
+        301      One month
+        302:400  
+        401      One year
+        402:499  
+    (m) 999      Missing
+   (na)          NotAppl
+Could get a condom                             MV769                    576    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+Could get a female condom {NA}                 MV769A                   577    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+Seek advice for last disease                   MV770                    578    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Seek advise ITS: govt hospital                 MV770A                   579    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Seek advise ITS: health center /PMI {CG}       MV770B                   580    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Seek advise ITS: public VCT center {NA}        MV770C                   581    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Seek advise ITS: FP clinic {NA}                MV770D                   582    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Seek advise ITS: mobile clinic {NA}            MV770E                   583    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Seek advise ITS: fieldworker {NA}              MV770F                   584    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Seek advise ITS: CS public sector {NA}         MV770G                   585    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Seek advise ITS: CS public/Poste de sante {CG:}MV770H                   586    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Seek advise ITS: CS public {NA}                MV770I                   587    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Seek advise ITS: other public {NA}             MV770J                   588    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Seek advise ITS: private hosp/clinic/doctor {NAMV770K                   589    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Seek advise ITS: private VCT center {NA}       MV770L                   590    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Seek advise ITS: pharmacy                      MV770M                   591    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Seek advise ITS: mobile clinic {NA}            MV770N                   592    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Seek advise ITS: fieldworker {NA}              MV770O                   593    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Seek advise ITS: CS private/Cabinet soins infirMV770P                   594    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Seek advise ITS: CS private/Centre medico-sociaMV770Q                   595    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Seek advise ITS: CS private/Ass. Congolaise de MV770R                   596    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Seek advise ITS: other private {NA}            MV770S                   597    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Seek advise ITS: shop {NA}                     MV770T                   598    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Seek advise ITS: CS other {NA}                 MV770U                   599    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Seek advise ITS: CS/Other seudo-medical sourcesMV770V                   600    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Seek advise ITS: CS/Other local shopping sourceMV770W                   601    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Seek advise other                              MV770X                   602    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+AIDS transmit. during pregnancy                MV774A                   603    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+AIDS transmit. during delivery                 MV774B                   604    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+AIDS transmit. by breastfeeding                MV774C                   605    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+Knows someone who has or died of AIDS          MV775                    606    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+Allowed to keep AIDS infection secret          MV777                    607    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+Willing to care for relative with AIDS         MV778                    608    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+Person with AIDS allowed to continue teaching  MV779                    609    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+Should children be taught about condoms        MV780                    610    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+Ever been tested for AIDS                      MV781                    611    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Know a place to get AIDS test                  MV783                    612    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Place for AIDS test: govt hospital             MV784A                   613    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Government hospital
+    (m) 9  Missing
+   (na)    NotAppl
+Place for AIDS test:health center {CG: Centre dMV784B                   614    1    N    I    1    0   No   No
+        0  No
+        1  Yes: health center {CG: Centre de Santé/SMI}
+    (m) 9  Missing
+   (na)    NotAppl
+Place for AIDS test: public VCT center {NA}    MV784C                   615    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Government hospital
+    (m) 9  Missing
+   (na)    NotAppl
+Place for AIDS test: FP clinic {NA}            MV784D                   616    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Government hospital
+    (m) 9  Missing
+   (na)    NotAppl
+Place for AIDS test: mobile clinic {NA}        MV784E                   617    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Government hospital
+    (m) 9  Missing
+   (na)    NotAppl
+Place for AIDS test: filedworker {NA}          MV784F                   618    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Government hospital
+    (m) 9  Missing
+   (na)    NotAppl
+Place for AIDS test: CS publ/National laboratorMV784G                   619    1    N    I    1    0   No   No
+        0  No
+        1  Yes: CS publ/National laboratory {CG:}
+    (m) 9  Missing
+   (na)    NotAppl
+Place for AIDS test: CS publ/Centre dépistage aMV784H                   620    1    N    I    1    0   No   No
+        0  No
+        1  Yes: CS publ/Centre dépistage anonyme volontaire (CDAV)
+    (m) 9  Missing
+   (na)    NotAppl
+Place for AIDS test: CS public {NA}            MV784I                   621    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Government hospital
+    (m) 9  Missing
+   (na)    NotAppl
+Place for AIDS test: other public {NA}         MV784J                   622    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Government hospital
+    (m) 9  Missing
+   (na)    NotAppl
+Place for AIDS test: private hosp/clinic/doctorMV784K                   623    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Government hospital
+    (m) 9  Missing
+   (na)    NotAppl
+Place for AIDS test: private VCT center {NA}   MV784L                   624    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Government hospital
+    (m) 9  Missing
+   (na)    NotAppl
+Place for AIDS test: pharmacy {NA}             MV784M                   625    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Government hospital
+    (m) 9  Missing
+   (na)    NotAppl
+Place for AIDS test: mobile clinic {NA}        MV784N                   626    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Government hospital
+    (m) 9  Missing
+   (na)    NotAppl
+Place for AIDS test: fieldworker {NA}          MV784O                   627    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Government hospital
+    (m) 9  Missing
+   (na)    NotAppl
+Place for AIDS test: CS priv/Clinic {CG:}      MV784P                   628    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Clinic {CG:}
+    (m) 9  Missing
+   (na)    NotAppl
+Place for AIDS test: CS priv/Medical doctor {CGMV784Q                   629    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Medical doctor {CG:}
+    (m) 9  Missing
+   (na)    NotAppl
+Place for AIDS test: CS priv/Laboratory {CG:}  MV784R                   630    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Laboratory {CG:}
+    (m) 9  Missing
+   (na)    NotAppl
+Place for AIDS test: other priv/Centre medico-sMV784S                   631    1    N    I    1    0   No   No
+        0  No
+        1  Yes: other priv/Centre medico-social {CG:}
+    (m) 9  Missing
+   (na)    NotAppl
+Place for AIDS test: CS/Ass. Congolaise de BienMV784T                   632    1    N    I    1    0   No   No
+        0  No
+        1  Yes: CS/Ass. Congolaise de Bienêtre Familial {CG:}
+    (m) 9  Missing
+   (na)    NotAppl
+Place for AIDS test: CS other {NA}             MV784U                   633    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Government hospital
+    (m) 9  Missing
+   (na)    NotAppl
+Place for AIDS test: CS other {NA}             MV784V                   634    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Government hospital
+    (m) 9  Missing
+   (na)    NotAppl
+Place for AIDS test: other                     MV784X                   635    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Other
+    (m) 9  Missing
+   (na)    NotAppl
+Heard about other STDs                         MV785                    636    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Paid for sex last 12 months {NA}               MV793                    637    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Condom used when paid for sex last 12 months {NMV793A                   638    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Condom used every time paid for sex last 12 monMV793B                   639    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Condom used at first sexual intercourse        MV820                    640    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+Wife justified to ask husband to use condom if MV822                    641    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  Don't know
+    (m) 9  Missing
+   (na)    Not applicable
+Can get AIDS by witchcraft or supernatural meanMV823                    642    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  Don't know
+    (m) 9  Missing
+   (na)    Not applicable
+Drugs to avoid AIDS transmission to baby duringMV824                    643    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  Don't know
+    (m) 9  Missing
+   (na)    Not applicable
+Would buy vegetables from vendor with AIDS     MV825                    644    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  Don't know
+    (m) 9  Missing
+   (na)    Not applicable
+When was last time you were tested             MV826                    645    1    N    I    1    0   No   No
+        1  Less than 12 months
+        2  12-23 months
+        3  2 years or more
+    (m) 9  Missing
+   (na)    Not applicable
+Last test was on your own, offered or required MV827                    646    1    N    I    1    0   No   No
+        1  Asked for the test
+        2  Offered and accepted
+        3  Required
+    (m) 9  Missing
+   (na)    Not applicable
+Did get results for last test                  MV828                    647    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+Place were last AIDS test was taken            MV829                    648    2    N    I    1    0   No   No
+        10  PUBLIC SECTOR
+        11  Govt. hospital
+        12  Govt. health center {CG: Centre de Santé/SMI}
+        13  National laboratory
+        14  Centre dépistage anonyme volontaire (CDAV) {CG:}
+        20  PRIVATE MEDICAL
+        21  Pvt. clinic
+        22  Pvt. doctor {CG: Cabinet médecin privé}
+        23  Pvt. laboratory
+        24  Centre médico-social {CG:}
+        25  Ass. Congolaise de Bienêtre Familial {CG:}
+        96  Other
+    (m) 99  Missing
+   (na)     Not applicable
+Time since last intercourse with next to last sMV832B                   650    3    N    I    1    0   No   No
+        100      <1 day ago
+        101      Days: 1
+        102:160  
+        201      Weeks: 1
+        202:210  
+        301      Months: 1
+        301:312  
+        401      Years: 1
+        995      Within last 4 weeks
+        996      Before last birth
+        997      Inconsistent
+        998      Don't know
+    (m) 999      Missing
+   (na)          NotAppl
+Time since last intercourse with second to lastMV832C                   653    3    N    I    1    0   No   No
+        100      <1 day ago
+        101      Days: 1
+        102:160  
+        201      Weeks: 1
+        202:210  
+        301      Months: 1
+        301:312  
+        401      Years: 1
+        995      Within last 4 weeks
+        996      Before last birth
+        997      Inconsistent
+        998      Don't know
+    (m) 999      Missing
+   (na)          NotAppl
+Used condom every time had sex with last sex paMV833A                   656    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+Used condom every time had sex with next to lasMV833B                   657    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+Used condom every time had sex with second to lMV833C                   658    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+Alcohol consumption last time had sex          MV835A                   659    1    N    I    1    0   No   No
+        0  No
+        1  Respondent drunk only
+        2  Partner drunk only
+        3  Both drunk
+        4  Neither drunk but consumed alcohol
+    (m) 9  Missing
+   (na)    Not applicable
+Alcohol consumption next to last time had sex  MV835B                   660    1    N    I    1    0   No   No
+        0  No
+        1  Respondent drunk only
+        2  Partner drunk only
+        3  Both drunk
+        4  Neither drunk but consumed alcohol
+    (m) 9  Missing
+   (na)    Not applicable
+Alcohol consumption second to last time had sexMV835C                   661    1    N    I    1    0   No   No
+        0  No
+        1  Respondent drunk only
+        2  Partner drunk only
+        3  Both drunk
+        4  Neither drunk but consumed alcohol
+    (m) 9  Missing
+   (na)    Not applicable
+Total lifetime number of sexual partners       MV836                    662    2    N    I    1    0   No   No
+        1:94  
+        95    95+
+        98    Don't know
+    (m) 99    Missing
+   (na)       Not applicable
+Heard of drugs to help infected people to live MV837                    664    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  Don't know
+    (m) 9  Missing
+   (na)    Not applicable
+Knows someone denied health services because ofMV844                    665    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        2  Don't know anyone with AIDS
+    (m) 9  Missing
+   (na)    Not applicable
+Knows someone denied social events because of AMV845                    666    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+Knows someone verbally abused because of AIDS lMV846                    667    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+People with AIDS should be ashamed of themselveMV847                    668    1    N    I    1    0   No   No
+        0  Disagree
+        1  Agree
+        8  Don't know / no opinion
+    (m) 9  Missing
+   (na)    Not applicable
+People with AIDS should be blamed for bringing MV848                    669    1    N    I    1    0   No   No
+        0  Disagree
+        1  Agree
+        8  Don't know / no opinion
+    (m) 9  Missing
+   (na)    Not applicable
+Children 12-14 should wait for sex until marriaMV849                    670    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  Don't know / depends
+    (m) 9  Missing
+   (na)    Not applicable
+Young men should wait for sex until marriage   MV851A                   671    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK, not sure, depends
+    (m) 9  Missing
+   (na)    Not applicable
+Most young men wait for sex until marriage {NA}MV851B                   672    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK, not sure, depends
+    (m) 9  Missing
+   (na)    Not applicable
+Unmarried sexually active men should only havinMV851C                   673    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK, not sure, depends
+    (m) 9  Missing
+   (na)    Not applicable
+Most unmarried sexually active men have only onMV851D                   674    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK, not sure, depends
+    (m) 9  Missing
+   (na)    Not applicable
+Married men should only have sex with their wivMV851E                   675    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK, not sure, depends
+    (m) 9  Missing
+   (na)    Not applicable
+Most married men only have sex with their wivesMV851F                   676    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK, not sure, depends
+    (m) 9  Missing
+   (na)    Not applicable
+Young women should wait for sex until marriage MV851G                   677    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK, not sure, depends
+    (m) 9  Missing
+   (na)    Not applicable
+Most young women wait for sex until marriage {NMV851H                   678    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK, not sure, depends
+    (m) 9  Missing
+   (na)    Not applicable
+Unmarried sexually active women should have onlMV851I                   679    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK, not sure, depends
+    (m) 9  Missing
+   (na)    Not applicable
+Most unmarried sexually active women have only MV851J                   680    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK, not sure, depends
+    (m) 9  Missing
+   (na)    Not applicable
+Married women should only have sex with their hMV851K                   681    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK, not sure, depends
+    (m) 9  Missing
+   (na)    Not applicable
+Most married women only have sex with their husMV851L                   682    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK, not sure, depends
+    (m) 9  Missing
+   (na)    Not applicable
+Number of siblings of resp.                    SMMC1                    683    2    N    I    1    0   No   No
+        0:20  
+    (m) 99    Missing
+Preceeding births before resp.                 SMMC2                    685    2    N    I    1    0   No   No
+        0:20  
+    (m) 99    Missing
+   (na)       NotAppl
+Sister's reporting {NA}                        SMMC3                    687    2    N    I    1    0   No   No
+        0     Respondent reported
+        1:90  
+    (m) 99    Missing
+   (na)       NotAppl
+Résidence (de facto) (CS for preliminary & finaSMRESID                  689    1    N    I    1    0   No   No
+        1  Brazzaville
+        2  Pointe Noire
+        3  Autres villes
+        4  Ensemble urbain
+        5  Rural
+        6  Ensemble du pays
+Departement (de facto) (CS for preliminary & fiSMDEPAR                  690    2    N    I    1    0   No   No
+        1   Kouilou
+        2   Niari
+        3   Lekoumou
+        4   Bouenza
+        5   Pool
+        6   Plateaux
+        7   Cuvette
+        8   Cuvette Ouest
+        9   Sangha
+        10  Likouala
+        11  Brazzaville
+Highest educational level (CS for preliminary &SMV106                   692    1    N    I    1    0   No   No
+        0  No education
+        1  Primary
+        2  Secondary 1st cycle
+        3  Secondary 2nd cycle
+        4  Higher
+    (m) 9  Missing
+Highest grade at that level                    SM106                    693    1    N    I    1    0   No   No
+        0    < 1 year completed
+        1:4  
+        5    Primary CM1
+        6    Primary CM2
+    (m) 9    Missing
+   (na)      Not applicable
+Share used for household expenditures          SM122                    694    1    N    I    1    0   No   No
+        1  Almost none
+        2  Less than half
+        3  About half
+        4  More than half
+        5  All
+        6  None, his income is all saved
+    (m) 9  Missing
+   (na)    Not applicable
+Activity last 12 months                        SM123                    695    2    N    I    1    0   No  Yes
+        1   Going to school, studying
+        2   Looking for work
+        3   Inactive
+        4   Too sick to work {CG}
+        5   Could not work, handicapped {CG}
+        6   Domestic work {CG}
+        7   Other
+    (m) 99  Missing
+   (na)     Not applicable
+Approve/disapprove FP                          SM212                    697    1    N    I    1    0   No   No
+    Note: {CG: question QM212 in Congo!} 
+        0  Disapprove
+        1  Approve
+        8  Don't Know/Unsure
+    (m) 9  Missing
+Circumcised                                    SM213                    698    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    Not applicable
+Source for injection by health worker          SM216                    699    2    N    I    1    0   No  Yes
+        11  Hôpital
+        12  Centre de Santé/SMI
+        13  Poste de Santé
+        21  Clinique
+        22  Cabinet médecin privé
+        23  Cabinet soins infirmier
+        24  Centre médico-social
+        25  Ass. Congolaise de Bienêtre Familial
+        26  Pharmacie
+        27  Dentiste
+        31  Tradi-thérapeute
+        32  Centre medecine spirituelle
+        41  Maison propre ou autre maison
+        96  Autre endroit
+    (m) 99  
+   (na)     
+Time since last intercourse(g)                 SMV528                   701    2    N    I    1    0   No   No
+        0:30  
+        31    31+ days
+        95    Within last 4 weeks
+        96    Before last birth
+        97    Inconsistent
+        98    Don't know
+    (m) 99    Missing
+   (na)       NotAppl
+Age of partner at first sexual intercourse     SM323                    703    2    N    I    1    0   No   No
+        10:79  
+        80     80 and more
+    (m) 99     Missing
+   (na)        Not applicable
+Partner younger, the same age or older         SM324                    705    1    N    I    1    0   No   No
+        1  Older
+        2  Younger
+        3  About the same age
+        8  DK
+    (m) 9  Missing
+   (na)    Not applicable
+Older partner, estimation of difference        SM325                    706    1    N    I    1    0   No   No
+        1  10 or more years older
+        2  Less than 10 years older
+        3  Older, don't know difference
+    (m) 9  Missing
+   (na)    Not applicable
+Privacy for next questions                     SM341                    707    1    N    I    1    0   No   No
+        0  Privacy impossible
+        1  Privacy obtained
+   (na)    
+Wanted first intercourse                       SM342                    708    1    N    I    1    0   No   No
+        0  No, forced
+        1  Yes
+        3  Does not answer
+    (m) 9  Missing
+   (na)    Not applicable
+Any forced intercourse last 12 months          SM343                    709    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        3  Does not answer
+    (m) 9  Missing
+   (na)    Not applicable
+Source for condoms: Tradi-therapeute {CG:}     SM345J                   710    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Tradi-therapeute {CG:}
+    (m) 9  Missing
+   (na)    NotAppl
+Source for condoms: Centre medicine spirituelleSM345K                   711    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Centre medicine spirituelle {CG:}
+    (m) 9  Missing
+   (na)    NotAppl
+Source for condoms: Vendeur ambulant/pharmacie SM345L                   712    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Vendeur ambulant/pharmacie par terre {CG:}
+    (m) 9  Missing
+   (na)    NotAppl
+Source for condoms: Boutique/marche {CG:}      SM345M                   713    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Boutique/marche {CG:}
+    (m) 9  Missing
+   (na)    NotAppl
+Source for condoms: Bar de nuit/hotel {CG:}    SM345N                   714    1    N    I    1    0   No   No
+        0  No
+        1  Yes: Bar de nuit/hotel {CG:}
+    (m) 9  Missing
+   (na)    NotAppl
+Ways to avoid AIDS                             SM408                    715    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+AIDS: abstain from sex                         SM409A                   716    1    N    I    1    0   No   No
+        0  No
+        1  Abstain from sex
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+AIDS: use condoms during sex                   SM409B                   717    1    N    I    1    0   No   No
+        0  No
+        1  Condoms during sex
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+AIDS: only one sex partner                     SM409C                   718    1    N    I    1    0   No   No
+        0  No
+        1  Only one sex partner
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+AIDS: Limit number of sex partners             SM409D                   719    1    N    I    1    0   No   No
+        0  No
+        1  Limit number of sex partners
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+AIDS: avoid sex prostitutes                    SM409E                   720    1    N    I    1    0   No   No
+        0  No
+        1  Avoid prostitutes
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+AIDS: Avoid partners who have many partners    SM409F                   721    1    N    I    1    0   No   No
+        0  No
+        1  Avoid partners who have many partners
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+AIDS: avoid sex homosexuals                    SM409G                   722    1    N    I    1    0   No   No
+        0  No
+        1  Avoid homosexuals
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+AIDS: Avoid sex with intravenous drug users    SM409H                   723    1    N    I    1    0   No   No
+        0  No
+        1  Avoid sex with intravenous drug users
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+AIDS: avoid blood transfusions                 SM409I                   724    1    N    I    1    0   No   No
+        0  No
+        1  Avoid blood transfus
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+AIDS: avoid injections                         SM409J                   725    1    N    I    1    0   No   No
+        0  No
+        1  Avoid injections
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+AIDS: avoid sharing razor blades with AIDS patiSM409K                   726    1    N    I    1    0   No   No
+        0  No
+        1  Avoid sharing razor blades with AIDS patient
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+AIDS: avoid kissing                            SM409L                   727    1    N    I    1    0   No   No
+        0  No
+        1  Avoid kissing
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+AIDS: avoid mosquito bites                     SM409M                   728    1    N    I    1    0   No   No
+        0  No
+        1  Avoid mosquito bites
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+AIDS: protection trad. healer                  SM409N                   729    1    N    I    1    0   No   No
+        0  No
+        1  Seek trad. healing
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+AIDS: protection by praying                    SM409O                   730    1    N    I    1    0   No   No
+        0  No
+        1  Praying
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+AIDS: other responses                          SM409X                   731    1    N    I    1    0   No   No
+        0  No
+        1  Other responses
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+AIDS: DK ways to avoid AIDS                    SM409Z                   732    1    N    I    1    0   No   No
+        0  No: knows ways
+        1  Yes: DK ways
+    (m) 9  Missing
+   (na)    NotAppl
+AIDS infected should inform partner {CG}       SM434AA                  733    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  Don't know
+    (m) 9  Missing
+   (na)    Not applicable
+AIDS infected should inform family {CG}        SM434AB                  734    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  Don't know
+    (m) 9  Missing
+   (na)    Not applicable
+AIDS infected should inform friends {CG}       SM434AC                  735    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+        8  Don't know
+    (m) 9  Missing
+   (na)    Not applicable
+Man's symptoms of STI: Abdominal pain          SM451A                   736    1    N    I    1    0   No   No
+        0  No
+        1  Abdominal pain
+    (m) 9  Missing
+   (na)    NotAppl
+Man's symptoms of STI: Genital discharge       SM451B                   737    1    N    I    1    0   No   No
+        0  No
+        1  Genital discharge
+    (m) 9  Missing
+   (na)    NotAppl
+Man's symptoms of STI: Foul smelling discharge SM451C                   738    1    N    I    1    0   No   No
+        0  No
+        1  Foul smelling discharge
+    (m) 9  Missing
+   (na)    NotAppl
+Man's symptoms of STI: Buring pain during urinaSM451D                   739    1    N    I    1    0   No   No
+        0  No
+        1  Buring pain during urination
+    (m) 9  Missing
+   (na)    NotAppl
+Man's symptoms of STI: Redness/inflamation     SM451E                   740    1    N    I    1    0   No   No
+        0  No
+        1  Redness/inflamation
+    (m) 9  Missing
+   (na)    NotAppl
+Man's symptoms of STI: Genital swelling        SM451F                   741    1    N    I    1    0   No   No
+        0  No
+        1  Genital swelling
+    (m) 9  Missing
+   (na)    NotAppl
+Man's symptoms of STI: Sores/ulcers            SM451G                   742    1    N    I    1    0   No   No
+        0  No
+        1  Sores/ulcers
+    (m) 9  Missing
+   (na)    NotAppl
+Man's symptoms of STI: Genital wart            SM451H                   743    1    N    I    1    0   No   No
+        0  No
+        1  Genital wart
+    (m) 9  Missing
+   (na)    NotAppl
+Man's symptoms of STI: Genital itching         SM451I                   744    1    N    I    1    0   No   No
+        0  No
+        1  Genital itching
+    (m) 9  Missing
+   (na)    NotAppl
+Man's symptoms of STI: Blood in urine          SM451J                   745    1    N    I    1    0   No   No
+        0  No
+        1  Blood in urine
+    (m) 9  Missing
+   (na)    NotAppl
+Man's symptoms of STI: Weight loss             SM451K                   746    1    N    I    1    0   No   No
+        0  No
+        1  Weight loss
+    (m) 9  Missing
+   (na)    NotAppl
+Man's symptoms of STI: Impotence               SM451L                   747    1    N    I    1    0   No   No
+        0  No
+        1  Impotence
+    (m) 9  Missing
+   (na)    NotAppl
+Man's symptoms of STI: Other responses         SM451X                   748    1    N    I    1    0   No   No
+        0  No
+        1  Other
+    (m) 9  Missing
+   (na)    NotAppl
+Man's symptoms of STI: No symptoms             SM451Y                   749    1    N    I    1    0   No   No
+        0  Yes, has symptoms
+        1  No symptoms
+    (m) 9  Missing
+   (na)    NotAppl
+Man's symptoms of STI: Don't know              SM451Z                   750    1    N    I    1    0   No   No
+        0  Knows symptoms
+        1  Don't know symptoms
+    (m) 9  Missing
+   (na)    NotAppl
+Woman's symptoms of STI: Abdominal pain        SM452A                   751    1    N    I    1    0   No   No
+        0  No
+        1  Abdominal pain
+    (m) 9  Missing
+   (na)    NotAppl
+Woman's symptoms of STI: Genital discharge     SM452B                   752    1    N    I    1    0   No   No
+        0  No
+        1  Genital discharge
+    (m) 9  Missing
+   (na)    NotAppl
+Woman's symptoms of STI: Foul smelling dischargSM452C                   753    1    N    I    1    0   No   No
+        0  No
+        1  Foul smelling discharge
+    (m) 9  Missing
+   (na)    NotAppl
+Woman's symptoms of STI: Buring pain during uriSM452D                   754    1    N    I    1    0   No   No
+        0  No
+        1  Buring pain during urination
+    (m) 9  Missing
+   (na)    NotAppl
+Woman's symptoms of STI: Redness/inflamation   SM452E                   755    1    N    I    1    0   No   No
+        0  No
+        1  Redness/inflamation
+    (m) 9  Missing
+   (na)    NotAppl
+Woman's symptoms of STI: Genital swelling      SM452F                   756    1    N    I    1    0   No   No
+        0  No
+        1  Genital swelling
+    (m) 9  Missing
+   (na)    NotAppl
+Woman's symptoms of STI: Sores/ulcers          SM452G                   757    1    N    I    1    0   No   No
+        0  No
+        1  Sores/ulcers
+    (m) 9  Missing
+   (na)    NotAppl
+Woman's symptoms of STI: Genital wart          SM452H                   758    1    N    I    1    0   No   No
+        0  No
+        1  Genital wart
+    (m) 9  Missing
+   (na)    NotAppl
+Woman's symptoms of STI: Genital itching       SM452I                   759    1    N    I    1    0   No   No
+        0  No
+        1  Genital itching
+    (m) 9  Missing
+   (na)    NotAppl
+Woman's symptoms of STI: Blood in urine        SM452J                   760    1    N    I    1    0   No   No
+        0  No
+        1  Blood in urine
+    (m) 9  Missing
+   (na)    NotAppl
+Woman's symptoms of STI: Weight loss           SM452K                   761    1    N    I    1    0   No   No
+        0  No
+        1  Weight loss
+    (m) 9  Missing
+   (na)    NotAppl
+Woman's symptoms of STI: Hard to get pregnant  SM452L                   762    1    N    I    1    0   No   No
+        0  No
+        1  Hard to get pregnant
+    (m) 9  Missing
+   (na)    NotAppl
+Woman's symptoms of STI: Other responses       SM452X                   763    1    N    I    1    0   No   No
+        0  No
+        1  Other responses
+    (m) 9  Missing
+   (na)    NotAppl
+Woman's symptoms of STI: No symptoms           SM452Y                   764    1    N    I    1    0   No   No
+        0  Yes has symptoms
+        1  No symptoms
+    (m) 9  Missing
+   (na)    NotAppl
+Woman's symptoms of STI: Don't know            SM452Z                   765    1    N    I    1    0   No   No
+        0  Knows symptoms
+        1  Don't know symptoms
+    (m) 9  Missing
+   (na)    NotAppl
+Seek advise ITS: Clinique {CG:}                SM460D                   766    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Seek advise ITS: Private doctor {CG:}          SM460E                   767    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Seek advise ITS: Traditional therapist {CG:}   SM460J                   768    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Seek advise ITS: Spiritual medical center {CG:}SM460K                   769    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Seek advise ITS: Itenerant merchant/Ground pharSM460L                   770    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Seek advise ITS: Shop/Market {CG:}             SM460M                   771    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+    (m) 9  Missing
+   (na)    NotAppl
+Mother had any other children                  SM501A                   772    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+Brothers still alive                           SM501B                   773    2    N    I    1    0   No   No
+        0:20  
+   (na)       Not applicable
+Sisters still alive                            SM501C                   775    2    N    I    1    0   No   No
+        0:20  
+   (na)       Not applicable
+Brothers who died                              SM501D                   777    2    N    I    1    0   No   No
+        0:20  
+   (na)       Not applicable
+Sisters who died                               SM501E                   779    2    N    I    1    0   No   No
+        0:20  
+   (na)       Not applicable
+Mother had any other children whose survival isSM501F                   781    1    N    I    1    0   No   No
+        0  No
+        1  Yes
+   (na)    Not applicable
+Other brothers/sisters with unknown survival stSM501G                   782    2    N    I    1    0   No   No
+        0:20  
+   (na)       Not applicable
+Maternal mortality index                       SMMIDX                   784    2    N    I   20    0   No   No
+        1:20  
+Sex of sibling                                 SMM1                     824    1    N    I   20    0   No   No
+        1  Male
+        2  Female
+        8  DK
+    (m) 9  Missing
+Sibling's survival status                      SMM2                     844    1    N    I   20    0   No   No
+        0  Dead
+        1  Alive
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+Sibling's current age                          SMM3                     864    2    N    I   20    0   No   No
+        0:96  
+        97    97+
+        98    Don't know
+    (m) 99    Missing
+   (na)       NotAppl
+CMC date of birth of sibling                   SMM4                     904    4    N    I   20    0   No   No
+   (na)       NotAppl
+Sibling's marital status {NA}                  SMM5                     984    1    N    I   20    0   No   No
+        0  Never married
+        1  Ever married
+        8  DK
+    (m) 9  Missing
+   (na)    NotAppl
+Years ago sibling died                         SMM6                    1004    2    N    I   20    0   No   No
+        0:96  
+        97    97+
+        98    Don't know
+    (m) 99    Missing
+   (na)       NotAppl
+Sibling's age at death                         SMM7                    1044    2    N    I   20    0   No   No
+        0:94  
+        95    DK but less than 12
+        97    97+
+        98    Don't know
+    (m) 99    Missing
+   (na)       NotAppl
+CMC date of death of sibling                   SMM8                    1084    4    N    I   20    0   No   No
+   (na)       NotAppl
+Sibling's death & pregnancy                    SMM9                    1164    2    N    I   20    0   No   No
+        0   Never pregnant
+        1   Death not related
+        2   Died while pregnant
+        3   Died during delivery
+        4   Since delivery
+        5   6 weeks after Deliv.
+        6   2 months after Deliv
+        98  Don't know
+    (m) 99  Missing
+   (na)     NotAppl
+Death & pregnancy are related {NA}             SMM10                   1204    1    N    I   20    0   No   No
+        0  No
+        1  Yes
+        8  Don't know
+    (m) 9  Missing
+   (na)    NotAppl
+Sibling's cause of death {NA}                  SMM11                   1224    2    N    I   20    0   No   No
+        0   Country specific
+    (m) 99  Missing
+   (na)     NotAppl
+Time between delivery & death {NA}             SMM12                   1264    3    N    I   20    0   No   No
+        100      
+        101      1 day
+        102:200  
+        201      1 month
+        202:300  
+        301      1 year
+        302:399  
+        997      Inconsistent
+        998      Don't know
+    (m) 999      Missing
+   (na)          NotAppl
+Place of death {NA}                            SMM13                   1324    2    N    I   20    0   No   No
+        0   Country specific
+    (m) 99  Missing
+   (na)     NotAppl
+Number of sibling's children {NA}{GMO: siblingsSMM14                   1364    2    N    I   20    0   No   No
+        0:24  
+    (m) 99    Missing
+   (na)       NotAppl
+Sibling's year of death {NA}                   SMM15                   1404    4    N    I   20    0   No   No
+        1920:2005  
+        9998       Don't know
+    (m) 9999       Missing
+   (na)            NotAppl
+CS-Death by violent event                      SM513                   1484    1    N    I   20    0   No   No
+        0  No
+        1  Yes
+        8  Dont' know
+    (m) 9  Missing
+   (na)    Not applicable
+--------------------------------------------------------------------------------------------------------------
+Relation Name         Primary               Linked by             Secondary             Linked by
+--------------------------------------------------------------------------------------------------------------

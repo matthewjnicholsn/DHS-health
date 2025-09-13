@@ -1,0 +1,160 @@
+﻿                                                   KEFW7AFL
+                                                KEFW7AFL_DICT
+
+                                        C:\Countries\KE7A\KEFW7AFL.DCF
+                                    Last Modified:  10/11/2017  8:47:01 AM
+
+--------------------------------------------------------------------------------------------------------------
+Level Name                    Level Label                                                  Type            Rec
+  Record Name                   Record Label                                              Value  Req  Max  Len
+--------------------------------------------------------------------------------------------------------------
+LEVEL_1                       Level 1
+  FWRECORD                      Fieldworker record                                               Yes    1   50
+Level: Level 1                                         Record: Fieldworker record
+--------------------------------------------------------------------------------------------------------------
+                                                                                 Data Item            Dec Zero
+Item Name              Item Label                                     Start  Len Type Type  Occ  Dec Char Fill
+--------------------------------------------------------------------------------------------------------------
+                         (record type)                                    0    0   AN    I    1    0   No   No
+FW101             (id) Fieldworker code                                   1    4    N    I    1    0   No   No
+FW000                  Country code and phase                             5    3   AN    I    1    0   No   No
+FW102                  Fieldworker region of residence                    8    2    N    I    1    0   No   No
+                               1  Coast
+                               2  North Eastern
+                               3  Eastern
+                               4  Central
+                               5  Rift Valley
+                               6  Western
+                               7  Nyanza
+                               8  Nairobi
+FW103                  Fieldworker type of place of residence            10    1    N    I    1    0   No   No
+                               1  City
+                               2  Town
+                               3  Rural
+FW104                  Fieldworker age                                   11    2    N    I    1    0   No   No
+                               15:65  
+FW105                  Fieldworker sex                                   13    1    N    I    1    0   No   No
+                               1  Male
+                               2  Female
+FW106                  Fieldworker marital status                        14    1    N    I    1    0   No   No
+                               1  Currently married
+                               2  Living with a man/woman
+                               3  Widowed
+                               4  Divorced
+                               5  Separated
+                               6  Never married or lived with a man/woman
+FW107                  Fieldworker number of living children             15    2    N    I    1    0   No   No
+                               0:24  
+FW108                  Fieldworker ever had a child who died             17    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               9  Missing
+FW109                  Highest level of school attended by fieldworker   18    1    N    I    1    0   No   No
+                               1  Primary
+                               2  Secondary
+                               3  Higher
+FW110                  Highest grade/form/year at that level completed   19    2    N    I    1    0   No   No
+                               0     Less than one year at level
+                               1:15  
+FW111                  Fieldworker religion                              21    2    N    I    1    0   No   No
+                               1  Roman Catholic
+                               2  Protestant/Other Christian
+                               3  Muslim
+                               4  No religion
+                               6  Other
+FW112                  Fieldworker ethnicity                             23    2    N    I    1    0   No   No
+                               1   Embu
+                               2   Kalenjin
+                               3   Kamba
+                               4   Kikuyu
+                               5   Kisii
+                               6   Luhya
+                               7   Luo
+                               8   Maasai
+                               9   Meru
+                               10  Mijikenda
+                               11  Somali
+                               12  Taita/Taveta
+                               13  Borana
+                               14  Maragoli
+                               15  Pokot
+                               16  Turkana
+                               17  Swahili
+                               96  Other
+FW113                  Fieldworker's mother's tongue/native language     25    2    N    I    1    0   No   No
+                               1   Embu
+                               2   English
+                               3   Kalenjin
+                               4   Kamba
+                               5   Kikuyu
+                               6   Kisii
+                               7   Luhya
+                               8   Luo
+                               9   Maasai
+                               10  Meru
+                               11  Mijikenda
+                               12  Somali
+                               13  Taita/Taveta
+                               14  Borana
+                               15  Maragoli
+                               16  Pokot
+                               17  Turkana
+                               18  Swahili
+                               96  Other
+FW114A                 Embu                                              27    1   AN    I    1    0   No   No
+                               A  Language A
+FW114B                 English                                           28    1   AN    I    1    0   No   No
+                               B  Language B
+FW114C                 Kalenjin                                          29    1   AN    I    1    0   No   No
+                               C  Language C
+FW114D                 Kamba                                             30    1   AN    I    1    0   No   No
+                               D  Language D
+FW114E                 Kikuyu                                            31    1   AN    I    1    0   No   No
+                               E  Language E
+FW114F                 Kisii                                             32    1   AN    I    1    0   No   No
+                               F  Language F
+FW114G                 Luhya                                             33    1   AN    I    1    0   No   No
+                               G  Language G
+FW114H                 Luo                                               34    1   AN    I    1    0   No   No
+                               H  Language H
+FW114I                 Maasai                                            35    1   AN    I    1    0   No   No
+                               I  Language I
+FW114J                 Meru                                              36    1   AN    I    1    0   No   No
+                               J  Language J
+FW114K                 Mijikenda                                         37    1   AN    I    1    0   No   No
+                               K  Language K
+FW114L                 Somali                                            38    1   AN    I    1    0   No   No
+                               L  Language L
+FW114M                 Taiti/Taveta                                      39    1   AN    I    1    0   No   No
+                               M  Language M
+FW114N                 Borana                                            40    1   AN    I    1    0   No   No
+                               M  Language M
+FW114O                 Maragoli                                          41    1   AN    I    1    0   No   No
+                               M  Language M
+FW114P                 Pokot                                             42    1   AN    I    1    0   No   No
+                               M  Language M
+FW114Q                 Turkana                                           43    1   AN    I    1    0   No   No
+                               M  Language M
+FW114R                 Swahili                                           44    1   AN    I    1    0   No   No
+                               M  Language M
+FW114X                 Other language                                    45    1   AN    I    1    0   No   No
+                               X  Other language
+FW114Y                 No other language                                 46    1   AN    I    1    0   No   No
+                               Y  No other language
+FW115                  Has fieldworker ever worked on a DHS              47    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+FW116                  Has fieldworker ever worked on any other survey   48    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+FW117                  Was fieldworker working for agency at the time    49    1    N    I    1    0   No   No
+                               1  Yes, MCU
+                               2  Yes, KNBS
+                               3  No
+FW118                  Is fieldworker permanently or temporarily emplo   50    1    N    I    1    0   No   No
+                               1  Permanent
+                               2  Temporary
+                          (na)    Not applicable
+--------------------------------------------------------------------------------------------------------------
+Relation Name         Primary               Linked by             Secondary             Linked by
+--------------------------------------------------------------------------------------------------------------

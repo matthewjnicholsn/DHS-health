@@ -1,0 +1,1652 @@
+                                                   GHVA51FL
+                                                GHVA51FL_DICT
+
+                  P:\DHS\PROJECTS\Distrib\Ghana MaternalMortality2007\export\VA\GHVA51FL.DCF
+                                    Last Modified:  5/27/2009  7:36:52 PM
+
+--------------------------------------------------------------------------------------------------------------
+Level Name                    Level Label                                                  Type            Rec
+  Record Name                   Record Label                                              Value  Req  Max  Len
+--------------------------------------------------------------------------------------------------------------
+VAQ                           VAQ
+  RECORD1                       RECORD1                                                          Yes    1 1427
+Level: VAQ                                             Record: RECORD1
+--------------------------------------------------------------------------------------------------------------
+                                                                                 Data Item            Dec Zero
+Item Name              Item Label                                     Start  Len Type Type  Occ  Dec Char Fill
+--------------------------------------------------------------------------------------------------------------
+                         (record type)                                    0    0   AN    I    1    0   No   No
+VACLUST           (id) Cluster number                                     1    4    N    I    1    0   No   No
+                               1:1776  
+VASTRUC           (id) Structure Number                                   5    3    N    I    1    0   No   No
+                               1:999  
+VAHHNO            (id) Household Number                                   8    3    N    I    1    0   No   No
+                               1:999  
+VALINE            (id) Line number of woman                              11    2    N    I    1    0   No   No
+                               1:50  
+                          (na)       Not applicable
+VAREGION               Region of residence                               13    2    N    I    1    0   No   No
+                               1   Western
+                               2   Central
+                               3   Greater Accra
+                               4   Volta
+                               5   Eastern
+                               6   Ashanti
+                               7   Brong Ahafo
+                               8   Northern
+                               9   Upper East
+                               10  Upper West
+                          (na)     Not applicable
+VADISTR                District                                          15    2    N    I    1    0   No   No
+VALOCAL                Large city\small city\town\rural                  17    1    N    I    1    0   No   No
+                               1  Large city
+                               2  Small city
+                               3  Town
+                               4  Rural
+                          (na)    Not applicable
+VARLTN                 Relationship of main respondent to deceased       18    1    N    I    1    0   No   No
+                               1  Father
+                               2  Mother
+                               3  Husband
+                               4  Brother/sister
+                               5  Child
+                               6  Other relative
+                               7  No relation
+                               9  Missing
+VAINTD                 Day of VA interview                               19    2    N    I    1    0   No  Yes
+                               1:31  
+                          (na)       Not applicable
+VAINTM                 Month of VA interview                             21    2    N    I    1    0   No  Yes
+                               1:12  
+                          (na)       Not applicable
+VAINTY                 Year of VA interview                              23    4    N    I    1    0   No  Yes
+                               2007:2008  
+                          (na)            Not applicable
+VAINTNUM               Interviewer number                                27    3    N    I    1    0   No   No
+                               0:998  
+                           (m) 999    Missing
+VARESULT               Result of interview                               30    1    N    I    1    0   No   No
+                               1  Completed
+                               2  Not at home
+                               3  Postponed
+                               4  Refused
+                               5  Partly completed
+                               6  Appropriate person not found
+                               7  Other
+                               8  Not eligible
+                          (na)    Not applicable
+VAVISITS               Number of household visits                        31    1    N    I    1    0   No   No
+                               1:3  
+                          (na)      Not applicable
+VALANGQ                Language of questionnaire                         32    1    N    I    1    0   No   No
+                               1  ENGLISH
+                               2  AKAN
+                               3  GA
+                               4  EWE
+                               5  NZEMA
+                               6  DAGBANI
+                               7  OTHER
+                          (na)    Not applicable
+VALANGI                Language of interview                             33    1    N    I    1    0   No   No
+                               1  ENGLISH
+                               2  AKAN
+                               3  GA
+                               4  EWE
+                               5  NZEMA
+                               6  DAGBANI
+                               7  OTHER
+                           (m) 9  Missing
+                          (na)    Not applicable
+VALANGR                Language of respondent                            34    1    N    I    1    0   No   No
+                               1  ENGLISH
+                               2  AKAN
+                               3  GA
+                               4  EWE
+                               5  NZEMA
+                               6  DAGBANI
+                               7  OTHER
+                           (m) 9  Missing
+                          (na)    Not applicable
+VATRANS                Translator used                                   35    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+VASUPERV               Supervisor number                                 36    3    N    I    1    0   No   No
+                               0:998  
+                           (m) 999    Missing
+                          (na)        Not applicable
+VAFEDIT                Field editor number                               39    3    N    I    1    0   No   No
+                               0:998  
+                           (m) 999    Missing
+                          (na)        Not applicable
+VAOEDIT                Office editor number                              42    2    N    I    1    0   No   No
+                               0:98  
+                           (m) 99    Missing
+                          (na)       Not applicable
+VAKEYER                Data entry clerk                                  44    2    N    I    1    0   No   No
+                          (na)     Not applicable
+VAINTC                 Date of VA interview (CMC)                        46    4    N    I    1    0   No   No
+                          (na)       Not applicable
+VAWEIGHT               Weight (6 decimals)                               50    8    N    I    1    0   No   No
+                          (na)           Not applicable
+VASTRATA               Strata based on region and urban/rural            58    4    N    I    1    0   No   No
+                               1   Western - urban
+                               2   Western - rural
+                               3   Central - urban
+                               4   Central - rural
+                               5   Greater Accra - urban
+                               6   Greater Accra - rural
+                               7   Volta - urban
+                               8   Volta - rural
+                               9   Eastern - urban
+                               10  Eastern - rural
+                               11  Ashanti - urban
+                               12  Ashanti - rural
+                               13  Brong Ahafo - urban
+                               14  Brong Ahafo - rural
+                               15  Northern - urban
+                               16  Northern - rural
+                               17  Upper East - urban
+                               18  Upper East - rural
+                               19  Upper West - urban
+                               20  Upper West - rural
+VAURBRUR               Urban / rural                                     62    1    N    I    1    0   No   No
+                               1  Urban
+                               2  Rural
+                          (na)    Not applicable
+VA101H                 Start of interview (hour)                         63    2    N    I    1    0   No  Yes
+                               1:23  
+                               97    Inconsistent
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA101M                 Start of interview (minutes)                      65    2    N    I    1    0   No  Yes
+                               0:59  
+                               97    Inconsistent
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA102D                 Day of birth                                      67    2    N    I    1    0   No   No
+                               1:31  
+                               97    Inconsistent
+                               98    DK day
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA102M                 Month of birth                                    69    2    N    I    1    0   No   No
+                               1:12  
+                               97    Inconsistent
+                               98    DK month
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA102Y                 Year of birth                                     71    4    N    I    1    0   No   No
+                               1900:2007  
+                               9997       Inconsistent
+                               9998       DK year
+                           (m) 9999       Missing
+                          (na)            Not applicable
+VA103D                 Day of death                                      75    2    N    I    1    0   No   No
+                               1:31  
+                               97    Inconsistent
+                               98    DK day
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA103M                 Month of death                                    77    2    N    I    1    0   No   No
+                               1:12  
+                               97    Inconsistent
+                               98    DK month
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA103Y                 Year of death                                     79    4    N    I    1    0   No   No
+                               1900:2007  
+                               9997       Inconsistent
+                               9998       DK year
+                           (m) 9999       Missing
+                          (na)            Not applicable
+VA104                  Age at death                                      83    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or older
+                               97    Inconsistent
+                               98    DK
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA106                  Marital status of deceased                        85    1    N    I    1    0   No   No
+                               1  Never married
+                               2  Married/living with a partner
+                               3  Separated
+                               4  Divorced
+                               5  Widowed
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA107                  Highest educational level of deceased             86    1    N    I    1    0   No   No
+                               1  Primary
+                               2  Middle/JSS
+                               3  Secondary/SSS
+                               4  Higher
+                               5  Never attended school
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA108                  Place of death                                    87    1    N    I    1    0   No   No
+                               1  Home
+                               2  Health facility
+                               3  Shrine/prayer camp
+                               6  Other
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA109                  Usual place of residence of deceased              88    1    N    I    1    0   No   No
+                               1  In this house/locality
+                               2  In a different village/town
+                               6  Other
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA110                  Place of funeral/burial                           89    1    N    I    1    0   No   No
+                               1  In this house/locality
+                               2  In a different village/town
+                               6  Other
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA102C                 Date of birth (CMC)                               90    4    N    I    1    0   No   No
+                          (na)       Not applicable
+VA102F                 Date flag for VA102C                              94    1    N    I    1    0   No   No
+                               1  Have YOB, MOB - no imputation
+                               2  YOB, MOD, YOD, age at death - impute MOB
+                               3  YOB, YOD, AOD - impute MOB
+                               4  YOB,YOD - impute MOB
+                               5  YOB, AOD - impute MOB
+                               6  MOD,YOD,AOD - impute MOB, YOB
+                               7  YOD, AOD - impute MOB, YOB
+                               8  No information - impute MOB, YOB
+                               9  None of the above
+                          (na)    Not applicable
+VA103C                 Date of death (CMC)                               95    4    N    I    1    0   No   No
+                          (na)       Not applicable
+VA103F                 Date flag for VA103C                              99    1    N    I    1    0   No   No
+                               1  Have month, year of death - no imputation
+                               2  YOD, Age at death, YOB,MOB - impute MOD
+                               3  YOD, AOD, YOB - impute MOD
+                               4  YOD, AOD, MOB - impute MOD
+                               5  YOD, AOD - impute MOD
+                               6  YOD - impute MOD
+                               7  No information - impute MOD, YOD
+                               8  Other
+                          (na)    Not applicable
+VAELIG                 VAQ eligibility                                  100    1    N    I    1    0   No   No
+                               1  Eligible for VAQ
+                               2  Not eligible based on date of death
+                               3  Not eligible based on age of death
+V202L                  List of medical conditions                       101    2    N    I   12    0   No   No
+                               1   High blood pressure
+                               2   Heart disease
+                               3   Stroke
+                               4   Mental disorder (including depression)
+                               5   HIV/AIDS
+                               6   Chronic obstructive pulmonary disease (COPD)
+                               7   Diabetes
+                               8   Tuberculosis
+                               9   Epilepsy
+                               10  Cancer
+                               11  Asthma
+                               12  Malaria
+                               13  Other chronic illness
+V202                   Ever had condition                               125    1    N    I   12    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+V202U                  Onset of condition (units)                       137    1    N    I   12    0   No   No
+                               1  Months
+                               2  Years
+                               9  Special answers
+                          (na)    Not applicable
+V202N                  Onset of condition (number)                      149    2    N    I   12    0   No   No
+                               0:90  
+                               98    Don't know
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA301U                 Length of illness before death (units)           173    1    N    I    1    0   No   No
+                               1  Days
+                               2  Months
+                               9  Special answers
+                          (na)    Not applicable
+VA301N                 Length of illness before death (number)          174    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                           (m) 99    Missing
+VA302U                 Length of fever (units)                          176    1    N    I    1    0   No   No
+                               0  No fever
+                               1  Days
+                               2  Months
+                               9  Special answers
+VA302N                 Length of fever (number)                         177    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+VA302A                 Fever continuous                                 179    1    N    I    1    0   No   No
+                               1  Continuous
+                               2  On and off
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA302B                 Fever only at night                              180    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA302C                 Chills/rigor                                     181    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA303U                 Duration of cough (units)                        182    1    N    I    1    0   No   No
+                               0  No cough
+                               1  Days
+                               2  Months
+                               9  Special answers
+VA303N                 Duration of cough (number)                       183    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+VA303A                 Cough severe                                     185    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA303B                 Cough productive w/ sputum                       186    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA303C                 Cough out blood                                  187    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA303D                 Night sweats                                     188    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA304U                 Duration of breathlessness (units)               189    1    N    I    1    0   No   No
+                               0  No breathlessness
+                               1  Days
+                               2  Months
+                               9  Special answers
+VA304N                 Duration of breathlessness (number)              190    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+VA304A                 Unable to carry out daily routines due to breat  192    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA304B                 Breathless while lying flat                      193    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA304C                 Wheezing                                         194    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA305U                 Duration of chest pain (units)                   195    1    N    I    1    0   No   No
+                               0  No chest pain
+                               1  Days
+                               2  Months
+                               9  Special answers
+VA305N                 Duration of chest pain (number)                  196    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+VA305A                 How chest pain started                           198    1    N    I    1    0   No   No
+                               1  Suddenly
+                               2  Gradually
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA305B                 Severe chest pain and duration                   199    1    N    I    1    0   No   No
+                               1  Less than half an hour
+                               2  Half hour to 24 hours
+                               3  More than 24 hours
+                               4  No severe chest pain
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA305C                 Chest pain below sternum                         200    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA305D                 Chest pain over heart and spread to left arm     201    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA305E                 Chest pain over the ribs                         202    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA305F                 Chest pain continuous                            203    1    N    I    1    0   No   No
+                               1  Continuous
+                               2  On and off
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA305G                 Chest pain worse while coughing                  204    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA305H                 Palpitations                                     205    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA306U                 Duration of diarrhea (units)                     206    1    N    I    1    0   No   No
+                               0  No diarrhea
+                               1  Days
+                               2  Months
+                               9  Special answers
+VA306N                 Duration of diarrhea (number)                    207    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+VA306A                 Diarrhea continuous                              209    1    N    I    1    0   No   No
+                               1  Continuous
+                               2  On and off
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA306B                 Blood in the stool                               210    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA306C                 Number of times passing stools per day           211    2    N    I    1    0   No   No
+                               0:50  
+                               98    Don't know
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA307U                 Duration of vomiting (units)                     213    1    N    I    1    0   No   No
+                               0  No vomiting
+                               1  Days
+                               2  Months
+                               9  Special answers
+VA307N                 Duration of vomiting (number)                    214    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+VA307A                 Appearance of vomit                              216    1    N    I    1    0   No   No
+                               1  Coffee-colored fluid
+                               2  Bright red / blood red
+                               3  Clear / colorless
+                               4  Yellow
+                               5  Color of food
+                               6  Other
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA307B                 Vomiting episodes per day when severe            217    2    N    I    1    0   No   No
+                               0:50  
+                               98    Don't know
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA308U                 Duration of abdominal pain (units)               219    1    N    I    1    0   No   No
+                               0  No abdominal pain
+                               1  Days
+                               2  Months
+                               9  Special answers
+VA308N                 Duration of abdominal pain (number)              220    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+VA308A                 Abdominal pain severe                            222    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA309U                 Duration of abdominal distention (units)         223    1    N    I    1    0   No   No
+                               0  No abdominal distention
+                               1  Days
+                               2  Months
+                               9  Special answers
+VA309N                 Duration of abdominal distention (number)        224    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+VA309A                 How quickly abdominal distention developed       226    1    N    I    1    0   No   No
+                               1  Rapidly, within days
+                               2  Gradually, over months
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA309B                 Period of a day or longer of not passing any st  227    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA310U                 Duration of mass in the abdomen (units)          228    1    N    I    1    0   No   No
+                               0  No mass in abdomen
+                               1  Days
+                               2  Months
+                               9  Special answers
+VA310N                 Duration of mass in the abdomen (number)         229    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+VA310A                 Location of mass in abdomen                      231    1    N    I    1    0   No   No
+                               1  Right upper abdomen
+                               2  Left upper abdomen
+                               3  Lower abdomen
+                               4  All over abdomen
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA311U                 Duration of difficulty swallowing solids (units  232    1    N    I    1    0   No   No
+                               0  No difficulty swallowing solids
+                               1  Days
+                               2  Months
+                               9  Special answers
+VA311N                 Duration of difficulty swallowing solids (numbe  233    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+VA312U                 Duration of difficulty swallowing liquids (unit  235    1    N    I    1    0   No   No
+                               0  No difficulty swallowing liquids
+                               1  Days
+                               2  Months
+                               9  Special answers
+VA312N                 Duration of difficulty swallowing liquids (numb  236    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+VA313U                 Duration of headache (units)                     238    1    N    I    1    0   No   No
+                               0  No headache
+                               1  Days
+                               2  Months
+                               9  Special answers
+VA313N                 Duration of headache (number)                    239    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+VA313A                 Headache severe                                  241    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA314U                 Duration of stiff or painful neck (units)        242    1    N    I    1    0   No   No
+                               0  No stiff or painful neck
+                               1  Days
+                               2  Months
+                               9  Special answers
+VA314N                 Duration of stiff or painful neck (number)       243    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+VA315U                 Duration of mental confusion (units)             245    1    N    I    1    0   No   No
+                               0  No mental confusion
+                               1  Days
+                               2  Months
+                               9  Special answers
+VA315N                 Duration of mental confusion (number)            246    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+VA315A                 How mental confusion started                     248    1    N    I    1    0   No   No
+                               1  Suddenly
+                               2  Fast (within a day)
+                               3  Slowly (over many days)
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA316U                 Duration of unconsciousness (units)              249    1    N    I    1    0   No   No
+                               0  Was not unconscious
+                               1  Days
+                               2  Months
+                               9  Special answers
+VA316N                 Duration of unconsciousness (number)             250    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+VA316A                 How unconsciousness started                      252    1    N    I    1    0   No   No
+                               1  Suddenly
+                               2  Fast (within a day)
+                               3  Slowly (over many days)
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA317U                 Duration of convulsions (units)                  253    1    N    I    1    0   No   No
+                               0  No convulsions
+                               1  Days
+                               2  Months
+                               9  Special answers
+VA317N                 Duration of convulsions (number)                 254    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+VA318U                 Duration of problem opening mouth (units)        256    1    N    I    1    0   No   No
+                               0  No problem opening mouth
+                               1  Days
+                               2  Months
+                               9  Special answers
+VA318N                 Duration of problem opening mouth (number)       257    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+VA319U                 Duration of stiffness of whole body (units)      259    1    N    I    1    0   No   No
+                               0  No stiffness
+                               1  Days
+                               2  Months
+                               9  Special answers
+VA319N                 Duration of stiffness of whole body (number)     260    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+VA320U                 Duration of paralysis of one side of body (unit  262    1    N    I    1    0   No   No
+                               0  No paralysis of one side
+                               1  Days
+                               2  Months
+                               9  Special answers
+VA320N                 Duration of paralysis of one side of body (numb  263    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+VA320A                 How paralysis of one side of the body started    265    1    N    I    1    0   No   No
+                               1  Suddenly
+                               2  Fast (within a day)
+                               3  Slowly (over many days)
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA321U                 Duration of paralysis in lower limbs (units)     266    1    N    I    1    0   No   No
+                               0  No paralysis of lower limbs
+                               1  Days
+                               2  Months
+                               9  Special answers
+VA321N                 Duration of paralysis in lower limbs (number)    267    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+VA321A                 How paralysis of lower limbs started             269    1    N    I    1    0   No   No
+                               1  Suddenly
+                               2  Fast (within a day)
+                               3  Slowly (over many days)
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA322U                 Duration of difficulty passing urine (units)     270    1    N    I    1    0   No   No
+                               0  No difficulty in passing urine
+                               1  Days
+                               2  Months
+                               9  Special answers
+VA322N                 Duration of difficulty passing urine (number)    271    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+VA323U                 Duration of change in urine color (units)        273    1    N    I    1    0   No   No
+                               0  No change in urine color
+                               1  Days
+                               2  Months
+                               9  Special answers
+VA323N                 Duration of change in urine color (number)       274    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+VA324U                 Duration of passing blood in urine (units)       276    1    N    I    1    0   No   No
+                               0  No blood in urine
+                               1  Days
+                               2  Months
+                               9  Special answers
+VA324N                 Duration of passing blood in urine (number)      277    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+VA325U                 Duration of change in amount of urine passed da  279    1    N    I    1    0   No   No
+                               0  No change in urine amount
+                               1  Days
+                               2  Months
+                               9  Special answers
+VA325N                 Duration of change in amount of urine passed da  280    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+VA325A                 Amount of urine passed                           282    1    N    I    1    0   No   No
+                               1  Too much
+                               2  Too little
+                               3  No urine at all
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA326U                 Duration of skin rash (units)                    283    1    N    I    1    0   No   No
+                               0  No skin rash
+                               1  Days
+                               2  Months
+                               9  Special answers
+VA326N                 Duration of skin rash (number)                   284    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+VA326A                 Location of skin rash                            286    1    N    I    1    0   No   No
+                               1  Face
+                               2  Trunk
+                               3  Arms and legs
+                               4  Whole body
+                               6  Other
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA326B                 Description of skin rash                         287    1    N    I    1    0   No   No
+                               1  Measles rash
+                               2  Rash with clear fluid
+                               3  Rash with pus
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA326C                 Presence of red eyes                             288    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA326D                 Bleeding from nose, mouth, anus                  289    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA327U                 Duration of weight loss (units)                  290    1    N    I    1    0   No   No
+                               0  No weight loss
+                               1  Days
+                               2  Months
+                               9  Special answers
+VA327N                 Duration of weight loss (number)                 291    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+VA327A                 Looked thin and wasted                           293    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA328U                 Duration of mouth sores (units)                  294    1    N    I    1    0   No   No
+                               0  No mouth sores
+                               1  Days
+                               2  Months
+                               9  Special answers
+VA328N                 Duration of mouth sores (number)                 295    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+VA329U                 Duration of swelling (units)                     297    1    N    I    1    0   No   No
+                               0  No swelling
+                               1  Days
+                               2  Months
+                               9  Special answers
+VA329N                 Duration of swelling (number)                    298    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+VA329A                 Location of swelling                             300    6   AN    I    1    0   No   No
+                               A       Face
+                               B       Joints
+                               C       Ankles
+                               D       Whole body
+                               E       Feet
+                               F       Legs
+                               X       Other
+                               Y       Don't know
+VA330U                 Duration of lumps (units)                        306    1    N    I    1    0   No   No
+                               0  No lumps
+                               1  Days
+                               2  Months
+                               9  Special answers
+VA330N                 Duration of lumps (number)                       307    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+VA330A                 Location of lumps                                309    5   AN    I    1    0   No   No
+                               A      Neck
+                               B      Armpit
+                               C      Groin
+                               D      Breast
+                               X      Other
+                               Y      Don't know
+VA331U                 Duration of yellow discoloration of eye (units)  314    1    N    I    1    0   No   No
+                               0  No discoloration in the eye
+                               1  Days
+                               2  Months
+                               9  Special answers
+VA331N                 Duration of yellow discoloration of eye (number  315    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+VA332U                 Duration of paleness (units)                     317    1    N    I    1    0   No   No
+                               0  Nothing pale
+                               1  Days
+                               2  Months
+                               9  Special answers
+VA332N                 Duration of paleness (number)                    318    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+VA333U                 Duration of ulcer,abcess,sore (units)            320    1    N    I    1    0   No   No
+                               0  No ulcer/abcess/sore
+                               1  Days
+                               2  Months
+                               9  Special answers
+VA333N                 Duration of ulcer,abcess,sore (number)           321    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+VA333A                 Location of ulcer,abcess,sore                    323   10   AN    I    1    0   No   No
+                               A           Neck
+                               B           Armpit
+                               C           Groin
+                               D           Face
+                               E           Joints
+                               F           Ankles
+                               G           Genitals
+                               H           Whole body
+                               I           Breast
+                               J           Buttocks
+                               K           Legs
+                               X           Other
+                               Y           Don't know
+VA401U                 Duration of ulcer/swelling in the breast (units  333    1    N    I    1    0   No   No
+                               0  No ulcer/swelling in breast
+                               1  Days
+                               2  Months
+                               9  Special answers
+VA401N                 Duration of ulcer/swelling in the breats (numbe  334    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+VA402U                 Duration of excessive bleeding during menstruat  336    1    N    I    1    0   No   No
+                               0  No excessive bleeding
+                               1  Days
+                               2  Months
+                               9  Special answers
+VA402N                 Duration of excessive bleeding during menstruat  337    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+VA403U                 Duration of vaginal bleeding between periods (u  339    1    N    I    1    0   No   No
+                               0  No vaginal bleeding
+                               1  Days
+                               2  Months
+                               9  Special answers
+VA403N                 Duration of vaginal bleeding between periods (n  340    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+VA404U                 Duration of abnormal vaginal discharge (units)   342    1    N    I    1    0   No   No
+                               0  No abnormal discharge
+                               1  Days
+                               2  Months
+                               9  Special answers
+VA404N                 Duration of abnormal vaginal discharge (number)  343    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+VA405                  Pregnant at time of death                        345    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Unsure
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA405AU                Duration of pregnancy at time of death (units)   346    1    N    I    1    0   No   No
+                               1  Days
+                               2  Months
+                               9  Special answers
+                          (na)    Not applicable
+VA405AN                Duration of pregnancy at time of death (number)  347    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA405B                 Number of pregnancies                            349    2    N    I    1    0   No   No
+                               1:30  
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA405C                 Illness during last 3 months of pregnancy        351   12   AN    I    1    0   No   No
+                               A             Vaginal bleeding
+                               B             Foul-smelling vaginal discharge
+                               C             Puffy face
+                               D             Headache
+                               E             Blurred vision
+                               F             Convulsion
+                               G             Febrile illness
+                               H             Severe abdominal pain that was not labor pains
+                               I             Pallor and shortness of breath (both)
+                               X             Other
+                               Y             None
+                               Z             Don't know
+VA405D                 Death during labor but undelivered               363    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA406                  Gave birth recently                              364    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA406A                 Number of days survived after giving birth       365    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or greater
+                               98    Don't know
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA406B                 Excessive bleeding on day that labor started     367    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA406C                 Excessive bleeding during labor before delivery  368    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA406D                 Excessive bleeding after baby was delivered      369    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA406E                 Difficulty in delivering the placenta            370    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA406F                 In labor for more than 24 hours                  371    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA406G                 Normal vaginal delivery                          372    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA406H                 Type of delivery                                 373    1    N    I    1    0   No   No
+                               1  Forceps/vacuum
+                               2  Caesarian section
+                               6  Other
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA406I                 Foul-smelling vaginal discharge                  374    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA406J                 Location of delivery                             375    2    N    I    1    0   No   No
+                               1   Respondent's home
+                               2   Other home
+                               3   Govt. hospital/clinic
+                               4   Govt. health center
+                               5   Govt. health post
+                               6   Other public
+                               7   Pvt. hospital/clinic
+                               8   Maternity home
+                               9   Other private
+                               10  Shrine/prayer camp
+                               96  Other
+                               98  Don't know
+                           (m) 99  Missing
+                          (na)     Not applicable
+VA406K                 Assistance with delivery                         377    8   AN    I    1    0   No   No
+                               A         Doctor
+                               B         Nurse/midwife
+                               C         Auxiliary midwife
+                               D         Traditional birth attendant
+                               E         Relative/friend
+                               X         Other
+                               Y         No one
+                               Z         Don't know
+VA407                  Pregnant in 6 weeks before death                 385    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA407A                 Duration of pregnancy at time of death           386    1    N    I    1    0   No   No
+                               1  1st trimester
+                               2  2nd trimester
+                               3  3rd trimester
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA407B                 Using FP method at the time of becoming pregnan  387    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA407C                 Wanted to become pregnant                        388    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA407D                 Heavy bleeding when pregnancy ended              389    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA407E                 Severe abdominal pain in 3 days before death     390    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA407F                 Fever before death                               391    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA407G                 Fever starting in 3 days before death            392    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA407H                 Fever with shivering                             393    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA407I                 Foul-smelling discharge in 6 weeks before death  394    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA407J                 Medical treatment in 6 weeks before death        395    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA407K1                Operation                                        396    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  DK
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA407K2                Blood transfusion                                397    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  DK
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA407K3                Antibiotics                                      398    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  DK
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA407K4                Other treatment                                  399    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  DK
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA407L                 Wanted to end pregnancy                          400    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA407M                 Attempted to end pregnancy                       401    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA407N_U               Time before death of first attempt to end pregn  402    1    N    I    1    0   No   No
+                               1  Days
+                               2  Weeks
+                               3  Months
+                               9  Special answers
+                          (na)    Not applicable
+VA407N_N               Time before death of first attempt to end pregn  403    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA407O                 Took medicine or received treatment to end preg  405    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA408                  Abortion recently before death                   406    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA408A                 Died during abortion                             407    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA408B                 Number of days between abortion and death        408    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA408C                 Length of pregnancy at time of abortion          410    2    N    I    1    0   No   No
+                               0:10  
+                               98    Don't know
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA408D                 Heavy bleeding after the abortion                412    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA408E                 Abortion was spontaneous                         413    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA408F                 Took treatment to end pregnancy                  414    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA501                  Injury or accident that led to death             415    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA502                  Type of injury/accident                          416    2    N    I    1    0   No   No
+                               1   Road traffic accident
+                               2   Fall
+                               3   Drowning
+                               4   Poisoning
+                               5   Burns
+                               6   Violence/assault/homicide/abuse
+                               96  Other
+                               98  Don't know
+                           (m) 99  Missing
+                          (na)     Not applicable
+VA503                  Intentionally inflicted by someone else          418    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA504                  Committed suicide                                419    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA505                  Animal/insect bite that led to death             420    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA506                  Type of animal/insect bite                       421    1    N    I    1    0   No   No
+                               1  Dog
+                               2  Snake
+                               6  Other
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA601                  Received any treatment for illness that led to   422    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA602                  Type of treatment                                423    8   AN    I    1    0   No   No
+                               A         ORS Treatment
+                               B         Intravenous fluids
+                               C         Treatment/Food through tube
+                               D         Given drugs
+                               E         Operation
+                               F         Blood transfusion
+                               G         Herbal Treatment
+                               H         Oxygen
+                               X         Other
+                               Y         Don't know
+VA603                  Source of treatment                              431   12   AN    I    1    0   No   No
+                               A             Respondent's home
+                               B             Other home
+                               C             Govt. hospital/clinic
+                               D             Govt. health center
+                               E             Govt. health post
+                               F             Other public
+                               G             Pvt. hospital/clinic
+                               H             Maternity home
+                               I             Other private
+                               J             Shrine/prayer camp
+                               K             Other
+                               L             Don't know
+VA605                  Number of contacts with treatment source in mon  443    2    N    I    1    0   No   No
+                               0:40  
+                               41    41 times or greater
+                               98    Don't know
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA606                  Health worker told the cause of death            445    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA608                  Operation for the illness                        446    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA609U                 Time between operation and death (units)         447    1    N    I    1    0   No   No
+                               1  Days
+                               2  Weeks
+                               3  Months
+                               9  Special answers
+                          (na)    Not applicable
+VA609N                 Time between operation and death (number)        448    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA610                  Part of body operated on                         450    1    N    I    1    0   No   No
+                               1  Abdomen
+                               2  Chest
+                               3  Head
+                               6  Other
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA611                  Had measles vaccination                          451    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA701                  Drank alcohol                                    452    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA702U                 How long she had been drinking (units)           453    1    N    I    1    0   No   No
+                               1  Months
+                               2  Years
+                               9  Special answers
+                          (na)    Not applicable
+VA702N                 How long she had been drinking (number)          454    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA703                  How often drank alcohol                          456    1    N    I    1    0   No   No
+                               1  Daily
+                               2  Weekly
+                               3  Once in a while/rarely
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA704                  Stopped drinking alcohol before death            457    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA705U                 Time between stopping drinking and death (units  458    1    N    I    1    0   No   No
+                               1  Days
+                               2  Weeks
+                               3  Months
+                               4  Years
+                               9  Special answers
+                          (na)    Not applicable
+VA705N                 Time between stopping drinking and death (numbe  459    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA706                  Smoked tobacco or used snuff                     461    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA707U                 How long she had been smoking (units)            462    1    N    I    1    0   No   No
+                               1  Months
+                               2  Years
+                               9  Special answers
+                          (na)    Not applicable
+VA707N                 How long she had been smoking (number)           463    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA708                  How often smoked                                 465    1    N    I    1    0   No   No
+                               1  Daily
+                               2  Weekly
+                               3  Once in a while/rarely
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA709                  How many cigarettes/cigar/pipes smoked daily     466    2    N    I    1    0   No   No
+                               1:94  
+                               95    95 or greater
+                               98    Don't know
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA710                  Stopped smoking before death                     468    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA711U                 Time between stopping smoking and death (units)  469    1    N    I    1    0   No   No
+                               1  Days
+                               2  Weeks
+                               3  Months
+                               4  Years
+                               9  Dont know
+                          (na)    Not applicable
+VA711N                 Time between stopping smoking and death (number  470    2    N    I    1    0   No   No
+                               0:94  
+                               95    95 or higher
+                               98    Don't know
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA801                  Have a death certificate                         472    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA802D                 Day of death on death certificate                473    2    N    I    1    0   No  Yes
+                               1:31  
+                           (m) 99    Missin
+                          (na)       Not applicable
+VA802M                 Month of death on death certificate              475    2    N    I    1    0   No  Yes
+                               1:12  
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA802Y                 Year of death on death certificate               477    4    N    I    1    0   No  Yes
+                               2000:2008  
+                           (m) 9999       Missing
+                          (na)            Not applicable
+VA803D                 Day of issue of death certificate                481    2    N    I    1    0   No  Yes
+                               1:31  
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA803M                 Month of issue of death certificate              483    2    N    I    1    0   No  Yes
+                               1:12  
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA803Y                 Year of issue of death certificate               485    4    N    I    1    0   No  Yes
+                               2004:2008  
+                           (m) 9999       Missing
+                          (na)            Not applicable
+VA804                  Cause of death - 1st line of death certificate   489  100   AN    I    1    0   No   No
+VA805                  Cause of death - 2nd line of death certificate   589  100   AN    I    1    0   No   No
+VA806                  Cause of death - 3rd line of death certificate   689  100   AN    I    1    0   No   No
+VA807                  Cause of death - 4th line of death certificate   789  100   AN    I    1    0   No   No
+VA901A1                Has burial permit                                889    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA901A2                Cause of death on burial permit                  890   50   AN    I    1    0   No   No
+VA901A3D               Day of issue of burial permit                    940    2    N    I    1    0   No  Yes
+                               1:31  
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA901A3M               Month of issue of burial permit                  942    2    N    I    1    0   No  Yes
+                               1:12  
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA901A3Y               Year of issue of burial permit                   944    4    N    I    1    0   No  Yes
+                               1900:2008  
+                           (m) 9999       Missing
+                          (na)            Not applicable
+VA901B1                Has post mortem results                          948    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA901B2                Cause of death in post mortem results            949   50   AN    I    1    0   No   No
+VA901B3D               Day of issue of post mortem results              999    2    N    I    1    0   No  Yes
+                               1:31  
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA901B3M               Month of issue of post mortem results           1001    2    N    I    1    0   No  Yes
+                               1:12  
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA901B3Y               Year of issue of post mortem results            1003    4    N    I    1    0   No  Yes
+                               1900:2008  
+                           (m) 9999       Missing
+                          (na)            Not applicable
+VA901C1                Has MCH/ANC card                                1007    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA901C2                Cause of death on MCH/AHC card                  1008   50   AN    I    1    0   No   No
+VA901C3D               Day of issue of MCH/AHC card                    1058    2    N    I    1    0   No  Yes
+                               1:31  
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA901C3M               Month of issue of MCH/AHC card                  1060    2    N    I    1    0   No  Yes
+                               1:12  
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA901C3Y               Year of issue of MCH/AHC card                   1062    4    N    I    1    0   No  Yes
+                               1900:2008  
+                           (m) 9999       Missing
+                          (na)            Not applicable
+VA901D1                Has hospital prescription form                  1066    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA901D2                Cause of death on hospital prescription form    1067   50   AN    I    1    0   No   No
+VA901D3D               Day of issue of hospital prescription form      1117    2    N    I    1    0   No  Yes
+                               1:31  
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA901D3M               Month of issue of hospital prescription form    1119    2    N    I    1    0   No  Yes
+                               1:12  
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA901D3Y               Year of issue of hospital prescription form     1121    4    N    I    1    0   No  Yes
+                               1900:2008  
+                           (m) 9999       Missing
+                          (na)            Not applicable
+VA901E1                Has treatment cards                             1125    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA901E2                Cuase of death on treatment cards               1126   50   AN    I    1    0   No   No
+VA901E3D               Day of issue of treatment cards                 1176    2    N    I    1    0   No  Yes
+                               1:31  
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA901E3M               Month of issue of treatment cards               1178    2    N    I    1    0   No  Yes
+                               1:12  
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA901E3Y               Year of issue of treatment cards                1180    4    N    I    1    0   No  Yes
+                               1900:2008  
+                           (m) 9999       Missing
+                          (na)            Not applicable
+VA901F1                Has hospital discharge form                     1184    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA901F2                Cause of death on hospital discharge form       1185   50   AN    I    1    0   No   No
+VA901F3D               Day of issue of hospital discharge form         1235    2    N    I    1    0   No  Yes
+                               1:31  
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA901F3M               Month of issue of hospital discharge form       1237    2    N    I    1    0   No  Yes
+                               1:12  
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA901F3Y               Year of issue of hospital discharge form        1239    4    N    I    1    0   No  Yes
+                               1900:2008  
+                           (m) 9999       Missing
+                          (na)            Not applicable
+VA901G1                Has laboratory results                          1243    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA901G2                Cause of death on laboratory results            1244   50   AN    I    1    0   No   No
+VA901G3D               Day of issue of laboratory results              1294    2    N    I    1    0   No  Yes
+                               1:31  
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA901G3M               Month of issue of laboratory results            1296    2    N    I    1    0   No  Yes
+                               1:12  
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA901G3Y               Year of issue of laboratory results             1298    4    N    I    1    0   No  Yes
+                               1900:2008  
+                           (m) 9999       Missing
+                          (na)            Not applicable
+VA901H1                Has community register                          1302    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA901H2                Cause of death in community register            1303   50   AN    I    1    0   No   No
+VA901H3D               Day of issue of community register              1353    2    N    I    1    0   No  Yes
+                               1:31  
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA901H3M               Month of issue of community register            1355    2    N    I    1    0   No  Yes
+                               1:12  
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA901H3Y               Year of issue of community register             1357    4    N    I    1    0   No  Yes
+                               1900:2008  
+                           (m) 9999       Missing
+                          (na)            Not applicable
+VA901I1                Has other hospital documents                    1361    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+VA901I2                Cause of death on other hospital documents      1362   50   AN    I    1    0   No   No
+VA901I3D               Day of issue of other hospital documents        1412    2    N    I    1    0   No  Yes
+                               1:31  
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA901I3M               Month of issue of other hospital documents      1414    2    N    I    1    0   No  Yes
+                               1:12  
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA901I3Y               Year of issue of other hospital documents       1416    4    N    I    1    0   No  Yes
+                               1900:2008  
+                           (m) 9999       Missing
+                          (na)            Not applicable
+VA902H                 Time at end of interview (hour)                 1420    2    N    I    1    0   No  Yes
+                               1:23  
+                               97    Inconsistent
+                           (m) 99    Missing
+                          (na)       Not applicable
+VA902M                 Time at end of interview (minutes)              1422    2    N    I    1    0   No  Yes
+                               0:59  
+                               97    Inconsistent
+                           (m) 99    Missing
+                          (na)       Not applicable
+VAFINICD               Final ICD code                                  1424    4   AN    I    1    0   No   No
+--------------------------------------------------------------------------------------------------------------
+Relation Name         Primary               Linked by             Secondary             Linked by
+--------------------------------------------------------------------------------------------------------------

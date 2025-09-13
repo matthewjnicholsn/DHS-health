@@ -1,0 +1,152 @@
+﻿                                                   ZWFW71FL
+                                                ZWFW71FL_DICT
+
+                                    C:\Countries\ZW70\FWDATA\ZWFW71FL.DCF
+                                    Last Modified:  9/13/2017  2:20:41 PM
+
+--------------------------------------------------------------------------------------------------------------
+Level Name                    Level Label                                                  Type            Rec
+  Record Name                   Record Label                                              Value  Req  Max  Len
+--------------------------------------------------------------------------------------------------------------
+LEVEL_1                       Level 1
+  FWRECORD                      Fieldworker record                                               Yes    1   46
+Level: Level 1                                         Record: Fieldworker record
+--------------------------------------------------------------------------------------------------------------
+                                                                                 Data Item            Dec Zero
+Item Name              Item Label                                     Start  Len Type Type  Occ  Dec Char Fill
+--------------------------------------------------------------------------------------------------------------
+                         (record type)                                    0    0   AN    I    1    0   No   No
+FW101             (id) Fieldworker code                                   1    4    N    I    1    0   No   No
+FW000                  Country code and phase                             5    3   AN    I    1    0   No   No
+FW102                  Fieldworker region of residence                    8    2    N    I    1    0   No   No
+                               1   Bulawayo
+                               2   Manicaland
+                               3   Mashonaland central
+                               4   Mashonaland east
+                               5   Mashonaland west
+                               6   Matabeleland north
+                               7   Matabeleland south
+                               8   Midlands
+                               9   Masvingo
+                               10  Harare
+                           (m) 99  Missing
+FW103                  Fieldworker type of place of residence            10    1    N    I    1    0   No   No
+                               1  Urban
+                               2  Rural
+                           (m) 9  Missing
+                          (na)    Not applicable
+FW104                  Fieldworker age                                   11    2    N    I    1    0   No   No
+                               15:65  
+                           (m) 99     Missing
+                          (na)        Not applicable
+FW105                  Fieldworker sex                                   13    1    N    I    1    0   No   No
+                               1  Male
+                               2  Female
+                           (m) 9  Missing
+                          (na)    Not applicable
+FW106                  Fieldworker marital status                        14    1    N    I    1    0   No   No
+                               1  Currently married
+                               2  Living with a man/woman
+                               3  Widowed
+                               4  Divorced
+                               5  Separated
+                               6  Never married or lived with a man/woman
+                           (m) 9  Missing
+                          (na)    Not applicable
+FW107                  Fieldworker number of living children             15    2    N    I    1    0   No   No
+                               0:24  
+                           (m) 99    Missing
+                          (na)       Not applicable
+FW108                  Fieldworker ever had a child who died             17    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+FW109                  Highest level of school attended by fieldworker   18    1    N    I    1    0   No   No
+                               1  Primary
+                               2  Secondary
+                               3  Higher
+                           (m) 9  Missing
+                          (na)    Not applicable
+FW110                  Highest grade/form/year at that level completed   19    2    N    I    1    0   No   No
+                               0     Less than one year at level
+                               1:15  
+                           (m) 99    Missing
+                          (na)       Not applicable
+FW111                  Fieldworker religion                              21    2    N    I    1    0   No   No
+                               1   Traditional
+                               2   Roman catholic
+                               3   Protestant
+                               4   Pentecostal
+                               5   Apostolic sect
+                               6   Other christian
+                               7   Muslim
+                               95  No religion
+                               96  Other
+                           (m) 99  Missing
+                          (na)     Not applicable
+FW112                  NA - Fieldworker ethnicity                        23    3    N    I    1    0   No   No
+                          (na)      Not applicable
+FW113A                 Language A                                        26    1   AN    I    1    0   No   No
+                               A  Shona
+FW113B                 Language B                                        27    1   AN    I    1    0   No   No
+                               B  Ndebele
+FW113C                 Language C                                        28    1   AN    I    1    0   No   No
+                               C  English
+FW113D                 Language D                                        29    1   AN    I    1    0   No   No
+                               D  Nambia
+FW113E                 Language E                                        30    1   AN    I    1    0   No   No
+                               E  Venda
+FW113F                 Language F                                        31    1   AN    I    1    0   No   No
+                               F  Tonga
+FW113G                 Language G                                        32    1   AN    I    1    0   No   No
+                               G  Language G
+FW113H                 Language H                                        33    1   AN    I    1    0   No   No
+                               H  Language H
+FW113I                 Language I                                        34    1   AN    I    1    0   No   No
+                               I  Language I
+FW113J                 Language J                                        35    1   AN    I    1    0   No   No
+                               J  Language J
+FW113K                 Language K                                        36    1   AN    I    1    0   No   No
+                               K  Language K
+FW113L                 Language L                                        37    1   AN    I    1    0   No   No
+                               L  Language L
+FW113M                 Language M                                        38    1   AN    I    1    0   No   No
+                               M  Language M
+FW113X                 Other language                                    39    1   AN    I    1    0   No   No
+                               X  Other language
+FW113Y                 No other language                                 40    1   AN    I    1    0   No   No
+                               Y  No other language
+FW114                  Fieldworker's mother tongue/native language       41    2    N    I    1    0   No   No
+                               1   Shona
+                               2   Ndebele
+                               3   English
+                               4   Nambia
+                               5   Venda
+                               6   Tonga
+                               96  Other
+                           (m) 99  Missing
+                          (na)     Not applicable
+FW115                  Has fieldworker ever worked on a DHS              43    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+FW116                  Has fieldworker ever worked on any other survey   44    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+FW117                  Was fieldworker working for agency at the time    45    1    N    I    1    0   No   No
+                               1  Yes, ZIMSTAT
+                               3  No
+                           (m) 9  Missing
+                          (na)    Not applicable
+FW118                  Is fieldworker a permanent or temporary employe   46    1    N    I    1    0   No   No
+                               1  Permanent
+                               2  Temporary
+                           (m) 9  Missing
+                          (na)    Not applicable
+--------------------------------------------------------------------------------------------------------------
+Relation Name         Primary               Linked by             Secondary             Linked by
+--------------------------------------------------------------------------------------------------------------

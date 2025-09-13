@@ -1,0 +1,142 @@
+                                                   GHDC51FL
+                                                GHDC51FL_DICT
+
+                                C:\COUNTRIES\GHMMS2007\export\IQ\GHDC51FL.DCF
+                                    Last Modified:  5/27/2009  7:05:20 PM
+
+--------------------------------------------------------------------------------------------------------------
+Level Name                    Level Label                                                  Type            Rec
+  Record Name                   Record Label                                              Value  Req  Max  Len
+--------------------------------------------------------------------------------------------------------------
+DCLEVEL                       Death certificate
+  RECORD1                       RECORD1                                                          Yes    1  240
+Level: Death certificate                               Record: RECORD1
+--------------------------------------------------------------------------------------------------------------
+                                                                                 Data Item            Dec Zero
+Item Name              Item Label                                     Start  Len Type Type  Occ  Dec Char Fill
+--------------------------------------------------------------------------------------------------------------
+                         (record type)                                    0    0   AN    I    1    0   No   No
+DCCLUST           (id) Cluster number                                     1    4    N    I    1    0   No   No
+                               1:1776  
+DCSTRUC           (id) Structure number                                   5    3    N    I    1    0   No   No
+                               1:999  
+DCHHNO            (id) Household number                                   8    3    N    I    1    0   No   No
+                               1:999  
+DCLINE            (id) Line number                                       11    2    N    I    1    0   No   No
+DCPCN             (id) Physician code number                             13    2    N    I    1    0   No   No
+                               1  Reviewer 1
+                               2  Reviewer 2
+                               3  Reviewer 3
+                               4  Joint Review - Reviewer 1 & 2
+                               5  Joint Review - Reviewer 1 & 3
+                               6  Joint Review - Reviewer 2 & 3
+REGION                 Region                                            15    2    N    I    1    0   No   No
+                               1   Western
+                               2   Central
+                               3   Greater Accra
+                               4   Volta
+                               5   Eastern
+                               6   Ashanti
+                               7   Brong Ahafo
+                               8   Northern
+                               9   Upper East
+                               10  Upper West
+                          (na)     Not applicable
+DISTRICT               District                                          17    2    N    I    1    0   No   No
+CODA                   Cause of death A                                  19   28   AN    I    1    0   No   No
+INTRVAU                Interval A units                                  47    1    N    I    1    0   No   No
+                               1  Hours
+                               2  Days
+                               3  Weeks
+                               4  Months
+                               5  Years
+                           (m) 9  Missing
+                          (na)    Notappl
+INTRVAN                Interval A number                                 48    2    N    I    1    0   No   No
+                               0:95  
+                               96    96 or greater
+                           (m) 99    Missing
+ICDA                   ICD code A                                        50    4   AN    I    1    0   No   No
+CODB                   Cause of death B                                  54   28   AN    I    1    0   No   No
+INTRVBU                Interval B units                                  82    1    N    I    1    0   No   No
+                               1  Hours
+                               2  Days
+                               3  Weeks
+                               4  Months
+                               5  Years
+                           (m) 9  Missing
+                          (na)    Notappl
+INTRVBN                Interval B number                                 83    2    N    I    1    0   No   No
+                               0:95  
+                               96    96 or greater
+                           (m) 99    Missing
+ICDB                   ICD code B                                        85    4   AN    I    1    0   No   No
+CODC                   Cause of death C                                  89   28   AN    I    1    0   No   No
+INTRVCU                Interval C units                                 117    1    N    I    1    0   No   No
+                               1  Hours
+                               2  Days
+                               3  Weeks
+                               4  Months
+                               5  Years
+                           (m) 9  Missing
+                          (na)    Notappl
+INTRVCN                Interval C number                                118    2    N    I    1    0   No   No
+                               0:95  
+                               96    96 or greater
+                           (m) 99    Missing
+ICDC                   ICD code C                                       120    4   AN    I    1    0   No   No
+CODD                   Cause of death D                                 124   28   AN    I    1    0   No   No
+INTRVDU                Interval D units                                 152    1    N    I    1    0   No   No
+                               1  Hours
+                               2  Days
+                               3  Weeks
+                               4  Months
+                               5  Years
+                           (m) 9  Missing
+                          (na)    Notappl
+INTRVDN                Interval D number                                153    2    N    I    1    0   No   No
+                               0:95  
+                               96    96 or greater
+                           (m) 99    Missing
+ICDD                   ICD code D                                       155    4   AN    I    1    0   No   No
+FINICD                 Final ICD code                                   159    4   AN    I    1    0   No   No
+CODE                   Other significant condition E                    163   28   AN    I    1    0   No   No
+INTRVEU                Interval E units                                 191    1    N    I    1    0   No   No
+                               1  Hours
+                               2  Days
+                               3  Weeks
+                               4  Months
+                               5  Years
+                           (m) 9  Missing
+                          (na)    Notappl
+INTRVEN                Interval E number                                192    2    N    I    1    0   No   No
+                               0:95  
+                               96    96 or greater
+                           (m) 99    Missing
+ICDE                   ICD code E                                       194    4   AN    I    1    0   No   No
+CODF                   Other significant condition F                    198   28   AN    I    1    0   No   No
+INTRVFU                Interval F units                                 226    1    N    I    1    0   No   No
+                               1  Hours
+                               2  Days
+                               3  Weeks
+                               4  Months
+                               5  Years
+                           (m) 9  Missing
+                          (na)    Notappl
+INTRVFN                Interval F number                                227    2    N    I    1    0   No   No
+                               0:95  
+                               96    96 or greater
+                           (m) 99    Missing
+ICDF                   ICD code F                                       229    4   AN    I    1    0   No   No
+DCDAY                  Day of issue for death certificate               233    2    N    I    1    0   No   No
+                               1:31  
+                           (m) 99    Missing
+DDMONTH                Month of issue for death certificate             235    2    N    I    1    0   No   No
+                               1:12  
+                           (m) 99    Missing
+DCYEAR                 Year of issue for death certificate              237    4    N    I    1    0   No   No
+                               2008  
+                           (m) 9999  Missing
+--------------------------------------------------------------------------------------------------------------
+Relation Name         Primary               Linked by             Secondary             Linked by
+--------------------------------------------------------------------------------------------------------------

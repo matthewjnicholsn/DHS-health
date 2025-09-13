@@ -1,0 +1,1810 @@
+
+       Institute for Resource Development        Macro Systems Inc.
+
+               I S S A     D i c t i o n a r y     R e p o r t
+
+
+                  IIIIIIIIII     SSSSSSS       SSSSSSS            A
+                 IIIIIIIIII    SSSSSSSSSS    SSSSSSSSSS          AA
+                   IIII       SSSS          SSSS               AAAA
+                  IIII       SSSS          SSSS              AAAAAA
+                 IIII       SSSS          SSSS             AAA  AAA
+                IIII       SSSSSSSS      SSSSSSSS         AAA  AAA 
+               IIII         SSSSSSSS      SSSSSSSS      AAA    AAA 
+              IIII             SSSS          SSSS      AAAAAAAAAA  
+             IIII             SSSS          SSSS     AAAAAAAAAAAA  
+            IIII             SSSS          SSSS     AAA      AAA   
+        IIIIIIIIII    SSSSSSSSSS    SSSSSSSSSS    AAAA      AAAA   
+       IIIIIIIIII      SSSSSSS       SSSSSSS     AAAA      AAAA    
+
+  I n t e g r a t e d   S y s t e m   f o r    S u r v e y   A n a l y s i s
+
+
+--------------------------------------------------------------------------------
+
+Dictionary Name   : KESQ30   (file 'KESQ30.DIC')
+
+Dictionary Label  : Service availability          
+
+Owner             :                               
+
+Country           : Kenya                         
+
+Creation Date     : Mar 9, 1993 
+
+Last Update       : Mar 9, 1993 
+
+Questionnaire Id    Loc   Len   Label
+
+                    1     3     Cluster number                
+
+Section Id          Loc   Len
+
+                    4     2  
+
+Report date & time: 10-04-94 at 14:22:31 hrs.
+
+
+                             SECTION DESCRIPTION                       
+                                                                        10-04-94
+                                                                        14:22:31
+--------------------------------------------------------------------------------
+Section     Length      Occurs   ---  Group  ---  
+ name   Code     Class  Min Max    Max Loc Len    Section Label
+--------------------------------------------------------------------------------
+
+SEC00    00   176  S     1   1   -without group-  Service availability front pag
+
+SEC01    01   145  S     0   1   -without group-  Community Based Services
+
+SEC02    02    47  S     0   1   -without group-  Hospitals
+
+SEC03    03    90  S     0   1   -without group-  Health Centers
+
+SEC04    04    51  S     0   1   -without group-  Dispensaries
+
+SEC05    05   198  S     0   1   -without group-  Availability by Method
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC00                                                       10-04-94
+                                                                        14:22:31
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+SPROVIN      6    1    0     N      S    Province                      
+                                         values:   value  label
+                                                       1  Nairobi             
+                                                       2  Central             
+                                                       3  Coast               
+                                                       4  Eastern             
+                                                       6  Nyanza              
+                                                       7  Rift valley south   
+                                                       8  Rift valley north   
+                                                       9  Western             
+                                         ranges:   lower   upper
+                                                       1       9
+
+SDISTRI      7    2    0     N      S    District                      
+                                         ranges:   lower   upper
+                                                      10      93
+
+SNASSEP      9    4    0     N      S    NASSEP Cluster Number         
+
+SCLUSTER    13    3    0     N      S    KDHS Cluster Number           
+                                         ranges:   lower   upper
+                                                       1     536
+
+SLOCAL      16    1    0     N      S    Locality                      
+                                         values:   value  label
+                                                       1  Nairobi/Mombasa     
+                                                       2  Small city          
+                                                       3  Town                
+                                                       4  Rural               
+                                         ranges:   lower   upper
+                                                       1       4
+
+SINTNUM     17    2    0     N      S    Supervisor Number             
+                                         ranges:   lower   upper
+                                                       1      95
+
+SINTD       19    2    0     N      S    Day of interview              
+                                         ranges:   lower   upper
+                                                       1      31
+
+SINTM       21    2    0     N      S    Month of Interview            
+                                         ranges:   lower   upper
+                                                       2       8
+
+SINTY       23    2    0     N      S    Year of Interview             
+                                         ranges:   lower   upper
+                                                      93      93
+
+SINF1       25   30    0     A      S    First informant               
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC00                                                       10-04-94
+                                                                        14:22:31
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+SINF2       55   30    0     A      S    Second Informant              
+
+SINF3       85   30    0     A      S    Third Informant               
+
+SINF4      115   30    0     A      S    Fourth Informant              
+
+SINF5      145   30    0     A      S    Fifth Informant               
+
+SKEYER     175    2    0     N      S    Data entry operator           
+                                         ranges:   lower   upper
+                                                       1      12
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC01                                                       10-04-94
+                                                                        14:22:31
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+S01          6    1    0     N      S    Comunity based services       
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+
+S02A         7   30    0     A      S    1st comunity based name       
+
+S02B        37   30    0     A      S    2nd community based name      
+
+S03         67    1    0     N      S    Who community based works for 
+                                         values:   value  label
+                                                       1  Government          
+                                                       2  Non-government      
+                                                       8  Not sure/Don't know 
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+S04A        68    1    0     N      S    Can tell CBD organization name
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+
+S04B        69   30    0     A      S    CBD organization name         
+
+S05         99    1    0     N      S    CBD provide method/information
+                                         values:   value  label
+                                                       1  Provides methods    
+                                                       2  Only information    
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+
+S06A       100    1    0     N      S    CBD distributes: Pills        
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       8  Don't know          
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC01                                                       10-04-94
+                                                                        14:22:31
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+S06B       101    1    0     N      S    CBD distributes: Condoms      
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       8  Don't know          
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+S06C       102    1    0     N      S    CBD distributes: Tablets      
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       8  Don't know          
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+S07        103    1    0     N      S    Area visited by mobil clinic  
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+
+S08N       104    2    0     N      S    Times mobil clinic visit      
+                                         values:   value  label
+                                                      99  Missing value
+                                         ranges:   lower   upper
+                                                       1      40
+
+S08U       106    1    0     N      S    Units mobil clinic visit      
+                                         values:   value  label
+                                                       1  Month               
+                                                       2  Year                
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC01                                                       10-04-94
+                                                                        14:22:31
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+S09A       107    1    0     N      S    Mobil clinic provide: Pills   
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       8  Don't know          
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+S09B       108    1    0     N      S    Mobil clinic provide: IUD     
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       8  Don't know          
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+S09C       109    1    0     N      S    Mobil clinic provide: Injectio
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       8  Don't know          
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+S10        110    1    0     N      S    Traditional birth attendant   
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       8  Don't know          
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+S11        111    1    0     N      S    Community health worker       
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       8  Don't know          
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC01                                                       10-04-94
+                                                                        14:22:31
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+S12        112    1    0     N      S    CHW provide ORS/Malaria/Info. 
+                                         values:   value  label
+                                                       1  Provides medication 
+                                                       2  Only information    
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+
+S13A       113    1    0     N      S    CHW provides: ORS             
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       8  Don't know          
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+S13B       114    1    0     N      S    CHW provides: Malaria medicine
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       8  Don't know          
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+S13C       115    1    0     N      S    CHW provides: Condoms         
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       8  Don't know          
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+S13D       116   30    0     A      S    CHW provides anything else    
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC02                                                       10-04-94
+                                                                        14:22:31
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+S14          6   30    0     A      S    Name of the hospital          
+
+S15         36    1    0     N      S    Type of hospital              
+                                         values:   value  label
+                                                       1  Government          
+                                                       2  Mission/Church      
+                                                       3  Private employer    
+                                                       4  Other private       
+                                                       5  Other               
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       5
+
+S16         37    2    0     N      S    Distance to hospital          
+                                         values:   value  label
+                                                      97  97+                 
+                                                      98  Don't know          
+                                                      99  Missing value
+                                         ranges:   lower   upper
+                                                       0      98
+
+S17         39    1    0     N      S    How to get to the hospital    
+                                         values:   value  label
+                                                       1  Car/Motorcycle      
+                                                       2  Bus, taxi           
+                                                       3  Bicycle             
+                                                       4  Animal/animal cart  
+                                                       5  Walking             
+                                                       6  Other               
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       6
+
+S18U        40    1    0     N      S    Time to hospital: Units       
+                                         values:   value  label
+                                                       1  Hours               
+                                                       2  Minutes             
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+
+S18N        41    3    0     N      S    Time to hospital: Number      
+                                         values:   value  label
+                                                     999  Missing value
+                                         ranges:   lower   upper
+                                                       0     360
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC02                                                       10-04-94
+                                                                        14:22:31
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+S19A        44    1    0     N      S    Hospital: antenatal care      
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       8  Don't know          
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+S19B        45    1    0     N      S    Hospital: delivery care       
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       8  Don't know          
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+S19C        46    1    0     N      S    Hospital: child immunisation  
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       8  Don't know          
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+S19D        47    1    0     N      S    Hospital: family planning     
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       8  Don't know          
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC03                                                       10-04-94
+                                                                        14:22:31
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+S20          6   30    0     A      S    Name of health center         
+
+S21         36    1    0     N      S    Type of health center         
+                                         values:   value  label
+                                                       1  Government          
+                                                       2  Mission/Church      
+                                                       3  Private employer    
+                                                       4  Other private       
+                                                       5  Other               
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       5
+
+S22         37    2    0     N      S    Distance to health center     
+                                         values:   value  label
+                                                      97  97+                 
+                                                      98  Don't know          
+                                                      99  Missing value
+                                         ranges:   lower   upper
+                                                       0      98
+
+S23         39    1    0     N      S    How to get to health center   
+                                         values:   value  label
+                                                       1  Car/Motorcycle      
+                                                       2  Bus, taxi           
+                                                       3  Bicycle             
+                                                       4  Animal/animal cart  
+                                                       5  Walking             
+                                                       6  Other               
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       6
+
+S24U        40    1    0     N      S    Time to health center: Units  
+                                         values:   value  label
+                                                       1  Hours               
+                                                       2  Minutes             
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+
+S24N        41    3    0     N      S    Time to health center: Number 
+                                         values:   value  label
+                                                     999  Missing value
+                                         ranges:   lower   upper
+                                                       0     360
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC03                                                       10-04-94
+                                                                        14:22:31
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+S25A        44    1    0     N      S    Health center: antenatal care 
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       8  Don't know          
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+S25B        45    1    0     N      S    Health center: delivery care  
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       8  Don't know          
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+S25C        46    1    0     N      S    Health center: immunisations  
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       8  Don't know          
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+S25D        47    1    0     N      S    Health center: family planning
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       8  Don't know          
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+S26A        48    1    0     N      S    Any other health center       
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+
+S26B        49   30    0     A      S    Name of second health center  
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC03                                                       10-04-94
+                                                                        14:22:31
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+S27         79    1    0     N      S    Type of 2nd health center     
+                                         values:   value  label
+                                                       1  Government          
+                                                       2  Mission/Church      
+                                                       3  Private employer    
+                                                       4  Other private       
+                                                       5  Other               
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       5
+
+S28         80    2    0     N      S    Distance to 2nd health center 
+                                         values:   value  label
+                                                      97  97+                 
+                                                      98  Don't know          
+                                                      99  Missing value
+                                         ranges:   lower   upper
+                                                       0      98
+
+S29         82    1    0     N      S    How to get 2nd health center  
+                                         values:   value  label
+                                                       1  Car/Motorcycle      
+                                                       2  Bus, taxi           
+                                                       3  Bicycle             
+                                                       4  Animal/animal cart  
+                                                       5  Walking             
+                                                       6  Other               
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       6
+
+S30U        83    1    0     N      S    Time 2nd health center: Units 
+                                         values:   value  label
+                                                       1  Hours               
+                                                       2  Minutes             
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+
+S30N        84    3    0     N      S    Time 2nd health center: Number
+                                         values:   value  label
+                                                     999  Missing value
+                                         ranges:   lower   upper
+                                                       0     360
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC03                                                       10-04-94
+                                                                        14:22:31
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+S31A        87    1    0     N      S    2nd Hlth cent.: antenatal care
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       8  Don't know          
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+S31B        88    1    0     N      S    2nd Hlth cent.: delivery care 
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       8  Don't know          
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+S31C        89    1    0     N      S    2nd Hlth cent.: immunisations 
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       8  Don't know          
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+S31D        90    1    0     N      S    2nd Hlth cent.: family plannin
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       8  Don't know          
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC04                                                       10-04-94
+                                                                        14:22:31
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+S32A         6    1    0     N      S    Dispensary in area            
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+
+S32B         7   30    0     A      S    Name of dispensary            
+
+S33         37    1    0     N      S    Type of dispensary            
+                                         values:   value  label
+                                                       1  Government          
+                                                       2  Mission/Church      
+                                                       3  Private employer    
+                                                       4  Other private       
+                                                       5  Other               
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       5
+
+S34         38    2    0     N      S    Distance to health center     
+                                         values:   value  label
+                                                      97  97+                 
+                                                      98  Don't know          
+                                                      99  Missing value
+                                         ranges:   lower   upper
+                                                       0      98
+
+S35         40    1    0     N      S    How to get to dispensary      
+                                         values:   value  label
+                                                       1  Car/Motorcycle      
+                                                       2  Bus, taxi           
+                                                       3  Bicycle             
+                                                       4  Animal/animal cart  
+                                                       5  Walking             
+                                                       6  Other               
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       6
+
+S36U        41    1    0     N      S    Time to dispensary: Units     
+                                         values:   value  label
+                                                       1  Hours               
+                                                       2  Minutes             
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC04                                                       10-04-94
+                                                                        14:22:31
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+S36N        42    3    0     N      S    Time to dispensary: Number    
+                                         values:   value  label
+                                                     999  Missing value
+                                         ranges:   lower   upper
+                                                       0     360
+
+S37A        45    1    0     N      S    Dispensary: antenatal care    
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       8  Don't know          
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+S37B        46    1    0     N      S    Dispensary: delivery care     
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       8  Don't know          
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+S37C        47    1    0     N      S    Dispensary: immunisations     
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       8  Don't know          
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+S37D        48    1    0     N      S    Dispensary: family planning   
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       8  Don't know          
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC04                                                       10-04-94
+                                                                        14:22:31
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+S38A        49    1    0     N      S    Any other dispensary in area  
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+
+S38B        50    1    0     N      S    How many other dispensaries   
+                                         values:   value  label
+                                                       8  8+                  
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       8
+
+S39         51    1    0     N      S    Shops in area sell condoms    
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       8  Don't know          
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC05                                                       10-04-94
+                                                                        14:22:31
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+S40          6   30    0     A      S    Nearest place for pills       
+
+S41         36    2    0     N      S    Distance to pills provider    
+                                         values:   value  label
+                                                      97  97+                 
+                                                      98  Don't know          
+                                                      99  Missing value
+                                         ranges:   lower   upper
+                                                       0      98
+
+S42         38   30    0     A      S    Nearest place for condoms     
+
+S43         68    2    0     N      S    Distance to condoms provider  
+                                         values:   value  label
+                                                      97  97+                 
+                                                      98  Don't know          
+                                                      99  Missing value
+                                         ranges:   lower   upper
+                                                       0      98
+
+S44         70   30    0     A      S    Nearest place for injections  
+
+S45        100    2    0     N      S    Distance to injection provider
+                                         values:   value  label
+                                                      97  97+                 
+                                                      98  Don't know          
+                                                      99  Missing value
+                                         ranges:   lower   upper
+                                                       0      98
+
+S46        102   30    0     A      S    Nearest place for tablets     
+
+S47        132    2    0     N      S    Distance to tables provider   
+                                         values:   value  label
+                                                      97  97+                 
+                                                      98  Don't know          
+                                                      99  Missing value
+                                         ranges:   lower   upper
+                                                       0      98
+
+S48        134   30    0     A      S    Nearest place for IUDs        
+
+S49        164    2    0     N      S    Distance to IUDs provider     
+                                         values:   value  label
+                                                      97  97+                 
+                                                      98  Don't know          
+                                                      99  Missing value
+                                         ranges:   lower   upper
+                                                       0      98
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC05                                                       10-04-94
+                                                                        14:22:31
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+S50        166   30    0     A      S    Nearest place for steriliz.   
+
+S51        196    2    0     N      S    Distance to steriliz. provider
+                                         values:   value  label
+                                                      97  97+                 
+                                                      98  Don't know          
+                                                      99  Missing value
+                                         ranges:   lower   upper
+                                                       0      98
+
+S52        198    1    0     N      S    AIDS campaign last 6 months   
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+
+
+                             SECTION MAP                               
+Section   : SEC00                                                       10-04-94
+                                                                        14:22:31
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+   1|   |                
+    |   |
+    |   |
+    |   |
+    |   |     ___
+   6| N |  SPROVIN       Province                                                    ___
+   7| N |  SDISTRI       District                                               
+    | N |     ___
+   9| N |  SNASSEP       NASSEP Cluster Number                                  
+    | N |
+    | N |
+    | N |     ___
+  13| N |  SCLUSTER      KDHS Cluster Number                                    
+    | N |
+    | N |     ___
+  16| N |  SLOCAL        Locality                                                    ___
+  17| N |  SINTNUM       Supervisor Number                                      
+    | N |     ___
+  19| N |  SINTD         Day of interview                                       
+    | N |     ___
+  21| N |  SINTM         Month of Interview                                     
+    | N |     ___
+  23| N |  SINTY         Year of Interview                                      
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : SEC00                                                       10-04-94
+                                                                        14:22:31
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+  25| A |  SINF1         First informant                                        
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |     ___
+
+                             SECTION MAP                               
+Section   : SEC00                                                       10-04-94
+                                                                        14:22:31
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+  55| A |  SINF2         Second Informant                                       
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |     ___
+
+                             SECTION MAP                               
+Section   : SEC00                                                       10-04-94
+                                                                        14:22:31
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+  85| A |  SINF3         Third Informant                                        
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |     ___
+
+                             SECTION MAP                               
+Section   : SEC00                                                       10-04-94
+                                                                        14:22:31
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 115| A |  SINF4         Fourth Informant                                       
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |     ___
+
+                             SECTION MAP                               
+Section   : SEC00                                                       10-04-94
+                                                                        14:22:31
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 145| A |  SINF5         Fifth Informant                                        
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |     ___
+ 175| N |  SKEYER        Data entry operator                                    
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : SEC01                                                       10-04-94
+                                                                        14:22:31
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+   1|   |                
+    |   |
+    |   |
+    |   |
+    |   |     ___
+   6| N |  S01           Comunity based services               9                     ___
+   7| A |  S02A          1st comunity based name                                
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |     ___
+
+                             SECTION MAP                               
+Section   : SEC01                                                       10-04-94
+                                                                        14:22:31
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+  37| A |  S02B          2nd community based name                               
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |     ___
+  67| N |  S03           Who community based works for         9                     ___
+  68| N |  S04A          Can tell CBD organization name        9                     ___
+
+                             SECTION MAP                               
+Section   : SEC01                                                       10-04-94
+                                                                        14:22:31
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+  69| A |  S04B          CBD organization name                                  
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |     ___
+  99| N |  S05           CBD provide method/information        9                     ___
+ 100| N |  S06A          CBD distributes: Pills                9                     ___
+ 101| N |  S06B          CBD distributes: Condoms              9                     ___
+ 102| N |  S06C          CBD distributes: Tablets              9                     ___
+ 103| N |  S07           Area visited by mobil clinic          9                     ___
+ 104| N |  S08N          Times mobil clinic visit             99                
+    | N |     ___
+ 106| N |  S08U          Units mobil clinic visit              9                     ___
+ 107| N |  S09A          Mobil clinic provide: Pills           9                     ___
+ 108| N |  S09B          Mobil clinic provide: IUD             9                     ___
+ 109| N |  S09C          Mobil clinic provide: Injectio        9                     ___
+ 110| N |  S10           Traditional birth attendant           9                     ___
+ 111| N |  S11           Community health worker               9                     ___
+ 112| N |  S12           CHW provide ORS/Malaria/Info.         9                     ___
+ 113| N |  S13A          CHW provides: ORS                     9                     ___
+ 114| N |  S13B          CHW provides: Malaria medicine        9                     ___
+ 115| N |  S13C          CHW provides: Condoms                 9                     ___
+
+                             SECTION MAP                               
+Section   : SEC01                                                       10-04-94
+                                                                        14:22:31
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 116| A |  S13D          CHW provides anything else                             
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                       10-04-94
+                                                                        14:22:31
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+   1|   |                
+    |   |
+    |   |
+    |   |
+    |   |     ___
+   6| A |  S14           Name of the hospital                                   
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |     ___
+  36| N |  S15           Type of hospital                      9                     ___
+  37| N |  S16           Distance to hospital                 99                
+    | N |     ___
+  39| N |  S17           How to get to the hospital            9                     ___
+  40| N |  S18U          Time to hospital: Units               9                     ___
+  41| N |  S18N          Time to hospital: Number            999                
+    | N |
+    | N |     ___
+  44| N |  S19A          Hospital: antenatal care              9                     ___
+  45| N |  S19B          Hospital: delivery care               9                     ___
+  46| N |  S19C          Hospital: child immunisation          9                     ___
+  47| N |  S19D          Hospital: family planning             9                     ___
+
+                             SECTION MAP                               
+Section   : SEC03                                                       10-04-94
+                                                                        14:22:31
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+   1|   |                
+    |   |
+    |   |
+    |   |
+    |   |     ___
+   6| A |  S20           Name of health center                                  
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |     ___
+  36| N |  S21           Type of health center                 9                     ___
+  37| N |  S22           Distance to health center            99                
+    | N |     ___
+  39| N |  S23           How to get to health center           9                     ___
+  40| N |  S24U          Time to health center: Units          9                     ___
+  41| N |  S24N          Time to health center: Number       999                
+    | N |
+    | N |     ___
+  44| N |  S25A          Health center: antenatal care         9                     ___
+  45| N |  S25B          Health center: delivery care          9                     ___
+  46| N |  S25C          Health center: immunisations          9                     ___
+  47| N |  S25D          Health center: family planning        9                     ___
+  48| N |  S26A          Any other health center               9                     ___
+
+                             SECTION MAP                               
+Section   : SEC03                                                       10-04-94
+                                                                        14:22:31
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+  49| A |  S26B          Name of second health center                           
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |     ___
+  79| N |  S27           Type of 2nd health center             9                     ___
+  80| N |  S28           Distance to 2nd health center        99                
+    | N |     ___
+  82| N |  S29           How to get 2nd health center          9                     ___
+  83| N |  S30U          Time 2nd health center: Units         9                     ___
+  84| N |  S30N          Time 2nd health center: Number      999                
+    | N |
+    | N |     ___
+  87| N |  S31A          2nd Hlth cent.: antenatal care        9                     ___
+  88| N |  S31B          2nd Hlth cent.: delivery care         9                     ___
+  89| N |  S31C          2nd Hlth cent.: immunisations         9                     ___
+  90| N |  S31D          2nd Hlth cent.: family plannin        9                     ___
+
+                             SECTION MAP                               
+Section   : SEC04                                                       10-04-94
+                                                                        14:22:31
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+   1|   |                
+    |   |
+    |   |
+    |   |
+    |   |     ___
+   6| N |  S32A          Dispensary in area                    9                     ___
+   7| A |  S32B          Name of dispensary                                     
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |     ___
+  37| N |  S33           Type of dispensary                    9                     ___
+  38| N |  S34           Distance to health center            99                
+    | N |     ___
+  40| N |  S35           How to get to dispensary              9                     ___
+  41| N |  S36U          Time to dispensary: Units             9                     ___
+  42| N |  S36N          Time to dispensary: Number          999                
+    | N |
+    | N |     ___
+  45| N |  S37A          Dispensary: antenatal care            9                     ___
+  46| N |  S37B          Dispensary: delivery care             9                     ___
+  47| N |  S37C          Dispensary: immunisations             9                     ___
+  48| N |  S37D          Dispensary: family planning           9                     ___
+  49| N |  S38A          Any other dispensary in area          9                     ___
+  50| N |  S38B          How many other dispensaries           9                     ___
+  51| N |  S39           Shops in area sell condoms            9                     ___
+
+                             SECTION MAP                               
+Section   : SEC05                                                       10-04-94
+                                                                        14:22:31
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+   1|   |                
+    |   |
+    |   |
+    |   |
+    |   |     ___
+   6| A |  S40           Nearest place for pills                                
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |     ___
+  36| N |  S41           Distance to pills provider           99                
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : SEC05                                                       10-04-94
+                                                                        14:22:31
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+  38| A |  S42           Nearest place for condoms                              
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |     ___
+  68| N |  S43           Distance to condoms provider         99                
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : SEC05                                                       10-04-94
+                                                                        14:22:31
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+  70| A |  S44           Nearest place for injections                           
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |     ___
+ 100| N |  S45           Distance to injection provider       99                
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : SEC05                                                       10-04-94
+                                                                        14:22:31
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 102| A |  S46           Nearest place for tablets                              
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |     ___
+ 132| N |  S47           Distance to tables provider          99                
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : SEC05                                                       10-04-94
+                                                                        14:22:31
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 134| A |  S48           Nearest place for IUDs                                 
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |     ___
+ 164| N |  S49           Distance to IUDs provider            99                
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : SEC05                                                       10-04-94
+                                                                        14:22:31
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 166| A |  S50           Nearest place for steriliz.                            
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |     ___
+ 196| N |  S51           Distance to steriliz. provider       99                
+    | N |     ___
+ 198| N |  S52           AIDS campaign last 6 months           9                     ___
+
+... Report of Dictionary KESQ30 normally ended

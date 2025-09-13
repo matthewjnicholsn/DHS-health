@@ -1,0 +1,1914 @@
+
+               I S S A     D i c t i o n a r y     R e p o r t
+
+
+                  IIIIIIIIII     SSSSSSS       SSSSSSS            A
+                 IIIIIIIIII    SSSSSSSSSS    SSSSSSSSSS          AA
+                   IIII       SSSS          SSSS               AAAA
+                  IIII       SSSS          SSSS              AAAAAA
+                 IIII       SSSS          SSSS             AAA  AAA
+                IIII       SSSSSSSS      SSSSSSSS         AAA  AAA 
+               IIII         SSSSSSSS      SSSSSSSS      AAA    AAA 
+              IIII             SSSS          SSSS      AAAAAAAAAA  
+             IIII             SSSS          SSSS     AAAAAAAAAAAA  
+            IIII             SSSS          SSSS     AAA      AAA   
+        IIIIIIIIII    SSSSSSSSSS    SSSSSSSSSS    AAAA      AAAA   
+       IIIIIIIIII      SSSSSSS       SSSSSSS     AAAA      AAAA    
+
+  I n t e g r a t e d   S y s t e m   f o r    S u r v e y   A n a l y s i s
+
+--------------------------------------------------------------------------------
+
+Dictionary Name   : KEHH01   (file 'KEHH01.DIC', 12128 bytes)
+
+Dictionary Label  : Kenya DHS - HH & Women        
+
+Owner             :                               
+
+Country           : Kenya                         
+
+Creation Date     : Nov 3, 1988 
+
+Last Update       : Feb 20, 1990      * 1 hierarchical level
+
+* Main index: not defined
+
+* No secondary indexes defined
+
+* Index summary: no index key lengths measured
+
+* Estimated case-data-area size: 939 bytes (2 sections, 26 variables)
+
+Report date & time: 08-08-2006 at 13:57:19 hrs.
+
+                             SECTION DESCRIPTION                       
+                                                                      08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Section     Length      Occurs   ---  Group  ---  
+ name   Loc.     Class  Min Max    Max Loc Len    Section Label
+--------------------------------------------------------------------------------
+
+SEC01      1   39  S     1   1   -without group-  Household Cover Sheet
+
+SEC02     40  900  M     0  75   -without group-  Household Roster
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC01                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+HPROV        1    1    0     N      S    Province                      
+                                         values:   value  label
+                                                       1  Nairobi                                                     
+                                                       2  Central                                                     
+                                                       3  Coast                                                       
+                                                       4  Eastern                                                     
+                                                       6  Nyanza                                                      
+                                                       7  Rift Valley                                                 
+                                                       9  Western                                                     
+                                         ranges:   lower   upper
+                                                       1       4
+                                                       6       7
+                                                       9       9
+
+HDIST        2    2    0     N      S    Household District            
+                                         ranges:   lower   upper
+                                                      10      93
+
+HCLUST       4    3    0     N      S    Cluster number                
+
+HHHNO        7    3    0     N      S    Household Number              
+                                         ranges:   lower   upper
+                                                       1     999
+
+HSTRUCNO    10    3    0     N      S    Structure number              
+
+HURBRUR     13    1    0     N      S    Urban/rural designation       
+                                         values:   value  label
+                                                       1  Urban                                                       
+                                                       2  Rural                                                       
+                                         ranges:   lower   upper
+                                                       1       2
+
+HMOINT      14    2    0     N      S    HH month of interview         
+                                         ranges:   lower   upper
+                                                       1       6
+                                                      11      12
+
+HYRINT      16    2    0     N      S    HH year of interview          
+                                         ranges:   lower   upper
+                                                      88      89
+
+HINTNO      18    2    0     N      S    HH Interviewer number         
+                                         ranges:   lower   upper
+                                                      10      99
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC01                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+HRESULT     20    1    0     N      S    HH result code                
+                                         values:   value  label
+                                                       1  Complete                                                    
+                                                       2  No competent resp                                           
+                                                       3  Absent night before                                         
+                                                       4  Postponed                                                   
+                                                       5  Refused                                                     
+                                                       6  Vacant                                                      
+                                                       7  Dwelling destroyed                                          
+                                                       8  Dwelling not found                                          
+                                                       9  Other                                                       
+                                         ranges:   lower   upper
+                                                       1       9
+
+HVISITS     21    1    0     N      S    HH number of visits           
+                                         ranges:   lower   upper
+                                                       1       3
+
+HHTOT       22    2    0     N      S    HH total number of members    
+                                         values:   value  label
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1      75
+
+EWTOT       24    2    0     N      S    HH total of eligible resps    
+                                         values:   value  label
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0      20
+
+EHTOT       26    2    0     N      S    HH total of eligible husbands 
+                                         values:   value  label
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0      10
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC01                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+HHLANG      28    2    0     N      S    Language for HH Questionnaire 
+                                         values:   value  label
+                                                       1  Kalenjin                                                    
+                                                       2  Kamba                                                       
+                                                       3  Kikuyu                                                      
+                                                       4  Kisii                                                       
+                                                       5  Luhya                                                       
+                                                       6  Luo                                                         
+                                                       7  Meru/Embu                                                   
+                                                       8  Mijikenda                                                   
+                                                       9  Kiswahili                                                   
+                                                      10  English                                                     
+                                                      11  Other                                                       
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1      11
+
+HKEYER      30    2    0     N      S                                  
+                                         values:   value  label
+                                                       1  Mildred Agwanda                                             
+                                                       2  Monica Kananu                                               
+                                                       3  Ronald Kilele                                               
+                                                       4  Julius Majale                                               
+                                                       5  Charles Momanyi                                             
+                                                       6  Salma Musa                                                  
+                                                       7  Lucy Nganga                                                 
+                                                       8  Joseph Owiti                                                
+                                                       9  Eunice Wanjiru                                              
+                                                      10  Richard Wanzala                                             
+                                                      11  George W. Odongo                                            
+                                                      12  Claire Mokeira                                              
+                                                      13  Drake                                                       
+                                         ranges:   lower   upper
+                                                       1      13
+
+HHWT        32    8    0     N      S    Household weight variable     
+                                         values:   value  label
+                                                   BLANK  Not applicable value
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+HHLINENO    40    2    0     N      M    HH line number                
+                                         ranges:   lower   upper
+                                                       1      75
+
+HHREL       42    1    0     N      M    HH relation to head           
+                                         values:   value  label
+                                                       1  Head                                                        
+                                                       2  Spouse                                                      
+                                                       3  Son/daughter                                                
+                                                       4  Brother/sister                                              
+                                                       5  Grandchild                                                  
+                                                       6  Parent                                                      
+                                                       7  Other relative                                              
+                                                       8  Unrelated                                                   
+                                                       9  Not stated                                                  
+                                         ranges:   lower   upper
+                                                       1       9
+
+HHLIVES     43    1    0     N      M    HH person normally lives here 
+                                         values:   value  label
+                                                       1  Yes                                                         
+                                                       2  No                                                          
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+
+HHSLEPT     44    1    0     N      M    HH member slept here lastnight
+                                         values:   value  label
+                                                       1  Yes                                                         
+                                                       2  No                                                          
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+
+HHSEX       45    1    0     N      M    HH member sex                 
+                                         values:   value  label
+                                                       1  Male                                                        
+                                                       2  Female                                                      
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+
+HHAGE       46    2    0     N      M    HH member age                 
+                                         ranges:   lower   upper
+                                                       0      99
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+HHFOSTER    48    1    0     N      M    HH member parents live here   
+                                         values:   value  label
+                                                       1  Yes                                                         
+                                                       2  No                                                          
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+HHELIG      49    2    0     N      M    HH member eligible respondent 
+                                         values:   value  label
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1      75
+
+HHPUNCH     51    1    0     N      M                                  
+                                         values:   value  label
+                                                   BLANK  Default value
+                                         ranges:   lower   upper
+                                                       1       1
+
+
+                             SECTION MAP                               
+Section   : SEC01                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+   1| N |  HPROV         Province                                                    ___
+   2| N |  HDIST         Household District                                     
+    | N |     ___
+   4| N |  HCLUST        Cluster number                                         
+    | N |
+    | N |     ___
+   7| N |  HHHNO         Household Number                                       
+    | N |
+    | N |     ___
+  10| N |  HSTRUCNO      Structure number                                       
+    | N |
+    | N |     ___
+  13| N |  HURBRUR       Urban/rural designation                                     ___
+  14| N |  HMOINT        HH month of interview                                  
+    | N |     ___
+  16| N |  HYRINT        HH year of interview                                   
+    | N |     ___
+  18| N |  HINTNO        HH Interviewer number                                  
+    | N |     ___
+  20| N |  HRESULT       HH result code                                              ___
+  21| N |  HVISITS       HH number of visits                                         ___
+  22| N |  HHTOT         HH total number of members                BLANK        
+    | N |     ___
+  24| N |  EWTOT         HH total of eligible resps                BLANK        
+    | N |     ___
+  26| N |  EHTOT         HH total of eligible husbands             BLANK        
+    | N |     ___
+  28| N |  HHLANG        Language for HH Questionnaire        99   BLANK        
+    | N |     ___
+  30| N |  HKEYER                                                               
+    | N |     ___
+  32| N |  HHWT          Household weight variable                 BLANK        
+    | N |
+    | N |
+    | N |
+    | N |
+    | N |
+    | N |
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+  40| N |  HHLINENO  (1) HH line number                                         
+    | N |     ___
+  42| N |  HHREL     (1) HH relation to head                                         ___
+  43| N |  HHLIVES   (1) HH person normally lives here         9                     ___
+  44| N |  HHSLEPT   (1) HH member slept here lastnight        9                     ___
+  45| N |  HHSEX     (1) HH member sex                         9                     ___
+  46| N |  HHAGE     (1) HH member age                                          
+    | N |     ___
+  48| N |  HHFOSTER  (1) HH member parents live here           9   BLANK             ___
+  49| N |  HHELIG    (1) HH member eligible respondent             BLANK        
+    | N |     ___
+  51| N |  HHPUNCH   (1)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+  52| N |  HHLINENO  (2) HH line number                                         
+    | N |     ___
+  54| N |  HHREL     (2) HH relation to head                                         ___
+  55| N |  HHLIVES   (2) HH person normally lives here         9                     ___
+  56| N |  HHSLEPT   (2) HH member slept here lastnight        9                     ___
+  57| N |  HHSEX     (2) HH member sex                         9                     ___
+  58| N |  HHAGE     (2) HH member age                                          
+    | N |     ___
+  60| N |  HHFOSTER  (2) HH member parents live here           9   BLANK             ___
+  61| N |  HHELIG    (2) HH member eligible respondent             BLANK        
+    | N |     ___
+  63| N |  HHPUNCH   (2)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+  64| N |  HHLINENO  (3) HH line number                                         
+    | N |     ___
+  66| N |  HHREL     (3) HH relation to head                                         ___
+  67| N |  HHLIVES   (3) HH person normally lives here         9                     ___
+  68| N |  HHSLEPT   (3) HH member slept here lastnight        9                     ___
+  69| N |  HHSEX     (3) HH member sex                         9                     ___
+  70| N |  HHAGE     (3) HH member age                                          
+    | N |     ___
+  72| N |  HHFOSTER  (3) HH member parents live here           9   BLANK             ___
+  73| N |  HHELIG    (3) HH member eligible respondent             BLANK        
+    | N |     ___
+  75| N |  HHPUNCH   (3)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+  76| N |  HHLINENO  (4) HH line number                                         
+    | N |     ___
+  78| N |  HHREL     (4) HH relation to head                                         ___
+  79| N |  HHLIVES   (4) HH person normally lives here         9                     ___
+  80| N |  HHSLEPT   (4) HH member slept here lastnight        9                     ___
+  81| N |  HHSEX     (4) HH member sex                         9                     ___
+  82| N |  HHAGE     (4) HH member age                                          
+    | N |     ___
+  84| N |  HHFOSTER  (4) HH member parents live here           9   BLANK             ___
+  85| N |  HHELIG    (4) HH member eligible respondent             BLANK        
+    | N |     ___
+  87| N |  HHPUNCH   (4)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+  88| N |  HHLINENO  (5) HH line number                                         
+    | N |     ___
+  90| N |  HHREL     (5) HH relation to head                                         ___
+  91| N |  HHLIVES   (5) HH person normally lives here         9                     ___
+  92| N |  HHSLEPT   (5) HH member slept here lastnight        9                     ___
+  93| N |  HHSEX     (5) HH member sex                         9                     ___
+  94| N |  HHAGE     (5) HH member age                                          
+    | N |     ___
+  96| N |  HHFOSTER  (5) HH member parents live here           9   BLANK             ___
+  97| N |  HHELIG    (5) HH member eligible respondent             BLANK        
+    | N |     ___
+  99| N |  HHPUNCH   (5)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 100| N |  HHLINENO  (6) HH line number                                         
+    | N |     ___
+ 102| N |  HHREL     (6) HH relation to head                                         ___
+ 103| N |  HHLIVES   (6) HH person normally lives here         9                     ___
+ 104| N |  HHSLEPT   (6) HH member slept here lastnight        9                     ___
+ 105| N |  HHSEX     (6) HH member sex                         9                     ___
+ 106| N |  HHAGE     (6) HH member age                                          
+    | N |     ___
+ 108| N |  HHFOSTER  (6) HH member parents live here           9   BLANK             ___
+ 109| N |  HHELIG    (6) HH member eligible respondent             BLANK        
+    | N |     ___
+ 111| N |  HHPUNCH   (6)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 112| N |  HHLINENO  (7) HH line number                                         
+    | N |     ___
+ 114| N |  HHREL     (7) HH relation to head                                         ___
+ 115| N |  HHLIVES   (7) HH person normally lives here         9                     ___
+ 116| N |  HHSLEPT   (7) HH member slept here lastnight        9                     ___
+ 117| N |  HHSEX     (7) HH member sex                         9                     ___
+ 118| N |  HHAGE     (7) HH member age                                          
+    | N |     ___
+ 120| N |  HHFOSTER  (7) HH member parents live here           9   BLANK             ___
+ 121| N |  HHELIG    (7) HH member eligible respondent             BLANK        
+    | N |     ___
+ 123| N |  HHPUNCH   (7)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 124| N |  HHLINENO  (8) HH line number                                         
+    | N |     ___
+ 126| N |  HHREL     (8) HH relation to head                                         ___
+ 127| N |  HHLIVES   (8) HH person normally lives here         9                     ___
+ 128| N |  HHSLEPT   (8) HH member slept here lastnight        9                     ___
+ 129| N |  HHSEX     (8) HH member sex                         9                     ___
+ 130| N |  HHAGE     (8) HH member age                                          
+    | N |     ___
+ 132| N |  HHFOSTER  (8) HH member parents live here           9   BLANK             ___
+ 133| N |  HHELIG    (8) HH member eligible respondent             BLANK        
+    | N |     ___
+ 135| N |  HHPUNCH   (8)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 136| N |  HHLINENO  (9) HH line number                                         
+    | N |     ___
+ 138| N |  HHREL     (9) HH relation to head                                         ___
+ 139| N |  HHLIVES   (9) HH person normally lives here         9                     ___
+ 140| N |  HHSLEPT   (9) HH member slept here lastnight        9                     ___
+ 141| N |  HHSEX     (9) HH member sex                         9                     ___
+ 142| N |  HHAGE     (9) HH member age                                          
+    | N |     ___
+ 144| N |  HHFOSTER  (9) HH member parents live here           9   BLANK             ___
+ 145| N |  HHELIG    (9) HH member eligible respondent             BLANK        
+    | N |     ___
+ 147| N |  HHPUNCH   (9)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 148| N |  HHLINENO (10) HH line number                                         
+    | N |     ___
+ 150| N |  HHREL    (10) HH relation to head                                         ___
+ 151| N |  HHLIVES  (10) HH person normally lives here         9                     ___
+ 152| N |  HHSLEPT  (10) HH member slept here lastnight        9                     ___
+ 153| N |  HHSEX    (10) HH member sex                         9                     ___
+ 154| N |  HHAGE    (10) HH member age                                          
+    | N |     ___
+ 156| N |  HHFOSTER (10) HH member parents live here           9   BLANK             ___
+ 157| N |  HHELIG   (10) HH member eligible respondent             BLANK        
+    | N |     ___
+ 159| N |  HHPUNCH  (10)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 160| N |  HHLINENO (11) HH line number                                         
+    | N |     ___
+ 162| N |  HHREL    (11) HH relation to head                                         ___
+ 163| N |  HHLIVES  (11) HH person normally lives here         9                     ___
+ 164| N |  HHSLEPT  (11) HH member slept here lastnight        9                     ___
+ 165| N |  HHSEX    (11) HH member sex                         9                     ___
+ 166| N |  HHAGE    (11) HH member age                                          
+    | N |     ___
+ 168| N |  HHFOSTER (11) HH member parents live here           9   BLANK             ___
+ 169| N |  HHELIG   (11) HH member eligible respondent             BLANK        
+    | N |     ___
+ 171| N |  HHPUNCH  (11)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 172| N |  HHLINENO (12) HH line number                                         
+    | N |     ___
+ 174| N |  HHREL    (12) HH relation to head                                         ___
+ 175| N |  HHLIVES  (12) HH person normally lives here         9                     ___
+ 176| N |  HHSLEPT  (12) HH member slept here lastnight        9                     ___
+ 177| N |  HHSEX    (12) HH member sex                         9                     ___
+ 178| N |  HHAGE    (12) HH member age                                          
+    | N |     ___
+ 180| N |  HHFOSTER (12) HH member parents live here           9   BLANK             ___
+ 181| N |  HHELIG   (12) HH member eligible respondent             BLANK        
+    | N |     ___
+ 183| N |  HHPUNCH  (12)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 184| N |  HHLINENO (13) HH line number                                         
+    | N |     ___
+ 186| N |  HHREL    (13) HH relation to head                                         ___
+ 187| N |  HHLIVES  (13) HH person normally lives here         9                     ___
+ 188| N |  HHSLEPT  (13) HH member slept here lastnight        9                     ___
+ 189| N |  HHSEX    (13) HH member sex                         9                     ___
+ 190| N |  HHAGE    (13) HH member age                                          
+    | N |     ___
+ 192| N |  HHFOSTER (13) HH member parents live here           9   BLANK             ___
+ 193| N |  HHELIG   (13) HH member eligible respondent             BLANK        
+    | N |     ___
+ 195| N |  HHPUNCH  (13)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 196| N |  HHLINENO (14) HH line number                                         
+    | N |     ___
+ 198| N |  HHREL    (14) HH relation to head                                         ___
+ 199| N |  HHLIVES  (14) HH person normally lives here         9                     ___
+ 200| N |  HHSLEPT  (14) HH member slept here lastnight        9                     ___
+ 201| N |  HHSEX    (14) HH member sex                         9                     ___
+ 202| N |  HHAGE    (14) HH member age                                          
+    | N |     ___
+ 204| N |  HHFOSTER (14) HH member parents live here           9   BLANK             ___
+ 205| N |  HHELIG   (14) HH member eligible respondent             BLANK        
+    | N |     ___
+ 207| N |  HHPUNCH  (14)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 208| N |  HHLINENO (15) HH line number                                         
+    | N |     ___
+ 210| N |  HHREL    (15) HH relation to head                                         ___
+ 211| N |  HHLIVES  (15) HH person normally lives here         9                     ___
+ 212| N |  HHSLEPT  (15) HH member slept here lastnight        9                     ___
+ 213| N |  HHSEX    (15) HH member sex                         9                     ___
+ 214| N |  HHAGE    (15) HH member age                                          
+    | N |     ___
+ 216| N |  HHFOSTER (15) HH member parents live here           9   BLANK             ___
+ 217| N |  HHELIG   (15) HH member eligible respondent             BLANK        
+    | N |     ___
+ 219| N |  HHPUNCH  (15)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 220| N |  HHLINENO (16) HH line number                                         
+    | N |     ___
+ 222| N |  HHREL    (16) HH relation to head                                         ___
+ 223| N |  HHLIVES  (16) HH person normally lives here         9                     ___
+ 224| N |  HHSLEPT  (16) HH member slept here lastnight        9                     ___
+ 225| N |  HHSEX    (16) HH member sex                         9                     ___
+ 226| N |  HHAGE    (16) HH member age                                          
+    | N |     ___
+ 228| N |  HHFOSTER (16) HH member parents live here           9   BLANK             ___
+ 229| N |  HHELIG   (16) HH member eligible respondent             BLANK        
+    | N |     ___
+ 231| N |  HHPUNCH  (16)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 232| N |  HHLINENO (17) HH line number                                         
+    | N |     ___
+ 234| N |  HHREL    (17) HH relation to head                                         ___
+ 235| N |  HHLIVES  (17) HH person normally lives here         9                     ___
+ 236| N |  HHSLEPT  (17) HH member slept here lastnight        9                     ___
+ 237| N |  HHSEX    (17) HH member sex                         9                     ___
+ 238| N |  HHAGE    (17) HH member age                                          
+    | N |     ___
+ 240| N |  HHFOSTER (17) HH member parents live here           9   BLANK             ___
+ 241| N |  HHELIG   (17) HH member eligible respondent             BLANK        
+    | N |     ___
+ 243| N |  HHPUNCH  (17)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 244| N |  HHLINENO (18) HH line number                                         
+    | N |     ___
+ 246| N |  HHREL    (18) HH relation to head                                         ___
+ 247| N |  HHLIVES  (18) HH person normally lives here         9                     ___
+ 248| N |  HHSLEPT  (18) HH member slept here lastnight        9                     ___
+ 249| N |  HHSEX    (18) HH member sex                         9                     ___
+ 250| N |  HHAGE    (18) HH member age                                          
+    | N |     ___
+ 252| N |  HHFOSTER (18) HH member parents live here           9   BLANK             ___
+ 253| N |  HHELIG   (18) HH member eligible respondent             BLANK        
+    | N |     ___
+ 255| N |  HHPUNCH  (18)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 256| N |  HHLINENO (19) HH line number                                         
+    | N |     ___
+ 258| N |  HHREL    (19) HH relation to head                                         ___
+ 259| N |  HHLIVES  (19) HH person normally lives here         9                     ___
+ 260| N |  HHSLEPT  (19) HH member slept here lastnight        9                     ___
+ 261| N |  HHSEX    (19) HH member sex                         9                     ___
+ 262| N |  HHAGE    (19) HH member age                                          
+    | N |     ___
+ 264| N |  HHFOSTER (19) HH member parents live here           9   BLANK             ___
+ 265| N |  HHELIG   (19) HH member eligible respondent             BLANK        
+    | N |     ___
+ 267| N |  HHPUNCH  (19)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 268| N |  HHLINENO (20) HH line number                                         
+    | N |     ___
+ 270| N |  HHREL    (20) HH relation to head                                         ___
+ 271| N |  HHLIVES  (20) HH person normally lives here         9                     ___
+ 272| N |  HHSLEPT  (20) HH member slept here lastnight        9                     ___
+ 273| N |  HHSEX    (20) HH member sex                         9                     ___
+ 274| N |  HHAGE    (20) HH member age                                          
+    | N |     ___
+ 276| N |  HHFOSTER (20) HH member parents live here           9   BLANK             ___
+ 277| N |  HHELIG   (20) HH member eligible respondent             BLANK        
+    | N |     ___
+ 279| N |  HHPUNCH  (20)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 280| N |  HHLINENO (21) HH line number                                         
+    | N |     ___
+ 282| N |  HHREL    (21) HH relation to head                                         ___
+ 283| N |  HHLIVES  (21) HH person normally lives here         9                     ___
+ 284| N |  HHSLEPT  (21) HH member slept here lastnight        9                     ___
+ 285| N |  HHSEX    (21) HH member sex                         9                     ___
+ 286| N |  HHAGE    (21) HH member age                                          
+    | N |     ___
+ 288| N |  HHFOSTER (21) HH member parents live here           9   BLANK             ___
+ 289| N |  HHELIG   (21) HH member eligible respondent             BLANK        
+    | N |     ___
+ 291| N |  HHPUNCH  (21)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 292| N |  HHLINENO (22) HH line number                                         
+    | N |     ___
+ 294| N |  HHREL    (22) HH relation to head                                         ___
+ 295| N |  HHLIVES  (22) HH person normally lives here         9                     ___
+ 296| N |  HHSLEPT  (22) HH member slept here lastnight        9                     ___
+ 297| N |  HHSEX    (22) HH member sex                         9                     ___
+ 298| N |  HHAGE    (22) HH member age                                          
+    | N |     ___
+ 300| N |  HHFOSTER (22) HH member parents live here           9   BLANK             ___
+ 301| N |  HHELIG   (22) HH member eligible respondent             BLANK        
+    | N |     ___
+ 303| N |  HHPUNCH  (22)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 304| N |  HHLINENO (23) HH line number                                         
+    | N |     ___
+ 306| N |  HHREL    (23) HH relation to head                                         ___
+ 307| N |  HHLIVES  (23) HH person normally lives here         9                     ___
+ 308| N |  HHSLEPT  (23) HH member slept here lastnight        9                     ___
+ 309| N |  HHSEX    (23) HH member sex                         9                     ___
+ 310| N |  HHAGE    (23) HH member age                                          
+    | N |     ___
+ 312| N |  HHFOSTER (23) HH member parents live here           9   BLANK             ___
+ 313| N |  HHELIG   (23) HH member eligible respondent             BLANK        
+    | N |     ___
+ 315| N |  HHPUNCH  (23)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 316| N |  HHLINENO (24) HH line number                                         
+    | N |     ___
+ 318| N |  HHREL    (24) HH relation to head                                         ___
+ 319| N |  HHLIVES  (24) HH person normally lives here         9                     ___
+ 320| N |  HHSLEPT  (24) HH member slept here lastnight        9                     ___
+ 321| N |  HHSEX    (24) HH member sex                         9                     ___
+ 322| N |  HHAGE    (24) HH member age                                          
+    | N |     ___
+ 324| N |  HHFOSTER (24) HH member parents live here           9   BLANK             ___
+ 325| N |  HHELIG   (24) HH member eligible respondent             BLANK        
+    | N |     ___
+ 327| N |  HHPUNCH  (24)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 328| N |  HHLINENO (25) HH line number                                         
+    | N |     ___
+ 330| N |  HHREL    (25) HH relation to head                                         ___
+ 331| N |  HHLIVES  (25) HH person normally lives here         9                     ___
+ 332| N |  HHSLEPT  (25) HH member slept here lastnight        9                     ___
+ 333| N |  HHSEX    (25) HH member sex                         9                     ___
+ 334| N |  HHAGE    (25) HH member age                                          
+    | N |     ___
+ 336| N |  HHFOSTER (25) HH member parents live here           9   BLANK             ___
+ 337| N |  HHELIG   (25) HH member eligible respondent             BLANK        
+    | N |     ___
+ 339| N |  HHPUNCH  (25)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 340| N |  HHLINENO (26) HH line number                                         
+    | N |     ___
+ 342| N |  HHREL    (26) HH relation to head                                         ___
+ 343| N |  HHLIVES  (26) HH person normally lives here         9                     ___
+ 344| N |  HHSLEPT  (26) HH member slept here lastnight        9                     ___
+ 345| N |  HHSEX    (26) HH member sex                         9                     ___
+ 346| N |  HHAGE    (26) HH member age                                          
+    | N |     ___
+ 348| N |  HHFOSTER (26) HH member parents live here           9   BLANK             ___
+ 349| N |  HHELIG   (26) HH member eligible respondent             BLANK        
+    | N |     ___
+ 351| N |  HHPUNCH  (26)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 352| N |  HHLINENO (27) HH line number                                         
+    | N |     ___
+ 354| N |  HHREL    (27) HH relation to head                                         ___
+ 355| N |  HHLIVES  (27) HH person normally lives here         9                     ___
+ 356| N |  HHSLEPT  (27) HH member slept here lastnight        9                     ___
+ 357| N |  HHSEX    (27) HH member sex                         9                     ___
+ 358| N |  HHAGE    (27) HH member age                                          
+    | N |     ___
+ 360| N |  HHFOSTER (27) HH member parents live here           9   BLANK             ___
+ 361| N |  HHELIG   (27) HH member eligible respondent             BLANK        
+    | N |     ___
+ 363| N |  HHPUNCH  (27)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 364| N |  HHLINENO (28) HH line number                                         
+    | N |     ___
+ 366| N |  HHREL    (28) HH relation to head                                         ___
+ 367| N |  HHLIVES  (28) HH person normally lives here         9                     ___
+ 368| N |  HHSLEPT  (28) HH member slept here lastnight        9                     ___
+ 369| N |  HHSEX    (28) HH member sex                         9                     ___
+ 370| N |  HHAGE    (28) HH member age                                          
+    | N |     ___
+ 372| N |  HHFOSTER (28) HH member parents live here           9   BLANK             ___
+ 373| N |  HHELIG   (28) HH member eligible respondent             BLANK        
+    | N |     ___
+ 375| N |  HHPUNCH  (28)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 376| N |  HHLINENO (29) HH line number                                         
+    | N |     ___
+ 378| N |  HHREL    (29) HH relation to head                                         ___
+ 379| N |  HHLIVES  (29) HH person normally lives here         9                     ___
+ 380| N |  HHSLEPT  (29) HH member slept here lastnight        9                     ___
+ 381| N |  HHSEX    (29) HH member sex                         9                     ___
+ 382| N |  HHAGE    (29) HH member age                                          
+    | N |     ___
+ 384| N |  HHFOSTER (29) HH member parents live here           9   BLANK             ___
+ 385| N |  HHELIG   (29) HH member eligible respondent             BLANK        
+    | N |     ___
+ 387| N |  HHPUNCH  (29)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 388| N |  HHLINENO (30) HH line number                                         
+    | N |     ___
+ 390| N |  HHREL    (30) HH relation to head                                         ___
+ 391| N |  HHLIVES  (30) HH person normally lives here         9                     ___
+ 392| N |  HHSLEPT  (30) HH member slept here lastnight        9                     ___
+ 393| N |  HHSEX    (30) HH member sex                         9                     ___
+ 394| N |  HHAGE    (30) HH member age                                          
+    | N |     ___
+ 396| N |  HHFOSTER (30) HH member parents live here           9   BLANK             ___
+ 397| N |  HHELIG   (30) HH member eligible respondent             BLANK        
+    | N |     ___
+ 399| N |  HHPUNCH  (30)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 400| N |  HHLINENO (31) HH line number                                         
+    | N |     ___
+ 402| N |  HHREL    (31) HH relation to head                                         ___
+ 403| N |  HHLIVES  (31) HH person normally lives here         9                     ___
+ 404| N |  HHSLEPT  (31) HH member slept here lastnight        9                     ___
+ 405| N |  HHSEX    (31) HH member sex                         9                     ___
+ 406| N |  HHAGE    (31) HH member age                                          
+    | N |     ___
+ 408| N |  HHFOSTER (31) HH member parents live here           9   BLANK             ___
+ 409| N |  HHELIG   (31) HH member eligible respondent             BLANK        
+    | N |     ___
+ 411| N |  HHPUNCH  (31)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 412| N |  HHLINENO (32) HH line number                                         
+    | N |     ___
+ 414| N |  HHREL    (32) HH relation to head                                         ___
+ 415| N |  HHLIVES  (32) HH person normally lives here         9                     ___
+ 416| N |  HHSLEPT  (32) HH member slept here lastnight        9                     ___
+ 417| N |  HHSEX    (32) HH member sex                         9                     ___
+ 418| N |  HHAGE    (32) HH member age                                          
+    | N |     ___
+ 420| N |  HHFOSTER (32) HH member parents live here           9   BLANK             ___
+ 421| N |  HHELIG   (32) HH member eligible respondent             BLANK        
+    | N |     ___
+ 423| N |  HHPUNCH  (32)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 424| N |  HHLINENO (33) HH line number                                         
+    | N |     ___
+ 426| N |  HHREL    (33) HH relation to head                                         ___
+ 427| N |  HHLIVES  (33) HH person normally lives here         9                     ___
+ 428| N |  HHSLEPT  (33) HH member slept here lastnight        9                     ___
+ 429| N |  HHSEX    (33) HH member sex                         9                     ___
+ 430| N |  HHAGE    (33) HH member age                                          
+    | N |     ___
+ 432| N |  HHFOSTER (33) HH member parents live here           9   BLANK             ___
+ 433| N |  HHELIG   (33) HH member eligible respondent             BLANK        
+    | N |     ___
+ 435| N |  HHPUNCH  (33)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 436| N |  HHLINENO (34) HH line number                                         
+    | N |     ___
+ 438| N |  HHREL    (34) HH relation to head                                         ___
+ 439| N |  HHLIVES  (34) HH person normally lives here         9                     ___
+ 440| N |  HHSLEPT  (34) HH member slept here lastnight        9                     ___
+ 441| N |  HHSEX    (34) HH member sex                         9                     ___
+ 442| N |  HHAGE    (34) HH member age                                          
+    | N |     ___
+ 444| N |  HHFOSTER (34) HH member parents live here           9   BLANK             ___
+ 445| N |  HHELIG   (34) HH member eligible respondent             BLANK        
+    | N |     ___
+ 447| N |  HHPUNCH  (34)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 448| N |  HHLINENO (35) HH line number                                         
+    | N |     ___
+ 450| N |  HHREL    (35) HH relation to head                                         ___
+ 451| N |  HHLIVES  (35) HH person normally lives here         9                     ___
+ 452| N |  HHSLEPT  (35) HH member slept here lastnight        9                     ___
+ 453| N |  HHSEX    (35) HH member sex                         9                     ___
+ 454| N |  HHAGE    (35) HH member age                                          
+    | N |     ___
+ 456| N |  HHFOSTER (35) HH member parents live here           9   BLANK             ___
+ 457| N |  HHELIG   (35) HH member eligible respondent             BLANK        
+    | N |     ___
+ 459| N |  HHPUNCH  (35)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 460| N |  HHLINENO (36) HH line number                                         
+    | N |     ___
+ 462| N |  HHREL    (36) HH relation to head                                         ___
+ 463| N |  HHLIVES  (36) HH person normally lives here         9                     ___
+ 464| N |  HHSLEPT  (36) HH member slept here lastnight        9                     ___
+ 465| N |  HHSEX    (36) HH member sex                         9                     ___
+ 466| N |  HHAGE    (36) HH member age                                          
+    | N |     ___
+ 468| N |  HHFOSTER (36) HH member parents live here           9   BLANK             ___
+ 469| N |  HHELIG   (36) HH member eligible respondent             BLANK        
+    | N |     ___
+ 471| N |  HHPUNCH  (36)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 472| N |  HHLINENO (37) HH line number                                         
+    | N |     ___
+ 474| N |  HHREL    (37) HH relation to head                                         ___
+ 475| N |  HHLIVES  (37) HH person normally lives here         9                     ___
+ 476| N |  HHSLEPT  (37) HH member slept here lastnight        9                     ___
+ 477| N |  HHSEX    (37) HH member sex                         9                     ___
+ 478| N |  HHAGE    (37) HH member age                                          
+    | N |     ___
+ 480| N |  HHFOSTER (37) HH member parents live here           9   BLANK             ___
+ 481| N |  HHELIG   (37) HH member eligible respondent             BLANK        
+    | N |     ___
+ 483| N |  HHPUNCH  (37)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 484| N |  HHLINENO (38) HH line number                                         
+    | N |     ___
+ 486| N |  HHREL    (38) HH relation to head                                         ___
+ 487| N |  HHLIVES  (38) HH person normally lives here         9                     ___
+ 488| N |  HHSLEPT  (38) HH member slept here lastnight        9                     ___
+ 489| N |  HHSEX    (38) HH member sex                         9                     ___
+ 490| N |  HHAGE    (38) HH member age                                          
+    | N |     ___
+ 492| N |  HHFOSTER (38) HH member parents live here           9   BLANK             ___
+ 493| N |  HHELIG   (38) HH member eligible respondent             BLANK        
+    | N |     ___
+ 495| N |  HHPUNCH  (38)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 496| N |  HHLINENO (39) HH line number                                         
+    | N |     ___
+ 498| N |  HHREL    (39) HH relation to head                                         ___
+ 499| N |  HHLIVES  (39) HH person normally lives here         9                     ___
+ 500| N |  HHSLEPT  (39) HH member slept here lastnight        9                     ___
+ 501| N |  HHSEX    (39) HH member sex                         9                     ___
+ 502| N |  HHAGE    (39) HH member age                                          
+    | N |     ___
+ 504| N |  HHFOSTER (39) HH member parents live here           9   BLANK             ___
+ 505| N |  HHELIG   (39) HH member eligible respondent             BLANK        
+    | N |     ___
+ 507| N |  HHPUNCH  (39)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 508| N |  HHLINENO (40) HH line number                                         
+    | N |     ___
+ 510| N |  HHREL    (40) HH relation to head                                         ___
+ 511| N |  HHLIVES  (40) HH person normally lives here         9                     ___
+ 512| N |  HHSLEPT  (40) HH member slept here lastnight        9                     ___
+ 513| N |  HHSEX    (40) HH member sex                         9                     ___
+ 514| N |  HHAGE    (40) HH member age                                          
+    | N |     ___
+ 516| N |  HHFOSTER (40) HH member parents live here           9   BLANK             ___
+ 517| N |  HHELIG   (40) HH member eligible respondent             BLANK        
+    | N |     ___
+ 519| N |  HHPUNCH  (40)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 520| N |  HHLINENO (41) HH line number                                         
+    | N |     ___
+ 522| N |  HHREL    (41) HH relation to head                                         ___
+ 523| N |  HHLIVES  (41) HH person normally lives here         9                     ___
+ 524| N |  HHSLEPT  (41) HH member slept here lastnight        9                     ___
+ 525| N |  HHSEX    (41) HH member sex                         9                     ___
+ 526| N |  HHAGE    (41) HH member age                                          
+    | N |     ___
+ 528| N |  HHFOSTER (41) HH member parents live here           9   BLANK             ___
+ 529| N |  HHELIG   (41) HH member eligible respondent             BLANK        
+    | N |     ___
+ 531| N |  HHPUNCH  (41)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 532| N |  HHLINENO (42) HH line number                                         
+    | N |     ___
+ 534| N |  HHREL    (42) HH relation to head                                         ___
+ 535| N |  HHLIVES  (42) HH person normally lives here         9                     ___
+ 536| N |  HHSLEPT  (42) HH member slept here lastnight        9                     ___
+ 537| N |  HHSEX    (42) HH member sex                         9                     ___
+ 538| N |  HHAGE    (42) HH member age                                          
+    | N |     ___
+ 540| N |  HHFOSTER (42) HH member parents live here           9   BLANK             ___
+ 541| N |  HHELIG   (42) HH member eligible respondent             BLANK        
+    | N |     ___
+ 543| N |  HHPUNCH  (42)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 544| N |  HHLINENO (43) HH line number                                         
+    | N |     ___
+ 546| N |  HHREL    (43) HH relation to head                                         ___
+ 547| N |  HHLIVES  (43) HH person normally lives here         9                     ___
+ 548| N |  HHSLEPT  (43) HH member slept here lastnight        9                     ___
+ 549| N |  HHSEX    (43) HH member sex                         9                     ___
+ 550| N |  HHAGE    (43) HH member age                                          
+    | N |     ___
+ 552| N |  HHFOSTER (43) HH member parents live here           9   BLANK             ___
+ 553| N |  HHELIG   (43) HH member eligible respondent             BLANK        
+    | N |     ___
+ 555| N |  HHPUNCH  (43)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 556| N |  HHLINENO (44) HH line number                                         
+    | N |     ___
+ 558| N |  HHREL    (44) HH relation to head                                         ___
+ 559| N |  HHLIVES  (44) HH person normally lives here         9                     ___
+ 560| N |  HHSLEPT  (44) HH member slept here lastnight        9                     ___
+ 561| N |  HHSEX    (44) HH member sex                         9                     ___
+ 562| N |  HHAGE    (44) HH member age                                          
+    | N |     ___
+ 564| N |  HHFOSTER (44) HH member parents live here           9   BLANK             ___
+ 565| N |  HHELIG   (44) HH member eligible respondent             BLANK        
+    | N |     ___
+ 567| N |  HHPUNCH  (44)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 568| N |  HHLINENO (45) HH line number                                         
+    | N |     ___
+ 570| N |  HHREL    (45) HH relation to head                                         ___
+ 571| N |  HHLIVES  (45) HH person normally lives here         9                     ___
+ 572| N |  HHSLEPT  (45) HH member slept here lastnight        9                     ___
+ 573| N |  HHSEX    (45) HH member sex                         9                     ___
+ 574| N |  HHAGE    (45) HH member age                                          
+    | N |     ___
+ 576| N |  HHFOSTER (45) HH member parents live here           9   BLANK             ___
+ 577| N |  HHELIG   (45) HH member eligible respondent             BLANK        
+    | N |     ___
+ 579| N |  HHPUNCH  (45)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 580| N |  HHLINENO (46) HH line number                                         
+    | N |     ___
+ 582| N |  HHREL    (46) HH relation to head                                         ___
+ 583| N |  HHLIVES  (46) HH person normally lives here         9                     ___
+ 584| N |  HHSLEPT  (46) HH member slept here lastnight        9                     ___
+ 585| N |  HHSEX    (46) HH member sex                         9                     ___
+ 586| N |  HHAGE    (46) HH member age                                          
+    | N |     ___
+ 588| N |  HHFOSTER (46) HH member parents live here           9   BLANK             ___
+ 589| N |  HHELIG   (46) HH member eligible respondent             BLANK        
+    | N |     ___
+ 591| N |  HHPUNCH  (46)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 592| N |  HHLINENO (47) HH line number                                         
+    | N |     ___
+ 594| N |  HHREL    (47) HH relation to head                                         ___
+ 595| N |  HHLIVES  (47) HH person normally lives here         9                     ___
+ 596| N |  HHSLEPT  (47) HH member slept here lastnight        9                     ___
+ 597| N |  HHSEX    (47) HH member sex                         9                     ___
+ 598| N |  HHAGE    (47) HH member age                                          
+    | N |     ___
+ 600| N |  HHFOSTER (47) HH member parents live here           9   BLANK             ___
+ 601| N |  HHELIG   (47) HH member eligible respondent             BLANK        
+    | N |     ___
+ 603| N |  HHPUNCH  (47)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 604| N |  HHLINENO (48) HH line number                                         
+    | N |     ___
+ 606| N |  HHREL    (48) HH relation to head                                         ___
+ 607| N |  HHLIVES  (48) HH person normally lives here         9                     ___
+ 608| N |  HHSLEPT  (48) HH member slept here lastnight        9                     ___
+ 609| N |  HHSEX    (48) HH member sex                         9                     ___
+ 610| N |  HHAGE    (48) HH member age                                          
+    | N |     ___
+ 612| N |  HHFOSTER (48) HH member parents live here           9   BLANK             ___
+ 613| N |  HHELIG   (48) HH member eligible respondent             BLANK        
+    | N |     ___
+ 615| N |  HHPUNCH  (48)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 616| N |  HHLINENO (49) HH line number                                         
+    | N |     ___
+ 618| N |  HHREL    (49) HH relation to head                                         ___
+ 619| N |  HHLIVES  (49) HH person normally lives here         9                     ___
+ 620| N |  HHSLEPT  (49) HH member slept here lastnight        9                     ___
+ 621| N |  HHSEX    (49) HH member sex                         9                     ___
+ 622| N |  HHAGE    (49) HH member age                                          
+    | N |     ___
+ 624| N |  HHFOSTER (49) HH member parents live here           9   BLANK             ___
+ 625| N |  HHELIG   (49) HH member eligible respondent             BLANK        
+    | N |     ___
+ 627| N |  HHPUNCH  (49)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 628| N |  HHLINENO (50) HH line number                                         
+    | N |     ___
+ 630| N |  HHREL    (50) HH relation to head                                         ___
+ 631| N |  HHLIVES  (50) HH person normally lives here         9                     ___
+ 632| N |  HHSLEPT  (50) HH member slept here lastnight        9                     ___
+ 633| N |  HHSEX    (50) HH member sex                         9                     ___
+ 634| N |  HHAGE    (50) HH member age                                          
+    | N |     ___
+ 636| N |  HHFOSTER (50) HH member parents live here           9   BLANK             ___
+ 637| N |  HHELIG   (50) HH member eligible respondent             BLANK        
+    | N |     ___
+ 639| N |  HHPUNCH  (50)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 640| N |  HHLINENO (51) HH line number                                         
+    | N |     ___
+ 642| N |  HHREL    (51) HH relation to head                                         ___
+ 643| N |  HHLIVES  (51) HH person normally lives here         9                     ___
+ 644| N |  HHSLEPT  (51) HH member slept here lastnight        9                     ___
+ 645| N |  HHSEX    (51) HH member sex                         9                     ___
+ 646| N |  HHAGE    (51) HH member age                                          
+    | N |     ___
+ 648| N |  HHFOSTER (51) HH member parents live here           9   BLANK             ___
+ 649| N |  HHELIG   (51) HH member eligible respondent             BLANK        
+    | N |     ___
+ 651| N |  HHPUNCH  (51)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 652| N |  HHLINENO (52) HH line number                                         
+    | N |     ___
+ 654| N |  HHREL    (52) HH relation to head                                         ___
+ 655| N |  HHLIVES  (52) HH person normally lives here         9                     ___
+ 656| N |  HHSLEPT  (52) HH member slept here lastnight        9                     ___
+ 657| N |  HHSEX    (52) HH member sex                         9                     ___
+ 658| N |  HHAGE    (52) HH member age                                          
+    | N |     ___
+ 660| N |  HHFOSTER (52) HH member parents live here           9   BLANK             ___
+ 661| N |  HHELIG   (52) HH member eligible respondent             BLANK        
+    | N |     ___
+ 663| N |  HHPUNCH  (52)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 664| N |  HHLINENO (53) HH line number                                         
+    | N |     ___
+ 666| N |  HHREL    (53) HH relation to head                                         ___
+ 667| N |  HHLIVES  (53) HH person normally lives here         9                     ___
+ 668| N |  HHSLEPT  (53) HH member slept here lastnight        9                     ___
+ 669| N |  HHSEX    (53) HH member sex                         9                     ___
+ 670| N |  HHAGE    (53) HH member age                                          
+    | N |     ___
+ 672| N |  HHFOSTER (53) HH member parents live here           9   BLANK             ___
+ 673| N |  HHELIG   (53) HH member eligible respondent             BLANK        
+    | N |     ___
+ 675| N |  HHPUNCH  (53)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 676| N |  HHLINENO (54) HH line number                                         
+    | N |     ___
+ 678| N |  HHREL    (54) HH relation to head                                         ___
+ 679| N |  HHLIVES  (54) HH person normally lives here         9                     ___
+ 680| N |  HHSLEPT  (54) HH member slept here lastnight        9                     ___
+ 681| N |  HHSEX    (54) HH member sex                         9                     ___
+ 682| N |  HHAGE    (54) HH member age                                          
+    | N |     ___
+ 684| N |  HHFOSTER (54) HH member parents live here           9   BLANK             ___
+ 685| N |  HHELIG   (54) HH member eligible respondent             BLANK        
+    | N |     ___
+ 687| N |  HHPUNCH  (54)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 688| N |  HHLINENO (55) HH line number                                         
+    | N |     ___
+ 690| N |  HHREL    (55) HH relation to head                                         ___
+ 691| N |  HHLIVES  (55) HH person normally lives here         9                     ___
+ 692| N |  HHSLEPT  (55) HH member slept here lastnight        9                     ___
+ 693| N |  HHSEX    (55) HH member sex                         9                     ___
+ 694| N |  HHAGE    (55) HH member age                                          
+    | N |     ___
+ 696| N |  HHFOSTER (55) HH member parents live here           9   BLANK             ___
+ 697| N |  HHELIG   (55) HH member eligible respondent             BLANK        
+    | N |     ___
+ 699| N |  HHPUNCH  (55)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 700| N |  HHLINENO (56) HH line number                                         
+    | N |     ___
+ 702| N |  HHREL    (56) HH relation to head                                         ___
+ 703| N |  HHLIVES  (56) HH person normally lives here         9                     ___
+ 704| N |  HHSLEPT  (56) HH member slept here lastnight        9                     ___
+ 705| N |  HHSEX    (56) HH member sex                         9                     ___
+ 706| N |  HHAGE    (56) HH member age                                          
+    | N |     ___
+ 708| N |  HHFOSTER (56) HH member parents live here           9   BLANK             ___
+ 709| N |  HHELIG   (56) HH member eligible respondent             BLANK        
+    | N |     ___
+ 711| N |  HHPUNCH  (56)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 712| N |  HHLINENO (57) HH line number                                         
+    | N |     ___
+ 714| N |  HHREL    (57) HH relation to head                                         ___
+ 715| N |  HHLIVES  (57) HH person normally lives here         9                     ___
+ 716| N |  HHSLEPT  (57) HH member slept here lastnight        9                     ___
+ 717| N |  HHSEX    (57) HH member sex                         9                     ___
+ 718| N |  HHAGE    (57) HH member age                                          
+    | N |     ___
+ 720| N |  HHFOSTER (57) HH member parents live here           9   BLANK             ___
+ 721| N |  HHELIG   (57) HH member eligible respondent             BLANK        
+    | N |     ___
+ 723| N |  HHPUNCH  (57)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 724| N |  HHLINENO (58) HH line number                                         
+    | N |     ___
+ 726| N |  HHREL    (58) HH relation to head                                         ___
+ 727| N |  HHLIVES  (58) HH person normally lives here         9                     ___
+ 728| N |  HHSLEPT  (58) HH member slept here lastnight        9                     ___
+ 729| N |  HHSEX    (58) HH member sex                         9                     ___
+ 730| N |  HHAGE    (58) HH member age                                          
+    | N |     ___
+ 732| N |  HHFOSTER (58) HH member parents live here           9   BLANK             ___
+ 733| N |  HHELIG   (58) HH member eligible respondent             BLANK        
+    | N |     ___
+ 735| N |  HHPUNCH  (58)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 736| N |  HHLINENO (59) HH line number                                         
+    | N |     ___
+ 738| N |  HHREL    (59) HH relation to head                                         ___
+ 739| N |  HHLIVES  (59) HH person normally lives here         9                     ___
+ 740| N |  HHSLEPT  (59) HH member slept here lastnight        9                     ___
+ 741| N |  HHSEX    (59) HH member sex                         9                     ___
+ 742| N |  HHAGE    (59) HH member age                                          
+    | N |     ___
+ 744| N |  HHFOSTER (59) HH member parents live here           9   BLANK             ___
+ 745| N |  HHELIG   (59) HH member eligible respondent             BLANK        
+    | N |     ___
+ 747| N |  HHPUNCH  (59)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 748| N |  HHLINENO (60) HH line number                                         
+    | N |     ___
+ 750| N |  HHREL    (60) HH relation to head                                         ___
+ 751| N |  HHLIVES  (60) HH person normally lives here         9                     ___
+ 752| N |  HHSLEPT  (60) HH member slept here lastnight        9                     ___
+ 753| N |  HHSEX    (60) HH member sex                         9                     ___
+ 754| N |  HHAGE    (60) HH member age                                          
+    | N |     ___
+ 756| N |  HHFOSTER (60) HH member parents live here           9   BLANK             ___
+ 757| N |  HHELIG   (60) HH member eligible respondent             BLANK        
+    | N |     ___
+ 759| N |  HHPUNCH  (60)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 760| N |  HHLINENO (61) HH line number                                         
+    | N |     ___
+ 762| N |  HHREL    (61) HH relation to head                                         ___
+ 763| N |  HHLIVES  (61) HH person normally lives here         9                     ___
+ 764| N |  HHSLEPT  (61) HH member slept here lastnight        9                     ___
+ 765| N |  HHSEX    (61) HH member sex                         9                     ___
+ 766| N |  HHAGE    (61) HH member age                                          
+    | N |     ___
+ 768| N |  HHFOSTER (61) HH member parents live here           9   BLANK             ___
+ 769| N |  HHELIG   (61) HH member eligible respondent             BLANK        
+    | N |     ___
+ 771| N |  HHPUNCH  (61)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 772| N |  HHLINENO (62) HH line number                                         
+    | N |     ___
+ 774| N |  HHREL    (62) HH relation to head                                         ___
+ 775| N |  HHLIVES  (62) HH person normally lives here         9                     ___
+ 776| N |  HHSLEPT  (62) HH member slept here lastnight        9                     ___
+ 777| N |  HHSEX    (62) HH member sex                         9                     ___
+ 778| N |  HHAGE    (62) HH member age                                          
+    | N |     ___
+ 780| N |  HHFOSTER (62) HH member parents live here           9   BLANK             ___
+ 781| N |  HHELIG   (62) HH member eligible respondent             BLANK        
+    | N |     ___
+ 783| N |  HHPUNCH  (62)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 784| N |  HHLINENO (63) HH line number                                         
+    | N |     ___
+ 786| N |  HHREL    (63) HH relation to head                                         ___
+ 787| N |  HHLIVES  (63) HH person normally lives here         9                     ___
+ 788| N |  HHSLEPT  (63) HH member slept here lastnight        9                     ___
+ 789| N |  HHSEX    (63) HH member sex                         9                     ___
+ 790| N |  HHAGE    (63) HH member age                                          
+    | N |     ___
+ 792| N |  HHFOSTER (63) HH member parents live here           9   BLANK             ___
+ 793| N |  HHELIG   (63) HH member eligible respondent             BLANK        
+    | N |     ___
+ 795| N |  HHPUNCH  (63)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 796| N |  HHLINENO (64) HH line number                                         
+    | N |     ___
+ 798| N |  HHREL    (64) HH relation to head                                         ___
+ 799| N |  HHLIVES  (64) HH person normally lives here         9                     ___
+ 800| N |  HHSLEPT  (64) HH member slept here lastnight        9                     ___
+ 801| N |  HHSEX    (64) HH member sex                         9                     ___
+ 802| N |  HHAGE    (64) HH member age                                          
+    | N |     ___
+ 804| N |  HHFOSTER (64) HH member parents live here           9   BLANK             ___
+ 805| N |  HHELIG   (64) HH member eligible respondent             BLANK        
+    | N |     ___
+ 807| N |  HHPUNCH  (64)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 808| N |  HHLINENO (65) HH line number                                         
+    | N |     ___
+ 810| N |  HHREL    (65) HH relation to head                                         ___
+ 811| N |  HHLIVES  (65) HH person normally lives here         9                     ___
+ 812| N |  HHSLEPT  (65) HH member slept here lastnight        9                     ___
+ 813| N |  HHSEX    (65) HH member sex                         9                     ___
+ 814| N |  HHAGE    (65) HH member age                                          
+    | N |     ___
+ 816| N |  HHFOSTER (65) HH member parents live here           9   BLANK             ___
+ 817| N |  HHELIG   (65) HH member eligible respondent             BLANK        
+    | N |     ___
+ 819| N |  HHPUNCH  (65)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 820| N |  HHLINENO (66) HH line number                                         
+    | N |     ___
+ 822| N |  HHREL    (66) HH relation to head                                         ___
+ 823| N |  HHLIVES  (66) HH person normally lives here         9                     ___
+ 824| N |  HHSLEPT  (66) HH member slept here lastnight        9                     ___
+ 825| N |  HHSEX    (66) HH member sex                         9                     ___
+ 826| N |  HHAGE    (66) HH member age                                          
+    | N |     ___
+ 828| N |  HHFOSTER (66) HH member parents live here           9   BLANK             ___
+ 829| N |  HHELIG   (66) HH member eligible respondent             BLANK        
+    | N |     ___
+ 831| N |  HHPUNCH  (66)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 832| N |  HHLINENO (67) HH line number                                         
+    | N |     ___
+ 834| N |  HHREL    (67) HH relation to head                                         ___
+ 835| N |  HHLIVES  (67) HH person normally lives here         9                     ___
+ 836| N |  HHSLEPT  (67) HH member slept here lastnight        9                     ___
+ 837| N |  HHSEX    (67) HH member sex                         9                     ___
+ 838| N |  HHAGE    (67) HH member age                                          
+    | N |     ___
+ 840| N |  HHFOSTER (67) HH member parents live here           9   BLANK             ___
+ 841| N |  HHELIG   (67) HH member eligible respondent             BLANK        
+    | N |     ___
+ 843| N |  HHPUNCH  (67)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 844| N |  HHLINENO (68) HH line number                                         
+    | N |     ___
+ 846| N |  HHREL    (68) HH relation to head                                         ___
+ 847| N |  HHLIVES  (68) HH person normally lives here         9                     ___
+ 848| N |  HHSLEPT  (68) HH member slept here lastnight        9                     ___
+ 849| N |  HHSEX    (68) HH member sex                         9                     ___
+ 850| N |  HHAGE    (68) HH member age                                          
+    | N |     ___
+ 852| N |  HHFOSTER (68) HH member parents live here           9   BLANK             ___
+ 853| N |  HHELIG   (68) HH member eligible respondent             BLANK        
+    | N |     ___
+ 855| N |  HHPUNCH  (68)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 856| N |  HHLINENO (69) HH line number                                         
+    | N |     ___
+ 858| N |  HHREL    (69) HH relation to head                                         ___
+ 859| N |  HHLIVES  (69) HH person normally lives here         9                     ___
+ 860| N |  HHSLEPT  (69) HH member slept here lastnight        9                     ___
+ 861| N |  HHSEX    (69) HH member sex                         9                     ___
+ 862| N |  HHAGE    (69) HH member age                                          
+    | N |     ___
+ 864| N |  HHFOSTER (69) HH member parents live here           9   BLANK             ___
+ 865| N |  HHELIG   (69) HH member eligible respondent             BLANK        
+    | N |     ___
+ 867| N |  HHPUNCH  (69)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 868| N |  HHLINENO (70) HH line number                                         
+    | N |     ___
+ 870| N |  HHREL    (70) HH relation to head                                         ___
+ 871| N |  HHLIVES  (70) HH person normally lives here         9                     ___
+ 872| N |  HHSLEPT  (70) HH member slept here lastnight        9                     ___
+ 873| N |  HHSEX    (70) HH member sex                         9                     ___
+ 874| N |  HHAGE    (70) HH member age                                          
+    | N |     ___
+ 876| N |  HHFOSTER (70) HH member parents live here           9   BLANK             ___
+ 877| N |  HHELIG   (70) HH member eligible respondent             BLANK        
+    | N |     ___
+ 879| N |  HHPUNCH  (70)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 880| N |  HHLINENO (71) HH line number                                         
+    | N |     ___
+ 882| N |  HHREL    (71) HH relation to head                                         ___
+ 883| N |  HHLIVES  (71) HH person normally lives here         9                     ___
+ 884| N |  HHSLEPT  (71) HH member slept here lastnight        9                     ___
+ 885| N |  HHSEX    (71) HH member sex                         9                     ___
+ 886| N |  HHAGE    (71) HH member age                                          
+    | N |     ___
+ 888| N |  HHFOSTER (71) HH member parents live here           9   BLANK             ___
+ 889| N |  HHELIG   (71) HH member eligible respondent             BLANK        
+    | N |     ___
+ 891| N |  HHPUNCH  (71)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 892| N |  HHLINENO (72) HH line number                                         
+    | N |     ___
+ 894| N |  HHREL    (72) HH relation to head                                         ___
+ 895| N |  HHLIVES  (72) HH person normally lives here         9                     ___
+ 896| N |  HHSLEPT  (72) HH member slept here lastnight        9                     ___
+ 897| N |  HHSEX    (72) HH member sex                         9                     ___
+ 898| N |  HHAGE    (72) HH member age                                          
+    | N |     ___
+ 900| N |  HHFOSTER (72) HH member parents live here           9   BLANK             ___
+ 901| N |  HHELIG   (72) HH member eligible respondent             BLANK        
+    | N |     ___
+ 903| N |  HHPUNCH  (72)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 904| N |  HHLINENO (73) HH line number                                         
+    | N |     ___
+ 906| N |  HHREL    (73) HH relation to head                                         ___
+ 907| N |  HHLIVES  (73) HH person normally lives here         9                     ___
+ 908| N |  HHSLEPT  (73) HH member slept here lastnight        9                     ___
+ 909| N |  HHSEX    (73) HH member sex                         9                     ___
+ 910| N |  HHAGE    (73) HH member age                                          
+    | N |     ___
+ 912| N |  HHFOSTER (73) HH member parents live here           9   BLANK             ___
+ 913| N |  HHELIG   (73) HH member eligible respondent             BLANK        
+    | N |     ___
+ 915| N |  HHPUNCH  (73)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 916| N |  HHLINENO (74) HH line number                                         
+    | N |     ___
+ 918| N |  HHREL    (74) HH relation to head                                         ___
+ 919| N |  HHLIVES  (74) HH person normally lives here         9                     ___
+ 920| N |  HHSLEPT  (74) HH member slept here lastnight        9                     ___
+ 921| N |  HHSEX    (74) HH member sex                         9                     ___
+ 922| N |  HHAGE    (74) HH member age                                          
+    | N |     ___
+ 924| N |  HHFOSTER (74) HH member parents live here           9   BLANK             ___
+ 925| N |  HHELIG   (74) HH member eligible respondent             BLANK        
+    | N |     ___
+ 927| N |  HHPUNCH  (74)                                                   BLANK     ___
+
+                             SECTION MAP                               
+Section   : SEC02                                                     08-08-2006
+                                                                        13:57:19
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 928| N |  HHLINENO (75) HH line number                                         
+    | N |     ___
+ 930| N |  HHREL    (75) HH relation to head                                         ___
+ 931| N |  HHLIVES  (75) HH person normally lives here         9                     ___
+ 932| N |  HHSLEPT  (75) HH member slept here lastnight        9                     ___
+ 933| N |  HHSEX    (75) HH member sex                         9                     ___
+ 934| N |  HHAGE    (75) HH member age                                          
+    | N |     ___
+ 936| N |  HHFOSTER (75) HH member parents live here           9   BLANK             ___
+ 937| N |  HHELIG   (75) HH member eligible respondent             BLANK        
+    | N |     ___
+ 939| N |  HHPUNCH  (75)                                                   BLANK     ___
+
+... Report of Dictionary KEHH01 normally ended

@@ -1,0 +1,300 @@
+﻿                                                   ETFW71FL
+                                                ETFW71FL_DICT
+
+                                        C:\Countries\ET71\ETFW71FL.DCF
+                                     Last Modified:  6/8/2018  2:36:10 PM
+
+--------------------------------------------------------------------------------------------------------------
+Level Name                    Level Label                                                  Type            Rec
+  Record Name                   Record Label                                              Value  Req  Max  Len
+--------------------------------------------------------------------------------------------------------------
+LEVEL_1                       Level 1
+  FWRECORD                      Fieldworker record                                               Yes    1   48
+Level: Level 1                                         Record: Fieldworker record
+--------------------------------------------------------------------------------------------------------------
+                                                                                 Data Item            Dec Zero
+Item Name              Item Label                                     Start  Len Type Type  Occ  Dec Char Fill
+--------------------------------------------------------------------------------------------------------------
+                         (record type)                                    0    0   AN    I    1    0   No   No
+FW101             (id) Fieldworker code                                   1    4    N    I    1    0   No  Yes
+FW000                  Country code and phase                             5    3   AN    I    1    0   No   No
+FW102                  Fieldworker region of residence                    8    2    N    I    1    0   No   No
+                               1   TIGRAY
+                               2   AFAR
+                               3   AMHARA
+                               4   OROMIA
+                               5   SOMALI
+                               6   BENISHANGUL-GUMUZ
+                               7   SNNPR
+                               12  GAMBELA
+                               13  HARARI
+                               14  ADDIS ABABA
+                               15  DIRE DAWA
+                               16  Special enumeration area
+                               96  Outside of Ethiopia
+                               99  Missing
+FW102Z                 Zone of residence                                 10    2    N    I    1    0   No   No
+  (FW102Z_VS)            all ranges
+                               0:50  
+                               99    Missing
+  (FW102Z_VS1)           Zone of residence
+                               0  TIGRAY REGION
+                               1  NORTH WEST TIGRAY-ZONE
+                               2  CENTRAL TIGRAY-ZONE
+                               3  EASTERN TIGRAY ZONE
+                               4  SOUTHERN TIGRAY-ZONE
+                               5  WESTERN TIGRAY-ZONE
+                               6  MEKELE TOWN SPECIAL-ZONE
+  (FW102Z_VS2)           Zone lived before moved to place of interview
+                               0  AFAR REGION
+                               1  ZONE 1
+                               2  ZONE 2
+                               3  ZONE 3
+                               4  ZONE 4
+                               5  ZONE 5
+  (FW102Z_VS3)           Zone lived before moved to place of interview
+                               0   AMHARA REGION
+                               1   NORTH GONDAR-ZONE
+                               2   SOUTH GONDAR-ZONE
+                               3   NORTH WELLO-ZONE
+                               4   SOUTH WELLO-ZONE
+                               5   NORTH SHEWA-ZONE
+                               6   EAST GOJAM ZONE
+                               7   WEST GOJAM-ZONE
+                               8   WAG HIMRA-ZONE
+                               9   AWI-ZONE
+                               10  OROMIYA-ZONE
+                               11  BAHIR DAR SPECIAL-ZONE
+                               12  ARGOBA SPECIAL-WEREDA
+  (FW102Z_VS4)           Zone lived before moved to place of interview
+                               0   OROMIA REGION
+                               1   WEST WELLEGA-ZONE
+                               2   EAST WELLEGA-ZONE
+                               3   ILU ABA BORA-ZONE
+                               4   JIMMA -ZONE
+                               5   WEST SHEWA-ZONE
+                               6   NORTH SHEWA-ZONE
+                               7   EAST SHEWA-ZONE
+                               8   ARSI-ZONE
+                               9   WEST HARARGE-ZONE
+                               10  EAST HARARGE-ZONE
+                               11  BALE-ZONE
+                               12  BORENA ZONE
+                               13  SOUTH WEST SHEWA ZONE
+                               14  GUJI-ZONE
+                               15  ADAMA SPECIAL-ZONE
+                               16  JIMMA TOWN SPECIAL-ZONE
+                               17  WEST ARSI-ZONE
+                               18  KELEM WELLEGA ZONE
+                               19  HORO GUDRU WELLEGA-ZONE
+                               20  BURAYU SPECIAL-ZONE
+  (FW102Z_VS5)           Zone lived before moved to place of interview
+                               0  SOMALI REGION
+                               1  SHINILE-ZONE
+                               2  JIJIGA-ZONE
+                               3  DEGEHABUR-ZONE
+                               4  WARDER-ZONE
+                               5  KORAHE-ZONE
+                               6  FIK-ZONE
+                               7  GODE-ZONE
+                               8  AFDER-ZONE
+                               9  LIBEN-ZONE
+  (FW102Z_VS6)           Zone lived before moved to place of interview
+                               0  BENISHANGUL-GUMUZ REGION
+                               1  METEKEL-ZONE
+                               2  ASOSA-ZONE
+                               3  KAMASHI-ZONE
+                               4  PAWE SPECIAL-WEREDA
+                               5  MAO KOMO SPECIAL-WEREDA
+  (FW102Z_VS7)           Zone lived before moved to place of interview
+                               0   SOUTHERN NATIONS, NATIONALITIES, AND PEOPLES REGION
+                               1   GURAGE-ZONE
+                               2   HADIYA-ZONE
+                               3   KEMBATA TIBARO-ZONE
+                               4   SIDAMA-ZONE
+                               5   GEDEO-ZONE
+                               6   WOLAYITA-ZONE
+                               7   SOUTH OMO-ZONE
+                               8   SHEKA-ZONE
+                               9   KEFA-ZONE
+                               10  GAMO GOFA ZONE
+                               11  BENCH MAJI-ZONE
+                               12  YEM SPECIAL-WEREDA
+                               13  AMARO SPECIAL-WEREDA
+                               14  BURJI SPECIAL-WEREDA
+                               15  KONSO SPECIAL-WEREDA
+                               16  DERASHE SPECIAL-WEREDA
+                               17  DAWURO-ZONE
+                               18  BASKETO SPECIAL-WEREDA
+                               19  KONTA SPECIAL-WEREDA
+                               20  SILTIE-ZONE
+                               21  ALABA SPECIAL-WEREDA
+                               22  HAWASSA CITY ADMINISTRATION-ZONE
+  (FW102Z_VS12)          Zone lived before moved to place of interview
+                               0  GAMBELA REGION
+                               1  AGNEWAK-ZONE
+                               2  NUWER-ZONE
+                               3  MEJENGER-ZONE
+                               4  ETANG SPECIAL-WEREDA
+  (FW102Z_VS13)          Zone lived before moved to place of interview
+                               0  HARARI REGION
+                               1  Harari
+  (FW102Z_VS14)          Zone lived before moved to place of interview
+                               0  ADDIS ABABA
+                               1  Addis Ababa
+  (FW102Z_VS15)          Zone lived before moved to place of interview
+                               0  DIRE DAWA
+                               1  Dire Dawa
+  (FW102Z_VS16)          Zone lived before moved to place of interview
+                               0  SPECIAL ENUMERATION AREA
+                               1  MOYALE SPECIAL-ZONE
+                               2  MEDA WELABU SPECIAL-ZONE
+                               3  MULO SPECIAL WEREDA-ZONE
+FW103                  Fieldworker type of place of residence            12    1    N    I    1    0   No   No
+                               1  Urban
+                               2  Rural
+                               9  Missing
+                          (na)    Not applicable
+FW104                  Fieldworker age                                   13    2    N    I    1    0   No   No
+                               15:65  
+                               99     Missing
+                          (na)        Not applicable
+FW105                  Fieldworker sex                                   15    1    N    I    1    0   No   No
+                               1  Male
+                               2  Female
+                               9  Missing
+                          (na)    Not applicable
+FW106                  Fieldworker marital status                        16    1    N    I    1    0   No   No
+                               1  Currently married
+                               2  Living with a man/woman
+                               3  Widowed
+                               4  Divorced
+                               5  Separated
+                               6  Never married or lived with a man/woman
+                               9  Missing
+                          (na)    Not applicable
+FW107                  Fieldworker number of living children             17    2    N    I    1    0   No   No
+                               0:24  
+                               99    Missing
+                          (na)       Not applicable
+FW108                  Fieldworker ever had a child who died             19    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               9  Missing
+                          (na)    Not applicable
+FW109                  Highest level of school attended by fieldworker   20    1    N    I    1    0   No   No
+                               1  Primary
+                               2  Secondary
+                               3  Technical/ vocational
+                               4  Higher
+                               9  Missing
+                          (na)    Not applicable
+FW110                  Highest grade/form/year at that level completed   21    2    N    I    1    0   No   No
+                               0     Less than one year at level
+                               1:15  
+                               99    Missing
+                          (na)       Not applicable
+FW111                  Fieldworker religion                              23    2    N    I    1    0   No   No
+                               1   Orthodox
+                               2   Catholic
+                               3   Protestant
+                               4   Muslin
+                               5   Traditional
+                               95  No religion
+                               96  Other
+                               99  Missing
+                          (na)     Not applicable
+FW112                  Fieldworker ethnicity                             25    3    N    I    1    0   No   No
+                               1    Amhara
+                               2    Oromo
+                               3    Tigrie
+                               4    Affar
+                               5    Somalie
+                               6    Guragie
+                               7    Sidama
+                               8    Nuwer
+                               9    Welaita
+                               10   Berta
+                               11   Kefficho
+                               12   Gumuz
+                               13   Hadiya
+                               14   Gamo
+                               15   Silte
+                               16   Anyiwak
+                               17   Kembata
+                               18   Gedeo
+                               19   Agew-Awi
+                               96   OTHER
+                               99   Missing
+                          (na)      Not applicable
+FW113                  Fieldworker mother's tongue/native language       28    2    N    I    1    0   No   No
+                               1   Amarigna
+                               2   Trigrigna
+                               3   Oromigna
+                               4   Afarigna
+                               5   Somaligna
+                               6   Walytta
+                               96  Other
+                               99  Missing
+                          (na)     Not applicable
+FW114A                 Language A: AMARIGNA                              30    1   AN    I    1    0   No   No
+                               A  Amarigna
+                               ?  Missing
+FW114B                 Language B: TIGRIGNA                              31    1   AN    I    1    0   No   No
+                               B  Trigrigna
+                               ?  Missing
+FW114C                 Language C: OROMIGNA                              32    1   AN    I    1    0   No   No
+                               C  Oromigna
+                               ?  Missing
+FW114D                 Language D: AFARIGNA                              33    1   AN    I    1    0   No   No
+                               D  Afarigna
+                               ?  Missing
+FW114E                 Language E: SOMALIGNA                             34    1   AN    I    1    0   No   No
+                               E  Somaligna
+                               ?  Missing
+FW114F                 Language F: WALYTTA                               35    1   AN    I    1    0   No   No
+                               F  Walytta
+                               ?  Missing
+FW114G                 Language G: ENGLISH                               36    1   AN    I    1    0   No   No
+                               G  English
+                               ?  Missing
+FW114H                 NA - Language H                                   37    1   AN    I    1    0   No   No
+                               H  Language H
+FW114I                 NA - Language I                                   38    1   AN    I    1    0   No   No
+                               I  Language I
+FW114J                 NA - Language J                                   39    1   AN    I    1    0   No   No
+                               J  Language J
+FW114K                 NA - Language K                                   40    1   AN    I    1    0   No   No
+                               K  Language K
+FW114L                 NA - Language L                                   41    1   AN    I    1    0   No   No
+                               L  Language L
+FW114M                 NA - Language M                                   42    1   AN    I    1    0   No   No
+                               M  Language M
+FW114X                 Other language                                    43    1   AN    I    1    0   No   No
+                               X  Other language
+FW114Y                 No other language                                 44    1   AN    I    1    0   No   No
+                               Y  No other language
+FW115                  Have fieldworker ever worked on a DHS             45    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               9  Missing
+                          (na)    Not applicable
+FW116                  Have fieldworker ever worked on any other surve   46    1    N    I    1    0   No   No
+                               1  Yes
+                               2  No
+                               9  Missing
+                          (na)    Not applicable
+FW117                  Was fieldworker working for agency at the time    47    1    N    I    1    0   No   No
+                               1  Yes, CSA
+                               2  Yes, EPHI
+                               3  No
+                               9  Missing
+                          (na)    Not applicable
+FW118                  Is fieldworker permanent or te temporary employ   48    1    N    I    1    0   No   No
+                               1  Permanent
+                               2  Temporary
+                               9  Missing
+                          (na)    Not applicable
+--------------------------------------------------------------------------------------------------------------
+Relation Name         Primary               Linked by             Secondary             Linked by
+--------------------------------------------------------------------------------------------------------------

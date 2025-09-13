@@ -1,0 +1,2365 @@
+
+               I S S A     D i c t i o n a r y     R e p o r t
+
+
+                  IIIIIIIIII     SSSSSSS       SSSSSSS            A
+                 IIIIIIIIII    SSSSSSSSSS    SSSSSSSSSS          AA
+                   IIII       SSSS          SSSS               AAAA
+                  IIII       SSSS          SSSS              AAAAAA
+                 IIII       SSSS          SSSS             AAA  AAA
+                IIII       SSSSSSSS      SSSSSSSS         AAA  AAA 
+               IIII         SSSSSSSS      SSSSSSSS      AAA    AAA 
+              IIII             SSSS          SSSS      AAAAAAAAAA  
+             IIII             SSSS          SSSS     AAAAAAAAAAAA  
+            IIII             SSSS          SSSS     AAA      AAA   
+        IIIIIIIIII    SSSSSSSSSS    SSSSSSSSSS    AAAA      AAAA   
+       IIIIIIIIII      SSSSSSS       SSSSSSS     AAAA      AAAA    
+
+  I n t e g r a t e d   S y s t e m   f o r    S u r v e y   A n a l y s i s
+
+--------------------------------------------------------------------------------
+
+Dictionary Name   : ETPR41   (file 'ETPR41.DIC', 32992 bytes)
+
+Dictionary Label  : Standard Recode         1.4.0 
+
+Owner             : DHS IV                        
+
+Country           : Ethiopia 2000                 
+
+Creation Date     : May 3, 4    
+
+Last Update       : May 3, 4          * 1 hierarchical level
+
+* Main index: not defined
+
+* No secondary indexes defined
+
+* Index summary: no index key lengths measured
+
+* Estimated case-data-area size: 427 bytes (2 sections, 200 variables)
+
+Report date & time: 05-03-2004 at 11:08:47 hrs.
+
+                             SECTION DESCRIPTION                       
+                                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Section     Length      Occurs   ---  Group  ---  
+ name   Loc.     Class  Min Max    Max Loc Len    Section Label
+--------------------------------------------------------------------------------
+
+SEC1       1  212  S     0   1   -without group-  
+
+SEC2     213  215  S     0   1   -without group-  
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC1                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+HHID         1   12    0     A      S    Case Identification           
+
+HV000       13    3    0     A      S    Country code and phase        
+
+HV001       16    8    0     N      S    Cluster number                
+
+HV002       24    4    0     N      S    Household number              
+
+HV003       28    3    0     N      S    Respondent's line number      
+
+HV004       31    4    0     N      S    Ultimate area unit            
+
+HV005       35    8    0     N      S    Sample weight                 
+
+HV006       43    2    0     N      S    Month of interview            
+                                         ranges:   lower   upper
+                                                       1      12
+
+HV007       45    4    0     N      S    Year of interview             
+                                         ranges:   lower   upper
+                                                    1990    2005
+
+HV008       49    4    0     N      S    Date of interview (CMC)       
+
+HV009       53    2    0     N      S    Number of household members   
+                                         ranges:   lower   upper
+                                                       0      90
+
+HV010       55    2    0     N      S    Number of eligible women in HH
+                                         ranges:   lower   upper
+                                                       0      20
+
+HV011       57    2    0     N      S    Number of eligible men in HH  
+                                         ranges:   lower   upper
+                                                       0      20
+
+HV012       59    2    0     N      S    Number of de jure members     
+                                         ranges:   lower   upper
+                                                       0      90
+
+HV013       61    2    0     N      S    Number of de facto members    
+                                         ranges:   lower   upper
+                                                       0      90
+
+HV014       63    2    0     N      S    Number of children 5 and under
+                                         ranges:   lower   upper
+                                                       0      20
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC1                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+HV015       65    1    0     N      S    Result of household interview 
+                                         values:   value  label
+                                                       1  Completed                                                   
+                                                       2  HH present, no resp                                         
+                                                       3  HH absent                                                   
+                                                       4  Postponed                                                   
+                                                       5  Refused                                                     
+                                                       6  Dwelling vacant                                             
+                                                       7  Dwelling destroyed                                          
+                                                       8  Dwelling not found                                          
+                                                       9  Other                                                       
+                                         ranges:   lower   upper
+                                                       1       9
+
+HV016       66    2    0     N      S    Day of interview              
+                                         ranges:   lower   upper
+                                                       1      31
+
+HV017       68    1    0     N      S    Number of visits              
+                                         ranges:   lower   upper
+                                                       1       5
+
+HV018       69    3    0     N      S    Interviewer identification    
+                                         values:   value  label
+                                                     999  Missing value
+
+HV019       72    2    0     N      S    Keyer identification          
+                                         values:   value  label
+                                                      99  Missing value
+
+HV020       74    1    0     N      S    Ever-married sample           
+                                         values:   value  label
+                                                       0  All woman sample                                            
+                                                       1  Ever married sample                                         
+                                         ranges:   lower   upper
+                                                       0       1
+
+HV021       75    4    0     N      S    Primary sampling unit         
+
+HV022       79    4    0     N      S    Sample stratum number         
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC1                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+HV023       83    2    0     N      S    Sample domain                 
+                                         values:   value  label
+                                                       1  Tigray, urban                                               
+                                                       2  Tigray, rural                                               
+                                                       3  Afar, urban                                                 
+                                                       4  Afar, rural                                                 
+                                                       5  Amhara, urban                                               
+                                                       6  Amhara, rural                                               
+                                                       7  Oromiya, urban                                              
+                                                       8  Oromiya, rural                                              
+                                                       9  Somali, urban                                               
+                                                      10  Somali, rural                                               
+                                                      11  Ben-Gumz, urban                                             
+                                                      12  Ben-Gumz, rural                                             
+                                                      13  SNNP, urban                                                 
+                                                      14  SNNP, rural                                                 
+                                                      15  Gambela, urban                                              
+                                                      16  Gambela, rural                                              
+                                                      17  Harrari, urban                                              
+                                                      18  Harrari, rural                                              
+                                                      19  Addis, urban                                                
+                                                      20  Dire Dawa, urban                                            
+                                                      21  Dire Dawa, rural                                            
+                                         ranges:   lower   upper
+                                                       1      21
+
+HV024       85    2    0     N      S    Region                        
+                                         values:   value  label
+                                                       1  Tigray                                                      
+                                                       2  Affar                                                       
+                                                       3  Amhara                                                      
+                                                       4  Oromiya                                                     
+                                                       5  Somali                                                      
+                                                       6  Ben-Gumz                                                    
+                                                       7  SNNP                                                        
+                                                      12  Gambela                                                     
+                                                      13  Harari                                                      
+                                                      14  Addis                                                       
+                                                      15  Dire Dawa                                                   
+                                         ranges:   lower   upper
+                                                       1       7
+                                                      12      15
+
+HV025       87    1    0     N      S    Type of place of residence    
+                                         values:   value  label
+                                                       1  Urban                                                       
+                                                       2  Rural                                                       
+                                         ranges:   lower   upper
+                                                       1       2
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC1                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+HV026       88    1    0     N      S    Place of residence            
+                                         values:   value  label
+                                                       0  Capital, large city                                         
+                                                       1  Small city                                                  
+                                                       2  Town                                                        
+                                                       3  Countryside                                                 
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       0       3
+
+HV027       89    1    0     N      S    Selection for male/husb. int. 
+                                         values:   value  label
+                                                       0  Not selected                                                
+                                                       1  Men's survey                                                
+                                                       2  Husband's survey                                            
+                                         ranges:   lower   upper
+                                                       0       2
+
+HV028       90    8    0     N      S    Sample weight for male subsamp
+
+HV030       98    3    0     N      S    Field supervisor              
+                                         values:   value  label
+                                                     999  Missing value
+                                                   BLANK  Not applicable value
+
+HV031      101    3    0     N      S    Field editor                  
+                                         values:   value  label
+                                                     999  Missing value
+                                                   BLANK  Not applicable value
+
+HV032      104    2    0     N      S    Office editor                 
+                                         values:   value  label
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+
+HV033      106    8    0     N      S    Ultimate area selection prob. 
+
+HV035      114    2    0     N      S    Number of eligible children for height & weight
+                                         ranges:   lower   upper
+                                                       0      20
+
+HV040      116    4    0     N      S    Cluster altitude in meters -NA
+                                         values:   value  label
+                                                   BLANK  Not applicable value
+
+HV041      120    2    0     N      S    Total adults measured         
+                                         ranges:   lower   upper
+                                                       0      15
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC1                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+HV042      122    1    0     N      S    Selection for hemoglobin      
+                                         values:   value  label
+                                                       0  Not selected                                                
+                                                       1  Selected                                                    
+                                         ranges:   lower   upper
+                                                       0       1
+
+HV043      123    1    0     N      S    Selection for women's status module
+                                         values:   value  label
+                                                       0  Household not selected                                      
+                                                       1  Household selected                                          
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+HV044      124    1    0     N      S    Selection for domestic violence module
+                                         values:   value  label
+                                                       0  Household not selected                                      
+                                                       1  Household selected                                          
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+HV201      125    2    0     N      S    Source of drinking water      
+                                         values:   value  label
+                                                      10  PIPED WATER                                                 
+                                                      11  Piped into dwelling                                         
+                                                      12  Piped into compound                                         
+                                                      13  Piped outside compound                                      
+                                                      20  WATER FROM OPEN WELL                                        
+                                                      21  Open well                                                   
+                                                      22  Open spring                                                 
+                                                      23  Covered well                                                
+                                                      24  Covered spring                                              
+                                                      31  River                                                       
+                                                      32  Pond/lake/dam                                               
+                                                      40  SURFACE WATER                                               
+                                                      41  Rainwater                                                   
+                                                      96  Other                                                       
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                      10      71
+                                                      96      96
+
+HV204      127    3    0     N      S    Time to get to water source   
+                                         values:   value  label
+                                                     995  One day or longer                                           
+                                                     996  On premises                                                 
+                                                     999  Missing value
+                                                   BLANK  Not applicable value
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC1                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+HV205      130    2    0     N      S    Type of toilet facility       
+                                         values:   value  label
+                                                      10  FLUSH TOILET                                                
+                                                      11  Flush toilet                                                
+                                                      20  PIT TOILET LATRINE                                          
+                                                      21  Traditional pit latrine                                     
+                                                      22  Improved (ventilated) pit latrine                           
+                                                      30  NO FACILITY                                                 
+                                                      31  No facility, bush, field                                    
+                                                      96  OTHER                                                       
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                      10      31
+                                                      96      96
+
+HV206      132    1    0     N      S    Has electricity               
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+HV207      133    1    0     N      S    Has radio                     
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+HV208      134    1    0     N      S    Has television                
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+HV209      135    1    0     N      S    Has refrigerator           -NA
+                                         values:   value  label
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC1                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+HV210      136    1    0     N      S    Has bicycle                   
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+HV211      137    1    0     N      S    Has motorcycle/scooter        
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+HV212      138    1    0     N      S    Has car/truck                 
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+HV213      139    2    0     N      S    Main floor material           
+                                         values:   value  label
+                                                      10  NATURAL FLOOR                                               
+                                                      11  Earth, sand                                                 
+                                                      12  Dung                                                        
+                                                      20  RUDIMENTARY FLOOR                                           
+                                                      21  Wood planks                                                 
+                                                      22  Reed, bamboo                                                
+                                                      30  FINISHED FLOOR                                              
+                                                      31  Parquet, polished wood                                      
+                                                      32  Vinyl sheets/tiles                                          
+                                                      33  Cement                                                      
+                                                      34  Cement tiles/brick                                          
+                                                      35  Carpet                                                      
+                                                      96  Other                                                       
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                      10      35
+                                                      96      96
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC1                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+HV214      141    2    0     N      S    Main wall material         -NA
+                                         values:   value  label
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                      10      31
+                                                      96      96
+
+HV215      143    2    0     N      S    Main roof material            
+                                         values:   value  label
+                                                      10  NATURAL                                                     
+                                                      20  RUDIMENTARY                                                 
+                                                      21  Wood or mulch                                               
+                                                      22  Thatch                                                      
+                                                      23  Reed or bamboo                                              
+                                                      24  Plastic sheet                                               
+                                                      27  Mobile roofs of nomads                                      
+                                                      30  FINISHED                                                    
+                                                      31  Corrugated iron                                             
+                                                      32  Cement or concrete                                          
+                                                      96  OTHER                                                       
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                      10      32
+                                                      96      96
+
+HV217      145    1    0     N      S    Relationship structure        
+                                         values:   value  label
+                                                       0  No adults                                                   
+                                                       1  One adult                                                   
+                                                       2  Two adults, opp. sex                                        
+                                                       3  Two adults, same sex                                        
+                                                       4  Three+ related adult                                        
+                                                       5  Unrelated adults                                            
+                                         ranges:   lower   upper
+                                                       0       5
+
+HV218      146    2    0     N      S    Line number of head of househ.
+                                         ranges:   lower   upper
+                                                       1      90
+
+HV219      148    1    0     N      S    Sex of head of household      
+                                         values:   value  label
+                                                       1  Male                                                        
+                                                       2  Female                                                      
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC1                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+HV220      149    2    0     N      S    Age of head of household      
+                                         values:   value  label
+                                                      97  97+                                                         
+                                                      98  DK                                                          
+                                                      99  Missing value
+                                         ranges:   lower   upper
+                                                       0      98
+
+HV221      151    1    0     N      S    Has telephone                 
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+HV225      152    1    0     N      S    Share toilet with other households
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+HV226      153    2    0     N      S    Type of cooking fuel          
+                                         values:   value  label
+                                                       1  Electricity                                                 
+                                                       2  LPG, natural gas                                            
+                                                       3  Biogas                                                      
+                                                       4  Kerosene                                                    
+                                                       5  Coal, lignite                                               
+                                                       6  Charcoal                                                    
+                                                       7  Firewood, straw                                             
+                                                       8  Dung                                                        
+                                                       9  Does not cook at home                                       
+                                                      96  Other                                                       
+                                                      99  Missing value
+                                         ranges:   lower   upper
+                                                       1       9
+                                                      96      96
+
+HV227      155    1    0     N      S    Have bednet for sleeping      
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       0       1
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC1                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+HV228      156    1    0     N      S    Children under 5 slept unde-NA
+                                         values:   value  label
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       3
+
+HV230      157    1    0     N      S    Place for hand washing     -NA
+                                         values:   value  label
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       2
+
+HV231      158    1    0     N      S    Items present: Water, tap  -NA
+                                         values:   value  label
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+HV232      159    1    0     N      S    Items present: soap/other c-NA
+                                         values:   value  label
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+HV233      160    1    0     N      S    Items present: Basin       -NA
+                                         values:   value  label
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+HV234      161    3    0     N      S    Test salt for Iodine       -NA
+                                         values:   value  label
+                                                     999  Missing value
+                                                   BLANK  Not applicable value
+
+SHINTD     164    2    0     N      S    Day of household interview - Gregorian calendar
+                                         ranges:   lower   upper
+                                                       1      31
+
+SHINTM     166    2    0     N      S    Month of household interview - Gregorian calendar
+                                         ranges:   lower   upper
+                                                       1      13
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC1                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+SHINTY     168    4    0     N      S    Year of household interview - Gregorian calendar
+                                         ranges:   lower   upper
+                                                    1990    2005
+
+SHINTC     172    4    0     N      S    Date of HH interview (CMC) - Gregorian calendar
+
+SH25E      176    1    0     N      S    Household has an electric mitad
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+SH25F      177    1    0     N      S    Household has a kerosene lamp/pressure lamp
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+SH25G      178    1    0     N      S    Household has a bed/table     
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+SH25AA     179    1    0     N      S    Own house                     
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+SH25AB     180    1    0     N      S    Crop land                     
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC1                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+SH25AC     181    1    0     N      S    Cattle/camels                 
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+SH25AD     182    1    0     N      S    Horse/mule/donkey             
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+SH25AE     183    1    0     N      S    Sheep/goats                   
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+SH25AF     184    1    0     N      S    Cash crops                    
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+SH27B      185    2    0     N      S    Rooms for sleeping            
+                                         values:   value  label
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0      30
+
+SH28D      187    1    0     N      S    Member owns a horse/mule      
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC1                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+SH29A      188    1    0     N      S    Treatment sick child          
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+SH29B      189    1    0     N      S    Immunization                  
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+SH29C      190    1    0     N      S    Family planning               
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+SH29D      191    1    0     N      S    Prenatal/postnatal/delivery are
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+SH29E      192    1    0     N      S    Information on STD/HIV/AIDS   
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC1                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+SH29F      193    1    0     N      S    Information on breastfeeding/infant feeding
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+SH29BA     194    1    0     N      S    Facilities received services from: Government hospital
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+SH29BB     195    1    0     N      S    Facilities received services from: Health center
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+SH29BC     196    1    0     N      S    Facilities received services from: Health station/clinic
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+SH29BD     197    1    0     N      S    Facilities received services from: Health post
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC1                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+SH29BE     198    1    0     N      S    Facilities received services from: Comm. based outlet
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+SH29BF     199    1    0     N      S    Facilities received services from: Other government
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+SH29BG     200    1    0     N      S    Facilities received services from: NGO health facility
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+SH29BH     201    1    0     N      S    Facilities received services from: NGO comm. based outlet
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+SH29BI     202    1    0     N      S    Facilities received services from: Other NGO
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC1                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+SH29BJ     203    1    0     N      S    Facilities received services from: Private hospital
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+SH29BK     204    1    0     N      S    Facilities received services from: Private doctor/clinic
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+SH29BL     205    1    0     N      S    Facilities received services from: Other private
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+SH29BM     206    1    0     N      S    Facilities received services from: Kebele - during campaign
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+SH29BX     207    1    0     N      S    Facilities received services from: Other source
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC1                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+SH29CA     208    1    0     N      S    Bought drugs in last 12 months
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+SH29DA     209    1    0     N      S    Where bought drugs from - Pharmacy/Other medical facility
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+SH29DB     210    1    0     N      S    Where bought drugs from - Non medical facility
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+SH29GA     211    1    0     N      S    Bednets have been treated     
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+SH35       212    1    0     N      S    Test salt for Iodine          
+                                         values:   value  label
+                                                       1  0 PPM (No Iodine)                                           
+                                                       2  25 PPM                                                      
+                                                       3  50 PPM                                                      
+                                                       4  75 PPM                                                      
+                                                       5  100 PPM                                                     
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       5
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC2                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+HVIDX      213    2    0     N      S    Line number                   
+                                         ranges:   lower   upper
+                                                       1      90
+
+HV101      215    2    0     N      S    Relationship to head          
+                                         values:   value  label
+                                                       1  Head                                                        
+                                                       2  Wife or husband                                             
+                                                       3  Son/daughter                                                
+                                                       4  Son/daughter-in-law                                         
+                                                       5  Grandchild                                                  
+                                                       6  Parent                                                      
+                                                       7  Parent-in-law                                               
+                                                       8  Brother/sister                                              
+                                                       9  Co-spouse                                                   
+                                                      10  Other relative                                              
+                                                      11  Adopted/foster child                                        
+                                                      12  Not related                                                 
+                                                      98  DK                                                          
+                                                      99  Missing value
+                                         ranges:   lower   upper
+                                                       1      12
+                                                      98      98
+
+HV102      217    1    0     N      S    Usual resident                
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       0       1
+
+HV103      218    1    0     N      S    Slept last night              
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       0       1
+
+HV104      219    1    0     N      S    Sex of household member       
+                                         values:   value  label
+                                                       1  Male                                                        
+                                                       2  Female                                                      
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC2                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+HV105      220    2    0     N      S    Age of household members      
+                                         values:   value  label
+                                                      97  97+                                                         
+                                                      98  DK                                                          
+                                                      99  Missing value
+                                         ranges:   lower   upper
+                                                       0      98
+
+HV106      222    1    0     N      S    Highest educational level     
+                                         values:   value  label
+                                                       0  No education, preschool                                     
+                                                       1  Primary                                                     
+                                                       2  Secondary                                                   
+                                                       3  Higher                                                      
+                                                       8  DK                                                          
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       0       3
+                                                       8       8
+
+HV107      223    2    0     N      S    Highest year of education     
+                                         values:   value  label
+                                                      98  DK                                                          
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+
+HV108      225    2    0     N      S    Education in single years     
+                                         values:   value  label
+                                                      97  Inconsistent                                                
+                                                      98  DK                                                          
+                                                      99  Missing value
+                                         ranges:   lower   upper
+                                                       0      20
+                                                      97      98
+
+HV109      227    1    0     N      S    Educational attainment        
+                                         values:   value  label
+                                                       0  No education                                                
+                                                       1  Incomplete primary                                          
+                                                       2  Complete primary                                            
+                                                       3  Incomplete secondary                                        
+                                                       4  Complete secondary                                          
+                                                       5  Higher                                                      
+                                                       8  DK                                                          
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       0       5
+                                                       8       8
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC2                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+HV110      228    1    0     N      S    Member still in school        
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       0       1
+
+HV111      229    1    0     N      S    Mother alive                  
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       8  DK                                                          
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+                                                       8       8
+
+HV112      230    2    0     N      S    Mother's line number          
+                                         values:   value  label
+                                                       0  Mother not in HH                                            
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0      90
+
+HV113      232    1    0     N      S    Father alive                  
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       8  DK                                                          
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+                                                       8       8
+
+HV114      233    2    0     N      S    Father's line number          
+                                         values:   value  label
+                                                       0  Father not in HH                                            
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0      90
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC2                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+HV115      235    1    0     N      S    Current marital status     -NA
+                                         values:   value  label
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       5
+
+HV116      236    1    0     N      S    Currently, formerly, never -NA
+                                         values:   value  label
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       2
+
+HV117      237    1    0     N      S    Eligibility for female interview
+                                         values:   value  label
+                                                       0  Not eligible                                                
+                                                       1  Eligible                                                    
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+HV118      238    1    0     N      S    Eligibility for male interview
+                                         values:   value  label
+                                                       0  Not eligible                                                
+                                                       1  Eligible                                                    
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+HV120      239    1    0     N      S    Children eligibility for height/weight and hemoglobin
+                                         values:   value  label
+                                                       0  Not eligible                                                
+                                                       1  Eligible                                                    
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+HV121      240    1    0     N      S    Member attended school during current school year
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Currently attending                                         
+                                                       2  Attended at some time                                       
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       2
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC2                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+HV122      241    1    0     N      S    Educational level during current school year
+                                         values:   value  label
+                                                       0  No education, preschool                                     
+                                                       1  Primary                                                     
+                                                       2  Secondary                                                   
+                                                       3  Higher                                                      
+                                                       8  DK                                                          
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       0       3
+                                                       8       8
+
+HV123      242    2    0     N      S    Grade of education during current school year
+                                         values:   value  label
+                                                      98  DK                                                          
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+
+HV124      244    2    0     N      S    Education in single years - current school year
+                                         values:   value  label
+                                                      97  Inconsistent                                                
+                                                      98  DK                                                          
+                                                      99  Missing value
+                                         ranges:   lower   upper
+                                                       0      20
+                                                      97      98
+
+HV125      246    1    0     N      S    Member attended school during previous school year
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       0       1
+
+HV126      247    1    0     N      S    Educational level during previous school year
+                                         values:   value  label
+                                                       0  No education, preschool                                     
+                                                       1  Primary                                                     
+                                                       2  Secondary                                                   
+                                                       3  Higher                                                      
+                                                       8  DK                                                          
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       0       3
+                                                       8       8
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC2                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+HV127      248    2    0     N      S    Grade of education during previous school year
+                                         values:   value  label
+                                                      98  DK                                                          
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+
+HV128      250    2    0     N      S    Education in single years - previous school year
+                                         values:   value  label
+                                                      97  Inconsistent                                                
+                                                      98  DK                                                          
+                                                      99  Missing value
+                                         ranges:   lower   upper
+                                                       0      20
+                                                      97      98
+
+HV129      252    1    0     N      S    School attendance status      
+                                         values:   value  label
+                                                       0  Never attended                                              
+                                                       1  Entered school                                              
+                                                       2  Advanced                                                    
+                                                       3  Repeating                                                   
+                                                       4  Dropout                                                     
+                                                       5  Left school 2+ years ago                                    
+                                                       8  DK                                                          
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       5
+                                                       8       8
+
+IDXH4      253    2    0     N      S    Index to household schedule   
+                                         ranges:   lower   upper
+                                                       1      90
+
+SH14       255    1    0     N      S    Able to read and write        
+                                         values:   value  label
+                                                       0  No                                                          
+                                                       1  Yes                                                         
+                                                       8  DK                                                          
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+                                                       8       8
+
+HA0        256    2    0     N      S    Index to household schedule   
+                                         ranges:   lower   upper
+                                                       1      90
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC2                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+HA1        258    2    0     N      S    Women's age in years          
+                                         ranges:   lower   upper
+                                                      15      49
+
+HA2        260    4    0     N      S    Respondent's weight (kilos-1d)
+                                         values:   value  label
+                                                    9999  Missing value
+                                                   BLANK  Not applicable value
+
+HA3        264    4    0     N      S    Respondent's height (cms-1d)  
+                                         values:   value  label
+                                                    9999  Missing value
+                                                   BLANK  Not applicable value
+
+HA4        268    4    0     N      S    Ht/A Percentile (resp.)       
+                                         values:   value  label
+                                                    9998  Flagged cases                                               
+                                                    9999  Missing value
+                                                   BLANK  Not applicable value
+
+HA5        272    4    0     N      S    Ht/A Standard deviations (resp
+                                         values:   value  label
+                                                    9998  Flagged cases                                               
+                                                    9999  Missing value
+                                                   BLANK  Not applicable value
+
+HA6        276    5    0     N      S    Ht/A Percent ref. median (resp
+                                         values:   value  label
+                                                   99998  Flagged cases                                               
+                                                   99999  Missing value
+                                                   BLANK  Not applicable value
+
+HA11       281    4    0     N      S    Wt/Ht Std deviations(resp) DHS
+                                         values:   value  label
+                                                    9998  Flagged cases                                               
+                                                    9999  Missing value
+                                                   BLANK  Not applicable value
+
+HA12       285    5    0     N      S    Wt/Ht Percent ref. median (DHS
+                                         values:   value  label
+                                                   99998  Flagged cases                                               
+                                                   99999  Missing value
+                                                   BLANK  Not applicable value
+
+HA12A      290    5    0     N      S    Wt/Ht Percent ref. median (Fog
+                                         values:   value  label
+                                                   99998  Flagged cases                                               
+                                                   99999  Missing value
+                                                   BLANK  Not applicable value
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC2                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+HA12B      295    5    0     N      S    Wt/Ht Percent ref. median (WHO
+                                         values:   value  label
+                                                   99998  Flagged cases                                               
+                                                   99999  Missing value
+                                                   BLANK  Not applicable value
+
+HA13       300    1    0     N      S    Result of measurement of resp.
+                                         values:   value  label
+                                                       0  Measured                                                    
+                                                       3  Not present                                                 
+                                                       4  Refused                                                     
+                                                       6  Other                                                       
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       0       6
+
+HA32       301    4    0     N      S    Date of birth (cmc)           
+
+HA33       305    1    0     N      S    Completeness of information   
+                                         values:   value  label
+                                                       1  Month and year                                              
+                                                       2  Month and age                                               
+                                                       3  Year and age                                                
+                                                       4  Year                                                        
+                                                       6  Age                                                         
+                                                       7  Month                                                       
+                                                       8  None                                                        
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       8
+
+HA35       306    1    0     N      S    Smoking                    -NA
+                                         values:   value  label
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+HA40       307    4    0     N      S    Body mass index for respondent
+                                         values:   value  label
+                                                    9998  Flagged cases                                               
+                                                    9999  Missing value
+                                                   BLANK  Not applicable value
+
+HA41       311    4    0     N      S    Rohrer's index for respondent 
+                                         values:   value  label
+                                                    9998  Flagged cases                                               
+                                                    9999  Missing value
+                                                   BLANK  Not applicable value
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC2                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+HA50       315    1    0     N      S    Under age 18               -NA
+                                         values:   value  label
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+HA51       316    2    0     N      S    Line no. of parent/caretake-NA
+                                         values:   value  label
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0      50
+
+HA52       318    1    0     N      S    Read consent statement     -NA
+                                         values:   value  label
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+HA53       319    3    0     N      S    Hemoglobin level (g/dl - 1 -NA
+                                         values:   value  label
+                                                     999  Missing value
+                                                   BLANK  Not applicable value
+
+HA54       322    1    0     N      S    Currently pregnant         -NA
+                                         values:   value  label
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+HA55       323    1    0     N      S    Result of measuring (Hemogl-NA
+                                         values:   value  label
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       6
+
+HA56       324    3    0     N      S    Hemoglobin level adjusted b-NA
+                                         values:   value  label
+                                                     999  Missing value
+                                                   BLANK  Not applicable value
+
+HA57       327    1    0     N      S    Anemia level               -NA
+                                         values:   value  label
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       4
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC2                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+HA58       328    1    0     N      S    Agrees to referral         -NA
+                                         values:   value  label
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+HC0        329    2    0     N      S    Index to household schedule   
+                                         values:   value  label
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1      90
+
+HC1        331    2    0     N      S    Age in months                 
+
+HC2        333    4    0     N      S    Weight in kilograms (1 dec.)  
+                                         values:   value  label
+                                                    9999  Missing value
+                                                   BLANK  Not applicable value
+
+HC3        337    4    0     N      S    Height in centimeters (1 dec.)
+                                         values:   value  label
+                                                    9999  Missing value
+                                                   BLANK  Not applicable value
+
+HC4        341    4    0     N      S    Ht/A Percentile               
+                                         values:   value  label
+                                                    9998  Flagged cases                                               
+                                                    9999  Missing value
+                                                   BLANK  Not applicable value
+
+HC5        345    4    0     N      S    Ht/A Standard deviations      
+                                         values:   value  label
+                                                    9998  Flagged cases                                               
+                                                    9999  Missing value
+                                                   BLANK  Not applicable value
+
+HC6        349    5    0     N      S    Ht/A Percent of ref. median   
+                                         values:   value  label
+                                                   99998  Flagged cases                                               
+                                                   99999  Missing value
+                                                   BLANK  Not applicable value
+
+HC7        354    4    0     N      S    Wt/A Percentile               
+                                         values:   value  label
+                                                    9998  Flagged cases                                               
+                                                    9999  Missing value
+                                                   BLANK  Not applicable value
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC2                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+HC8        358    4    0     N      S    Wt/A Standard deviations      
+                                         values:   value  label
+                                                    9998  Flagged cases                                               
+                                                    9999  Missing value
+                                                   BLANK  Not applicable value
+
+HC9        362    5    0     N      S    Wt/A Percent of ref. median   
+                                         values:   value  label
+                                                   99998  Flagged cases                                               
+                                                   99999  Missing value
+                                                   BLANK  Not applicable value
+
+HC10       367    4    0     N      S    Wt/Ht Percentile              
+                                         values:   value  label
+                                                    9998  Flagged cases                                               
+                                                    9999  Missing value
+                                                   BLANK  Not applicable value
+
+HC11       371    4    0     N      S    Wt/Ht Standard deviations     
+                                         values:   value  label
+                                                    9998  Flagged cases                                               
+                                                    9999  Missing value
+                                                   BLANK  Not applicable value
+
+HC12       375    5    0     N      S    Wt/Ht Percent of ref. median  
+                                         values:   value  label
+                                                   99998  Flagged cases                                               
+                                                   99999  Missing value
+                                                   BLANK  Not applicable value
+
+HC13       380    1    0     N      S    Reason not measured           
+                                         values:   value  label
+                                                       0  Measured                                                    
+                                                       3  Not present                                                 
+                                                       4  Refused                                                     
+                                                       6  Other                                                       
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       0       6
+
+HC15       381    1    0     N      S    Height: lying or standing     
+                                         values:   value  label
+                                                       1  Lying                                                       
+                                                       2  Standing                                                    
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC2                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+HC16       382    2    0     N      S    Day of birth of child         
+                                         values:   value  label
+                                                      99  Missing value
+                                         ranges:   lower   upper
+                                                       1      31
+                                                      97      98
+
+HC17       384    2    0     N      S    Date measured (day)           
+                                         values:   value  label
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1      31
+
+HC18       386    2    0     N      S    Date measured (month)         
+                                         values:   value  label
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1      12
+
+HC19       388    4    0     N      S    Date measured (year)          
+                                         values:   value  label
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                    1992    2005
+
+HC27       392    1    0     N      S    Sex                           
+                                         values:   value  label
+                                                       1  Male                                                        
+                                                       2  Female                                                      
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+
+HC30       393    2    0     N      S    Month of birth of child       
+                                         values:   value  label
+                                                      97  Inconsistent                                                
+                                                      98  DK                                                          
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1      12
+                                                      97      98
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC2                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+HC31       395    4    0     N      S    Year of birth of child        
+                                         values:   value  label
+                                                    9997  Inconsistent                                                
+                                                    9998  DK                                                          
+                                                    9999  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                    1987    2005
+                                                    9997    9998
+
+HC32       399    4    0     N      S    Date of birth (cmc)           
+
+HC33       403    1    0     N      S    Completeness of information   
+                                         values:   value  label
+                                                       1  Month and year                                              
+                                                       2  Month and age                                               
+                                                       3  Year and age                                                
+                                                       4  Year                                                        
+                                                       6  Age                                                         
+                                                       7  Month                                                       
+                                                       8  None                                                        
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       8
+
+HC51       404    2    0     N      S    Line no. of parent/caretake-NA
+                                         values:   value  label
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0      50
+
+HC52       406    1    0     N      S    Read consent statement     -NA
+                                         values:   value  label
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+HC53       407    3    0     N      S    Hemoglobin level (g/dl - 1 -NA
+                                         values:   value  label
+                                                     999  Missing value
+                                                   BLANK  Not applicable value
+
+HC55       410    1    0     N      S    Result of measuring (Hemogl-NA
+                                         values:   value  label
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       6
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC2                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+HC56       411    4    0     N      S    Hemoglobin level adjusted b-NA
+                                         values:   value  label
+                                                    9999  Missing value
+                                                   BLANK  Not applicable value
+
+HC57       415    1    0     N      S    Anemia level               -NA
+                                         values:   value  label
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       4
+
+HC58       416    1    0     N      S    Agrees to referral         -NA
+                                         values:   value  label
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       1
+
+HC60       417    3    0     N      S    Women's line number from women's questionnaire
+                                         values:   value  label
+                                                     993  Mother not de facto                                         
+                                                     994  Incomplete women's interview                                
+                                                     995  Not in household                                            
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1      50
+                                                     993     995
+
+HC61       420    1    0     N      S    Mother's highest educational level
+                                         values:   value  label
+                                                       0  No education                                                
+                                                       1  Primary                                                     
+                                                       2  Secondary                                                   
+                                                       3  Higher                                                      
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       3
+
+HC62       421    2    0     N      S    Mother's highest year of education
+                                         values:   value  label
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+
+HC63       423    3    0     N      S    Preceding birth interval      
+                                         values:   value  label
+                                                     999  Missing value
+                                                   BLANK  Not applicable value
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : SEC2                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+HC64       426    2    0     N      S    Birth order number            
+                                         values:   value  label
+                                                      99  Missing value
+                                         ranges:   lower   upper
+                                                       1      20
+
+
+                             SECTION MAP                               
+Section   : SEC1                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+   1| A |  HHID          Case Identification                                    
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |     ___
+  13| A |  HV000         Country code and phase                                 
+    | A |
+    | A |     ___
+  16| N |  HV001         Cluster number                                         
+    | N |
+    | N |
+    | N |
+    | N |
+    | N |
+    | N |
+    | N |     ___
+  24| N |  HV002         Household number                                       
+    | N |
+    | N |
+    | N |     ___
+  28| N |  HV003         Respondent's line number                               
+    | N |
+    | N |     ___
+  31| N |  HV004         Ultimate area unit                                     
+    | N |
+    | N |
+    | N |     ___
+  35| N |  HV005         Sample weight                                          
+    | N |
+    | N |
+    | N |
+    | N |
+    | N |
+    | N |
+    | N |     ___
+  43| N |  HV006         Month of interview                                     
+    | N |     ___
+  45| N |  HV007         Year of interview                                      
+    | N |
+    | N |
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : SEC1                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+  49| N |  HV008         Date of interview (CMC)                                
+    | N |
+    | N |
+    | N |     ___
+  53| N |  HV009         Number of household members                            
+    | N |     ___
+  55| N |  HV010         Number of eligible women in HH                         
+    | N |     ___
+  57| N |  HV011         Number of eligible men in HH                           
+    | N |     ___
+  59| N |  HV012         Number of de jure members                              
+    | N |     ___
+  61| N |  HV013         Number of de facto members                             
+    | N |     ___
+  63| N |  HV014         Number of children 5 and under                         
+    | N |     ___
+  65| N |  HV015         Result of household interview                               ___
+  66| N |  HV016         Day of interview                                       
+    | N |     ___
+  68| N |  HV017         Number of visits                                            ___
+  69| N |  HV018         Interviewer identification          999                
+    | N |
+    | N |     ___
+  72| N |  HV019         Keyer identification                 99                
+    | N |     ___
+  74| N |  HV020         Ever-married sample                                         ___
+  75| N |  HV021         Primary sampling unit                                  
+    | N |
+    | N |
+    | N |     ___
+  79| N |  HV022         Sample stratum number                                  
+    | N |
+    | N |
+    | N |     ___
+  83| N |  HV023         Sample domain                                          
+    | N |     ___
+  85| N |  HV024         Region                                                 
+    | N |     ___
+  87| N |  HV025         Type of place of residence                                  ___
+  88| N |  HV026         Place of residence                    9                     ___
+  89| N |  HV027         Selection for male/husb. int.                               ___
+  90| N |  HV028         Sample weight for male subsamp                         
+    | N |
+    | N |
+    | N |
+    | N |
+    | N |
+    | N |
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : SEC1                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+  98| N |  HV030         Field supervisor                    999   BLANK        
+    | N |
+    | N |     ___
+ 101| N |  HV031         Field editor                        999   BLANK        
+    | N |
+    | N |     ___
+ 104| N |  HV032         Office editor                        99   BLANK        
+    | N |     ___
+ 106| N |  HV033         Ultimate area selection prob.                          
+    | N |
+    | N |
+    | N |
+    | N |
+    | N |
+    | N |
+    | N |     ___
+ 114| N |  HV035         Number of eligible children for height & weight                         
+    | N |     ___
+ 116| N |  HV040         Cluster altitude in meters -NA            BLANK        
+    | N |
+    | N |
+    | N |     ___
+ 120| N |  HV041         Total adults measured                                  
+    | N |     ___
+ 122| N |  HV042         Selection for hemoglobin                                    ___
+ 123| N |  HV043         Selection for women's status module            BLANK             ___
+ 124| N |  HV044         Selection for domestic violence module            BLANK             ___
+ 125| N |  HV201         Source of drinking water             99   BLANK        
+    | N |     ___
+ 127| N |  HV204         Time to get to water source         999   BLANK        
+    | N |
+    | N |     ___
+ 130| N |  HV205         Type of toilet facility              99   BLANK        
+    | N |     ___
+ 132| N |  HV206         Has electricity                       9   BLANK             ___
+ 133| N |  HV207         Has radio                             9   BLANK             ___
+ 134| N |  HV208         Has television                        9   BLANK             ___
+ 135| N |  HV209         Has refrigerator           -NA        9   BLANK             ___
+ 136| N |  HV210         Has bicycle                           9   BLANK             ___
+ 137| N |  HV211         Has motorcycle/scooter                9   BLANK             ___
+ 138| N |  HV212         Has car/truck                         9   BLANK             ___
+ 139| N |  HV213         Main floor material                  99   BLANK        
+    | N |     ___
+ 141| N |  HV214         Main wall material         -NA       99   BLANK        
+    | N |     ___
+ 143| N |  HV215         Main roof material                   99   BLANK        
+    | N |     ___
+ 145| N |  HV217         Relationship structure                                      ___
+ 146| N |  HV218         Line number of head of househ.                         
+    | N |     ___
+ 148| N |  HV219         Sex of head of household              9                     ___
+
+                             SECTION MAP                               
+Section   : SEC1                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 149| N |  HV220         Age of head of household             99                
+    | N |     ___
+ 151| N |  HV221         Has telephone                         9   BLANK             ___
+ 152| N |  HV225         Share toilet with other households        9   BLANK             ___
+ 153| N |  HV226         Type of cooking fuel                 99                
+    | N |     ___
+ 155| N |  HV227         Have bednet for sleeping              9                     ___
+ 156| N |  HV228         Children under 5 slept unde-NA        9   BLANK             ___
+ 157| N |  HV230         Place for hand washing     -NA        9   BLANK             ___
+ 158| N |  HV231         Items present: Water, tap  -NA        9   BLANK             ___
+ 159| N |  HV232         Items present: soap/other c-NA        9   BLANK             ___
+ 160| N |  HV233         Items present: Basin       -NA        9   BLANK             ___
+ 161| N |  HV234         Test salt for Iodine       -NA      999   BLANK        
+    | N |
+    | N |     ___
+ 164| N |  SHINTD        Day of household interview - Gregorian calendar                         
+    | N |     ___
+ 166| N |  SHINTM        Month of household interview - Gregorian calendar                         
+    | N |     ___
+ 168| N |  SHINTY        Year of household interview - Gregorian calendar                         
+    | N |
+    | N |
+    | N |     ___
+ 172| N |  SHINTC        Date of HH interview (CMC) - Gregorian calendar                         
+    | N |
+    | N |
+    | N |     ___
+ 176| N |  SH25E         Household has an electric mitad        9   BLANK             ___
+ 177| N |  SH25F         Household has a kerosene lamp/pressure lamp        9   BLANK             ___
+ 178| N |  SH25G         Household has a bed/table             9   BLANK             ___
+ 179| N |  SH25AA        Own house                             9   BLANK             ___
+ 180| N |  SH25AB        Crop land                             9   BLANK             ___
+ 181| N |  SH25AC        Cattle/camels                         9   BLANK             ___
+ 182| N |  SH25AD        Horse/mule/donkey                     9   BLANK             ___
+ 183| N |  SH25AE        Sheep/goats                           9   BLANK             ___
+ 184| N |  SH25AF        Cash crops                            9   BLANK             ___
+ 185| N |  SH27B         Rooms for sleeping                   99   BLANK        
+    | N |     ___
+ 187| N |  SH28D         Member owns a horse/mule              9   BLANK             ___
+ 188| N |  SH29A         Treatment sick child                  9   BLANK             ___
+ 189| N |  SH29B         Immunization                          9   BLANK             ___
+ 190| N |  SH29C         Family planning                       9   BLANK             ___
+ 191| N |  SH29D         Prenatal/postnatal/delivery are        9   BLANK             ___
+ 192| N |  SH29E         Information on STD/HIV/AIDS           9   BLANK             ___
+ 193| N |  SH29F         Information on breastfeeding/infant feeding        9   BLANK             ___
+ 194| N |  SH29BA        Facilities received services from: Government hospital        9   BLANK             ___
+ 195| N |  SH29BB        Facilities received services from: Health center        9   BLANK             ___
+ 196| N |  SH29BC        Facilities received services from: Health station/clinic        9   BLANK             ___
+ 197| N |  SH29BD        Facilities received services from: Health post        9   BLANK             ___
+ 198| N |  SH29BE        Facilities received services from: Comm. based outlet        9   BLANK             ___
+ 199| N |  SH29BF        Facilities received services from: Other government        9   BLANK             ___
+
+                             SECTION MAP                               
+Section   : SEC1                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 200| N |  SH29BG        Facilities received services from: NGO health facility        9   BLANK             ___
+ 201| N |  SH29BH        Facilities received services from: NGO comm. based outlet        9   BLANK             ___
+ 202| N |  SH29BI        Facilities received services from: Other NGO        9   BLANK             ___
+ 203| N |  SH29BJ        Facilities received services from: Private hospital        9   BLANK             ___
+ 204| N |  SH29BK        Facilities received services from: Private doctor/clinic        9   BLANK             ___
+ 205| N |  SH29BL        Facilities received services from: Other private        9   BLANK             ___
+ 206| N |  SH29BM        Facilities received services from: Kebele - during campaign        9   BLANK             ___
+ 207| N |  SH29BX        Facilities received services from: Other source        9   BLANK             ___
+ 208| N |  SH29CA        Bought drugs in last 12 months        9   BLANK             ___
+ 209| N |  SH29DA        Where bought drugs from - Pharmacy/Other medical facility        9   BLANK             ___
+ 210| N |  SH29DB        Where bought drugs from - Non medical facility        9   BLANK             ___
+ 211| N |  SH29GA        Bednets have been treated             9   BLANK             ___
+ 212| N |  SH35          Test salt for Iodine                  9   BLANK             ___
+
+                             SECTION MAP                               
+Section   : SEC2                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 213| N |  HVIDX         Line number                                            
+    | N |     ___
+ 215| N |  HV101         Relationship to head                 99                
+    | N |     ___
+ 217| N |  HV102         Usual resident                        9                     ___
+ 218| N |  HV103         Slept last night                      9                     ___
+ 219| N |  HV104         Sex of household member               9                     ___
+ 220| N |  HV105         Age of household members             99                
+    | N |     ___
+ 222| N |  HV106         Highest educational level             9                     ___
+ 223| N |  HV107         Highest year of education            99   BLANK        
+    | N |     ___
+ 225| N |  HV108         Education in single years            99                
+    | N |     ___
+ 227| N |  HV109         Educational attainment                9                     ___
+ 228| N |  HV110         Member still in school                9                     ___
+ 229| N |  HV111         Mother alive                          9   BLANK             ___
+ 230| N |  HV112         Mother's line number                 99   BLANK        
+    | N |     ___
+ 232| N |  HV113         Father alive                          9   BLANK             ___
+ 233| N |  HV114         Father's line number                 99   BLANK        
+    | N |     ___
+ 235| N |  HV115         Current marital status     -NA        9   BLANK             ___
+ 236| N |  HV116         Currently, formerly, never -NA        9   BLANK             ___
+ 237| N |  HV117         Eligibility for female interview            BLANK             ___
+ 238| N |  HV118         Eligibility for male interview            BLANK             ___
+ 239| N |  HV120         Children eligibility for height/weight and hemoglobin            BLANK             ___
+ 240| N |  HV121         Member attended school during current school year        9   BLANK             ___
+ 241| N |  HV122         Educational level during current school year        9                     ___
+ 242| N |  HV123         Grade of education during current school year       99   BLANK        
+    | N |     ___
+ 244| N |  HV124         Education in single years - current school year       99                
+    | N |     ___
+ 246| N |  HV125         Member attended school during previous school year        9                     ___
+ 247| N |  HV126         Educational level during previous school year        9                     ___
+ 248| N |  HV127         Grade of education during previous school year       99   BLANK        
+    | N |     ___
+ 250| N |  HV128         Education in single years - previous school year       99                
+    | N |     ___
+ 252| N |  HV129         School attendance status              9   BLANK             ___
+ 253| N |  IDXH4         Index to household schedule                            
+    | N |     ___
+ 255| N |  SH14          Able to read and write                9   BLANK             ___
+ 256| N |  HA0           Index to household schedule                            
+    | N |     ___
+ 258| N |  HA1           Women's age in years                                   
+    | N |     ___
+ 260| N |  HA2           Respondent's weight (kilos-1d)     9999   BLANK        
+    | N |
+    | N |
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : SEC2                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 264| N |  HA3           Respondent's height (cms-1d)       9999   BLANK        
+    | N |
+    | N |
+    | N |     ___
+ 268| N |  HA4           Ht/A Percentile (resp.)            9999   BLANK        
+    | N |
+    | N |
+    | N |     ___
+ 272| N |  HA5           Ht/A Standard deviations (resp     9999   BLANK        
+    | N |
+    | N |
+    | N |     ___
+ 276| N |  HA6           Ht/A Percent ref. median (resp    99999   BLANK        
+    | N |
+    | N |
+    | N |
+    | N |     ___
+ 281| N |  HA11          Wt/Ht Std deviations(resp) DHS     9999   BLANK        
+    | N |
+    | N |
+    | N |     ___
+ 285| N |  HA12          Wt/Ht Percent ref. median (DHS    99999   BLANK        
+    | N |
+    | N |
+    | N |
+    | N |     ___
+ 290| N |  HA12A         Wt/Ht Percent ref. median (Fog    99999   BLANK        
+    | N |
+    | N |
+    | N |
+    | N |     ___
+ 295| N |  HA12B         Wt/Ht Percent ref. median (WHO    99999   BLANK        
+    | N |
+    | N |
+    | N |
+    | N |     ___
+ 300| N |  HA13          Result of measurement of resp.        9                     ___
+ 301| N |  HA32          Date of birth (cmc)                                    
+    | N |
+    | N |
+    | N |     ___
+ 305| N |  HA33          Completeness of information               BLANK             ___
+ 306| N |  HA35          Smoking                    -NA        9   BLANK             ___
+ 307| N |  HA40          Body mass index for respondent     9999   BLANK        
+    | N |
+    | N |
+    | N |     ___
+ 311| N |  HA41          Rohrer's index for respondent      9999   BLANK        
+    | N |
+    | N |
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : SEC2                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 315| N |  HA50          Under age 18               -NA        9   BLANK             ___
+ 316| N |  HA51          Line no. of parent/caretake-NA            BLANK        
+    | N |     ___
+ 318| N |  HA52          Read consent statement     -NA        9   BLANK             ___
+ 319| N |  HA53          Hemoglobin level (g/dl - 1 -NA      999   BLANK        
+    | N |
+    | N |     ___
+ 322| N |  HA54          Currently pregnant         -NA        9   BLANK             ___
+ 323| N |  HA55          Result of measuring (Hemogl-NA        9   BLANK             ___
+ 324| N |  HA56          Hemoglobin level adjusted b-NA      999   BLANK        
+    | N |
+    | N |     ___
+ 327| N |  HA57          Anemia level               -NA        9   BLANK             ___
+ 328| N |  HA58          Agrees to referral         -NA        9   BLANK             ___
+ 329| N |  HC0           Index to household schedule               BLANK        
+    | N |     ___
+ 331| N |  HC1           Age in months                                          
+    | N |     ___
+ 333| N |  HC2           Weight in kilograms (1 dec.)       9999   BLANK        
+    | N |
+    | N |
+    | N |     ___
+ 337| N |  HC3           Height in centimeters (1 dec.)     9999   BLANK        
+    | N |
+    | N |
+    | N |     ___
+ 341| N |  HC4           Ht/A Percentile                    9999   BLANK        
+    | N |
+    | N |
+    | N |     ___
+ 345| N |  HC5           Ht/A Standard deviations           9999   BLANK        
+    | N |
+    | N |
+    | N |     ___
+ 349| N |  HC6           Ht/A Percent of ref. median       99999   BLANK        
+    | N |
+    | N |
+    | N |
+    | N |     ___
+ 354| N |  HC7           Wt/A Percentile                    9999   BLANK        
+    | N |
+    | N |
+    | N |     ___
+ 358| N |  HC8           Wt/A Standard deviations           9999   BLANK        
+    | N |
+    | N |
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : SEC2                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 362| N |  HC9           Wt/A Percent of ref. median       99999   BLANK        
+    | N |
+    | N |
+    | N |
+    | N |     ___
+ 367| N |  HC10          Wt/Ht Percentile                   9999   BLANK        
+    | N |
+    | N |
+    | N |     ___
+ 371| N |  HC11          Wt/Ht Standard deviations          9999   BLANK        
+    | N |
+    | N |
+    | N |     ___
+ 375| N |  HC12          Wt/Ht Percent of ref. median      99999   BLANK        
+    | N |
+    | N |
+    | N |
+    | N |     ___
+ 380| N |  HC13          Reason not measured                   9                     ___
+ 381| N |  HC15          Height: lying or standing             9   BLANK             ___
+ 382| N |  HC16          Day of birth of child                99                
+    | N |     ___
+ 384| N |  HC17          Date measured (day)                       BLANK        
+    | N |     ___
+ 386| N |  HC18          Date measured (month)                     BLANK        
+    | N |     ___
+ 388| N |  HC19          Date measured (year)                      BLANK        
+    | N |
+    | N |
+    | N |     ___
+ 392| N |  HC27          Sex                                   9                     ___
+ 393| N |  HC30          Month of birth of child              99   BLANK        
+    | N |     ___
+ 395| N |  HC31          Year of birth of child             9999   BLANK        
+    | N |
+    | N |
+    | N |     ___
+ 399| N |  HC32          Date of birth (cmc)                                    
+    | N |
+    | N |
+    | N |     ___
+ 403| N |  HC33          Completeness of information               BLANK             ___
+ 404| N |  HC51          Line no. of parent/caretake-NA            BLANK        
+    | N |     ___
+ 406| N |  HC52          Read consent statement     -NA        9   BLANK             ___
+ 407| N |  HC53          Hemoglobin level (g/dl - 1 -NA      999   BLANK        
+    | N |
+    | N |     ___
+ 410| N |  HC55          Result of measuring (Hemogl-NA        9   BLANK             ___
+
+                             SECTION MAP                               
+Section   : SEC2                                                      05-03-2004
+                                                                        11:08:47
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 411| N |  HC56          Hemoglobin level adjusted b-NA     9999   BLANK        
+    | N |
+    | N |
+    | N |     ___
+ 415| N |  HC57          Anemia level               -NA        9   BLANK             ___
+ 416| N |  HC58          Agrees to referral         -NA        9   BLANK             ___
+ 417| N |  HC60          Women's line number from women's questionnaire            BLANK        
+    | N |
+    | N |     ___
+ 420| N |  HC61          Mother's highest educational level        9   BLANK             ___
+ 421| N |  HC62          Mother's highest year of education       99   BLANK        
+    | N |     ___
+ 423| N |  HC63          Preceding birth interval            999   BLANK        
+    | N |
+    | N |     ___
+ 426| N |  HC64          Birth order number                   99                
+    | N |     ___
+
+... Report of Dictionary ETPR41 normally ended

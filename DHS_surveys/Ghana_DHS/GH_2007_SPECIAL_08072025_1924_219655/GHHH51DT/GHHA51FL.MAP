@@ -1,0 +1,180 @@
+                                                   GHHA51FL
+                                                GHHA51FL_DICT
+
+                                C:\COUNTRIES\GHMMS2007\export\HH\GHHA51FL.DCF
+                                    Last Modified:  5/27/2009  7:49:29 PM
+
+--------------------------------------------------------------------------------------------------------------
+Level Name                    Level Label                                                  Type            Rec
+  Record Name                   Record Label                                              Value  Req  Max  Len
+--------------------------------------------------------------------------------------------------------------
+PHASE1                        Phase 1 Household
+  RECORD1                       RECORD1                                                          Yes    1  116
+Level: Phase 1 Household                               Record: RECORD1
+--------------------------------------------------------------------------------------------------------------
+                                                                                 Data Item            Dec Zero
+Item Name              Item Label                                     Start  Len Type Type  Occ  Dec Char Fill
+--------------------------------------------------------------------------------------------------------------
+                         (record type)                                    0    0   AN    I    1    0   No   No
+HHCLUST           (id) Cluster number                                     1    4    N    I    1    0   No  Yes
+                               1:1776  
+                          (na)         Not applicable
+HHSTRUC           (id) Structure number                                   5    3    N    I    1    0   No  Yes
+                          (na)      Not applicable
+HHNUM             (id) Household number                                   8    3    N    I    1    0   No  Yes
+                          (na)      Not applicable
+HHREGION               Region                                            11    2    N    I    1    0   No  Yes
+                               1   Western
+                               2   Central
+                               3   Greater Accra
+                               4   Volta
+                               5   Eastern
+                               6   Ashanti
+                               7   Brong Ahafo
+                               8   Northern
+                               9   Upper East
+                               10  Upper West
+HHLOC                  Large city/Small city/Town/Rural                  13    1    N    I    1    0   No  Yes
+                               1  Large city
+                               2  Small city
+                               3  Town
+                               4  Rural
+                           (m) 9  Missing
+HHINTD                 Day of interview                                  14    2    N    I    1    0   No  Yes
+                               1:31  
+                           (m) 99    
+HHINTM                 Month of interview                                16    2    N    I    1    0   No  Yes
+                               1:12  
+                           (m) 99    
+HHINTY                 Year of interview                                 18    4    N    I    1    0   No  Yes
+                               1900:2008  
+                           (m) 9999       
+HHINTNUM               Interviewer's number                              22    3    N    I    1    0   No  Yes
+HHRESULT               Result code                                       25    1    N    I    1    0   No  Yes
+                               1  Complete
+                               2  No household member at home
+                               3  Household members absent for extended period
+                               4  Postponed
+                               5  Refused
+                               6  Dwelling vacant or address not a dwelling
+                               7  Dwelling destroyed
+                               8  Dwelling not found
+                               9  Other
+HHVISITS               Total number of visits                            26    1    N    I    1    0   No  Yes
+                               1:3  
+                           (m) 9    Missing
+                          (na)      
+HHTOTDTH               Total deaths to women aged 12-49                  27    2    N    I    1    0   No  Yes
+                               0:20  
+                           (m) 99    Missing
+HHLANGQ                Language of questionnaire                         29    1    N    I    1    0   No  Yes
+                               1  English
+                               2  Akan
+                               3  Ga
+                               4  Ewe
+                               5  Other
+                           (m) 9  Missing
+HHLANGI                Language of interview                             30    1    N    I    1    0   No  Yes
+                               1  English
+                               2  Akan
+                               3  Ga
+                               4  Ewe
+                               5  Other
+                           (m) 9  Missing
+HHLANGR                Native language of respondent                     31    1    N    I    1    0   No  Yes
+                               1  English
+                               2  Akan
+                               3  Ga
+                               4  Ewe
+                               5  Other
+                           (m) 9  Missing
+HHTRANS                Translator used?                                  32    1    N    I    1    0   No  Yes
+                               1  Yes
+                               2  No
+                           (m) 9  Missing
+HHSUPVNO               Supervisor's number                               33    3    N    I    1    0   No  Yes
+HHSUPVD                Supervisor's date: day                            36    2    N    I    1    0   No  Yes
+                               1:31  
+                           (m) 99    
+HHSUPVM                Supervisor's date: month                          38    2    N    I    1    0   No  Yes
+                               1:12  
+                           (m) 99    
+HHSUPVY                Supervisor's date: year                           40    4    N    I    1    0   No  Yes
+                               1900:2008  
+                           (m) 9999       
+HHKEYER                Data entry clerk                                  44    2    N    I    1    0   No  Yes
+                               1   
+                               2   
+                               3   
+                               4   
+                               5   
+                               6   
+                               7   
+                               8   
+                               9   
+                               10  
+                               11  
+                               12  
+                               13  
+                           (m) 99  Missing
+HH1                    Number of persons living in household             46    2    N    I    1    0   No  Yes
+                               1:50  
+                           (m) 99    Missing
+                          (na)       Notappl
+HH2                    Years lived in house                              48    2    N    I    1    0   No  Yes
+                               0:98  
+                           (m) 99    Missing
+                          (na)       Notappl
+HH3                    Number of children                                50    2    N    I    1    0   No  Yes
+                               0:50  
+                           (m) 99    Missing
+                          (na)       Notappl
+HH4                    Anyone suffered any healh problems                52    1    N    I    1    0   No  Yes
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Notappl
+HH5                    Any member of hhold died last 5 years             53    1    N    I    1    0   No  Yes
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Notappl
+HH8                    Sex of person who died                            54    1    N    I    9    0   No  Yes
+                               1  Male
+                               2  Female
+                           (m) 9  Missing
+                          (na)    Notappl
+HH9                    Age of person at death                            63    2    N    I    9    0   No  Yes
+                               0:97  
+                               98    98+
+                           (m) 99    Missing
+                          (na)       Notappl
+HH11                   Pregnant when she died                            81    1    N    I    9    0   No  Yes
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Notappl
+HH12                   Died during childbirth                            90    1    N    I    9    0   No  Yes
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Notappl
+HH13                   Died within two months after  the end of a preg   99    1    N    I    9    0   No  Yes
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Notappl
+HH14                   Has any other HH member died in last five years  108    1    N    I    9    0   No  Yes
+                               1  Yes
+                               2  No
+                               8  Don't know
+                           (m) 9  Missing
+                          (na)    Notappl
+--------------------------------------------------------------------------------------------------------------
+Relation Name         Primary               Linked by             Secondary             Linked by
+--------------------------------------------------------------------------------------------------------------

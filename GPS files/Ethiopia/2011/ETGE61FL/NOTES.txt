@@ -1,0 +1,2 @@
+Clusters 93 and 233 are slightly outside the DHS Region for Somali. This is not an error in 
+the GPS dataset but rather due to the undetermined border of Somali Region. 

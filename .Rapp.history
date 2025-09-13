@@ -1,0 +1,3 @@
+str("emaillist.csv")
+df <- read.csv("emaillist.csv")
+str(df)

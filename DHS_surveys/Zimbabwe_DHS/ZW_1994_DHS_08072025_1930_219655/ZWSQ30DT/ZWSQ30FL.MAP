@@ -1,0 +1,1593 @@
+
+       
+
+               I S S A     D i c t i o n a r y     R e p o r t
+
+
+                  IIIIIIIIII     SSSSSSS       SSSSSSS            A
+                 IIIIIIIIII    SSSSSSSSSS    SSSSSSSSSS          AA
+                   IIII       SSSS          SSSS               AAAA
+                  IIII       SSSS          SSSS              AAAAAA
+                 IIII       SSSS          SSSS             AAA  AAA
+                IIII       SSSSSSSS      SSSSSSSS         AAA  AAA 
+               IIII         SSSSSSSS      SSSSSSSS      AAA    AAA 
+              IIII             SSSS          SSSS      AAAAAAAAAA  
+             IIII             SSSS          SSSS     AAAAAAAAAAAA  
+            IIII             SSSS          SSSS     AAA      AAA   
+        IIIIIIIIII    SSSSSSSSSS    SSSSSSSSSS    AAAA      AAAA   
+       IIIIIIIIII      SSSSSSS       SSSSSSS     AAAA      AAAA    
+
+  I n t e g r a t e d   S y s t e m   f o r    S u r v e y   A n a l y s i s
+
+
+--------------------------------------------------------------------------------
+
+Dictionary Name   : ZWSQ30   (file 'ZWSQ30.DIC')
+
+Dictionary Label  : Service availability          
+
+Owner             :                               
+
+Country           : Zimbabwe                      
+
+Creation Date     : May 13, 1993
+
+Last Update       : Apr 21, 1994
+
+Questionnaire Id    Loc   Len   Label
+
+                    1     3     Cluster number                
+
+Section Id          Loc   Len
+
+                    4     2  
+
+Report date & time: 11-13-95 at 09:43:33 hrs.
+
+
+                             SECTION DESCRIPTION                       
+                                                                        11-13-95
+                                                                        09:43:33
+--------------------------------------------------------------------------------
+Section     Length      Occurs   ---  Group  ---  
+ name   Code     Class  Min Max    Max Loc Len    Section Label
+--------------------------------------------------------------------------------
+
+CSEC00   00    23  S     1   1   -without group-  Front page
+
+CSEC11   11    61  S     0   1   -without group-  Community Characteristics
+
+CSEC12   12    50  S     0   1   -without group-  Health/FP programs, community
+
+CSEC21   21    91  M     0   5   -without group-  Facilities
+
+CSEC31   31    41  M     0  11   -without group-  FP methods and health provisio
+
+CSEC32   32   187  S     0   1      4    6  45    Cluster informants
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : CSEC00                                                      11-13-95
+                                                                        09:43:33
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+CCLUSTER     6    3    0     N      S    Cluster number                
+                                         ranges:   lower   upper
+                                                       1     230
+
+CPROVIN      9    2    0     N      S    Province                      
+                                         values:   value  label
+                                                       1  Manicaland          
+                                                       2  Mashonaland central 
+                                                       3  Mashonaland east    
+                                                       4  Mashonaland west    
+                                                       5  Matabeleland north  
+                                                       6  Matabeleland south  
+                                                       7  Midlands            
+                                                       8  Masvingo            
+                                                       9  Harare/chitungwiza  
+                                                      10  Bulawayo            
+                                         ranges:   lower   upper
+                                                       1      10
+
+CTYPE       11    1    0     N      S    Urban/Rural                   
+                                         values:   value  label
+                                                       1  Urban               
+                                                       2  Rural               
+                                         ranges:   lower   upper
+                                                       1       2
+
+CINTD       12    2    0     N      S    Day of interview              
+                                         ranges:   lower   upper
+                                                       1      31
+
+CINTM       14    2    0     N      S    Month of interview            
+                                         ranges:   lower   upper
+                                                       2       5
+
+CINTY       16    2    0     N      S    Year of interview             
+                                         ranges:   lower   upper
+                                                      94      94
+
+CINTNUM     18    2    0     N      S    Interviewer name              
+                                         values:   value  label
+                                                       1  To be adjusted      
+                                         ranges:   lower   upper
+                                                       1       1
+
+CSUPERV     20    2    0     N      S    Supervisor name               
+                                         values:   value  label
+                                                       1  To be adjusted      
+                                         ranges:   lower   upper
+                                                       1       1
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : CSEC00                                                      11-13-95
+                                                                        09:43:33
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+CKEYER      22    2    0     N      S    Data entry operator           
+                                         values:   value  label
+                                                       1  Alice               
+                                                       2  Sekai               
+                                                       3  Simon               
+                                                       4  Arnold              
+                                         ranges:   lower   upper
+                                                       1       4
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : CSEC11                                                      11-13-95
+                                                                        09:43:33
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+C101         6    1    0     N      S    Type of locality              
+                                         values:   value  label
+                                                       1  Main town           
+                                                       2  Other urban         
+                                                       3  Rural               
+                                         ranges:   lower   upper
+                                                       1       3
+
+C102         7    3    0     N      S    Nearest urban center          
+                                         values:   value  label
+                                                     103  Chipinge            
+                                                     121  Mutare              
+                                                     122  Rusape              
+                                                     221  Bindura             
+                                                     321  Chitungwiza         
+                                                     322  Harare              
+                                                     323  Marondera           
+                                                     324  Ruwa                
+                                                     421  Chegutu             
+                                                     422  Chinhoyi            
+                                                     423  Chirundo            
+                                                     424  Kdoma               
+                                                     425  Kariba              
+                                                     426  Karoi               
+                                                     501  Binga               
+                                                     521  Bulawayo            
+                                                     522  Hwange              
+                                                     523  Victoria falls      
+                                                     601  Beitbridge          
+                                                     621  Gwanda              
+                                                     721  Gweru               
+                                                     722  Kwekwe              
+                                                     723  Redcliff            
+                                                     724  Shurugwi            
+                                                     725  Zvishavane          
+                                                     821  Masvingo            
+                                                     999  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                     100     998
+
+C103        10    3    0     N      S    Distance to urban center      
+                                         values:   value  label
+                                                     999  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1     400
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : CSEC11                                                      11-13-95
+                                                                        09:43:33
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+C104        13    1    0     N      S    Transport to urban center     
+                                         values:   value  label
+                                                       1  Motorized           
+                                                       2  Animal              
+                                                       3  Walking             
+                                                       4  Cycling             
+                                                       5  Other               
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       5
+
+C105        14    1    0     N      S    Access route to urban center  
+                                         values:   value  label
+                                                       1  All weather road    
+                                                       2  Seasonal road       
+                                                       3  River               
+                                                       4  Path                
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       4
+
+C106        15    7    0     A      S    Major economic activities     
+
+C107        22    1    0     N      S    Telephone service in locality 
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+
+C108        23    1    0     N      S    Familiar with seeing problems 
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+
+C108A       24   25    0     A      S    How is seeing condition called
+
+C108B       49    1    0     N      S    Knows child who has condition 
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : CSEC11                                                      11-13-95
+                                                                        09:43:33
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+C109A       50    2    0     N      S    Primary school in locality    
+                                         values:   value  label
+                                                       0  In locality         
+                                                      97  97+                 
+                                                      98  DK                  
+                                                      99  Missing value
+                                         ranges:   lower   upper
+                                                       0      98
+
+C109B       52    2    0     N      S    Secondary school in locality  
+                                         values:   value  label
+                                                       0  In locality         
+                                                      97  97+                 
+                                                      98  DK                  
+                                                      99  Missing value
+                                         ranges:   lower   upper
+                                                       0      98
+
+C109C       54    2    0     N      S    Postal service in locality    
+                                         values:   value  label
+                                                       0  In locality         
+                                                      97  97+                 
+                                                      98  DK                  
+                                                      99  Missing value
+                                         ranges:   lower   upper
+                                                       0      98
+
+C109D       56    2    0     N      S    Cinema in locality            
+                                         values:   value  label
+                                                       0  In locality         
+                                                      97  97+                 
+                                                      98  DK                  
+                                                      99  Missing value
+                                         ranges:   lower   upper
+                                                       0      98
+
+C109E       58    2    0     N      S    Bank in locality              
+                                         values:   value  label
+                                                       0  In locality         
+                                                      97  97+                 
+                                                      98  DK                  
+                                                      99  Missing value
+                                         ranges:   lower   upper
+                                                       0      98
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : CSEC11                                                      11-13-95
+                                                                        09:43:33
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+C109F       60    2    0     N      S    Public transport in locality  
+                                         values:   value  label
+                                                       0  In locality         
+                                                      97  97+                 
+                                                      98  DK                  
+                                                      99  Missing value
+                                         ranges:   lower   upper
+                                                       0      98
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : CSEC12                                                      11-13-95
+                                                                        09:43:33
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+C110         6    1    0     N      S    A CBD operates in locality    
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+
+C110AN       7    2    0     N      S    How often CBD visits (number) 
+                                         values:   value  label
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1      40
+
+C110AU       9    1    0     N      S    How often CBD visits (units)  
+                                         values:   value  label
+                                                       1  Permotnh            
+                                                       2  Per year            
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+C110B       10    1    0     N      S    CBD provides faimily planning 
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+C110CA      11    1    0     N      S    Pill, from FP field worker    
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+C110CB      12    1    0     N      S    Condom, from FP field worker  
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : CSEC12                                                      11-13-95
+                                                                        09:43:33
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+C110CC      13    1    0     N      S    Vaginals, from FP field worker
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+C110DA      14    2    0     N      S    CBDs operate in locality      
+                                         values:   value  label
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0      15
+
+C110DB      16    2    0     N      S    ZNFPC/CBDs operate in locality
+                                         values:   value  label
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0      15
+
+C110DC      18    2    0     N      S    MOHCW/CBDs operate in locality
+                                         values:   value  label
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0      15
+
+C111        20    1    0     N      S    Locality visited by mobile FP 
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+
+C111AN      21    2    0     N      S    How often mobile FP visit (n) 
+                                         values:   value  label
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1      40
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : CSEC12                                                      11-13-95
+                                                                        09:43:33
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+C111AU      23    1    0     N      S    How often mobile FP visit (u) 
+                                         values:   value  label
+                                                       1  Per month           
+                                                       2  Per year            
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+C111BA      24    1    0     N      S    Pill, from ZNFPC mobile       
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+C111BB      25    1    0     N      S    IUD, from ZNFPC mobile        
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+C111BC      26    1    0     N      S    Condoms, from ZNFPC mobile    
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+C111BD      27    1    0     N      S    Injection, from ZNFPC mobile  
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : CSEC12                                                      11-13-95
+                                                                        09:43:33
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+C111BE      28    1    0     N      S    Vaginals, from ZNFPC mobile   
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+C112        29    1    0     N      S    Locality visit by other FP    
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+
+C112AN      30    2    0     N      S    How often other FP visit (n)  
+                                         values:   value  label
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1      40
+
+C112AU      32    1    0     N      S    How often other FP visit (u)  
+                                         values:   value  label
+                                                       1  Per month           
+                                                       2  Per year            
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+C112BA      33    1    0     N      S    Pill, from other than ZNFPC   
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+C112BB      34    1    0     N      S    IUD, from other than ZNFPC    
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : CSEC12                                                      11-13-95
+                                                                        09:43:33
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+C112BC      35    1    0     N      S    Condoms, from other than ZNFPC
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+C112BD      36    1    0     N      S    Inject, from other than ZNFPC 
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+C112BE      37    1    0     N      S    Vaginal, from other than ZNFPC
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+C113        38    1    0     N      S    Traditional midwife available 
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+C113A       39    1    0     N      S    Is traditional midwife trained
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       8  DK                  
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : CSEC12                                                      11-13-95
+                                                                        09:43:33
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+C114        40    1    0     N      S    Is there a village comm-worker
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+
+C114AA      41    1    0     N      S    Comm-worker provide: medicat. 
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+C114AB      42    1    0     N      S    Comm-worker provide: sanitat. 
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+C114AC      43    1    0     N      S    Comm-worker provide: breastfed
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+C114AD      44    1    0     N      S    Comm-worker provide: income-g.
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : CSEC12                                                      11-13-95
+                                                                        09:43:33
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+C114AE      45    1    0     N      S    Comm-worker provide: antenal-c
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+C114AF      46    1    0     N      S    Comm-worker provide: immunizat
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+C114AG      47    1    0     N      S    Comm-worker provide: FP       
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+C114BN      48    2    0     N      S    How often comm-workr visit (n)
+                                         values:   value  label
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1      40
+
+C114BU      50    1    0     N      S    How often comm-workr visit (u)
+                                         values:   value  label
+                                                       1  Per month           
+                                                       2  Per year            
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : CSEC21                                                      11-13-95
+                                                                        09:43:33
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+C21TYPE      6    1    0     N      S    Type of facility              
+                                         values:   value  label
+                                                       1  Private doctor      
+                                                       2  Pharmacy            
+                                                       3  Rural health center 
+                                                       4  Clinic              
+                                                       5  Hospital            
+                                         ranges:   lower   upper
+                                                       1       5
+
+C201         7   30    0     A      S    Name of facility              
+
+C202        37    1    0     N      S    Govt, non-govt facility       
+                                         values:   value  label
+                                                       1  Government          
+                                                       2  ZNFPC, non-govt.    
+                                                       3  Other               
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       3
+
+C203        38    2    0     N      S    Distance to facility          
+                                         values:   value  label
+                                                      97  97+                 
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0      97
+
+C204        40    1    0     N      S    Transport to facility         
+                                         values:   value  label
+                                                       1  Motorized           
+                                                       2  Cycling             
+                                                       3  Animal              
+                                                       4  Walking             
+                                                       5  Other               
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       5
+
+C205H       41    1    0     N      S    Hours to get to facility      
+                                         values:   value  label
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       8
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : CSEC21                                                      11-13-95
+                                                                        09:43:33
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+C205M       42    2    0     N      S    Minutes to get to facility    
+                                         values:   value  label
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0      59
+
+C206A       44    1    0     N      S    Provide: antenatal care       
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       8  DK                  
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+C206B       45    1    0     N      S    Provide: delivery care        
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       8  DK                  
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+C206C       46    1    0     N      S    Provide: growth promotion     
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       8  DK                  
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+C206D       47    1    0     N      S    Provide: child immunization   
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       8  DK                  
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : CSEC21                                                      11-13-95
+                                                                        09:43:33
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+C206E       48    1    0     N      S    Provide: family planning      
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       8  DK                  
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+C207        49   30    0     A      S    Facility provides family plann
+
+C208        79    1    0     N      S    Govt, non-govt FP facility    
+                                         values:   value  label
+                                                       1  Government          
+                                                       2  ZNFPC, non-govt.    
+                                                       3  Other               
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       3
+
+C209        80    2    0     N      S    Distance to FP facility       
+                                         values:   value  label
+                                                      97  97+                 
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0      97
+
+C210        82    1    0     N      S    Transport to FP facility      
+                                         values:   value  label
+                                                       1  Motorized           
+                                                       2  Cycling             
+                                                       3  Animal              
+                                                       4  Walking             
+                                                       5  Other               
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       5
+
+C211H       83    1    0     N      S    Hours to get to FP facility   
+                                         values:   value  label
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       8
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : CSEC21                                                      11-13-95
+                                                                        09:43:33
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+C211M       84    2    0     N      S    Minutes to get to FP facility 
+                                         values:   value  label
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0      59
+
+C212A       86    1    0     N      S    FP facility: antenatal care   
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       8  DK                  
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+C212B       87    1    0     N      S    FP facility: delivery care    
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       8  DK                  
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+C212C       88    1    0     N      S    FP facility: growth promotion 
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       8  DK                  
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+C212D       89    1    0     N      S    FP facility: child immunizatio
+                                         values:   value  label
+                                                       1  Yes                 
+                                                       2  No                  
+                                                       8  DK                  
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : CSEC21                                                      11-13-95
+                                                                        09:43:33
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+C213        90    2    0     N      S    Facilities within 30 Kms.     
+                                         values:   value  label
+                                                      97  Urban or 97+        
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0      30
+                                                      97      97
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : CSEC31                                                      11-13-95
+                                                                        09:43:33
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+C31TYPE      6    3    0     N      S    Question and type of service  
+                                         values:   value  label
+                                                     301  Pill                
+                                                     303  Condoms             
+                                                     305  Injection           
+                                                     307  IUD                 
+                                                     309  Sterilization       
+                                                     311  Vaginals            
+                                                     313  Immunization        
+                                                     316  Cough               
+                                                     318  Antenatal care      
+                                                     320  Delivery service    
+                                                     322  Delivery complicatio
+
+C31NAME      9   30    0     A      S    Name facility provide service 
+
+C31PROV     39    1    0     N      S    Who provides immunization     
+                                         values:   value  label
+                                                       1  Fixed facility      
+                                                       2  Outreach program    
+                                                       3  Private doctor      
+                                                       8  None known          
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       3
+                                                       8       8
+
+C31DIST     40    2    0     N      S    Distance to provider of servic
+                                         values:   value  label
+                                                      97  97+                 
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0      97
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : CSEC32                                                      11-13-95
+                                                                        09:43:33
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+C324A        6   20    0     A      M    Name of informant             
+
+C324B       26   25    0     A      M    Position of informant         
+
+C325       186    2    0     N      S    Total number of informants    
+                                         ranges:   lower   upper
+                                                       1      20
+
+
+                             SECTION MAP                               
+Section   : CSEC00                                                      11-13-95
+                                                                        09:43:33
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+   1|   |                
+    |   |
+    |   |
+    |   |
+    |   |     ___
+   6| N |  CCLUSTER      Cluster number                                         
+    | N |
+    | N |     ___
+   9| N |  CPROVIN       Province                                               
+    | N |     ___
+  11| N |  CTYPE         Urban/Rural                                                 ___
+  12| N |  CINTD         Day of interview                                       
+    | N |     ___
+  14| N |  CINTM         Month of interview                                     
+    | N |     ___
+  16| N |  CINTY         Year of interview                                      
+    | N |     ___
+  18| N |  CINTNUM       Interviewer name                                       
+    | N |     ___
+  20| N |  CSUPERV       Supervisor name                                        
+    | N |     ___
+  22| N |  CKEYER        Data entry operator                                    
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : CSEC11                                                      11-13-95
+                                                                        09:43:33
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+   1|   |                
+    |   |
+    |   |
+    |   |
+    |   |     ___
+   6| N |  C101          Type of locality                                            ___
+   7| N |  C102          Nearest urban center                999   BLANK        
+    | N |
+    | N |     ___
+  10| N |  C103          Distance to urban center            999   BLANK        
+    | N |
+    | N |     ___
+  13| N |  C104          Transport to urban center             9   BLANK             ___
+  14| N |  C105          Access route to urban center          9   BLANK             ___
+  15| A |  C106          Major economic activities                              
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |     ___
+  22| N |  C107          Telephone service in locality         9                     ___
+  23| N |  C108          Familiar with seeing problems         9                     ___
+  24| A |  C108A         How is seeing condition called                         
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |     ___
+  49| N |  C108B         Knows child who has condition         9   BLANK             ___
+  50| N |  C109A         Primary school in locality           99                
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : CSEC11                                                      11-13-95
+                                                                        09:43:33
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+  52| N |  C109B         Secondary school in locality         99                
+    | N |     ___
+  54| N |  C109C         Postal service in locality           99                
+    | N |     ___
+  56| N |  C109D         Cinema in locality                   99                
+    | N |     ___
+  58| N |  C109E         Bank in locality                     99                
+    | N |     ___
+  60| N |  C109F         Public transport in locality         99                
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : CSEC12                                                      11-13-95
+                                                                        09:43:33
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+   1|   |                
+    |   |
+    |   |
+    |   |
+    |   |     ___
+   6| N |  C110          A CBD operates in locality            9                     ___
+   7| N |  C110AN        How often CBD visits (number)        99   BLANK        
+    | N |     ___
+   9| N |  C110AU        How often CBD visits (units)          9   BLANK             ___
+  10| N |  C110B         CBD provides faimily planning         9   BLANK             ___
+  11| N |  C110CA        Pill, from FP field worker            9   BLANK             ___
+  12| N |  C110CB        Condom, from FP field worker          9   BLANK             ___
+  13| N |  C110CC        Vaginals, from FP field worker        9   BLANK             ___
+  14| N |  C110DA        CBDs operate in locality             99   BLANK        
+    | N |     ___
+  16| N |  C110DB        ZNFPC/CBDs operate in locality       99   BLANK        
+    | N |     ___
+  18| N |  C110DC        MOHCW/CBDs operate in locality       99   BLANK        
+    | N |     ___
+  20| N |  C111          Locality visited by mobile FP         9                     ___
+  21| N |  C111AN        How often mobile FP visit (n)        99   BLANK        
+    | N |     ___
+  23| N |  C111AU        How often mobile FP visit (u)         9   BLANK             ___
+  24| N |  C111BA        Pill, from ZNFPC mobile               9   BLANK             ___
+  25| N |  C111BB        IUD, from ZNFPC mobile                9   BLANK             ___
+  26| N |  C111BC        Condoms, from ZNFPC mobile            9   BLANK             ___
+  27| N |  C111BD        Injection, from ZNFPC mobile          9   BLANK             ___
+  28| N |  C111BE        Vaginals, from ZNFPC mobile           9   BLANK             ___
+  29| N |  C112          Locality visit by other FP            9                     ___
+  30| N |  C112AN        How often other FP visit (n)         99   BLANK        
+    | N |     ___
+  32| N |  C112AU        How often other FP visit (u)          9   BLANK             ___
+  33| N |  C112BA        Pill, from other than ZNFPC           9   BLANK             ___
+  34| N |  C112BB        IUD, from other than ZNFPC            9   BLANK             ___
+  35| N |  C112BC        Condoms, from other than ZNFPC        9   BLANK             ___
+  36| N |  C112BD        Inject, from other than ZNFPC         9   BLANK             ___
+  37| N |  C112BE        Vaginal, from other than ZNFPC        9   BLANK             ___
+  38| N |  C113          Traditional midwife available         9   BLANK             ___
+  39| N |  C113A         Is traditional midwife trained        9   BLANK             ___
+  40| N |  C114          Is there a village comm-worker        9                     ___
+  41| N |  C114AA        Comm-worker provide: medicat.         9   BLANK             ___
+  42| N |  C114AB        Comm-worker provide: sanitat.         9   BLANK             ___
+  43| N |  C114AC        Comm-worker provide: breastfed        9   BLANK             ___
+  44| N |  C114AD        Comm-worker provide: income-g.        9   BLANK             ___
+  45| N |  C114AE        Comm-worker provide: antenal-c        9   BLANK             ___
+  46| N |  C114AF        Comm-worker provide: immunizat        9   BLANK             ___
+  47| N |  C114AG        Comm-worker provide: FP               9   BLANK             ___
+  48| N |  C114BN        How often comm-workr visit (n)       99   BLANK        
+    | N |     ___
+  50| N |  C114BU        How often comm-workr visit (u)        9   BLANK             ___
+
+                             SECTION MAP                               
+Section   : CSEC21                                                      11-13-95
+                                                                        09:43:33
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+   1|   |                
+    |   |
+    |   |
+    |   |
+    |   |     ___
+   6| N |  C21TYPE   (5) Type of facility                                            ___
+   7| A |  C201      (5) Name of facility                                       
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |     ___
+  37| N |  C202      (5) Govt, non-govt facility               9   BLANK             ___
+  38| N |  C203      (5) Distance to facility                 99   BLANK        
+    | N |     ___
+  40| N |  C204      (5) Transport to facility                 9   BLANK             ___
+  41| N |  C205H     (5) Hours to get to facility              9   BLANK             ___
+  42| N |  C205M     (5) Minutes to get to facility           99   BLANK        
+    | N |     ___
+  44| N |  C206A     (5) Provide: antenatal care               9   BLANK             ___
+  45| N |  C206B     (5) Provide: delivery care                9   BLANK             ___
+  46| N |  C206C     (5) Provide: growth promotion             9   BLANK             ___
+  47| N |  C206D     (5) Provide: child immunization           9   BLANK             ___
+  48| N |  C206E     (5) Provide: family planning              9   BLANK             ___
+
+                             SECTION MAP                               
+Section   : CSEC21                                                      11-13-95
+                                                                        09:43:33
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+  49| A |  C207      (5) Facility provides family plann                         
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |     ___
+  79| N |  C208      (5) Govt, non-govt FP facility            9   BLANK             ___
+  80| N |  C209      (5) Distance to FP facility              99   BLANK        
+    | N |     ___
+  82| N |  C210      (5) Transport to FP facility              9   BLANK             ___
+  83| N |  C211H     (5) Hours to get to FP facility           9   BLANK             ___
+  84| N |  C211M     (5) Minutes to get to FP facility        99   BLANK        
+    | N |     ___
+  86| N |  C212A     (5) FP facility: antenatal care           9   BLANK             ___
+  87| N |  C212B     (5) FP facility: delivery care                BLANK             ___
+  88| N |  C212C     (5) FP facility: growth promotion         9   BLANK             ___
+  89| N |  C212D     (5) FP facility: child immunizatio        9   BLANK             ___
+  90| N |  C213      (5) Facilities within 30 Kms.            99   BLANK        
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : CSEC31                                                      11-13-95
+                                                                        09:43:33
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+   1|   |                
+    |   |
+    |   |
+    |   |
+    |   |     ___
+   6| N |  C31TYPE  (11) Question and type of service                           
+    | N |
+    | N |     ___
+   9| A |  C31NAME  (11) Name facility provide service                          
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |     ___
+  39| N |  C31PROV  (11) Who provides immunization             9   BLANK             ___
+  40| N |  C31DIST  (11) Distance to provider of servic       99   BLANK        
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : CSEC32                                                      11-13-95
+                                                                        09:43:33
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+   1|   |                
+    |   |
+    |   |
+    |   |
+    |   |     ___
+   6| A |  C324A     (1) Name of informant                                      
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |     ___
+  26| A |  C324B     (1) Position of informant                                  
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |     ___
+
+                             SECTION MAP                               
+Section   : CSEC32                                                      11-13-95
+                                                                        09:43:33
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+  51| A |  C324A     (2) Name of informant                                      
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |     ___
+  71| A |  C324B     (2) Position of informant                                  
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |     ___
+
+                             SECTION MAP                               
+Section   : CSEC32                                                      11-13-95
+                                                                        09:43:33
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+  96| A |  C324A     (3) Name of informant                                      
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |     ___
+ 116| A |  C324B     (3) Position of informant                                  
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |     ___
+
+                             SECTION MAP                               
+Section   : CSEC32                                                      11-13-95
+                                                                        09:43:33
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 141| A |  C324A     (4) Name of informant                                      
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |     ___
+ 161| A |  C324B     (4) Position of informant                                  
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |     ___
+ 186| N |  C325          Total number of informants                             
+    | N |     ___
+
+... Report of Dictionary ZWSQ30 normally ended

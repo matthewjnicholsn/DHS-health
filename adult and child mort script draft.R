@@ -8,13 +8,12 @@ country <- c("Chad_DHS","Congo_DHS", "DRC_DHS", "Ethiopia_DHS", "Ghana_DHS",
 year <- c(1990:2021)
 survey <- c("BR", "IR")
 data <- readRDS(file = "/Users/matthewnicholson/DHS/DHS_surveys_rds_organized/Congo_DHS/2005/CGBR51DT/Congo_DHS_CG_2005_DHS_08072025_1919_219655_CGBR51DT_CGBR51FL.Rds")
-Viewfile_list <- get_file(country, year, survey)
+file_list <- get_file(country, year, survey)
 admort_results <- ls()
 for(i in seq_along(file_list)){
   ir_data <- readRDS(file_list[i])
-  indicators <- c("AAMR", "ASMR")
+  indicators <- c("ASMR", "AAMR")
   patch_dhsrate_functions(indicator_list = str_to_upper(indicators))
-  indicator <- str_to_lower(indicator)
   for(j in indicators){indicator <- indicators[j]
     admort_results[[indicator]] <- as_tibble(simplified_admort_func(ir_data, Indicator = indicator))
   }

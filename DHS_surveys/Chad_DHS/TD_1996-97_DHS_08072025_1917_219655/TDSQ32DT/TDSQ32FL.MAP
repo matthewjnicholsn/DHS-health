@@ -1,0 +1,1366 @@
+
+               I S S A     D i c t i o n a r y     R e p o r t
+
+
+                  IIIIIIIIII     SSSSSSS       SSSSSSS            A
+                 IIIIIIIIII    SSSSSSSSSS    SSSSSSSSSS          AA
+                   IIII       SSSS          SSSS               AAAA
+                  IIII       SSSS          SSSS              AAAAAA
+                 IIII       SSSS          SSSS             AAA  AAA
+                IIII       SSSSSSSS      SSSSSSSS         AAA  AAA 
+               IIII         SSSSSSSS      SSSSSSSS      AAA    AAA 
+              IIII             SSSS          SSSS      AAAAAAAAAA  
+             IIII             SSSS          SSSS     AAAAAAAAAAAA  
+            IIII             SSSS          SSSS     AAA      AAA   
+        IIIIIIIIII    SSSSSSSSSS    SSSSSSSSSS    AAAA      AAAA   
+       IIIIIIIIII      SSSSSSS       SSSSSSS     AAAA      AAAA    
+
+  I n t e g r a t e d   S y s t e m   f o r    S u r v e y   A n a l y s i s
+
+--------------------------------------------------------------------------------
+
+Dictionary Name   : TDSQ32   (file 'TDSQ32.DIC', 24256 bytes)
+
+Dictionary Label  : Questionnaire Communautaire   
+
+Owner             : Jim Otto                      
+
+Country           : Tchad                         
+
+Creation Date     : May 23, 1990
+
+Last Update       : Jun 13, 1996      * 1 hierarchical level
+
+Questionnaire Id    Loc   Len   Label
+
+                     1     3    Grappe                        
+
+Section Id          Loc   Len
+
+                     4     2  
+
+* Main index: not defined
+
+* No secondary indexes defined
+
+* Index summary: no index key lengths measured
+
+* Estimated case-data-area size: 333 bytes (6 sections, 75 variables)
+
+Report date & time: 06-22-1999 at 21:22:17 hrs.
+
+                             SECTION DESCRIPTION                       
+                                                                      06-22-1999
+                                                                        21:22:17
+--------------------------------------------------------------------------------
+Section     Code   Class   Occurs   --- Group ---  
+ name          Length      Min Max   Max Loc Len  Section Label
+--------------------------------------------------------------------------------
+
+QCSEC0      00    37 S      1   1   without group Identification du m‚nage
+
+QCSEC10     10    17 S      0   1   without group Caract‚ristiques g‚n‚rales
+
+QCSEC11     11    68 S      0   1     7    6   9  Tableau 1
+
+QCSEC20     20    47 S      0   1   without group Programmes de sant‚ et p.f.
+
+QCSEC21     21   181 S      0   1     8    6  22  Tableau 2
+
+QCSEC22     22    13 S      0   1   without group ProblŠmes et maladies
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : QCSEC0                                                    06-22-1999
+                                                                        21:22:17
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+QCPREF       6    2    0     N      S    Pr‚fecture                    
+                                         values:   value  label
+                                                       1  Batha                                                       
+                                                       2  B.E.T.                                                      
+                                                       3  Biltine                                                     
+                                                       4  Chari-Baguirmi                                              
+                                                       5  Gu‚ra                                                       
+                                                       6  Kanem                                                       
+                                                       7  Lac                                                         
+                                                       8  Logone Occidental                                           
+                                                       9  Logone Oriental                                             
+                                                      10  Mayo-Kebbi                                                  
+                                                      11  Moyen Chari                                                 
+                                                      12  Ouadda‹                                                     
+                                                      13  Salamat                                                     
+                                                      14  Tandjil‚                                                    
+                                                      15  N'djam‚na                                                   
+                                         ranges:   lower   upper
+                                                       1      15
+
+QCSPREF      8    1    0     N      S    Sous-Pr‚fecture               
+                                         ranges:   lower   upper
+                                                       1       5
+
+QCCANTON     9    2    0     N      S    Canton                        
+                                         ranges:   lower   upper
+                                                       1      18
+
+QCGRAPPE    11    3    0     N      S    Num‚ro de grappe              
+                                         ranges:   lower   upper
+                                                       1     250
+
+QCZONED     14    3    0     N      S    ZD (recensement)              
+                                         ranges:   lower   upper
+                                                     101     281
+
+QCLOCAL     17    1    0     N      S    Ville\petite ville\rural      
+                                         values:   value  label
+                                                       1  N'djam‚na                                                   
+                                                       2  Abeche/Moundou/Sarh                                         
+                                                       3  Petites villes                                              
+                                                       4  Rural                                                       
+                                         ranges:   lower   upper
+                                                       1       4
+
+QCINTJ      18    2    0     N      S    Jour de l'enquˆte communaut.  
+                                         ranges:   lower   upper
+                                                       1      31
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : QCSEC0                                                    06-22-1999
+                                                                        21:22:17
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+QCINTM      20    2    0     N      S    Mois de l'enquˆte communaut.  
+                                         ranges:   lower   upper
+                                                       1      12
+
+QCINTA      22    2    0     N      S    Ann‚e de l'enquˆte communaut. 
+                                         ranges:   lower   upper
+                                                      96      97
+
+QCENQNUM    24    2    0     N      S    Num‚ro de l'enquˆtrice(eur)   
+
+QCRESULT    26    1    0     N      S    R‚sultat de l'enquˆte commun. 
+                                         values:   value  label
+                                                       1  Rempli                                                      
+                                                       2  Non Rempli                                                  
+                                         ranges:   lower   upper
+                                                       1       2
+
+QCHOMMES    27    1    0     N      S    Nombre d'hommes enquˆt‚s      
+                                         values:   value  label
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       4
+
+QCFEMMES    28    1    0     N      S    Nombre de femmes enquˆt‚es    
+                                         values:   value  label
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       4
+
+QCSUPERV    29    2    0     N      S    Num‚ro du superviseur         
+
+QCCONTBU    31    2    0     N      S    Num‚ro du contr“leur de bureau
+
+QCAGENTS    33    2    0     N      S    Agent de saisie de donn‚es    
+
+QCREGION    35    2    0     N      S    R‚gion de r‚sidence           
+                                         ranges:   lower   upper
+                                                       1       4
+
+QCTYPE      37    1    0     N      S    Type de place de r‚sidence    
+                                         values:   value  label
+                                                       1  Urbain                                                      
+                                                       2  Rural                                                       
+                                         ranges:   lower   upper
+                                                       1       2
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : QCSEC10                                                   06-22-1999
+                                                                        21:22:17
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+QC102        6    2    0     N      S    Le type d'habitat             
+                                         values:   value  label
+                                                       1  Dense                                                       
+                                                       2  Dispers‚                                                    
+                                                      96  Autre                                                       
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                      96      96
+
+QC104        8    3    0     N      S    Distance en Km au chef lieu   
+                                         values:   value  label
+                                                     999  Missing value
+                                                   BLANK  Not applicable value
+
+QC105       11    1    0     N      S    Moyen de transport plus util. 
+                                         values:   value  label
+                                                       1  Vehicule … moteur                                           
+                                                       2  Mobylette/motocycl.                                         
+                                                       3  Charrette/dos d'anim                                        
+                                                       4  Bicyclette                                                  
+                                                       5  Pirogue                                                     
+                                                       6  A pied                                                      
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       6
+
+QC106       12    1    0     N      S    Principale voie d'acc‚s       
+                                         values:   value  label
+                                                       1  Route goudronn‚e                                            
+                                                       2  Route en terre battu                                        
+                                                       3  Piste carossable t-a                                        
+                                                       4  Piste saisoniŠre                                            
+                                                       5  Piste cyclable/sent.                                        
+                                                       6  Voie d'eau                                                  
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       6
+
+QC107       13    1    0     N      S    Y-a-t-il l'‚lectricit‚        
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : QCSEC10                                                   06-22-1999
+                                                                        21:22:17
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+QC108       14    1    0     N      S    Y-a-t-il le t‚l‚phone         
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       9  Missing value
+
+QC109       15    1    0     N      S    Y-a-t-il l'eau courante       
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       9  Missing value
+
+QC110       16    2    0     N      S    L'activit‚ principale des hab.
+                                         values:   value  label
+                                                       1  Agriculture                                                 
+                                                       2  Elevage                                                     
+                                                       3  Peche                                                       
+                                                       4  Commerce                                                    
+                                                       5  Artisanat                                                   
+                                                       6  Industrie                                                   
+                                                       7  Explotation miniŠre                                         
+                                                       8  Services                                                    
+                                                      96  Autre                                                       
+                                                      99  Missing value
+                                         ranges:   lower   upper
+                                                       1       8
+                                                      96      96
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : QCSEC11                                                   06-22-1999
+                                                                        21:22:17
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+QCTY11       6    1    0     N      M    Type de service               
+                                         values:   value  label
+                                                       1  Ecole primaire                                              
+                                                       2  Ecole second./prof.                                         
+                                                       3  March‚ journalier                                           
+                                                       4  March‚ hebdomadaire                                         
+                                                       5  Boutique                                                    
+                                                       6  Bureau de poste                                             
+                                                       7  Service trans-en-com                                        
+                                         ranges:   lower   upper
+                                                       1       7
+
+QC111        7    3    0     N      M    Distance en km au service     
+                                         values:   value  label
+                                                       0  Sur place                                                   
+                                                     999  Missing value
+                                                   BLANK  Not applicable value
+
+QC112       10    1    0     N      M    Moyen de transport            
+                                         values:   value  label
+                                                       1  Vehicule … moteur                                           
+                                                       2  Mobylette/motocycl.                                         
+                                                       3  Charrette/dos d'anim                                        
+                                                       4  Bicyclette                                                  
+                                                       5  Pirogue                                                     
+                                                       6  A pied                                                      
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       6
+
+QC113U      11    1    0     N      M    Temps de transport (unit‚)    
+                                         values:   value  label
+                                                       1  Minutes                                                     
+                                                       2  Heures                                                      
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+QC113N      12    3    0     N      M    Temps de transport (nombre)   
+                                         values:   value  label
+                                                     999  Missing value
+                                                   BLANK  Not applicable value
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : QCSEC20                                                   06-22-1999
+                                                                        21:22:17
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+QC201        6    1    0     N      S    Visite … propos de pf 12 mois 
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                         ranges:   lower   upper
+                                                       1       2
+
+QC202        7    2    0     N      S    Visite par quelle organisation
+                                         values:   value  label
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+
+QC203        9    7    0     A      S    Sujets abord‚s pendant visite 
+
+QC204       16    1    0     N      S    Endroit habituel pour accouch.
+                                         values:   value  label
+                                                       1  A la maison                                                 
+                                                       2  Etabliss. de sant‚                                          
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+
+QC205       17    1    0     N      S    Il y a accoucheuse tradition. 
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                         ranges:   lower   upper
+                                                       1       2
+
+QC206       18    1    0     N      S    Accoucheuse trad. form‚e      
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+QC207       19    1    0     N      S    Il y a matrone de l'h“pital   
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : QCSEC20                                                   06-22-1999
+                                                                        21:22:17
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+QC208       20    1    0     N      S    Il y a sage-femme prof.       
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+
+QC209       21    1    0     N      S    Il y a visite d'equipe de cds 
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                         ranges:   lower   upper
+                                                       1       2
+
+QC210A      22    1    0     N      S    Pr‚vention des maladies       
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+QC210B      23    1    0     N      S    Soins pr‚natals               
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+QC210C      24    1    0     N      S    Vaccinations                  
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+QC210D      25    1    0     N      S    Opthalomogie                  
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : QCSEC20                                                   06-22-1999
+                                                                        21:22:17
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+QC210E      26    1    0     N      S    LŠpre                         
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+QC210F      27    1    0     N      S    Onchocercose                  
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+QC210G      28    1    0     N      S    Trypanosomiase                
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+QC211       29    1    0     N      S    Autre visite … propos de sant‚
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                         ranges:   lower   upper
+                                                       1       2
+
+QC212       30    2    0     N      S    Visite de quelle organisation 
+                                         values:   value  label
+                                                      98  NSP                                                         
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+
+QC213       32   12    0     A      S    Sujets abord‚s pendant visite 
+
+QC214       44    1    0     N      S    Connaissance de prob de vision
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                         ranges:   lower   upper
+                                                       1       2
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : QCSEC20                                                   06-22-1999
+                                                                        21:22:17
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+QC215       45    2    0     N      S    Nom donn‚ … ce problŠme       
+                                         values:   value  label
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+
+QC216       47    1    0     N      S    Connaissance d'enfants        
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : QCSEC21                                                   06-22-1999
+                                                                        21:22:17
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+QCTY21       6    1    0     N      M    Type de service               
+                                         values:   value  label
+                                                       1  H“pital public                                              
+                                                       2  H“pital militaire                                           
+                                                       3  H“pital priv‚                                               
+                                                       4  Centre de sant‚ pub.                                        
+                                                       5  Centre de sant‚ priv                                        
+                                                       6  Clinique/cab. med.                                          
+                                                       7  Pharmacie/dep“t ph.                                         
+                                                       8  Pharmacie villag.                                           
+                                         ranges:   lower   upper
+                                                       1       8
+
+QC217        7    3    0     N      M    Distance en km au service     
+                                         values:   value  label
+                                                       0  Sur place                                                   
+                                                     999  Missing value
+                                                   BLANK  Not applicable value
+
+QC218       10    1    0     N      M    Moyen de transport plus util. 
+                                         values:   value  label
+                                                       1  Vehicule … moteur                                           
+                                                       2  Mobylette/motocycl.                                         
+                                                       3  Charrette/dos d'anim                                        
+                                                       4  Bicyclette                                                  
+                                                       5  Pirogue                                                     
+                                                       6  A pied                                                      
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       6
+
+QC219U      11    1    0     N      M    Temps de transport (unit‚)    
+                                         values:   value  label
+                                                       1  Minutes                                                     
+                                                       2  Heures                                                      
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+QC219N      12    3    0     N      M    Temps de transport (nombre)   
+                                         values:   value  label
+                                                     999  Missing value
+                                                   BLANK  Not applicable value
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : QCSEC21                                                   06-22-1999
+                                                                        21:22:17
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+QC220A      15    1    0     N      M    Planification familiale       
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       8  NSP                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+QC220B      16    1    0     N      M    Soins pr‚natals               
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       8  NSP                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+QC220C      17    1    0     N      M    Accouchement                  
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       8  NSP                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+QC220D      18    1    0     N      M    Conseil en nutrition          
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       8  NSP                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : QCSEC21                                                   06-22-1999
+                                                                        21:22:17
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+QC220E      19    1    0     N      M    Vaccination                   
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       8  NSP                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+QC220F      20    1    0     N      M    M‚decine g‚n‚rale             
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       8  NSP                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+QC220G      21    1    0     N      M    Chirurgie                     
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       8  NSP                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+QC221A      22    1    0     N      M    Contraceptifs                 
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       8  NSP                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : QCSEC21                                                   06-22-1999
+                                                                        21:22:17
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+QC221B      23    1    0     N      M    Condoms                       
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       8  NSP                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+QC221C      24    1    0     N      M    Sachets de SRO                
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       8  NSP                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+QC221D      25    1    0     N      M    Comprime de fer               
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       8  NSP                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+QC221E      26    1    0     N      M    Anti-palud‚ens                
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       8  NSP                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : QCSEC21                                                   06-22-1999
+                                                                        21:22:17
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+QC221F      27    1    0     N      M    M‚dicaments de base           
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       8  NSP                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : QCSEC22                                                   06-22-1999
+                                                                        21:22:17
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+QC222A       6    2    0     N      S    1er problŠme en matiŠre sant‚ 
+                                         values:   value  label
+                                                       1  Manque d'etab sanit                                         
+                                                       2  Manque de pers sant‚                                        
+                                                       3  Manque de m‚dicament                                        
+                                                       4  Etab sanit trop loin                                        
+                                                       5  ProblŠme de transp.                                         
+                                                       6  Accessibilit‚                                               
+                                                       7  Cout des soins/medic                                        
+                                                       8  Manque d'argent                                             
+                                                       9  Incompetence du pers                                        
+                                                      10  Mauvais accueil                                             
+                                                      11  Manque d'eau                                                
+                                                      12  Manque de nourriture                                        
+                                                      13  Salubrite/assainiss.                                        
+                                                      14  Manque education                                            
+                                                      96  Autre                                                       
+                                                      98  NSP                                                         
+                                                      99  Missing value
+                                         ranges:   lower   upper
+                                                       1      14
+                                                      96      96
+                                                      98      98
+
+QC222B       8    2    0     N      S    2Šm problŠme en matiŠre sant‚ 
+                                         values:   value  label
+                                                       1  Manque d'etab sanit                                         
+                                                       2  Manque de pers sant‚                                        
+                                                       3  Manque de m‚dicament                                        
+                                                       4  Etab sanit trop loin                                        
+                                                       5  ProblŠme de transp.                                         
+                                                       6  Accessibilit‚                                               
+                                                       7  Cout des soins/medic                                        
+                                                       8  Manque d'argent                                             
+                                                       9  Incompetence du pers                                        
+                                                      10  Mauvais accueil                                             
+                                                      11  Manque d'eau                                                
+                                                      12  Manque de nourriture                                        
+                                                      13  Salubrite/assainiss.                                        
+                                                      14  Manque education                                            
+                                                      96  Autre                                                       
+                                                      98  NSP                                                         
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1      14
+                                                      96      96
+                                                      98      98
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : QCSEC22                                                   06-22-1999
+                                                                        21:22:17
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+QC223A      10    2    0     N      S    1Šre maladie des jeunes       
+                                         values:   value  label
+                                                       1  Cholera                                                     
+                                                       2  Coqueluche                                                  
+                                                       3  Diarh‚e                                                     
+                                                       4  Diptherie                                                   
+                                                       5  FiŠvre                                                      
+                                                       6  Jaunisse/ictere/hepa                                        
+                                                       7  LŠpre                                                       
+                                                       8  Meningite                                                   
+                                                       9  Onchochercose                                               
+                                                      10  Paludisme                                                   
+                                                      11  Pneumonie                                                   
+                                                      12  Rougeole                                                    
+                                                      13  Sous-nutrition                                              
+                                                      14  Tetanos                                                     
+                                                      15  Toux                                                        
+                                                      16  Tuberculose                                                 
+                                                      17  Trypanosomiase                                              
+                                                      18  Varicelle                                                   
+                                                      19  Maladies de peau                                            
+                                                      20  Maladies respirat.                                          
+                                                      21  Maladies des yeux                                           
+                                                      22  Maladies intestinale                                        
+                                                      23  Vomissements                                                
+                                                      24  Goitre                                                      
+                                                      25  Bilharziose                                                 
+                                                      96  Autre                                                       
+                                                      98  NSP                                                         
+                                                      99  Missing value
+                                         ranges:   lower   upper
+                                                       1      25
+                                                      96      96
+                                                      98      98
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : QCSEC22                                                   06-22-1999
+                                                                        21:22:17
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+QC223B      12    2    0     N      S    2Šme maladie des jeunes       
+                                         values:   value  label
+                                                       1  Cholera                                                     
+                                                       2  Coqueluche                                                  
+                                                       3  Diarh‚e                                                     
+                                                       4  Diptherie                                                   
+                                                       5  FiŠvre                                                      
+                                                       6  Jaunisse/ictere/hepa                                        
+                                                       7  LŠpre                                                       
+                                                       8  Meningite                                                   
+                                                       9  Onchochercose                                               
+                                                      10  Paludisme                                                   
+                                                      11  Pneumonie                                                   
+                                                      12  Rougeole                                                    
+                                                      13  Sous-nutrition                                              
+                                                      14  Tetanos                                                     
+                                                      15  Toux                                                        
+                                                      16  Tuberculose                                                 
+                                                      17  Trypanosomiase                                              
+                                                      18  Varicelle                                                   
+                                                      19  Maladies de peau                                            
+                                                      20  Maladies respirat.                                          
+                                                      21  Maladies des yeux                                           
+                                                      22  Maladies intestinale                                        
+                                                      23  Vomissements                                                
+                                                      24  Goitre                                                      
+                                                      25  Bilharziose                                                 
+                                                      96  Autre                                                       
+                                                      98  NSP                                                         
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1      25
+                                                      96      96
+                                                      98      98
+
+
+                             SECTION MAP                               
+Section   : QCSEC0                                                    06-22-1999
+                                                                        21:22:17
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+   1|   |                
+    |   |
+    |   |
+    |   |
+    |   |     ___
+   6| N |  QCPREF        Pr‚fecture                                             
+    | N |     ___
+   8| N |  QCSPREF       Sous-Pr‚fecture                                             ___
+   9| N |  QCCANTON      Canton                                                 
+    | N |     ___
+  11| N |  QCGRAPPE      Num‚ro de grappe                                       
+    | N |
+    | N |     ___
+  14| N |  QCZONED       ZD (recensement)                                       
+    | N |
+    | N |     ___
+  17| N |  QCLOCAL       Ville\petite ville\rural                                    ___
+  18| N |  QCINTJ        Jour de l'enquˆte communaut.                           
+    | N |     ___
+  20| N |  QCINTM        Mois de l'enquˆte communaut.                           
+    | N |     ___
+  22| N |  QCINTA        Ann‚e de l'enquˆte communaut.                          
+    | N |     ___
+  24| N |  QCENQNUM      Num‚ro de l'enquˆtrice(eur)                            
+    | N |     ___
+  26| N |  QCRESULT      R‚sultat de l'enquˆte commun.                               ___
+  27| N |  QCHOMMES      Nombre d'hommes enquˆt‚s                  BLANK             ___
+  28| N |  QCFEMMES      Nombre de femmes enquˆt‚es                BLANK             ___
+  29| N |  QCSUPERV      Num‚ro du superviseur                                  
+    | N |     ___
+  31| N |  QCCONTBU      Num‚ro du contr“leur de bureau                         
+    | N |     ___
+  33| N |  QCAGENTS      Agent de saisie de donn‚es                             
+    | N |     ___
+  35| N |  QCREGION      R‚gion de r‚sidence                                    
+    | N |     ___
+  37| N |  QCTYPE        Type de place de r‚sidence                                  ___
+
+                             SECTION MAP                               
+Section   : QCSEC10                                                   06-22-1999
+                                                                        21:22:17
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+   1|   |                
+    |   |
+    |   |
+    |   |
+    |   |     ___
+   6| N |  QC102         Le type d'habitat                    99   BLANK        
+    | N |     ___
+   8| N |  QC104         Distance en Km au chef lieu         999   BLANK        
+    | N |
+    | N |     ___
+  11| N |  QC105         Moyen de transport plus util.         9   BLANK             ___
+  12| N |  QC106         Principale voie d'acc‚s               9   BLANK             ___
+  13| N |  QC107         Y-a-t-il l'‚lectricit‚                9                     ___
+  14| N |  QC108         Y-a-t-il le t‚l‚phone                 9                     ___
+  15| N |  QC109         Y-a-t-il l'eau courante               9                     ___
+  16| N |  QC110         L'activit‚ principale des hab.       99                
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : QCSEC11                                                   06-22-1999
+                                                                        21:22:17
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+   1|   |                
+    |   |
+    |   |
+    |   |
+    |   |     ___
+   6| N |  QCTY11    (1) Type de service                                             ___
+   7| N |  QC111     (1) Distance en km au service           999   BLANK        
+    | N |
+    | N |     ___
+  10| N |  QC112     (1) Moyen de transport                    9   BLANK             ___
+  11| N |  QC113U    (1) Temps de transport (unit‚)            9   BLANK             ___
+  12| N |  QC113N    (1) Temps de transport (nombre)         999   BLANK        
+    | N |
+    | N |     ___
+  15| N |  QCTY11    (2) Type de service                                             ___
+  16| N |  QC111     (2) Distance en km au service           999   BLANK        
+    | N |
+    | N |     ___
+  19| N |  QC112     (2) Moyen de transport                    9   BLANK             ___
+  20| N |  QC113U    (2) Temps de transport (unit‚)            9   BLANK             ___
+  21| N |  QC113N    (2) Temps de transport (nombre)         999   BLANK        
+    | N |
+    | N |     ___
+  24| N |  QCTY11    (3) Type de service                                             ___
+  25| N |  QC111     (3) Distance en km au service           999   BLANK        
+    | N |
+    | N |     ___
+  28| N |  QC112     (3) Moyen de transport                    9   BLANK             ___
+  29| N |  QC113U    (3) Temps de transport (unit‚)            9   BLANK             ___
+  30| N |  QC113N    (3) Temps de transport (nombre)         999   BLANK        
+    | N |
+    | N |     ___
+  33| N |  QCTY11    (4) Type de service                                             ___
+  34| N |  QC111     (4) Distance en km au service           999   BLANK        
+    | N |
+    | N |     ___
+  37| N |  QC112     (4) Moyen de transport                    9   BLANK             ___
+  38| N |  QC113U    (4) Temps de transport (unit‚)            9   BLANK             ___
+  39| N |  QC113N    (4) Temps de transport (nombre)         999   BLANK        
+    | N |
+    | N |     ___
+  42| N |  QCTY11    (5) Type de service                                             ___
+  43| N |  QC111     (5) Distance en km au service           999   BLANK        
+    | N |
+    | N |     ___
+  46| N |  QC112     (5) Moyen de transport                    9   BLANK             ___
+  47| N |  QC113U    (5) Temps de transport (unit‚)            9   BLANK             ___
+  48| N |  QC113N    (5) Temps de transport (nombre)         999   BLANK        
+    | N |
+    | N |     ___
+  51| N |  QCTY11    (6) Type de service                                             ___
+
+                             SECTION MAP                               
+Section   : QCSEC11                                                   06-22-1999
+                                                                        21:22:17
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+  52| N |  QC111     (6) Distance en km au service           999   BLANK        
+    | N |
+    | N |     ___
+  55| N |  QC112     (6) Moyen de transport                    9   BLANK             ___
+  56| N |  QC113U    (6) Temps de transport (unit‚)            9   BLANK             ___
+  57| N |  QC113N    (6) Temps de transport (nombre)         999   BLANK        
+    | N |
+    | N |     ___
+  60| N |  QCTY11    (7) Type de service                                             ___
+  61| N |  QC111     (7) Distance en km au service           999   BLANK        
+    | N |
+    | N |     ___
+  64| N |  QC112     (7) Moyen de transport                    9   BLANK             ___
+  65| N |  QC113U    (7) Temps de transport (unit‚)            9   BLANK             ___
+  66| N |  QC113N    (7) Temps de transport (nombre)         999   BLANK        
+    | N |
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : QCSEC20                                                   06-22-1999
+                                                                        21:22:17
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+   1|   |                
+    |   |
+    |   |
+    |   |
+    |   |     ___
+   6| N |  QC201         Visite … propos de pf 12 mois                               ___
+   7| N |  QC202         Visite par quelle organisation       99   BLANK        
+    | N |     ___
+   9| A |  QC203         Sujets abord‚s pendant visite                          
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |     ___
+  16| N |  QC204         Endroit habituel pour accouch.        9                     ___
+  17| N |  QC205         Il y a accoucheuse tradition.                               ___
+  18| N |  QC206         Accoucheuse trad. form‚e              9   BLANK             ___
+  19| N |  QC207         Il y a matrone de l'h“pital           9                     ___
+  20| N |  QC208         Il y a sage-femme prof.               9                     ___
+  21| N |  QC209         Il y a visite d'equipe de cds                               ___
+  22| N |  QC210A        Pr‚vention des maladies               9   BLANK             ___
+  23| N |  QC210B        Soins pr‚natals                       9   BLANK             ___
+  24| N |  QC210C        Vaccinations                          9   BLANK             ___
+  25| N |  QC210D        Opthalomogie                          9   BLANK             ___
+  26| N |  QC210E        LŠpre                                 9   BLANK             ___
+  27| N |  QC210F        Onchocercose                          9   BLANK             ___
+  28| N |  QC210G        Trypanosomiase                        9   BLANK             ___
+  29| N |  QC211         Autre visite … propos de sant‚                              ___
+  30| N |  QC212         Visite de quelle organisation        99   BLANK        
+    | N |     ___
+  32| A |  QC213         Sujets abord‚s pendant visite                          
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |
+    | A |     ___
+  44| N |  QC214         Connaissance de prob de vision                              ___
+  45| N |  QC215         Nom donn‚ … ce problŠme              99   BLANK        
+    | N |     ___
+  47| N |  QC216         Connaissance d'enfants                9   BLANK             ___
+
+                             SECTION MAP                               
+Section   : QCSEC21                                                   06-22-1999
+                                                                        21:22:17
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+   1|   |                
+    |   |
+    |   |
+    |   |
+    |   |     ___
+   6| N |  QCTY21    (1) Type de service                                             ___
+   7| N |  QC217     (1) Distance en km au service           999   BLANK        
+    | N |
+    | N |     ___
+  10| N |  QC218     (1) Moyen de transport plus util.         9   BLANK             ___
+  11| N |  QC219U    (1) Temps de transport (unit‚)            9   BLANK             ___
+  12| N |  QC219N    (1) Temps de transport (nombre)         999   BLANK        
+    | N |
+    | N |     ___
+  15| N |  QC220A    (1) Planification familiale               9   BLANK             ___
+  16| N |  QC220B    (1) Soins pr‚natals                       9   BLANK             ___
+  17| N |  QC220C    (1) Accouchement                          9   BLANK             ___
+  18| N |  QC220D    (1) Conseil en nutrition                  9   BLANK             ___
+  19| N |  QC220E    (1) Vaccination                           9   BLANK             ___
+  20| N |  QC220F    (1) M‚decine g‚n‚rale                     9   BLANK             ___
+  21| N |  QC220G    (1) Chirurgie                             9   BLANK             ___
+  22| N |  QC221A    (1) Contraceptifs                         9   BLANK             ___
+  23| N |  QC221B    (1) Condoms                               9   BLANK             ___
+  24| N |  QC221C    (1) Sachets de SRO                        9   BLANK             ___
+  25| N |  QC221D    (1) Comprime de fer                       9   BLANK             ___
+  26| N |  QC221E    (1) Anti-palud‚ens                        9   BLANK             ___
+  27| N |  QC221F    (1) M‚dicaments de base                   9   BLANK             ___
+  28| N |  QCTY21    (2) Type de service                                             ___
+  29| N |  QC217     (2) Distance en km au service           999   BLANK        
+    | N |
+    | N |     ___
+  32| N |  QC218     (2) Moyen de transport plus util.         9   BLANK             ___
+  33| N |  QC219U    (2) Temps de transport (unit‚)            9   BLANK             ___
+  34| N |  QC219N    (2) Temps de transport (nombre)         999   BLANK        
+    | N |
+    | N |     ___
+  37| N |  QC220A    (2) Planification familiale               9   BLANK             ___
+  38| N |  QC220B    (2) Soins pr‚natals                       9   BLANK             ___
+  39| N |  QC220C    (2) Accouchement                          9   BLANK             ___
+  40| N |  QC220D    (2) Conseil en nutrition                  9   BLANK             ___
+  41| N |  QC220E    (2) Vaccination                           9   BLANK             ___
+  42| N |  QC220F    (2) M‚decine g‚n‚rale                     9   BLANK             ___
+  43| N |  QC220G    (2) Chirurgie                             9   BLANK             ___
+  44| N |  QC221A    (2) Contraceptifs                         9   BLANK             ___
+  45| N |  QC221B    (2) Condoms                               9   BLANK             ___
+  46| N |  QC221C    (2) Sachets de SRO                        9   BLANK             ___
+  47| N |  QC221D    (2) Comprime de fer                       9   BLANK             ___
+  48| N |  QC221E    (2) Anti-palud‚ens                        9   BLANK             ___
+  49| N |  QC221F    (2) M‚dicaments de base                   9   BLANK             ___
+  50| N |  QCTY21    (3) Type de service                                             ___
+
+                             SECTION MAP                               
+Section   : QCSEC21                                                   06-22-1999
+                                                                        21:22:17
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+  51| N |  QC217     (3) Distance en km au service           999   BLANK        
+    | N |
+    | N |     ___
+  54| N |  QC218     (3) Moyen de transport plus util.         9   BLANK             ___
+  55| N |  QC219U    (3) Temps de transport (unit‚)            9   BLANK             ___
+  56| N |  QC219N    (3) Temps de transport (nombre)         999   BLANK        
+    | N |
+    | N |     ___
+  59| N |  QC220A    (3) Planification familiale               9   BLANK             ___
+  60| N |  QC220B    (3) Soins pr‚natals                       9   BLANK             ___
+  61| N |  QC220C    (3) Accouchement                          9   BLANK             ___
+  62| N |  QC220D    (3) Conseil en nutrition                  9   BLANK             ___
+  63| N |  QC220E    (3) Vaccination                           9   BLANK             ___
+  64| N |  QC220F    (3) M‚decine g‚n‚rale                     9   BLANK             ___
+  65| N |  QC220G    (3) Chirurgie                             9   BLANK             ___
+  66| N |  QC221A    (3) Contraceptifs                         9   BLANK             ___
+  67| N |  QC221B    (3) Condoms                               9   BLANK             ___
+  68| N |  QC221C    (3) Sachets de SRO                        9   BLANK             ___
+  69| N |  QC221D    (3) Comprime de fer                       9   BLANK             ___
+  70| N |  QC221E    (3) Anti-palud‚ens                        9   BLANK             ___
+  71| N |  QC221F    (3) M‚dicaments de base                   9   BLANK             ___
+  72| N |  QCTY21    (4) Type de service                                             ___
+  73| N |  QC217     (4) Distance en km au service           999   BLANK        
+    | N |
+    | N |     ___
+  76| N |  QC218     (4) Moyen de transport plus util.         9   BLANK             ___
+  77| N |  QC219U    (4) Temps de transport (unit‚)            9   BLANK             ___
+  78| N |  QC219N    (4) Temps de transport (nombre)         999   BLANK        
+    | N |
+    | N |     ___
+  81| N |  QC220A    (4) Planification familiale               9   BLANK             ___
+  82| N |  QC220B    (4) Soins pr‚natals                       9   BLANK             ___
+  83| N |  QC220C    (4) Accouchement                          9   BLANK             ___
+  84| N |  QC220D    (4) Conseil en nutrition                  9   BLANK             ___
+  85| N |  QC220E    (4) Vaccination                           9   BLANK             ___
+  86| N |  QC220F    (4) M‚decine g‚n‚rale                     9   BLANK             ___
+  87| N |  QC220G    (4) Chirurgie                             9   BLANK             ___
+  88| N |  QC221A    (4) Contraceptifs                         9   BLANK             ___
+  89| N |  QC221B    (4) Condoms                               9   BLANK             ___
+  90| N |  QC221C    (4) Sachets de SRO                        9   BLANK             ___
+  91| N |  QC221D    (4) Comprime de fer                       9   BLANK             ___
+  92| N |  QC221E    (4) Anti-palud‚ens                        9   BLANK             ___
+  93| N |  QC221F    (4) M‚dicaments de base                   9   BLANK             ___
+  94| N |  QCTY21    (5) Type de service                                             ___
+  95| N |  QC217     (5) Distance en km au service           999   BLANK        
+    | N |
+    | N |     ___
+  98| N |  QC218     (5) Moyen de transport plus util.         9   BLANK             ___
+  99| N |  QC219U    (5) Temps de transport (unit‚)            9   BLANK             ___
+
+                             SECTION MAP                               
+Section   : QCSEC21                                                   06-22-1999
+                                                                        21:22:17
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 100| N |  QC219N    (5) Temps de transport (nombre)         999   BLANK        
+    | N |
+    | N |     ___
+ 103| N |  QC220A    (5) Planification familiale               9   BLANK             ___
+ 104| N |  QC220B    (5) Soins pr‚natals                       9   BLANK             ___
+ 105| N |  QC220C    (5) Accouchement                          9   BLANK             ___
+ 106| N |  QC220D    (5) Conseil en nutrition                  9   BLANK             ___
+ 107| N |  QC220E    (5) Vaccination                           9   BLANK             ___
+ 108| N |  QC220F    (5) M‚decine g‚n‚rale                     9   BLANK             ___
+ 109| N |  QC220G    (5) Chirurgie                             9   BLANK             ___
+ 110| N |  QC221A    (5) Contraceptifs                         9   BLANK             ___
+ 111| N |  QC221B    (5) Condoms                               9   BLANK             ___
+ 112| N |  QC221C    (5) Sachets de SRO                        9   BLANK             ___
+ 113| N |  QC221D    (5) Comprime de fer                       9   BLANK             ___
+ 114| N |  QC221E    (5) Anti-palud‚ens                        9   BLANK             ___
+ 115| N |  QC221F    (5) M‚dicaments de base                   9   BLANK             ___
+ 116| N |  QCTY21    (6) Type de service                                             ___
+ 117| N |  QC217     (6) Distance en km au service           999   BLANK        
+    | N |
+    | N |     ___
+ 120| N |  QC218     (6) Moyen de transport plus util.         9   BLANK             ___
+ 121| N |  QC219U    (6) Temps de transport (unit‚)            9   BLANK             ___
+ 122| N |  QC219N    (6) Temps de transport (nombre)         999   BLANK        
+    | N |
+    | N |     ___
+ 125| N |  QC220A    (6) Planification familiale               9   BLANK             ___
+ 126| N |  QC220B    (6) Soins pr‚natals                       9   BLANK             ___
+ 127| N |  QC220C    (6) Accouchement                          9   BLANK             ___
+ 128| N |  QC220D    (6) Conseil en nutrition                  9   BLANK             ___
+ 129| N |  QC220E    (6) Vaccination                           9   BLANK             ___
+ 130| N |  QC220F    (6) M‚decine g‚n‚rale                     9   BLANK             ___
+ 131| N |  QC220G    (6) Chirurgie                             9   BLANK             ___
+ 132| N |  QC221A    (6) Contraceptifs                         9   BLANK             ___
+ 133| N |  QC221B    (6) Condoms                               9   BLANK             ___
+ 134| N |  QC221C    (6) Sachets de SRO                        9   BLANK             ___
+ 135| N |  QC221D    (6) Comprime de fer                       9   BLANK             ___
+ 136| N |  QC221E    (6) Anti-palud‚ens                        9   BLANK             ___
+ 137| N |  QC221F    (6) M‚dicaments de base                   9   BLANK             ___
+ 138| N |  QCTY21    (7) Type de service                                             ___
+ 139| N |  QC217     (7) Distance en km au service           999   BLANK        
+    | N |
+    | N |     ___
+ 142| N |  QC218     (7) Moyen de transport plus util.         9   BLANK             ___
+ 143| N |  QC219U    (7) Temps de transport (unit‚)            9   BLANK             ___
+ 144| N |  QC219N    (7) Temps de transport (nombre)         999   BLANK        
+    | N |
+    | N |     ___
+ 147| N |  QC220A    (7) Planification familiale               9   BLANK             ___
+ 148| N |  QC220B    (7) Soins pr‚natals                       9   BLANK             ___
+ 149| N |  QC220C    (7) Accouchement                          9   BLANK             ___
+ 150| N |  QC220D    (7) Conseil en nutrition                  9   BLANK             ___
+
+                             SECTION MAP                               
+Section   : QCSEC21                                                   06-22-1999
+                                                                        21:22:17
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 151| N |  QC220E    (7) Vaccination                           9   BLANK             ___
+ 152| N |  QC220F    (7) M‚decine g‚n‚rale                     9   BLANK             ___
+ 153| N |  QC220G    (7) Chirurgie                             9   BLANK             ___
+ 154| N |  QC221A    (7) Contraceptifs                         9   BLANK             ___
+ 155| N |  QC221B    (7) Condoms                               9   BLANK             ___
+ 156| N |  QC221C    (7) Sachets de SRO                        9   BLANK             ___
+ 157| N |  QC221D    (7) Comprime de fer                       9   BLANK             ___
+ 158| N |  QC221E    (7) Anti-palud‚ens                        9   BLANK             ___
+ 159| N |  QC221F    (7) M‚dicaments de base                   9   BLANK             ___
+ 160| N |  QCTY21    (8) Type de service                                             ___
+ 161| N |  QC217     (8) Distance en km au service           999   BLANK        
+    | N |
+    | N |     ___
+ 164| N |  QC218     (8) Moyen de transport plus util.         9   BLANK             ___
+ 165| N |  QC219U    (8) Temps de transport (unit‚)            9   BLANK             ___
+ 166| N |  QC219N    (8) Temps de transport (nombre)         999   BLANK        
+    | N |
+    | N |     ___
+ 169| N |  QC220A    (8) Planification familiale               9   BLANK             ___
+ 170| N |  QC220B    (8) Soins pr‚natals                       9   BLANK             ___
+ 171| N |  QC220C    (8) Accouchement                          9   BLANK             ___
+ 172| N |  QC220D    (8) Conseil en nutrition                  9   BLANK             ___
+ 173| N |  QC220E    (8) Vaccination                           9   BLANK             ___
+ 174| N |  QC220F    (8) M‚decine g‚n‚rale                     9   BLANK             ___
+ 175| N |  QC220G    (8) Chirurgie                             9   BLANK             ___
+ 176| N |  QC221A    (8) Contraceptifs                         9   BLANK             ___
+ 177| N |  QC221B    (8) Condoms                               9   BLANK             ___
+ 178| N |  QC221C    (8) Sachets de SRO                        9   BLANK             ___
+ 179| N |  QC221D    (8) Comprime de fer                       9   BLANK             ___
+ 180| N |  QC221E    (8) Anti-palud‚ens                        9   BLANK             ___
+ 181| N |  QC221F    (8) M‚dicaments de base                   9   BLANK             ___
+
+                             SECTION MAP                               
+Section   : QCSEC22                                                   06-22-1999
+                                                                        21:22:17
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+   1|   |                
+    |   |
+    |   |
+    |   |
+    |   |     ___
+   6| N |  QC222A        1er problŠme en matiŠre sant‚        99                
+    | N |     ___
+   8| N |  QC222B        2Šm problŠme en matiŠre sant‚        99   BLANK        
+    | N |     ___
+  10| N |  QC223A        1Šre maladie des jeunes              99                
+    | N |     ___
+  12| N |  QC223B        2Šme maladie des jeunes              99   BLANK        
+    | N |     ___
+
+... Report of Dictionary TDSQ32 normally ended

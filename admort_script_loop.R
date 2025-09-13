@@ -1,12 +1,16 @@
 rm(list = ls())
 
+
 #list of libraries to require
 lib_list <- c("haven", "dplyr", "stringr", "survey", "beepr")
 #apply require to list 
 lapply(lib_list, require, character.only = T)
 #list of files to apply mortality function to
-file_list <- c("/Users/matthewnicholson/DHS/DHS_surveys_rds_organized/DRC_DHS/2013-14/CDIR61DT/DRC_DHS_CD_2013-14_DHS_08072025_1920_219655_CDIR61DT_CDIR61FL.Rds"
-)
+source("/Users/matthewnicholson/DHS/get_file_function.R")
+countries <- c("Kenya_DHS", "Nigeria_DHS", "Ghana_DHS")
+years <- c(2018,2022)
+surveys<- c("IR")
+file_list <- get_file(countries = countries, years = years, surveys = surveys)
 #load the mortality function
 source("/Users/matthewnicholson/DHS/admort_scripts/simplified_admort_func.R")
 #define indicators and run debug function

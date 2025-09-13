@@ -1,0 +1,1351 @@
+
+               I S S A     D i c t i o n a r y     R e p o r t
+
+
+                  IIIIIIIIII     SSSSSSS       SSSSSSS            A
+                 IIIIIIIIII    SSSSSSSSSS    SSSSSSSSSS          AA
+                   IIII       SSSS          SSSS               AAAA
+                  IIII       SSSS          SSSS              AAAAAA
+                 IIII       SSSS          SSSS             AAA  AAA
+                IIII       SSSSSSSS      SSSSSSSS         AAA  AAA 
+               IIII         SSSSSSSS      SSSSSSSS      AAA    AAA 
+              IIII             SSSS          SSSS      AAAAAAAAAA  
+             IIII             SSSS          SSSS     AAAAAAAAAAAA  
+            IIII             SSSS          SSSS     AAA      AAA   
+        IIIIIIIIII    SSSSSSSSSS    SSSSSSSSSS    AAAA      AAAA   
+       IIIIIIIIII      SSSSSSS       SSSSSSS     AAAA      AAAA    
+
+  I n t e g r a t e d   S y s t e m   f o r    S u r v e y   A n a l y s i s
+
+--------------------------------------------------------------------------------
+
+Dictionary Name   : TDSQ41   (file 'TDSQ41.DIC', 13312 bytes)
+
+Dictionary Label  : Questionnaire Communautaire   
+
+Owner             :                               
+
+Country           : USA                           
+
+Creation Date     : Dec 15, 5   
+
+Last Update       : Dec 15, 5         * 1 hierarchical level
+
+Questionnaire Id    Loc   Len   Label
+
+                     1     3    LEVEL1                        
+
+Section Id          Loc   Len
+
+                     4     2  
+
+* Main index: not defined
+
+* No secondary indexes defined
+
+* Index summary: no index key lengths measured
+
+* Estimated case-data-area size: 718 bytes (5 sections, 61 variables)
+
+Report date & time: 12-16-2005 at 15:18:53 hrs.
+
+                             SECTION DESCRIPTION                       
+                                                                      12-16-2005
+                                                                        15:18:53
+--------------------------------------------------------------------------------
+Section     Code   Class   Occurs   --- Group ---  
+ name          Length      Min Max   Max Loc Len  Section Label
+--------------------------------------------------------------------------------
+
+CS00        00    28 S      1   1     4   23   1  Identification
+
+CS10        10    45 S      0   1   without group CaractÇristiques gÇnerales
+
+CS11        11    13 M      0   7   without group Services basiques
+
+CS20        20    43 M      0   8   without group Services de santÇ
+
+CS21        21   295 S      0   1     4   18  60  Problämes pour se soigner
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : CS00                                                      12-16-2005
+                                                                        15:18:53
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+CCLUS        1    3    0     N      S    Nß de la grappe               
+
+DEP          6    2    0     N      S    DÇpartement                   
+
+CZONE        8    1    0     N      S    Zone U/R                      
+                                         values:   value  label
+                                                       1  Urbain                                                      
+                                                       2  Rural                                                       
+                                         ranges:   lower   upper
+                                                       1       2
+
+CLOCA        9    1    0     N      S    Type de LocalitÇ              
+                                         values:   value  label
+                                                       1  N'DjamÇna                                                   
+                                                       2  ABECHE/MOUNDOU/SARH                                         
+                                                       3  Autres chefs lieu de DÇpartement                            
+                                                       4  Autres petites villes                                       
+                                                       5  Rural                                                       
+                                         ranges:   lower   upper
+                                                       1       5
+
+CINTD       10    2    0     N      S    Jour d'interview              
+                                         values:   value  label
+                                                      99  Missing value
+                                         ranges:   lower   upper
+                                                       1      31
+
+CINTM       12    2    0     N      S    Mois d'interview              
+                                         values:   value  label
+                                                      99  Missing value
+                                         ranges:   lower   upper
+                                                       1      12
+
+CINTY       14    4    0     N      S    AnnÇe d'interview             
+                                         ranges:   lower   upper
+                                                    2003    2004
+
+CINTNUM     18    3    0     N      S    Enquàteur (chef d'Çquipe)     
+                                         ranges:   lower   upper
+                                                      11     176
+                                                     191     193
+
+CRESULT     21    1    0     N      S    RÇsultat interview            
+                                         values:   value  label
+                                                       1  Rempli                                                      
+                                                       2  Non rempli                                                  
+                                         ranges:   lower   upper
+                                                       1       2
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : CS00                                                      12-16-2005
+                                                                        15:18:53
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+CMEN        22    1    0     N      S    Personnes enquàtÇes/Hommes    
+                                         values:   value  label
+                                                       0  Aucun homme                                                 
+                                                       6  6 hommes et plus                                            
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       6
+
+CMENFT      23    1    0     N      M    Titre/Fonction Hpmme          
+                                         values:   value  label
+                                                   BLANK  Not applicable value
+
+CWOMEN      27    1    0     N      S    Personnes enquàtÇes/Femmes    
+                                         values:   value  label
+                                                       0  Aucune femme                                                
+                                                       6  6 hommes et plus                                            
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0       6
+
+CWOMENFT    28    1    0     N      S    Titre/Fonction Femme          
+                                         values:   value  label
+                                                   BLANK  Not applicable value
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : CS10                                                      12-16-2005
+                                                                        15:18:53
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+C102         6    1    0     N      S    Type d'habitat                
+                                         values:   value  label
+                                                       1  Dense                                                       
+                                                       2  DispersÇ                                                    
+                                                       6  Autre                                                       
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       6       6
+
+C103         7   26    0     X      S    Nom de la ville plus proche   
+
+C104        33    1    0     N      S    Voie principale d'accäs (Ö la ville plus proche)
+                                         values:   value  label
+                                                       1  Route goudronnÇe                                            
+                                                       2  Route en terre battue                                       
+                                                       3  Piste Carrissable toute annÇe                               
+                                                       4  Piste saisonniäre                                           
+                                                       5  Piste cyclable/sentier                                      
+                                                       6  Voie pluviale/d'eau                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       6
+
+C105        34    2    0     N      S    Distance en km (de la ville plus proche)
+                                         values:   value  label
+                                                       0  Moins d'un km                                               
+                                                      95  95 km et plus                                               
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0      95
+
+C106        36    1    0     N      S    Moyen de transport plus commun (pour la ville plus proche)
+                                         values:   value  label
+                                                       1  VÇhicule Ö moteur                                           
+                                                       2  Mobylette/motocyclette                                      
+                                                       3  Charette/dos d'animal                                       
+                                                       4  Bicyclette                                                  
+                                                       5  Pirogue                                                     
+                                                       6  Aucun/Ö pied                                                
+                                                       9  Missing                                                     
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       6
+                                                       9       9
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : CS10                                                      12-16-2005
+                                                                        15:18:53
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+C107        37    1    0     N      S    RÇseau d'eau courante         
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+
+C108        38    2    0     N      S    Forage en Çtat de marche      
+                                         values:   value  label
+                                                      90  90 et plus                                                  
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0      90
+
+C109        40    2    0     N      S    Puits en Çtat de marche       
+                                         values:   value  label
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0      90
+
+C110        42    1    0     N      S    ElÇctricitÇ                   
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+
+C111        43    1    0     N      S    TÇlÇphone                     
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       9  Missing value
+                                         ranges:   lower   upper
+                                                       1       2
+
+LSB         44    1    0     N      S    Nb de lignes remplies pour services de base
+                                         values:   value  label
+                                                   BLANK  Not applicable value
+
+LSS         45    1    0     N      S    Nb de lignes remplies pour services de sante
+                                         values:   value  label
+                                                   BLANK  Not applicable value
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : CS11                                                      12-16-2005
+                                                                        15:18:53
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+CCODE        6    2    0     N      S    Code du service               
+                                         values:   value  label
+                                                       1  Ecole primaire/Medersa/Çcole communaure                     
+                                                       2  Ecole secondaire ou professionnelle                         
+                                                       3  MarchÇ Journalier                                           
+                                                       4  MarchÇ Hebdomadaire                                         
+                                                       5  Boutique                                                    
+                                                       6  Bureau de poste                                             
+                                                       7  Service rÇgulier de transport en commun                     
+                                         ranges:   lower   upper
+                                                       1       7
+
+C112         8    2    0     N      S    Distance en km (de la localitÇ possÇdant le service)
+                                         values:   value  label
+                                                       0  Moins d'un km                                               
+                                                      95  95 km et plus                                               
+                                                      96  Sur le lieu d'enquàte                                       
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0      96
+
+C113        10    1    0     N      S    Moyen de transport plus commun (pour la localitÇ possÇdant..
+                                         values:   value  label
+                                                       1  VÇhicule Ö moteur                                           
+                                                       2  Mobylette/moto                                              
+                                                       3  Charette/dos d'animal                                       
+                                                       4  Bicyclette                                                  
+                                                       5  Pirogue                                                     
+                                                       6  Aucun/Ö pied                                                
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       6
+
+C114U       11    1    0     N      S    Temps pour se rendre/UnitÇ (Ö la localitÇ possÇdant...
+                                         values:   value  label
+                                                       1  Minutes                                                     
+                                                       2  Heures                                                      
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+C114N       12    2    0     N      S    Temps pour se rendre/NumÇro (Ö la localitÇ possÇdant...
+                                         values:   value  label
+                                                      90  90 heures et plus                                           
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0      90
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : CS20                                                      12-16-2005
+                                                                        15:18:53
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+C200A        6    1    0     N      S    Code du service               
+                                         values:   value  label
+                                                       1  Hìpital public ou pyli(NDjamÇna seulement)                  
+                                                       2  Hìpital militaire/garnisson                                 
+                                                       3  Hìpital privÇ                                               
+                                                       4  Centre de santÇ/dispensaire public                          
+                                                       5  Centre de santÇ/dispensaire privÇ                           
+                                                       6  Clinique/Cabibet MÇdical                                    
+                                                       7  Pharmacie/dÇpìt pharmaceutique                              
+                                                       8  VÇrifier q101                                               
+                                         ranges:   lower   upper
+                                                       1       8
+
+C201         7   17    0     X      S    LocalitÇ oó se trouve le service
+
+C202        24    2    0     N      S    Distance en km (du service le plus proche)
+                                         values:   value  label
+                                                       0  Moins d'un km                                               
+                                                      95  95 km et plus                                               
+                                                      96  Sur le lieu d'enquàte                                       
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0      96
+
+C203        26    1    0     N      S    Moyen de transport plus commun (pour le service le plus...
+                                         values:   value  label
+                                                       1  VÇhicule Ö moteur                                           
+                                                       2  Mobylette/moto                                              
+                                                       3  Charette/dos d'animal                                       
+                                                       4  Bicyclette                                                  
+                                                       5  Pirogue                                                     
+                                                       6  Aucun/Ö pied                                                
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       6
+
+C204U       27    1    0     N      S    Temps pour se rendre/UnitÇ (au service le plus proche)
+                                         values:   value  label
+                                                       1  Minutes                                                     
+                                                       2  Heures                                                      
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : CS20                                                      12-16-2005
+                                                                        15:18:53
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+C204N       28    2    0     N      S    Temps pour se rendre/NumÇro (au service le plus proche)
+                                         values:   value  label
+                                                      90  90 heures et plus                                           
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       0      90
+
+C205A       30    1    0     N      S    Prestations: Planif. Familiale
+                                         values:   value  label
+                                                       1  oui                                                         
+                                                       2  non                                                         
+                                                       8  nsp                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+C205B       31    1    0     N      S    Prestations: Soins prÇnatals  
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       8  NSP                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+C205C       32    1    0     N      S    Prestations: Accouchement     
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       8  NSP                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+C205D       33    1    0     N      S    Prestations:Suivi des enfants 
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       8  NSP                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : CS20                                                      12-16-2005
+                                                                        15:18:53
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+C205E       34    1    0     N      S    Prestations: Vaccination      
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       8  NSP                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+C205F       35    1    0     N      S    Prestations: êduca. Nutrition 
+                                         values:   value  label
+                                                       1  oui                                                         
+                                                       2  non                                                         
+                                                       8  nsp                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+C205G       36    1    0     N      S    Prestations: MÇdecine GÇnÇrale
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       8  NSP                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+C205H       37    1    0     N      S    Prestations: Chirurgie        
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       8  NSP                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : CS20                                                      12-16-2005
+                                                                        15:18:53
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+C206A       38    1    0     N      S    MÇdicaments:Contraceptifs     
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       8  NSP                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+C206B       39    1    0     N      S    MÇdicaments: Condom           
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       8  NSP                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+C206C       40    1    0     N      S    MÇdicaments: Sachets SRO ComprimÇs
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       8  NSP                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+C206D       41    1    0     N      S    MÇdicaments: ComprimÇs de FER 
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       8  NSP                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : CS20                                                      12-16-2005
+                                                                        15:18:53
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+C206E       42    1    0     N      S    MÇdicaments: Anti-paludÇens   
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       8  NSP                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+C206F       43    1    0     N      S    MÇdicaments: MÇdicament de base
+                                         values:   value  label
+                                                       1  Oui                                                         
+                                                       2  Non                                                         
+                                                       8  NSP                                                         
+                                                       9  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1       2
+                                                       8       8
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : CS21                                                      12-16-2005
+                                                                        15:18:53
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+C207A        6    2    0     N      S    1er probläme de santÇ         
+                                         values:   value  label
+                                                      11  Ets.SantÇ inexistants                                       
+                                                      12  Ets.SantÇ trop ÇloignÇs/inaccessibles                       
+                                                      13  Problämes de transport                                      
+                                                      21  Consultations/MÇdicaments trop chers                        
+                                                      22  Manque d'argent                                             
+                                                      31  Ets. santÇ pas ÇquipÇs/mal ÇquipÇ                           
+                                                      32  Manque de mÇdicaments                                       
+                                                      33  Manque de personnel de santÇ                                
+                                                      41  Etabli.santÇ pas propre/manque d'hygiäne                    
+                                                      42  Manque confidentialitÇ dans Çtabli. santÇ                   
+                                                      43  Mauvais accueil/personnel pas aimable                       
+                                                      44  Manque de personnel de santÇ fÇminin                        
+                                                      45  Personnel de santÇ pas de qualitÇ                           
+                                                      94  (autre, prÇciser)                                           
+                                                      95  Aucun                                                       
+                                                      96  Pas d'autre                                                 
+                                                      98  Ne sait pas                                                 
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                      11      98
+
+C207B        8    2    0     N      S    2me probläme de santÇ         
+                                         values:   value  label
+                                                      11  Ets.SantÇ inexistants                                       
+                                                      12  Ets.SantÇ trop ÇloignÇs/inaccessibles                       
+                                                      13  Problämes de transport                                      
+                                                      21  Consultations/MÇdicaments trop chers                        
+                                                      22  Manque d'argent                                             
+                                                      31  Ets. santÇ pas ÇquipÇs/mal ÇquipÇ                           
+                                                      32  Manque de mÇdicaments                                       
+                                                      33  Manque de personnel de santÇ                                
+                                                      41  Etabli.santÇ pas propre/manque d'hygiäne                    
+                                                      42  Manque confidentialitÇ dans Çtabli. santÇ                   
+                                                      43  Mauvais accueil/personnel pas aimable                       
+                                                      44  Manque de personnel de santÇ fÇminin                        
+                                                      45  Personnel de santÇ pas de qualitÇ                           
+                                                      94  (autre, prÇciser)                                           
+                                                      95  Aucun                                                       
+                                                      96  Pas d'autre                                                 
+                                                      98  Ne sait pas                                                 
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                      11      98
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : CS21                                                      12-16-2005
+                                                                        15:18:53
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+C207C       10    2    0     N      S    3me probläme de santÇ         
+                                         values:   value  label
+                                                      11  Ets.SantÇ inexistants                                       
+                                                      12  Ets.SantÇ trop ÇloignÇs/inaccessibles                       
+                                                      13  Problämes de transport                                      
+                                                      21  Consultations/MÇdicaments trop chers                        
+                                                      22  Manque d'argent                                             
+                                                      31  Ets. santÇ pas ÇquipÇs/mal ÇquipÇ                           
+                                                      32  Manque de mÇdicaments                                       
+                                                      33  Manque de personnel de santÇ                                
+                                                      41  Etabli.santÇ pas propre/manque d'hygiäne                    
+                                                      42  Manque confidentialitÇ dans Çtabli. santÇ                   
+                                                      43  Mauvais accueil/personnel pas aimable                       
+                                                      44  Manque de personnel de santÇ fÇminin                        
+                                                      45  Personnel de santÇ pas de qualitÇ                           
+                                                      94  (autre, prÇciser)                                           
+                                                      95  Aucun                                                       
+                                                      96  Pas d'autre                                                 
+                                                      98  Ne sait pas                                                 
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                      11      98
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : CS21                                                      12-16-2005
+                                                                        15:18:53
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+C208A       12    2    0     N      S    1äre maladie des enfants      
+                                         values:   value  label
+                                                       1  Paludisme                                                   
+                                                       2  Fievre                                                      
+                                                       3  Rougeole                                                    
+                                                       4  TÇtanos                                                     
+                                                       5  MÇningite                                                   
+                                                       6  Tuberculose                                                 
+                                                       7  Coqueluche                                                  
+                                                       8  Varicelle                                                   
+                                                       9  Onchocecose                                                 
+                                                      10  DiarrhÇe                                                    
+                                                      11  CholÇra                                                     
+                                                      12  Vers intestinaux                                            
+                                                      13  HÇpatite/Jaunisse/ictäre                                    
+                                                      14  Malnutrition                                                
+                                                      15  AnÇmie/manque de sang                                       
+                                                      16  Infections respiratoires                                    
+                                                      17  Toux                                                        
+                                                      18  Maladies des yeux                                           
+                                                      19  Maladies de la bouche et des dents                          
+                                                      20  Problämes de peau/teigne/gale                               
+                                                      94  Autre                                                       
+                                                      95  Aucun                                                       
+                                                      98  Ne sait pas                                                 
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1      20
+                                                      94      95
+                                                      98      98
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : CS21                                                      12-16-2005
+                                                                        15:18:53
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+C208B       14    2    0     N      S    2äme maladie des enfants      
+                                         values:   value  label
+                                                       1  Paludisme                                                   
+                                                       2  Fievre                                                      
+                                                       3  Rougeole                                                    
+                                                       4  TÇtanos                                                     
+                                                       5  MÇningite                                                   
+                                                       6  Tuberculose                                                 
+                                                       7  Coqueluche                                                  
+                                                       8  Varicelle                                                   
+                                                       9  Onchocecose                                                 
+                                                      10  DiarrhÇe                                                    
+                                                      11  CholÇra                                                     
+                                                      12  Vers intestinaux                                            
+                                                      13  HÇpatite/Jaunisse/ictäre                                    
+                                                      14  Malnutrition                                                
+                                                      15  AnÇmie/manque de sang                                       
+                                                      16  Infections respiratoires                                    
+                                                      17  Toux                                                        
+                                                      18  Maladies des yeux                                           
+                                                      19  Maladies de la bouche et des dents                          
+                                                      20  Problämes de peau/teigne/gale                               
+                                                      94  Autre                                                       
+                                                      95  Aucun                                                       
+                                                      98  Ne sait pas                                                 
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1      20
+                                                      94      95
+                                                      98      98
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : CS21                                                      12-16-2005
+                                                                        15:18:53
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+C208C       16    2    0     N      S    3äme maladie des enfants      
+                                         values:   value  label
+                                                       1  Paludisme                                                   
+                                                       2  Fievre                                                      
+                                                       3  Rougeole                                                    
+                                                       4  TÇtanos                                                     
+                                                       5  MÇningite                                                   
+                                                       6  Tuberculose                                                 
+                                                       7  Coqueluche                                                  
+                                                       8  Varicelle                                                   
+                                                       9  Onchocecose                                                 
+                                                      10  DiarrhÇe                                                    
+                                                      11  CholÇra                                                     
+                                                      12  Vers intestinaux                                            
+                                                      13  HÇpatite/Jaunisse/ictäre                                    
+                                                      14  Malnutrition                                                
+                                                      15  AnÇmie/manque de sang                                       
+                                                      16  Infections respiratoires                                    
+                                                      17  Toux                                                        
+                                                      18  Maladies des yeux                                           
+                                                      19  Maladies de la bouche et des dents                          
+                                                      20  Problämes de peau/teigne/gale                               
+                                                      94  Autre                                                       
+                                                      95  Aucun                                                       
+                                                      98  Ne sait pas                                                 
+                                                      99  Missing value
+                                                   BLANK  Not applicable value
+                                         ranges:   lower   upper
+                                                       1      20
+                                                      94      95
+                                                      98      98
+
+CQTXT       18   60    0     X      M    Observations du Chef d'Çquipe 
+
+C2YYCHEF   258   30    0     X      S    Nom du chef d'Çquipe          
+
+C2ZZD      288    2    0     N      S    Date/Jour                     
+                                         values:   value  label
+                                                      99  Missing value
+                                         ranges:   lower   upper
+                                                       1      31
+
+C2ZZM      290    2    0     N      S    Date/Mois                     
+                                         values:   value  label
+                                                      99  Missing value
+                                         ranges:   lower   upper
+                                                       1      12
+
+
+                             VARIABLE  DESCRIPTION                     
+Section   : CS21                                                      12-16-2005
+                                                                        15:18:53
+--------------------------------------------------------------------------------
+Variable  Loca  Len   Deci  For   Class  Variable Label
+Name      tion  gth   mals  mat          Value   Label
+--------------------------------------------------------------------------------
+
+C2ZZY      292    4    0     N      S    Date/AnnÇe                    
+                                         values:   value  label
+                                                    9999  Missing value
+                                         ranges:   lower   upper
+                                                    2000    2005
+
+
+                             SECTION MAP                               
+Section   : CS00                                                      12-16-2005
+                                                                        15:18:53
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+   1| N |  CCLUS         Nß de la grappe                                        
+    | N |
+    | N |     ___
+   4|   |                
+    |   |     ___
+   6| N |  DEP           DÇpartement                                            
+    | N |     ___
+   8| N |  CZONE         Zone U/R                                                    ___
+   9| N |  CLOCA         Type de LocalitÇ                                            ___
+  10| N |  CINTD         Jour d'interview                     99                
+    | N |     ___
+  12| N |  CINTM         Mois d'interview                     99                
+    | N |     ___
+  14| N |  CINTY         AnnÇe d'interview                                      
+    | N |
+    | N |
+    | N |     ___
+  18| N |  CINTNUM       Enquàteur (chef d'Çquipe)                              
+    | N |
+    | N |     ___
+  21| N |  CRESULT       RÇsultat interview                                          ___
+  22| N |  CMEN          Personnes enquàtÇes/Hommes            9   BLANK             ___
+  23| N |  CMENFT    (1) Titre/Fonction Hpmme                      BLANK             ___
+  24| N |  CMENFT    (2) Titre/Fonction Hpmme                      BLANK             ___
+  25| N |  CMENFT    (3) Titre/Fonction Hpmme                      BLANK             ___
+  26| N |  CMENFT    (4) Titre/Fonction Hpmme                      BLANK             ___
+  27| N |  CWOMEN        Personnes enquàtÇes/Femmes            9   BLANK             ___
+  28| N |  CWOMENFT      Titre/Fonction Femme                      BLANK             ___
+
+                             SECTION MAP                               
+Section   : CS10                                                      12-16-2005
+                                                                        15:18:53
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+   1|   |                
+    |   |
+    |   |
+    |   |
+    |   |     ___
+   6| N |  C102          Type d'habitat                        9   BLANK             ___
+   7| X |  C103          Nom de la ville plus proche                            
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |     ___
+  33| N |  C104          Voie principale d'accäs (Ö la ville plus proche)        9   BLANK             ___
+  34| N |  C105          Distance en km (de la ville plus proche)       99   BLANK        
+    | N |     ___
+  36| N |  C106          Moyen de transport plus commun (pour la ville plus proche)            BLANK             ___
+  37| N |  C107          RÇseau d'eau courante                 9                     ___
+  38| N |  C108          Forage en Çtat de marche             99   BLANK        
+    | N |     ___
+  40| N |  C109          Puits en Çtat de marche              99   BLANK        
+    | N |     ___
+  42| N |  C110          ElÇctricitÇ                           9                     ___
+  43| N |  C111          TÇlÇphone                             9                     ___
+  44| N |  LSB           Nb de lignes remplies pour services de base            BLANK             ___
+  45| N |  LSS           Nb de lignes remplies pour services de sante            BLANK             ___
+
+                             SECTION MAP                               
+Section   : CS11                                                      12-16-2005
+                                                                        15:18:53
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+   1|   |                
+    |   |
+    |   |
+    |   |
+    |   |     ___
+   6| N |  CCODE     (7) Code du service                                        
+    | N |     ___
+   8| N |  C112      (7) Distance en km (de la localitÇ possÇdant le service)       99   BLANK        
+    | N |     ___
+  10| N |  C113      (7) Moyen de transport plus commun (pour la localitÇ possÇdant..        9   BLANK             ___
+  11| N |  C114U     (7) Temps pour se rendre/UnitÇ (Ö la localitÇ possÇdant...        9   BLANK             ___
+  12| N |  C114N     (7) Temps pour se rendre/NumÇro (Ö la localitÇ possÇdant...       99   BLANK        
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : CS20                                                      12-16-2005
+                                                                        15:18:53
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+   1|   |                
+    |   |
+    |   |
+    |   |
+    |   |     ___
+   6| N |  C200A     (8) Code du service                                             ___
+   7| X |  C201      (8) LocalitÇ oó se trouve le service                         
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |     ___
+  24| N |  C202      (8) Distance en km (du service le plus proche)       99   BLANK        
+    | N |     ___
+  26| N |  C203      (8) Moyen de transport plus commun (pour le service le plus...        9   BLANK             ___
+  27| N |  C204U     (8) Temps pour se rendre/UnitÇ (au service le plus proche)        9   BLANK             ___
+  28| N |  C204N     (8) Temps pour se rendre/NumÇro (au service le plus proche)       99   BLANK        
+    | N |     ___
+  30| N |  C205A     (8) Prestations: Planif. Familiale        9   BLANK             ___
+  31| N |  C205B     (8) Prestations: Soins prÇnatals          9   BLANK             ___
+  32| N |  C205C     (8) Prestations: Accouchement             9   BLANK             ___
+  33| N |  C205D     (8) Prestations:Suivi des enfants         9   BLANK             ___
+  34| N |  C205E     (8) Prestations: Vaccination              9   BLANK             ___
+  35| N |  C205F     (8) Prestations: êduca. Nutrition         9   BLANK             ___
+  36| N |  C205G     (8) Prestations: MÇdecine GÇnÇrale        9   BLANK             ___
+  37| N |  C205H     (8) Prestations: Chirurgie                9   BLANK             ___
+  38| N |  C206A     (8) MÇdicaments:Contraceptifs             9   BLANK             ___
+  39| N |  C206B     (8) MÇdicaments: Condom                   9   BLANK             ___
+  40| N |  C206C     (8) MÇdicaments: Sachets SRO ComprimÇs        9   BLANK             ___
+  41| N |  C206D     (8) MÇdicaments: ComprimÇs de FER         9   BLANK             ___
+  42| N |  C206E     (8) MÇdicaments: Anti-paludÇens           9   BLANK             ___
+  43| N |  C206F     (8) MÇdicaments: MÇdicament de base        9   BLANK             ___
+
+                             SECTION MAP                               
+Section   : CS21                                                      12-16-2005
+                                                                        15:18:53
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+   1|   |                
+    |   |
+    |   |
+    |   |
+    |   |     ___
+   6| N |  C207A         1er probläme de santÇ                99   BLANK        
+    | N |     ___
+   8| N |  C207B         2me probläme de santÇ                99   BLANK        
+    | N |     ___
+  10| N |  C207C         3me probläme de santÇ                99   BLANK        
+    | N |     ___
+  12| N |  C208A         1äre maladie des enfants             99   BLANK        
+    | N |     ___
+  14| N |  C208B         2äme maladie des enfants             99   BLANK        
+    | N |     ___
+  16| N |  C208C         3äme maladie des enfants             99   BLANK        
+    | N |     ___
+
+                             SECTION MAP                               
+Section   : CS21                                                      12-16-2005
+                                                                        15:18:53
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+  18| X |  CQTXT     (1) Observations du Chef d'Çquipe                          
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |     ___
+
+                             SECTION MAP                               
+Section   : CS21                                                      12-16-2005
+                                                                        15:18:53
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+  78| X |  CQTXT     (2) Observations du Chef d'Çquipe                          
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |     ___
+
+                             SECTION MAP                               
+Section   : CS21                                                      12-16-2005
+                                                                        15:18:53
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 138| X |  CQTXT     (3) Observations du Chef d'Çquipe                          
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |     ___
+
+                             SECTION MAP                               
+Section   : CS21                                                      12-16-2005
+                                                                        15:18:53
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 198| X |  CQTXT     (4) Observations du Chef d'Çquipe                          
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |     ___
+
+                             SECTION MAP                               
+Section   : CS21                                                      12-16-2005
+                                                                        15:18:53
+--------------------------------------------------------------------------------
+Loc  Fmt   Variable      Variable Label                  Missing NotAppl Default
+--------------------------------------------------------------------------------
+
+     ___
+ 258| X |  C2YYCHEF      Nom du chef d'Çquipe                                   
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |
+    | X |     ___
+ 288| N |  C2ZZD         Date/Jour                            99                
+    | N |     ___
+ 290| N |  C2ZZM         Date/Mois                            99                
+    | N |     ___
+ 292| N |  C2ZZY         Date/AnnÇe                         9999                
+    | N |
+    | N |
+    | N |     ___
+
+... Report of Dictionary TDSQ41 normally ended
