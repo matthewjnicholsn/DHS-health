@@ -15,6 +15,7 @@ for(i in seq_along(file_list)){
   indicators <- c("ASMR", "AAMR")
   patch_dhsrate_functions(indicator_list = str_to_upper(indicators))
   for(j in indicators){indicator <- indicators[j]
+    indicator <- str_to_upper(indicator)
     admort_results[[indicator]] <- as_tibble(simplified_admort_func(ir_data, Indicator = indicator))
   }
 }
