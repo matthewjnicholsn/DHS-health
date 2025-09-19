@@ -1,20 +1,6 @@
-library(sf)
-library(ggplot2)
-library(viridis)
-library(haven)
-library(dplyr)
-library(sf)
-library(ggplot2)
-library(viridis)
-library(sf)
-library(sp)
-library(gstat)
-library(raster)
-library(ggplot2)
-library(viridis)
 lib_list <- c("sf", "ggplot2", "viridis", "haven", "dplyr", "sf", "ggplot2",
-              "viridis", "sf", "sp", "gstat", "raster", "ggplot2", "viridis") %>% 
-  unique(lib_list)
+              "viridis", "sf", "sp", "gstat", "raster", "ggplot2", "viridis") 
+lapply(lib_list, require, character.only = T)
 et_sf <- read_sf("/Users/matthewnicholson/DHS/GPS files/Ethiopia/2000/ETGE42FL/ETGE42FL.shp")
 et_hr <- readRDS(file = "/Users/matthewnicholson/DHS/DHS_surveys_rds_organized/Ethiopia_DHS/2000/ETHR41DT/Ethiopia_DHS_ET_2000_DHS_08072025_1921_219655_ETHR41DT_ETHR41FL.Rds")
 et_wi <- as_tibble(read_dta("/Users/matthewnicholson/DHS/DHS_surveys/Ethiopia_DHS/ET_2000_DHS_08072025_1921_219655/ETWI41DT/ETWI41FL.DTA"))
@@ -71,23 +57,25 @@ vgm_emp_clean <- subset(vgm_emp, np >= 30)
 vgm_emp_clean <- subset(vgm_emp, dist <= 900)
 
 # Suppose vgm_emp_clean is your empirical variogram data.frame
-fit_parab <- lm(gamma ~ dist + I(dist^2), data = vgm_emp_clean)
+fit_vgm <- fit.variogram(vgm_emp, vgm("Sph"))
 
 # Extract coefficients
-coef(fit_parab)  # a, b, c
+coef(fit_vgm)  # a, b, c
 
 # Generate fitted values for plotting
-dist_seq <- seq(min(vgm_emp_clean$dist), max(vgm_emp_clean$dist), length.out=100)
-parab_fit <- coef(fit_parab)[1] + coef(fit_parab)[2]*dist_seq + coef(fit_parab)[3]*dist_seq^2
+dist_seq <- seq(min(vgm_emp$dist), max(vgm_emp$dist), length.out=100)
+vgm_fit <- coef(fit_vgm)[1] + coef(fit_vgm)[2]*dist_seq + coef(fit_vgm)[3]*dist_seq^2
 
 # Plot
-plot(vgm_emp_clean$dist, vgm_emp_clean$gamma, pch=21, col="blue",
-     xlab="distance", ylab="semivariance", main="Parabolic Fit")
-lines(dist_seq, parab_fit, col="purple", lwd=2)
+plot(vgm_emp,model = vgm_fit)
+
+plot(vgm_emp$dist, vgm_emp$gamma, pch=21, col="blue",
+     xlab="distance", ylab="semivariance", main="spherical Fit")
+lines(dist_seq, vgm_fit, col="purple", lwd=2)
 
 
 
-kriging_result <- krige(wlthind5.x ~ 1, wealth_cluster_sp, grid_sp, model = vgm_fit)
+kriging_result <- krige(ALT_DEM ~ 1, et_sf, grid_sp, model = vgm_fit)
 
 
 duplicated_coords <- duplicated(st_coordinates(wealth_cluster))
