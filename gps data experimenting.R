@@ -4,8 +4,7 @@ lapply(lib_list, require, character.only = T)
 et_sf <- read_sf("/Users/matthewnicholson/DHS/GPS files/Ethiopia/2000/ETGE42FL/ETGE42FL.shp")
 et_hr <- readRDS(file = "/Users/matthewnicholson/DHS/DHS_surveys_rds_organized/Ethiopia_DHS/2000/ETHR41DT/Ethiopia_DHS_ET_2000_DHS_08072025_1921_219655_ETHR41DT_ETHR41FL.Rds")
 et_wi <- as_tibble(read_dta("/Users/matthewnicholson/DHS/DHS_surveys/Ethiopia_DHS/ET_2000_DHS_08072025_1921_219655/ETWI41DT/ETWI41FL.DTA"))
-View(et_sf)
-View(et_hr)
+
 
 et_hr <- et_hr %>% 
   rename(DHSCLUST = hv001) %>% 
