@@ -187,4 +187,5 @@ plot(data$wealth_factor, data$rohrer)
 
 data <- data |> 
   filter(rohrer < 9998)
+
 t.test()
