@@ -1,4 +1,4 @@
-lib_list <- c("sp", "gstat", "raster", "spacetime")
+lib_list <- c("sp","sf", "gstat", "raster", "spacetime", "ggplot2", "viridis")
 lapply(lib_list, require, character.only = T)
 source("/Users/matthewnicholson/DHS/get_file_function.R")
 year_list <- c(1990,2003,2008,2010,2013,2015,2018,2021)
@@ -69,18 +69,27 @@ for(i in seq_len(length(st_file_list) - 1)) {
 }
 
 #test for one year
-data_1990 <- readRDS(ir_file_list[1]) |> 
-  dplyr::select(v001, v106,v005) |> 
-  dplyr::rename(cluster = v001, education = v106, wt = v005) |> 
-  dplyr::mutate(education = dplyr::na_if(education, 9),  # convert 9 -> NA
-      wt = wt / 1e6 ) |>
-    dplyr::group_by(cluster) |>
-    dplyr::summarize(
-      weighted_education = sum(wt * education, na.rm = TRUE) / sum(wt[!is.na(education)], na.rm = TRUE),
-      unweighted_n = dplyr::n(),
-      total_weight = sum(wt, na.rm = TRUE),
-      .groups = "drop"
-    )
+library(haven)
+data_1990 <- readRDS(ir_file_list[1]) |>
+  dplyr::select(v001, v106, v005) |>
+  dplyr::rename(cluster = v001, education = v106, wt = v005) |>
+  dplyr::mutate(
+    education = dplyr::na_if(education, 9),
+    wt = as.numeric(wt) / 1e6
+  ) |>
+  dplyr::mutate(
+    # convert labelled to factor using numeric codes, then to numeric
+    education = as.numeric(haven::as_factor(education, levels = "default"))
+  ) |>
+  dplyr::group_by(cluster) |>
+  dplyr::summarise(
+    weighted_education = sum(wt * education, na.rm = TRUE) / sum(wt[!is.na(education)], na.rm = TRUE),
+    unweighted_n = dplyr::n(),
+    total_weight = sum(wt, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+
 
 sf_1990 <- st_read(st_file_list[1]) |> 
   dplyr::select(DHSCLUST,geometry) |> 
@@ -95,37 +104,54 @@ ggplot(data = data_1990) +
   scale_color_viridis(option = "viridis", name = "Mean education") +
   theme_minimal() +
   labs(title = "Cluster-level Mean education (Nigeria 1990)")
+#_________________________
 
-# Assume data_1990 is already created as sf
-data_1990 <- as(data_1990, "Spatial")
+# Fit a theoretical variogram model
+# Try common models: "Sph" (spherical), "Exp" (exponential), "Gau" (Gaussian)
+# Reproject your sf data and grid
+data_1990 <- st_transform(data_1990, 32632)
+grid_sf   <- st_transform(grid_sf, 32632)
 
-# 1. Get CRS from clusters
-crs_clusters <- st_crs(data_1990)
+# Back to Spatial
+data_1990_sp <- as(data_1990, "Spatial")
+grid_sp      <- as(grid_sf, "Spatial")
 
-# 2. Create grid covering extent
-bbox <- st_bbox(data_1990)
-x.range <- seq(bbox$xmin, bbox$xmax, length.out = 100)
-y.range <- seq(bbox$ymin, bbox$ymax, length.out = 100)
-grid <- expand.grid(x = x.range, y = y.range)
+# Add projected coords for trend
+data_1990_sp$X <- coordinates(data_1990_sp)[,1]
+data_1990_sp$Y <- coordinates(data_1990_sp)[,2]
+grid_sp$X      <- coordinates(grid_sp)[,1]
+grid_sp$Y      <- coordinates(grid_sp)[,2]
 
-# 3. Assign CRS to grid and convert to sp
-grid_sf <- st_as_sf(grid, coords = c("x", "y"), crs = crs_clusters)
-grid_sp <- as(grid_sf, "Spatial")
+# Variogram + universal kriging
+vgm_emp <- variogram(weighted_education ~ 1, data_1990_sp)  # ~1 = ordinary kriging
+vgm_fit <- fit.variogram(vgm_emp, model = vgm("Sph"))
 
-# 4. Ensure CRS matches
-st_crs(data_1990) == st_crs(grid_sf) # Should be TRUE
+plot(vgm_emp,vgm_fit)
+uk_model <- gstat(formula = weighted_education ~ X + Y,
+                  data = data_1990_sp,
+                  model = vgm_fit)
 
-# 5. Kriging
-vgm_emp <- variogram(weighted_education~ 1, data = data_1990)
-plot(vgm_emp)
+uk_pred <- predict(uk_model, grid_sp)   # should now work
+
+ggplot() +
+  geom_sf(data = uk_pred, aes(fill = var1.pred), color = NA) +
+  scale_fill_viridis_c(name = "Predicted education") +
+  theme_minimal() +
+  labs(title = "Universal Kriging: Educational Attainment (Nigeria, 1990)")
+
+
+
+
+
+#___________________
 
 # Remove outliers (e.g., lag distances above a chosen threshold)
 vgm_emp_clean <- subset(vgm_emp, np >= 30)
 vgm_emp_clean <- subset(vgm_emp, dist <= 900)
 
 # Suppose vgm_emp_clean is your empirical variogram data.frame
-fit_vgm <- fit.variogram(vgm_emp, vgm("Exp"))
-
+fit_vgm <- fit.variogram(vgm_emp, vgm("Gau"))
+plot(vgm_emp,fit_vgm)
 # Extract coefficients
 coef(fit_vgm)  # a, b, c
 
@@ -142,7 +168,7 @@ lines(dist_seq, vgm_fit, col="purple", lwd=2)
 
 
 
-kriging_result <- krige(ALT_DEM ~ 1, et_sf, grid_sp, model = vgm_fit)
+kriging_result <- krige(weighted_education ~ 1, data_1990, grid_sp=f, model = vgm_fit)
 
 
 duplicated_coords <- duplicated(st_coordinates(data_1990))
