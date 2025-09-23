@@ -145,3 +145,66 @@ ggplot(k_pred_df, aes(x = x, y = y, fill = var1.pred)) +
 
 
 
+#r2 now
+# get CRS from clusters
+#remove duplicates
+# re_1_data_1990 <- re_1_data_1990[!duplicated(re_1_data_1990), ]
+re_2_data_1990 <- as(re_2_data_1990, "Spatial")
+re_2_data_1990 <- re_2_data_1990[-zerodist(re_2_data_1990)[,1],]
+crs_clusters <- st_crs(re_2_data_1990)
+
+# 2. Create grid covering extent
+bbox <- st_bbox(re_2_data_1990)
+x.range <- seq(bbox$xmin, bbox$xmax, length.out = 100)
+y.range <- seq(bbox$ymin, bbox$ymax, length.out = 100)
+grid <- expand.grid(x = x.range, y = y.range)
+
+# 3. Assign CRS to grid and convert to sp
+grid_sf <- st_as_sf(grid, coords = c("x", "y"), crs = crs_clusters)
+grid_sp <- as(grid_sf, "Spatial")
+
+# reproject your sf data and grid
+re_2_data_1990 <- st_as_sf(re_2_data_1990)
+re_2_data_1990 <- st_transform(re_2_data_1990, 32632) #this is approximately the right projection
+grid_sf   <- st_transform(grid_sf, 32632)
+
+
+# Back to Spatial
+re_2_data_1990_sp <- as(re_2_data_1990, "Spatial")
+grid_sp      <- as(grid_sf, "Spatial")
+
+# Add projected coords for trend
+re_2_data_1990_sp$X <- coordinates(re_2_data_1990_sp)[,1]
+re_2_data_1990_sp$Y <- coordinates(re_2_data_1990_sp)[,2]
+grid_sp$X      <- coordinates(grid_sp)[,1]
+grid_sp$Y      <- coordinates(grid_sp)[,2]
+
+# Variogram + ordinary kriging
+vgm_emp <- variogram(weighted_education ~ 1, re_2_data_1990_sp)  # ~1 = ordinary kriging
+plot(vgm_emp)
+vgm_fit <- fit.variogram(vgm_emp, model = vgm(c("Exp","Mat","Gau", "Sph")))
+
+plot(vgm_emp,vgm_fit)
+
+
+k_model <- gstat(formula = weighted_education ~ 1,
+                  data = re_2_data_1990_sp,
+                  model = vgm_fit)
+
+k_pred <- predict(k_model, grid_sp)   # should now work
+
+# Convert Spatial* to data.frame with coords
+k_pred_df <- as.data.frame(k_pred)
+coords <- coordinates(k_pred)                 # matrix of x,y
+k_pred_df$x <- coords[,1]; k_pred_df$y <- coords[,2]
+
+# If grid is regular, use geom_raster/geom_tile
+ggplot(k_pred_df, aes(x = x, y = y, fill = var1.pred)) +
+  geom_tile() +
+  scale_fill_viridis_c(name = "Predicted education", begin = 0, end = 1, option = "F") +
+  coord_fixed() +
+  theme_minimal() +
+    labs(title = "Ordinary kriging: Educational Attainment (1990), region 1")
+
+
+
