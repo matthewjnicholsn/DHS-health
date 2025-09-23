@@ -200,11 +200,9 @@ k_pred_df$x <- coords[,1]; k_pred_df$y <- coords[,2]
 
 # If grid is regular, use geom_raster/geom_tile
 ggplot(k_pred_df, aes(x = x, y = y, fill = var1.pred)) +
-  geom_tile() +
+  geom_raster(interpolate = FALSE) +
   scale_fill_viridis_c(name = "Predicted education", begin = 0, end = 1, option = "F") +
   coord_fixed() +
   theme_minimal() +
     labs(title = "Ordinary kriging: Educational Attainment (1990), region 1")
-
-
 
