@@ -84,6 +84,10 @@ var(re_4_data_1990$weighted_education) #lowest variance
 
 #will try r1 first
 # get CRS from clusters
+#remove duplicates
+# re_1_data_1990 <- re_1_data_1990[!duplicated(re_1_data_1990), ]
+re_1_data_1990 <- as(re_1_data_1990, "Spatial")
+re_1_data_1990 <- re_1_data_1990[-zerodist(re_1_data_1990)[,1],]
 crs_clusters <- st_crs(re_1_data_1990)
 
 # 2. Create grid covering extent
@@ -97,6 +101,7 @@ grid_sf <- st_as_sf(grid, coords = c("x", "y"), crs = crs_clusters)
 grid_sp <- as(grid_sf, "Spatial")
 
 # reproject your sf data and grid
+re_1_data_1990 <- st_as_sf(re_1_data_1990)
 re_1_data_1990 <- st_transform(re_1_data_1990, 32632) #this is approximately the right projection
 grid_sf   <- st_transform(grid_sf, 32632)
 
@@ -114,9 +119,10 @@ grid_sp$Y      <- coordinates(grid_sp)[,2]
 # Variogram + ordinary kriging
 vgm_emp <- variogram(weighted_education ~ 1, re_1_data_1990_sp)  # ~1 = ordinary kriging
 plot(vgm_emp)
-vgm_fit <- fit.variogram(vgm_emp, model = vgm("Sph"))
+vgm_fit <- fit.variogram(vgm_emp, model = vgm(c("Exp","Mat","Gau", "Sph")))
 
 plot(vgm_emp,vgm_fit)
+
 
 k_model <- gstat(formula = weighted_education ~ 1,
                   data = re_1_data_1990_sp,
@@ -124,9 +130,18 @@ k_model <- gstat(formula = weighted_education ~ 1,
 
 k_pred <- predict(k_model, grid_sp)   # should now work
 
-ggplot() +
-  geom_sf(data = k_pred, aes(fill = var1.pred), color = NA) +
-  scale_fill_viridis_c(name = "Predicted education") +
+# Convert Spatial* to data.frame with coords
+k_pred_df <- as.data.frame(k_pred)
+coords <- coordinates(k_pred)                 # matrix of x,y
+k_pred_df$x <- coords[,1]; k_pred_df$y <- coords[,2]
+
+# If grid is regular, use geom_raster/geom_tile
+ggplot(k_pred_df, aes(x = x, y = y, fill = var1.pred)) +
+  geom_raster(interpolate = FALSE) +
+  scale_fill_viridis_c(name = "Predicted education", begin = 0, end = 1, option = "F") +
+  coord_fixed() +
   theme_minimal() +
-  labs(title = "Universal Kriging: Educational Attainment (Nigeria, 1990)")
+    labs(title = "Ordinary kriging: Educational Attainment (1990), region 1")
+
+
 
