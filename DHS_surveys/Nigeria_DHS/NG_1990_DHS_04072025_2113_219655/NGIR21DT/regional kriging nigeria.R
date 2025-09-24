@@ -25,16 +25,19 @@ ir_file_list <- get_file("Nigeria_DHS", year_list, "IR")
 ng_1980_shp <- st_read("/Users/matthewnicholson/Downloads/Nigeria_states/1987-1991/1987-1991.shp")
 shp_states <- unique(ng_1980_shp$NAME_1) |> 
   str_to_lower() |> 
-  trimws()
+  trimws() |> 
+  str_sort()
 #for state names and shapefiles stuff
 ir <- readRDS(ir_file_list[1])
 ir_states <- list() 
 ir_states <- levels(as_factor(ir$sstate, levels = "default"))|> 
   str_to_lower() |> 
-  trimws()
+  trimws() |> 
+  str_sort()
 
 same_states <- list()
 same_states <- same_states[ir_states %in% shp_states]
+
 
 # we get all of the files so that we can get the variograms for all years eventually, or conversely do a spatio-temporal kriging
 # first we try one year, 1990
