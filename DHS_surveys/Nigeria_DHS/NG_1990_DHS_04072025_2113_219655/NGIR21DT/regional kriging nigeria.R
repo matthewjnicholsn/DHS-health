@@ -5,8 +5,6 @@ lapply(lib_list, require, character.only = T)
 # load in our data
 
 
-
-
 source("/Users/matthewnicholson/DHS/get_file_function.R")
 year_list <- c(1990,2003,2008,2010,2013,2015,2018,2021)
 st_file_list <- c(
@@ -21,22 +19,6 @@ st_file_list <- c(
       )
 ir_file_list <- get_file("Nigeria_DHS", year_list, "IR")
 
-#shapefile state deprecating stuff
-ng_1980_shp <- st_read("/Users/matthewnicholson/Downloads/Nigeria_states/1987-1991/1987-1991.shp")
-shp_states <- unique(ng_1980_shp$NAME_1) |> 
-  str_to_lower() |> 
-  trimws() |> 
-  str_sort()
-#for state names and shapefiles stuff
-ir <- readRDS(ir_file_list[1])
-ir_states <- list() 
-ir_states <- levels(as_factor(ir$sstate, levels = "default"))|> 
-  str_to_lower() |> 
-  trimws() |> 
-  str_sort()
-
-same_states <- list()
-same_states <- same_states[ir_states %in% shp_states]
 
 
 # we get all of the files so that we can get the variograms for all years eventually, or conversely do a spatio-temporal kriging
@@ -342,3 +324,30 @@ ggplot(k_pred_df, aes(x = x, y = y, fill = var1.pred)) +
   coord_fixed() +
   theme_minimal() +
   labs(title = "Ordinary kriging: Educational Attainment (1990), region 4")
+
+# now going to try to do the kriging within the actual bounds of each regions shapefiles. There will be a few steps to this
+# 1. Load in the polygon shapefile and data file
+
+# 2. make sure naming for regions is the same between files (there are some differences that will have to be taken care of)
+ng_1980_shp <- st_read("/Users/matthewnicholson/Downloads/Nigeria_states/1987-1991/1987-1991.shp")
+shp_states <- unique(ng_1980_shp$NAME_1) |> 
+  str_to_lower() |> 
+  trimws() |> 
+  str_sort()
+#for state names and shapefiles stuff
+ir <- readRDS(ir_file_list[1])
+ir_states <- list() 
+ir_states <- levels(as_factor(ir$sstate, levels = "default"))|> 
+  str_to_lower() |> 
+  trimws() |> 
+  str_sort()
+
+same_states <- list()
+same_states <- same_states[ir_states %in% shp_states]
+
+# 3. merge the files
+# 4. aggregate the geometries down to region (the shape file has states, so we need to make a table from the date file showing
+#  which states (sstate is the variable) are in each region (v024 is the variable), then make the polygons out of the state shapes (i 
+# forget how to do this)
+# 5. proceed with the kriging steps as normal, aggregating the weighted mean of the variable of interest to the region by cluster
+# 6. map each region separately, then combine in one shape file or data frame and visualize
