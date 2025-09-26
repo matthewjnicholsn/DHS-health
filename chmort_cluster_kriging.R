@@ -113,3 +113,42 @@ ggplot(data = res_clust) +
   theme_minimal() +
   labs(title = "Cluster-level child death probability (Nigeria 1990)")
 
+res_clust <- as(res_clust, "Spatial")
+res_clust <- res_clust[-zerodist(res_clust)[,1],]
+crs_clusters <- st_crs(res_clust)
+
+# 1. Project your data first
+res_clust <- st_as_sf(res_clust)
+res_clust <- st_transform(res_clust, 32632) # UTM projection
+
+# 2. Create grid AFTER projection, with fixed resolution
+bbox <- st_bbox(res_clust)
+res <- 1000   # cell size in meters (10 km, adjust as needed)
+
+x.range <- seq(bbox$xmin, bbox$xmax, by = res)
+y.range <- seq(bbox$ymin, bbox$ymax, by = res)
+grid <- expand.grid(x = x.range, y = y.range)
+
+grid_sf <- st_as_sf(grid, coords = c("x", "y"), crs = 32632)
+grid_sp <- as(grid_sf, "Spatial")
+
+# 3. Convert cluster data back to Spatial
+res_clust_sp <- as(res_clust, "Spatial")
+
+# 4. Add coords for variogram/kriging
+res_clust_sp$X <- coordinates(res_clust_sp)[,1]
+res_clust_sp$Y <- coordinates(res_clust_sp)[,2]
+grid_sp$X <- coordinates(grid_sp)[,1]
+grid_sp$Y <- coordinates(grid_sp)[,2]
+
+# 5. Variogram + kriging
+vgm_emp <- variogram(prob ~ 1, res_clust_sp)
+vgm_fit <- fit.variogram(vgm_emp, model = vgm(c("Exp","Mat","Gau","Sph")))
+
+k_model <- gstat(formula = prob ~ 1,
+                 data = res_clust_sp,
+                 model = vgm_fit)
+
+k_pred <- predict(k_model, grid_sp)
+## need to try to scale the chmort to deaths per 1000 ie just multiply prob by 1000. Then could scale to 0 mean... 
+# as of right now semivariance is far far too small for the size of distance we are working with
