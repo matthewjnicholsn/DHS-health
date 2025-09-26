@@ -1,5 +1,5 @@
 rm(list = ls())
-lib_list <- c("sp","sf", "gstat", "ggplot2", "viridis", "haven", "dplyr")
+lib_list <- c("sp","sf", "gstat", "ggplot2", "viridis", "haven", "dplyr", "stringr", "purrr")
 lapply(lib_list, require, character.only = T)
 
 # load in our data
@@ -328,26 +328,126 @@ ggplot(k_pred_df, aes(x = x, y = y, fill = var1.pred)) +
 # now going to try to do the kriging within the actual bounds of each regions shapefiles. There will be a few steps to this
 # 1. Load in the polygon shapefile and data file
 
-# 2. make sure naming for regions is the same between files (there are some differences that will have to be taken care of)
+# 1. Load in the polygon shapefile for 1987–1991 states
 ng_1980_shp <- st_read("/Users/matthewnicholson/Downloads/Nigeria_states/1987-1991/1987-1991.shp")
-shp_states <- unique(ng_1980_shp$NAME_1) |> 
-  str_to_lower() |> 
-  trimws() |> 
-  str_sort()
-#for state names and shapefiles stuff
-ir <- readRDS(ir_file_list[1])
-ir_states <- list() 
-ir_states <- levels(as_factor(ir$sstate, levels = "default"))|> 
-  str_to_lower() |> 
-  trimws() |> 
-  str_sort()
 
-same_states <- list()
-same_states <- same_states[ir_states %in% shp_states]
+# 2. Harmonize state names between shapefile and DHS data
+shp_states <- ng_1980_shp$NAME_1 |> 
+  str_to_lower() |> 
+  trimws()
 
-# 3. merge the files
-# 4. aggregate the geometries down to region (the shape file has states, so we need to make a table from the date file showing
-#  which states (sstate is the variable) are in each region (v024 is the variable), then make the polygons out of the state shapes (i 
-# forget how to do this)
-# 5. proceed with the kriging steps as normal, aggregating the weighted mean of the variable of interest to the region by cluster
-# 6. map each region separately, then combine in one shape file or data frame and visualize
+ir <- readRDS(ir_file_list[1]) # DHS data (1990)
+ir_states <- as_factor(ir$sstate, levels = "default") |> 
+  as.character() |> 
+  str_to_lower() |> 
+  trimws()
+
+# 3. Create a lookup table: DHS state -> DHS region
+state_region_map <- ir |> 
+  dplyr::select(sstate, v024) |> 
+  distinct() |> 
+  mutate(
+    sstate = str_to_lower(as_factor(sstate, levels = "default")) |> trimws(),
+    region = as.numeric(v024)
+  )
+
+# 4. Fix known naming mismatches
+state_region_map <- state_region_map |>
+  mutate(sstate = dplyr::recode(sstate,
+    "abuja" = "federal capital territory"  # align with shapefile
+  ))
+
+# 5. Check for mismatches
+unmatched_data_states <- setdiff(state_region_map$sstate, shp_states)
+unmatched_shp_states  <- setdiff(shp_states, state_region_map$sstate)
+
+if (length(unmatched_data_states) > 0) {
+  message("States in DHS data not found in shapefile: ", paste(unmatched_data_states, collapse = ", "))
+}
+if (length(unmatched_shp_states) > 0) {
+  message("States in shapefile not found in DHS data: ", paste(unmatched_shp_states, collapse = ", "))
+}
+
+# 6. Join regions back to state shapefile
+ng_1980_shp <- ng_1980_shp |>
+  mutate(state = str_to_lower(NAME_1) |> trimws()) |>
+  left_join(state_region_map, by = c("state" = "sstate"))
+
+# 7. Aggregate state polygons into 4 regions
+ng_regions <- ng_1980_shp |>
+  group_by(region) |>
+  summarise(geometry = st_union(geometry), .groups = "drop") |>
+  st_transform(32632)  # match CRS used in kriging
+
+# --- Now loop through each region and mask predictions ---
+
+do_kriging_region <- function(region_id, region_poly, cluster_data) {
+  # Skip if no polygon found
+  if (nrow(region_poly) == 0) {
+    message("Skipping region ", region_id, " (no polygon found)")
+    return(NULL)
+  }
+  
+  # Project and subset points
+  cluster_sf <- cluster_data |>
+    filter(region == region_id) |>
+    st_transform(32632)
+  
+  if (nrow(cluster_sf) < 5) {
+    message("Skipping region ", region_id, " (too few points)")
+    return(NULL)
+  }
+  
+  cluster_sp <- as(cluster_sf, "Spatial")
+  cluster_sp <- cluster_sp[-zerodist(cluster_sp)[,1],]
+  cluster_sp$X <- coordinates(cluster_sp)[,1]
+  cluster_sp$Y <- coordinates(cluster_sp)[,2]
+  
+  # Create grid within bounding box of region polygon
+  bbox <- st_bbox(region_poly)
+  res <- 1000 # 1 km grid cells
+  x.range <- seq(bbox$xmin, bbox$xmax, by = res)
+  y.range <- seq(bbox$ymin, bbox$ymax, by = res)
+  grid <- expand.grid(x = x.range, y = y.range)
+  grid_sf <- st_as_sf(grid, coords = c("x", "y"), crs = 32632)
+  
+  # Clip grid to region polygon
+  grid_sf <- st_intersection(grid_sf, region_poly)
+  grid_sp <- as(grid_sf, "Spatial")
+  grid_sp$X <- coordinates(grid_sp)[,1]
+  grid_sp$Y <- coordinates(grid_sp)[,2]
+  
+  # Kriging
+  vgm_emp <- variogram(weighted_education ~ 1, cluster_sp)
+  vgm_fit <- fit.variogram(vgm_emp, model = vgm(c("Exp","Mat","Gau","Sph")))
+  k_model <- gstat(formula = weighted_education ~ 1, data = cluster_sp, model = vgm_fit)
+  k_pred <- predict(k_model, grid_sp)
+  
+  # Convert to data frame for ggplot
+  k_pred_df <- as.data.frame(k_pred)
+  coords <- coordinates(k_pred)
+  k_pred_df$x <- coords[,1]
+  k_pred_df$y <- coords[,2]
+  k_pred_df$region <- region_id
+  
+  return(k_pred_df)
+}
+
+#make sure tbls are sfs
+data_1990 <- st_as_sf(data_1990)
+
+# Run kriging for all 4 regions
+all_preds <- map_dfr(
+  1:4,
+  ~do_kriging_region(.x, ng_regions |> filter(region == .x), data_1990)
+)
+
+# Plot all regions together
+ggplot(all_preds, aes(x = x, y = y, fill = var1.pred)) +
+  geom_tile() +
+  facet_wrap(~region) +
+  scale_fill_viridis_c(name = "Predicted education", option = "F") +
+  coord_equal() +
+  theme_minimal() +
+  labs(title = "Ordinary kriging: Educational Attainment (1990), by 1980–1992 Regions") +
+  theme(strip.text = element_text(face = "bold"))
