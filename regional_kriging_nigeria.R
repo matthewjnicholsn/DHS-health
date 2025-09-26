@@ -451,3 +451,5 @@ ggplot(all_preds, aes(x = x, y = y, fill = var1.pred)) +
   theme_minimal() +
   labs(title = "Ordinary kriging: Educational Attainment (1990), by 1980–1992 Regions") +
   theme(strip.text = element_text(face = "bold"))
+library(beepr)
+beep()
