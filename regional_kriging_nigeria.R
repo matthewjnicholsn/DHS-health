@@ -453,3 +453,4 @@ ggplot(all_preds, aes(x = x, y = y, fill = var1.pred)) +
   theme(strip.text = element_text(face = "bold"))
 library(beepr)
 beep()
+We see 
