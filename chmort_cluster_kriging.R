@@ -11,7 +11,7 @@ gps_data <- st_read('/Users/matthewnicholson/DHS/GPS files/Nigeria/1990/NGGE23FL
   rename(cluster = DHSCLUST,
   region = DHSREGCO)
 #shape file for region and state polygons (extent for kriging)
-shp_file <- st_read("/Users/matthewnicholson/Downloads/Nigeria_states/1987-1991/1987-1991.shp") 
+shp_file <- st_read("/Users/matthewnicholson/Downloads/nigeria_The_Federal_Republic_of_Nigeria_Country_Boundary/nigeria_The_Federal_Republic_of_Nigeria_Country_Boundary.shp") 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 # calculate chmort by cluster
@@ -130,13 +130,110 @@ ggplot(data = res_clust) +
 # CONSTRAINING KRIGING TO NIGERIA BOUNDARY
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
-# dissolve shapefile to single Nigeria outline
+# aggregate shapefile to single Nigeria outline
 nigeria_outline <- shp_file |> st_union() |> st_make_valid()
 
 # project to same CRS as cluster data
 res_clust <- st_transform(res_clust, 32632) # UTM
 nigeria_outline <- st_transform(nigeria_outline, 32632)
 # plot(nigeria_outline) to check geometry union worked. Will take a long time as it's a large shapefile
+#problems with the shapefile, may need a diff one
+
+
+# create grid inside bounding box
+bbox <- st_bbox(nigeria_outline)
+res <- 10000   # 10 km grid resolution (adjust as needed)
+
+x.range <- seq(bbox$xmin, bbox$xmax, by = res)
+y.range <- seq(bbox$ymin, bbox$ymax, by = res)
+grid <- expand.grid(x = x.range, y = y.range)
+
+grid_sf <- st_as_sf(grid, coords = c("x", "y"), crs = 32632)
+
+# keep only grid points inside Nigeria
+grid_sf <- grid_sf[nigeria_outline, ]
+
+# convert to Spatial for gstat
+res_clust_sp <- as(res_clust, "Spatial") |> 
+  remove.duplicates()
+
+grid_sp <- as(grid_sf, "Spatial")
+
+# add coords
+res_clust_sp$X <- coordinates(res_clust_sp)[,1]
+res_clust_sp$Y <- coordinates(res_clust_sp)[,2]
+grid_sp$X <- coordinates(grid_sp)[,1]
+grid_sp$Y <- coordinates(grid_sp)[,2]
+
+# variogram + kriging
+vgm_emp <- variogram(prob ~ 1, res_clust_sp)
+vgm_fit <- fit.variogram(vgm_emp, model = vgm(c("Exp"
+#  ,"Mat","Gau","Sph"
+)))
+plot(vgm_emp, vgm_fit)
+
+k_model <- gstat(formula = prob ~ 1,
+                 data = res_clust_sp,
+                 model = vgm_fit)
+
+
+k_pred <- predict(k_model, grid_sp)
+beep()
+
+# convert predictions for ggplot
+k_pred_df <- as.data.frame(k_pred)
+coords <- coordinates(k_pred)
+k_pred_df$x <- coords[,1]
+k_pred_df$y <- coords[,2]
+
+dim(k_pred_df)
+# plot with Nigeria boundary
+ng_90_chmort_kirg <- ggplot() +
+  geom_tile(data = k_pred_df, aes(x = x, y = y, fill = var1.pred)) +
+  # geom_sf(data = nigeria_outline, fill = NA, color = "black", linewidth = 0.6) +
+  scale_fill_viridis_c(name = "Predicted child mortality", option = "M") +
+  coord_sf() +
+  theme_minimal() +
+  labs(title = "Ordinary kriging: child mortality (1990), constrained to Nigeria")
+ng_90_chmort_var <- ggplot() +
+  geom_tile(data = k_pred_df, aes(x = x, y = y, fill = var1.var)) +
+  # geom_sf(data = nigeria_outline, fill = NA, color = "black", linewidth = 0.6) +
+  scale_fill_viridis_c(name = "Predicted child mortality", option = "M") +
+  coord_sf() +
+  theme_minimal() +
+  labs(title = "Ordinary kriging: child mortality variance (1990), constrained to Nigeria")
+
+ggsave("ng_90_chnort_krig.png", plot = ng_90_chmort_kirg)
+ggsave("ng_90_chmortvar.png", plot = ng_90_chmort_var)
+
+#does not appear spatially continuous, high variance between observed values, predictions steeply vary past short distances. 
+#explore co-kriging with universal kriging, ie population will be positively correlated, health outposts will be negatively correlated
+
+#~~~~~~~~~~~#~~~~~~~~~~~#~~~~~~~~~~~#~~~~~~~~~~~#~~~~~~~~~~~#~~~~~~~~~~~#~~~~~~~~~~~#~~~~~~~~~~~
+# now we will try co-kriging, using population density as a co-variable
+co_var <- res_clust |> 
+  left_join(
+    read.csv('/Users/matthewnicholson/DHS/GPS files/Nigeria/1990/NGGC22FL/NGGC22FL.csv') |>
+      rename(cluster = DHSCLUST,
+             pop = All_Population_Count_2005) |>
+      mutate(pop = as.numeric(as.character(log1p(pop)))) |> 
+      select(pop, cluster),
+    by = "cluster"
+  )
+#this data frame now has cluster #, population per cluster, child deaths per 1000 live births per cluster, and geometry for each cluster.
+#ready for co-kriging
+
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+# CO-KRIGING: child mortality ~ population, constrained to Nigeria boundary
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#prep nigeria outline for grid
+# aggregate shapefile to single Nigeria outline
+nigeria_outline <- shp_file |> st_union() |> st_make_valid()
+
+# project to same CRS as cluster data
+res_clust <- st_transform(res_clust, 32632) # UTM zone 32N
+nigeria_outline <- st_transform(nigeria_outline, 32632)
 
 # create grid inside bounding box
 bbox <- st_bbox(nigeria_outline)
@@ -150,42 +247,145 @@ grid_sf <- st_as_sf(grid, coords = c("x", "y"), crs = 32632)
 
 # keep only grid points inside Nigeria
 grid_sf <- grid_sf[nigeria_outline, ]
+# Convert co_var to sf first (if not already)
+co_var_sf <- st_as_sf(co_var)
 
-# convert to Spatial for gstat
-res_clust_sp <- as(res_clust, "Spatial")
-grid_sp <- as(grid_sf, "Spatial")
+# Transform to UTM zone 32N (same CRS as grid_sf)
+co_var_sf <- st_transform(co_var_sf, st_crs(grid_sf))
 
-# add coords
-res_clust_sp$X <- coordinates(res_clust_sp)[,1]
-res_clust_sp$Y <- coordinates(res_clust_sp)[,2]
-grid_sp$X <- coordinates(grid_sp)[,1]
-grid_sp$Y <- coordinates(grid_sp)[,2]
+# Convert to Spatial for gstat
+co_var_sp <- as(co_var_sf, "Spatial") |> remove.duplicates()
+co_var_sp$X <- coordinates(co_var_sp)[,1]
+co_var_sp$Y <- coordinates(co_var_sp)[,2]
 
-# variogram + kriging
-vgm_emp <- variogram(prob ~ 1, res_clust_sp)
-vgm_fit <- fit.variogram(vgm_emp, model = vgm(c("Exp","Mat","Gau","Sph")))
-plot(vgm_emp, vgm_fit)
+# Make sure both target (prob) and covariate (pop) are numeric
+co_var_sp$prob <- as.numeric(co_var_sp$prob)
+co_var_sp$pop  <- as.numeric(co_var_sp$pop)
 
-k_model <- gstat(formula = prob ~ 1,
-                 data = res_clust_sp,
-                 model = vgm_fit)
+# Standardize variables (z-scores)
+co_var_sp$prob_std <- scale(co_var_sp$prob)[,1]
+co_var_sp$pop_std  <- scale(co_var_sp$pop)[,1]
 
-k_pred <- predict(k_model, grid_sp)
-beep()
+# 1. Define a multivariate gstat object with standardized variables
+gstat_obj <- gstat(NULL, id = "prob", formula = prob_std ~ 1, data = co_var_sp)
+gstat_obj <- gstat(gstat_obj, id = "pop",  formula = pop_std  ~ 1, data = co_var_sp)
 
-# convert predictions for ggplot
-k_pred_df <- as.data.frame(k_pred)
-coords <- coordinates(k_pred)
-k_pred_df$x <- coords[,1]
-k_pred_df$y <- coords[,2]
+# 2. Compute empirical variograms (direct + cross)
+vgm_emp_multi <- variogram(gstat_obj)
+plot(vgm_emp_multi)
 
-dim(k_pred_df)
-# plot with Nigeria boundary
-ggplot() +
-  geom_tile(data = k_pred_df, aes(x = x, y = y, fill = var1.pred)) +
-  # geom_sf(data = nigeria_outline, fill = NA, color = "black", linewidth = 0.6) +
-  scale_fill_viridis_c(name = "Predicted child mortality", option = "F") +
+# 3. Define a starting model (scaled sill, moderate range/nugget)
+vgm_model <- vgm(psill = 1, model = "Sph", range = 50000, nugget = 0.1)
+
+# 4. Fit linear model of coregionalization (LMC)
+vgm_fit_lmc <- fit.lmc(vgm_emp_multi, gstat_obj, vgm_model,
+                       fit.ranges = FALSE, fit.sills = TRUE)
+
+plot(vgm_emp_multi, vgm_fit_lmc)
+
+# 5. Define gstat object for co-kriging using fitted LMC
+g_co <- gstat(NULL, id = "prob", formula = prob_std ~ 1, data = co_var_sp)
+g_co <- gstat(g_co, id = "pop", formula = pop_std ~ 1, data = co_var_sp)
+
+# Step 2: Attach the fitted LMC
+g_co <- gstat(g_co, model = vgm_fit_lmc, fill.all = TRUE)
+
+# Step 3: Predict to grid
+ck_pred <- predict(g_co, grid_sf) 
+
+# 7. Convert predictions to df for ggplot
+ck_pred_df <- as.data.frame(ck_pred)
+coords <- coordinates(ck_pred)
+ck_pred_df$x <- coords[,1]
+ck_pred_df$y <- coords[,2]
+
+# 8. Plot co-kriging predictions (note: values are in z-scores!)
+ng_90_ckrig <- ggplot() +
+  geom_tile(data = ck_pred_df, aes(x = x, y = y, fill = prob.pred)) +
+  geom_sf(data = nigeria_outline, fill = NA, color = "black", linewidth = 0.6) +
+  scale_fill_viridis_c(name = "Co-kriged child mortality (z-score)", option = "mako") +
   coord_sf() +
   theme_minimal() +
-  labs(title = "Ordinary kriging: child mortality (1990), constrained to Nigeria")
-beep()
+  labs(title = "Co-kriging: standardized child mortality with standardized population (1990)")
+plot(ng_90_ckrig)
+ng_90_ckrig_var <- ggplot() +
+  geom_tile(data = ck_pred_df, aes(x = x, y = y, fill = prob.var)) +
+  geom_sf(data = nigeria_outline, fill = NA, color = "black", linewidth = 0.6) +
+  scale_fill_viridis_c(name = "Prediction variance", option = "mako") +
+  coord_sf() +
+  theme_minimal() +
+  labs(title = "Co-kriging variance (standardized variables)")
+plot(ng_90_ckrig_var)
+ggsave("ng_90_ckrig.png", plot = ng_90_ckrig)
+ggsave("ng_90_ckrigvar.png", plot = ng_90_ckrig_var)
+
+
+## I USED THIS CODE TO DO THE CO-KRIGING (WORKS) BUT IT DOES NOT LOOK SPATIALLY CONTINUOUS
+ # keep only grid points inside Nigeria
++ grid_sf <- grid_sf[nigeria_outline, ]
+> library(sf)
++ library(sp)
++ library(gstat)
++ 
++ # --- CRS: everything in UTM 32N ---
++ co_var_sf <- st_as_sf(co_var) |> st_transform(st_crs(grid_sf))
++ co_var_sp <- as(co_var_sf, "Spatial") |> remove.duplicates()
++ 
++ # Ensure numeric and standardize
++ co_var_sp$prob <- as.numeric(co_var_sp$prob)
++ co_var_sp$pop  <- as.numeric(co_var_sp$pop)
++ co_var_sp$prob_std <- scale(co_var_sp$prob)[,1]
++ co_var_sp$pop_std  <- scale(co_var_sp$pop)[,1]
++ 
++ # --- Build gstat object ---
++ g_co <- gstat(NULL, id = "prob", formula = prob_std ~ 1, data = co_var_sp)
++ g_co <- gstat(g_co, id = "pop", formula = pop_std ~ 1, data = co_var_sp)
++ 
++ # --- Empirical variograms and LMC ---
++ vgm_emp_multi <- variogram(g_co)
++ vgm_model <- vgm(psill = 1, model = "Sph", range = 50000, nugget = 0.1)
++ vgm_fit_lmc <- fit.lmc(vgm_emp_multi, g_co, vgm_model,
++                        fit.ranges = FALSE, fit.sills = TRUE)
++ 
++ # --- Attach the fitted LMC to gstat object ---
++ g_co_lmc <- g_co
++ g_co_lmc$model <- vgm_fit_lmc  # attach LMC
++ g_co_lmc$fill.all <- TRUE       # fill all variogram parameters
++ 
++ # --- Convert grid to Spatial ---
++ grid_sp <- as(grid_sf, "Spatial")
++ grid_sp$X <- coordinates(grid_sp)[,1]
++ grid_sp$Y <- coordinates(grid_sp)[,2]
++ 
++ # --- Predict ---
++ ck_pred <- predict(g_co_lmc, grid_sp)
++ 
++ # --- Convert predictions to dataframe for ggplot ---
++ ck_pred_df <- as.data.frame(ck_pred)
++ coords <- coordinates(ck_pred)
++ ck_pred_df$x <- coords[,1]
++ ck_pred_df$y <- coords[,2]
+[inverse distance weighted interpolation]
+> ng_90_ckrig <- ggplot() +
++   geom_tile(data = ck_pred_df, aes(x = x, y = y, fill = prob.pred)) +
++   geom_sf(data = nigeria_outline, fill = NA, color = "black", linewidth = 0.6) +
++   scale_fill_viridis_c(name = "Co-kriged child mortality (z-score)", option = "M") +
++   coord_sf() +
++   theme_minimal() +
++   labs(title = "Co-kriging: standardized child mortality with standardized population (1990)")
++ plot(ng_90_ckrig)
+Warning message:
+In viridisLite::viridis(n, alpha, begin, end, direction, option) :
+  Option 'M' does not exist. Defaulting to 'viridis'.
+> ng_90_ckrig <- ggplot() +
++   geom_tile(data = ck_pred_df, aes(x = x, y = y, fill = prob.pred)) +
++   geom_sf(data = nigeria_outline, fill = NA, color = "black", linewidth = 0.6) +
++   scale_fill_viridis_c(name = "Co-kriged child mortality (z-score)", option = "Mako") +
++   coord_sf() +
++   theme_minimal() +
++   labs(title = "Co-kriging: standardized child mortality with standardized population (1990)")
++ plot(ng_90_ckrig)
+
+## NOW YOU SEE WHAT I MEAN - I NEED TO TRY A DIFFERENT METHOD. IT  WOULD BE GOOD TO DO SOMETHING LIKE THIS
+## PCA TO EXTRACT FACTORS 
+## CO-KRIGING WITH MULTIPLE VARS FROM FACTOR POSITIVELY CORR WITH MORT OR REGRESSION KRIGING AFTER PCA...
