@@ -322,69 +322,69 @@ ggsave("ng_90_ckrigvar.png", plot = ng_90_ckrig_var)
 
 ## I USED THIS CODE TO DO THE CO-KRIGING (WORKS) BUT IT DOES NOT LOOK SPATIALLY CONTINUOUS
  # keep only grid points inside Nigeria
-+ grid_sf <- grid_sf[nigeria_outline, ]
-> library(sf)
-+ library(sp)
-+ library(gstat)
-+ 
-+ # --- CRS: everything in UTM 32N ---
-+ co_var_sf <- st_as_sf(co_var) |> st_transform(st_crs(grid_sf))
-+ co_var_sp <- as(co_var_sf, "Spatial") |> remove.duplicates()
-+ 
-+ # Ensure numeric and standardize
-+ co_var_sp$prob <- as.numeric(co_var_sp$prob)
-+ co_var_sp$pop  <- as.numeric(co_var_sp$pop)
-+ co_var_sp$prob_std <- scale(co_var_sp$prob)[,1]
-+ co_var_sp$pop_std  <- scale(co_var_sp$pop)[,1]
-+ 
-+ # --- Build gstat object ---
-+ g_co <- gstat(NULL, id = "prob", formula = prob_std ~ 1, data = co_var_sp)
-+ g_co <- gstat(g_co, id = "pop", formula = pop_std ~ 1, data = co_var_sp)
-+ 
-+ # --- Empirical variograms and LMC ---
-+ vgm_emp_multi <- variogram(g_co)
-+ vgm_model <- vgm(psill = 1, model = "Sph", range = 50000, nugget = 0.1)
-+ vgm_fit_lmc <- fit.lmc(vgm_emp_multi, g_co, vgm_model,
-+                        fit.ranges = FALSE, fit.sills = TRUE)
-+ 
-+ # --- Attach the fitted LMC to gstat object ---
-+ g_co_lmc <- g_co
-+ g_co_lmc$model <- vgm_fit_lmc  # attach LMC
-+ g_co_lmc$fill.all <- TRUE       # fill all variogram parameters
-+ 
-+ # --- Convert grid to Spatial ---
-+ grid_sp <- as(grid_sf, "Spatial")
-+ grid_sp$X <- coordinates(grid_sp)[,1]
-+ grid_sp$Y <- coordinates(grid_sp)[,2]
-+ 
-+ # --- Predict ---
-+ ck_pred <- predict(g_co_lmc, grid_sp)
-+ 
-+ # --- Convert predictions to dataframe for ggplot ---
-+ ck_pred_df <- as.data.frame(ck_pred)
-+ coords <- coordinates(ck_pred)
-+ ck_pred_df$x <- coords[,1]
-+ ck_pred_df$y <- coords[,2]
-[inverse distance weighted interpolation]
-> ng_90_ckrig <- ggplot() +
-+   geom_tile(data = ck_pred_df, aes(x = x, y = y, fill = prob.pred)) +
-+   geom_sf(data = nigeria_outline, fill = NA, color = "black", linewidth = 0.6) +
-+   scale_fill_viridis_c(name = "Co-kriged child mortality (z-score)", option = "M") +
-+   coord_sf() +
-+   theme_minimal() +
-+   labs(title = "Co-kriging: standardized child mortality with standardized population (1990)")
-+ plot(ng_90_ckrig)
-Warning message:
-In viridisLite::viridis(n, alpha, begin, end, direction, option) :
-  Option 'M' does not exist. Defaulting to 'viridis'.
-> ng_90_ckrig <- ggplot() +
-+   geom_tile(data = ck_pred_df, aes(x = x, y = y, fill = prob.pred)) +
-+   geom_sf(data = nigeria_outline, fill = NA, color = "black", linewidth = 0.6) +
-+   scale_fill_viridis_c(name = "Co-kriged child mortality (z-score)", option = "Mako") +
-+   coord_sf() +
-+   theme_minimal() +
-+   labs(title = "Co-kriging: standardized child mortality with standardized population (1990)")
-+ plot(ng_90_ckrig)
+ grid_sf <- grid_sf[nigeria_outline, ]
+#  library(sf)
+#  library(sp)
+#  library(gstat)
+ 
+ # --- CRS: everything in UTM 32N ---
+ co_var_sf <- st_as_sf(co_var) |> st_transform(st_crs(grid_sf))
+ co_var_sp <- as(co_var_sf, "Spatial") |> remove.duplicates()
+ 
+ # Ensure numeric and standardize
+ co_var_sp$prob <- as.numeric(co_var_sp$prob)
+ co_var_sp$pop  <- as.numeric(co_var_sp$pop)
+ co_var_sp$prob_std <- scale(co_var_sp$prob)[,1]
+ co_var_sp$pop_std  <- scale(co_var_sp$pop)[,1]
+ 
+ # --- Build gstat object ---
+ g_co <- gstat(NULL, id = "prob", formula = prob_std ~ 1, data = co_var_sp)
+ g_co <- gstat(g_co, id = "pop", formula = pop_std ~ 1, data = co_var_sp)
+ 
+ # --- Empirical variograms and LMC ---
+ vgm_emp_multi <- variogram(g_co)
+ vgm_model <- vgm(psill = 1, model = "Sph", range = 50000, nugget = 0.1)
+ vgm_fit_lmc <- fit.lmc(vgm_emp_multi, g_co, vgm_model,
+                        fit.ranges = FALSE, fit.sills = TRUE)
+ 
+ # --- Attach the fitted LMC to gstat object ---
+ g_co_lmc <- g_co
+ g_co_lmc$model <- vgm_fit_lmc  # attach LMC
+ g_co_lmc$fill.all <- TRUE       # fill all variogram parameters
+ 
+ # --- Convert grid to Spatial ---
+ grid_sp <- as(grid_sf, "Spatial")
+ grid_sp$X <- coordinates(grid_sp)[,1]
+ grid_sp$Y <- coordinates(grid_sp)[,2]
+ 
+ # --- Predict ---
+ ck_pred <- predict(g_co_lmc, grid_sp)
+ 
+ # --- Convert predictions to dataframe for ggplot ---
+ ck_pred_df <- as.data.frame(ck_pred)
+ coords <- coordinates(ck_pred)
+ ck_pred_df$x <- coords[,1]
+ ck_pred_df$y <- coords[,2]
+# [inverse distance weighted interpolation]
+ ng_90_ckrig <- ggplot() +
+   geom_tile(data = ck_pred_df, aes(x = x, y = y, fill = prob.pred)) +
+   geom_sf(data = nigeria_outline, fill = NA, color = "black", linewidth = 0.6) +
+   scale_fill_viridis_c(name = "Co-kriged child mortality (z-score)", option = "M") +
+   coord_sf() +
+   theme_minimal() +
+   labs(title = "Co-kriging: standardized child mortality with standardized population (1990)")
+ plot(ng_90_ckrig)
+# Warning message:
+# In viridisLite::viridis(n, alpha, begin, end, direction, option) :
+#   Option 'M' does not exist. Defaulting to 'viridis'.
+ ng_90_ckrig <- ggplot() +
+   geom_tile(data = ck_pred_df, aes(x = x, y = y, fill = prob.pred)) +
+   geom_sf(data = nigeria_outline, fill = NA, color = "black", linewidth = 0.6) +
+   scale_fill_viridis_c(name = "Co-kriged child mortality (z-score)", option = "Mako") +
+   coord_sf() +
+   theme_minimal() +
+   labs(title = "Co-kriging: standardized child mortality with standardized population (1990)")
+ plot(ng_90_ckrig)
 
 ## NOW YOU SEE WHAT I MEAN - I NEED TO TRY A DIFFERENT METHOD. IT  WOULD BE GOOD TO DO SOMETHING LIKE THIS
 ## PCA TO EXTRACT FACTORS 
