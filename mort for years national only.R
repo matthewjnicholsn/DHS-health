@@ -3,7 +3,7 @@ library(haven)
 library(naniar)
 library(sjlabelled)
 library(DHS.rates)
-library(data.table)  # For rbindlist
+library(data.table)  # For rbindlist and fwrite
 
 source("get_file_function.R")
 
@@ -12,7 +12,7 @@ year_list <- c(1990, 2003, 2008, 2013, 2018)
 
 # Initialize lists for storing data and results
 br_data <- list()
-chmortp_results <- list()
+chmort_results <- list()
 
 # Loop through years to process data
 for (i in seq_along(year_list)) {
@@ -75,40 +75,83 @@ for (i in seq_along(year_list)) {
         b3, b7, v106, v190, child_sex, mo_age_at_birth, birth_order, prev_bint, birth_size
       )
 
-    # Adjust datasets for child mortality calculations
+    # Adjust datasets for child mortality calculations (period offsets)
     BRdata_CMORT1 <- BRdata_CMORT
     BRdata_CMORT2 <- BRdata_CMORT
     BRdata_CMORT1$v008 <- BRdata_CMORT$v008 - 12 * 5
     BRdata_CMORT2$v008 <- BRdata_CMORT$v008 - 12 * 10
 
-    # Perform child mortality calculations
-    resn1 <- as.data.frame(chmortp(BRdata_CMORT))
-    resn1$period <- "0-4"
-    resn2 <- as.data.frame(chmortp(BRdata_CMORT1))
-    resn2$period <- "5-9"
-    resn3 <- as.data.frame(chmortp(BRdata_CMORT2))
-    resn3$period <- "10-14"
+# --- helper to tag chmort output with measures ---
+measure_tags <- c("NNMR", "PNNMR", "IMR", "CMR", "U5MR")
+measure_labels <- c(
+  NNMR = "Neonatal mortality rate (0-1 month)",
+  PNNMR = "Post-neonatal mortality rate (1-11 months)",
+  IMR = "Infant mortality rate (<1 year)",
+  CMR = "Child mortality rate (1-4 years)",
+  U5MR = "Under-five mortality rate (0-59 months)"
+)
 
-    resc <- as.data.frame(rbind(
-      chmortp(BRdata_CMORT, Class = "v024", Period = 120),
-      chmortp(BRdata_CMORT, Class = "v025", Period = 120),
-      chmortp(BRdata_CMORT, Class = "v007", Period = 120),
-      chmortp(BRdata_CMORT, Class = "v106", Period = 120),
-      chmortp(BRdata_CMORT, Class = "v190", Period = 120),
-      chmortp(BRdata_CMORT, Class = "child_sex", Period = 120),
-      chmortp(BRdata_CMORT, Class = "mo_age_at_birth", Period = 120),
-      chmortp(BRdata_CMORT, Class = "birth_order", Period = 120)
-    ))
-    resc$period <- "0-9"
+tag_chmort <- function(df) {
+  # if chmort already returns an 'Indicator' or 'Measure' column, prefer it
+  if ("Indicator" %in% names(df)) {
+    df$measure <- as.character(df$Indicator)
+  } else if ("Measure" %in% names(df)) {
+    df$measure <- as.character(df$Measure)
+  } else if (nrow(df) == length(measure_tags)) {
+    # assume standard order (NNMR, PNNMR, IMR, CMR, U5MR)
+    df$measure <- measure_tags
+  } else {
+    # fallback: make an NA measure column and warn
+    df$measure <- NA_character_
+    warning("tag_chmort(): unexpected number of rows (", nrow(df),
+            "); measure tags not assigned automatically.")
+  }
+  # add human-readable label where possible
+  df$measure_label <- measure_labels[df$measure]
+  # ensure character columns (avoid factors)
+  df$measure <- as.character(df$measure)
+  df$measure_label <- as.character(df$measure_label)
+  return(df)
+}
 
-    # Combine results
-    CHMORT <- rbindlist(list(resn1, resn2, resn3, resc), fill = TRUE)
-    CHMORT[["Class"]] <- ifelse(is.na(CHMORT[["Class"]]), "National", CHMORT[["Class"]])
-    CHMORT <- CHMORT[CHMORT[["Class"]] != "missing", ]
+# --- compute national chmort and tag measures ---
+resn1 <- as.data.frame(chmort(BRdata_CMORT))   # current / 0-4
+resn1$period <- "0-4"
+resn1 <- tag_chmort(resn1)
 
-    # Save results to CSV
-    write.csv(CHMORT, paste0("Tables_child_mort_ng_", min(year_list), "_", max(year_list), ".csv"), row.names = FALSE)
+resn2 <- as.data.frame(chmort(BRdata_CMORT1))  # 5-9
+resn2$period <- "5-9"
+resn2 <- tag_chmort(resn2)
+
+resn3 <- as.data.frame(chmort(BRdata_CMORT2))  # 10-14
+resn3$period <- "10-14"
+resn3 <- tag_chmort(resn3)
+
+# Combine the three national-period results for this survey
+CHMORT <- rbindlist(list(resn1, resn2, resn3), fill = TRUE)
+
+# Force national label and remove any rows labelled "missing"
+CHMORT[["Class"]] <- "National"
+CHMORT <- CHMORT[CHMORT[["Class"]] != "missing", ]
+
+# Tag with the survey year (the loop year) so we can combine across surveys
+CHMORT$survey_year <- year
+
+# store per-year results as before
+chmort_results[[length(chmort_results) + 1]] <- CHMORT
+
   }, error = function(e) {
     warning("An error occurred while processing year ", year, ": ", e$message)
   })
+}
+
+# Combine all years and write a single CSV
+if (length(chmort_results) > 0) {
+  all_chmort <- rbindlist(chmort_results, fill = TRUE)
+  # Optional: reorder columns so survey_year is first
+  setcolorder(all_chmort, c("survey_year", setdiff(names(all_chmort), "survey_year")))
+  fwrite(all_chmort, "Tables_child_mort_ng_national_1990_2018.csv")
+  message("Wrote national-level child mortality for all years to Tables_child_mort_ng_national_1990_2018.csv")
+} else {
+  warning("No results collected; nothing to write.")
 }
