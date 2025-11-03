@@ -93,4 +93,13 @@ for(i in seq_along(year_list)){
     left_join(chmortp_clust_results[[i]], by = "cluster", relationship = "many-to-one")
 }
 
-#this worked
+ng_2018_data <- br_data_list[[5]] |> 
+  rename(education = v106,
+         wts = v005)
+hist(ng_2018_data$prob)
+
+test_glm <- glm(prob ~ cluster, data = ng_2018_data)
+
+test_glm_2 <- glm(prob ~ cluster + education, data = ng_2018_data, weights = wts, family = gaussian, na.action = na.omit)
+
+plot(test_glm_2)
