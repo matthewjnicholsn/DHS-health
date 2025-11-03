@@ -85,3 +85,12 @@ for(i in seq_along(year_list)){
 }
 
 # bind the mortality results back to the data frames
+br_data_list <- list(vector, length = 5)
+for(i in seq_along(year_list)){
+  br_data_list[[i]] <- readRDS(file_list[[i]]) |> 
+    as_tibble() |> 
+    rename(cluster = v001) |> 
+    left_join(chmortp_clust_results[[i]], by = "cluster", relationship = "many-to-one")
+}
+
+#this worked
