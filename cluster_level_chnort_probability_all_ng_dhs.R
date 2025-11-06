@@ -1,6 +1,6 @@
-###### regional/sub-regional co-kriging
+###### child mort proability by cluster level in nigeria 1990-2018
 rm(list = ls())
-lib_list <- c("sp","sf", "beepr", "gstat", "ggplot2", "viridis", "haven", "dplyr", "stringr", "purrr", "DHS.rates", "sjlabelled")
+lib_list <- c("sp","fastDummies","sf", "DHARMa","beepr", "gstat", "ggplot2", "viridis", "haven", "dplyr", "stringr", "purrr", "DHS.rates", "sjlabelled")
 lapply(lib_list, require, character.only = T)
 #get file function
 source("/Users/matthewnicholson/DHS/get_file_function.R")
@@ -95,11 +95,36 @@ for(i in seq_along(year_list)){
 
 ng_2018_data <- br_data_list[[5]] |> 
   rename(education = v106,
-         wts = v005)
-hist(ng_2018_data$prob)
+         wts = v005,
+         wealth = v190) |> 
+  select(c(education,wts,cluster,wealth,prob)) |> 
+  mutate(wealth_poorest = (wealth == 1),
+         wealth_poor = (wealth == 2),
+         wealth_average = (wealth == 3),
+         wealth_wealthy = (wealth == 4),
+         wealth_wealthiest = (wealth ==5)) |> 
+  mutate(education_none = (education == 0),
+         education_primary = (education == 1),
+        education_secondary = (education == 2),
+        education_higher = (education == 3)) |> 
+  mutate(cluster = as.character(cluster)) |> 
+  select(-c(education,wealth))
+  # mutate(wealth = factor(wealth, levels = c("poorest", "poor", "neither rich nor poor", "rich", "richest"), labels = c(1:5)))
+ng_2018_data_encoded <- ng_2018_data |> 
+  mutate(across(c(education, cluster, wealth), as.character)) |>   # Convert to character if necessary
+  pivot_wider(names_from = education, values_from = education, values_fill = list(education = 0), values_fn = length) |> 
+  pivot_wider(names_from = cluster, values_from = cluster, values_fill = list(cluster = 0), values_fn = length) |> 
+  pivot_wider(names_from = wealth, values_from = wealth, values_fill = list(wealth = 0), values_fn = length)
 
-test_glm <- glm(prob ~ cluster, data = ng_2018_data)
 
-test_glm_2 <- glm(prob ~ cluster + education, data = ng_2018_data, weights = wts, family = gaussian, na.action = na.omit)
 
-plot(test_glm_2)
+test_lm <- lm(prob ~ wealth_poor + wealth_average + wealth_wealthy + wealth_wealthiest + education_none + education_primary
+  + education_secondary + education_higher, data = ng_2018_data, weights = wts)
+summary(test_lm)
+# test_glm_2 <- glm(prob ~ cluster + education + v190, data = ng_2018_data, weights = wts, family = gaussian, na.action = na.omit)
+
+# plot(test_glm_2)
+
+model_data_frame <- model.matrix(object = test_lm, data = ng_2018_data)
+
+
