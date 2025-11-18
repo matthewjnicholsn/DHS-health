@@ -9,6 +9,10 @@ year_list <- c(1990,2003,2008,2013,2018)
 file_list <- get_file(countries = "Nigeria_DHS", years = year_list, surveys = "BR")
 for(i in seq_along(file_list)){
 BRdata <- readRDS(file_list[[i]])
+
+#sample
+BRdata <- BRdata |> 
+  slice_sample(prop = 50)
   
 #chmort transformations
 BRdata <- BRdata %>%
@@ -74,7 +78,7 @@ res_clust <- as.data.frame(chmortp(BRdata_CMORT, Class = "v001", Period = 120)) 
   rename(cluster = Class)
 
 
-write.csv(res_clust, paste0("Tables_child_mort_by_cluster_0.5_sample_year", year_list[[i]], ".csv"))
+write.csv(res_clust, paste0("Tables_child_mort_by_cluster_0.5_sample_random_ungrouped_year", year_list[[i]], ".csv"))
 }
 
 
