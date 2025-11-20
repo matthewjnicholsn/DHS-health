@@ -123,12 +123,12 @@ beep()
 list(
   vgm_emp = vgm_emp_list,
   vgm_fit = vgm_fit_list,
-  krig_maps = krig_plot_list,
-  krig_var_maps = krig_var_plot_list
+  krig_plot_list = krig_plot_list,
+  krig_var_plot_list = krig_var_plot_list
 )
 
 #plot
-for(i in seq_along(krig_maps)){
+for(i in seq_along(krig_plot_list)){
   plot(krig_plot_list[[i]])
   plot(krig_var_plot_list[[i]])
 }
