@@ -180,7 +180,7 @@ for (i in seq_len(n)) {
   krig_maps[[i]] <- ggplot(kdf, aes(x = x, y = y, fill = var1.pred)) +
     geom_tile() +
     geom_sf(data = nigeria_outline_proj, inherit.aes = FALSE, fill = NA, color = "black", linewidth = 0.3) +
-    scale_fill_viridis_c(name = "Predicted weighted wealth", option = "viridis") +
+    scale_fill_distiller(name = "Predicted weighted wealth", palette = "heat", limits = c(1,5)) +
     coord_sf(crs = st_crs(nigeria_outline_proj)) +
     theme_minimal() +
     labs(title = paste("Kriging prediction —", year_list[i]))
@@ -188,7 +188,7 @@ for (i in seq_len(n)) {
   krig_var_maps[[i]] <- ggplot(kdf, aes(x = x, y = y, fill = var1.var)) +
     geom_tile() +
     geom_sf(data = nigeria_outline_proj, inherit.aes = FALSE, fill = NA, color = "black", linewidth = 0.3) +
-    scale_fill_viridis_c(name = "Kriging variance", option = "viridis") +
+    scale_fill_distiller(name = "Kriging variance", palette = "heat") +
     coord_sf(crs = st_crs(nigeria_outline_proj)) +
     theme_minimal() +
     labs(title = paste("Kriging variance —", year_list[i]))

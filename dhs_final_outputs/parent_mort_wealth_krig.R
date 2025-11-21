@@ -11,13 +11,13 @@ gps_list <- c('/Users/matthewnicholson/DHS/GPS files/Nigeria/1990/NGGE23FL/NGGE2
               '/Users/matthewnicholson/DHS/GPS files/Nigeria/2013/NGGE6AFL/NGGE6AFL.shp',
               '/Users/matthewnicholson/DHS/GPS files/Nigeria/2018/NGGE7BFL/NGGE7BFL.shp')
 #first calculate cluster level chmort
-source("cluster_level_chnort_probability_all_ng_dhs.R")
+source('dhs_final_outputs/chmort_countries_all_child.R')
 #then run kriging models on chmort data
-source("adapted ordinary kriging script for ng 1990-2018 WORKS.R")
+source("dhs_final_outputs/kriging_ng_1990_2018.R")
 #then calculate cluster level mean wealth
-source('weighted_wealth_by_cluster_by_year_ng.R')
+source('dhs_final_outputs/wealth_ng_1990_2018.R')
 #then krige
-source('ordinary kriging wealth by cluster ng (1990-2018).R')
+source('dhs_final_outputs/kriging_wealth_ng_1990_2018.R')
 
 #plot the relevant plots for wealth
 plot(krig_maps[[5]]);plot(krig_var_maps[[5]])

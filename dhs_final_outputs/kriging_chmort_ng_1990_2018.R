@@ -85,6 +85,5 @@ krig_var_plot_list[[i]] <- ggplot() +
   coord_sf()
   theme_minimal() +
     labs(title = paste("Ordinary Kriging variance for child mortality probability per 1000 child births Nigeria", year_list[[i]]))
-
-krig_var_plot_list[[i]] <- ggplot() +
+  
 }
