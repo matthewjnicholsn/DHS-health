@@ -1,15 +1,28 @@
 library(sf)
+library(sp)
 library(gstat)
+chmortp_clust_results <- vector("list", 5)
+chmort_files <- c("/Users/matthewnicholson/DHS/Tables_child_mort_by_cluster_year1990.csv",
+                   "/Users/matthewnicholson/DHS/Tables_child_mort_by_cluster_year2003.csv",
+                   "/Users/matthewnicholson/DHS/Tables_child_mort_by_cluster_year2008.csv",
+                   "/Users/matthewnicholson/DHS/Tables_child_mort_by_cluster_year2013.csv",
+                  "/Users/matthewnicholson/DHS/Tables_child_mort_by_cluster_year2018.csv")
+for(i in seq_along(countries)){
+  chmortp_clust_results[[i]] <- read.csv(chmort_files[[i]])
+}
 vgm_plot_list <- list()
 krig_plot_list <- list()
 krig_var_plot_list <- list()
 shp_file <- st_read("/Users/matthewnicholson/Downloads/nigeria_The_Federal_Republic_of_Nigeria_Country_Boundary/nigeria_The_Federal_Republic_of_Nigeria_Country_Boundary.shp")
-nigeria_outline <- shp_file |> st_union() |> st_make_valid()
+nigeria_outline <- shp_file |> st_union() |> st_make_valid() |> st_transform(32632)
 gps_list <- c('/Users/matthewnicholson/DHS/GPS files/Nigeria/1990/NGGE23FL/NGGE23FL.shp',
               '/Users/matthewnicholson/DHS/GPS files/Nigeria/2003/NGGE4BFL/NGGE4BFL.shp',
               '/Users/matthewnicholson/DHS/GPS files/Nigeria/2008/NGGE52FL/NGGE52FL.shp',
               '/Users/matthewnicholson/DHS/GPS files/Nigeria/2013/NGGE6AFL/NGGE6AFL.shp',
               '/Users/matthewnicholson/DHS/GPS files/Nigeria/2018/NGGE7BFL/NGGE7BFL.shp')
+
+#need to re-write to sit in the j-loop over years
+#also pre-configure vectors with length so subscript [[i]] is in-bounds
 gps_mort <- list()
 for(i in seq_along(gps_list)){
   gps_file <- st_read(gps_list[[i]]) |> 
@@ -18,6 +31,7 @@ for(i in seq_along(gps_list)){
   gps_mort[[i]] <- chmortp_clust_results[[i]] |> 
     left_join(gps_file, by = "cluster", relationship = "one-to-many") |> 
     mutate(prob = as.numeric(as.character(prob)) * 1000)
+
 
 #kriging
 gps_mort[[i]] <- gps_mort[[i]] |> 
@@ -41,7 +55,7 @@ grid_sf <- grid_sf[nigeria_outline, ]
 gps_mort[[i]] <- as(gps_mort[[i]], "Spatial") |> 
   remove.duplicates()
   
-grid_sp <- as(grid_sd, "Spatial")
+grid_sp <- as(grid_sf, "Spatial")
   
 gps_mort[[i]]$X <- coordinates(gps_mort[[i]])[,1]
 gps_mort[[i]]$Y <- coordinates(gps_mort[[i]])[,2]
@@ -60,7 +74,7 @@ krig_model <- gstat(formula = prob ~ 1,
                     data = gps_mort[[i]],
                     model = vgm_fit)
 krig_predict <- predict(krig_model, grid_sp)
-beep()
+
   
 #convert predictions to plot
   k_pred_df <- as.data.frame(krig_predict)
@@ -86,4 +100,7 @@ krig_var_plot_list[[i]] <- ggplot() +
   theme_minimal() +
     labs(title = paste("Ordinary Kriging variance for child mortality probability per 1000 child births Nigeria", year_list[[i]]))
   
+}
+for(i in seq_along(krig_plot_list)){
+  plot(krig_plot_list[[i]])
 }

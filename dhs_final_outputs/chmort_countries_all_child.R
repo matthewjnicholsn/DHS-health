@@ -40,26 +40,9 @@ chmortp_prepare <- function(BRdata){
     mutate(birth_size = factor(birth_size, levels = c(1,2,99,999), labels = c("Birth size: Small/very small","Birth size: Average or larger", "Birth size: Don't know/missing", "missing" )))
 return(BRdata)
             }  
-##error handling
-tryCatch(
-  expr = {
-
-  },
-  error = function(e){
-    message('An Error occurred')
-    message(w)
-  },
-  warning = function(w){
-    message("There is a warning")
-    message(w)
-  },
-  finally = {
-    #do tis at the end before quittign the trCatch
-  }  
-)
 #start the j loop over years
-for(j in seq_along(years[[i]]){
-    BRdata <- readRDS(br_file_list[[i,j]])
+for(j in seq_along(years[[i]])){
+    BRdata <- readRDS(br_file_list[[i]][j])
     BRdata <- chmortp_prepare(BRdata)
     #prep for calculations
     BRdata_CMORT <- (BRdata[, c("v001", "v021", "v022","v024", "v025", "v005", "v008","v011", 
@@ -77,16 +60,12 @@ for(j in seq_along(years[[i]]){
 
 
     #save results to a list
-    chmort_outputs_all[[i,j]] <- res_clust
-
-    #CHANGE
-    # bind the mortality results back to the data frames
-    #this part also needs to follow the logic of one frame for each year for each country
-    br_data_list <- list(vector, length = 5)
-    for(i in seq_along(year_list)){
-      br_data_list[[i]] <- readRDS(file_list[[i]]) |> 
-        as_tibble() |> 
-        rename(cluster = v001) |> 
-        left_join(chmortp_clust_results[[i]], by = "cluster", relationship = "many-to-one")
-    }
-
+    #save results as csv
+    file_name <- paste0("chmortp_clust_",countries[[i]],"_",years[[i]][j],"_",".csv")
+    chmort_file_list[[i]][j] <- file_name
+    write.csv(res_clust, file = file_name)
+    
+    # chmort_outputs_all[[i]][j] <- res_clust
+    #fails at this write step, cannot write a matrix at list location within the vector
+    # need to save as a matrix at each step then read it back in? will be memory intensive
+}
