@@ -131,4 +131,3 @@ list(
   krig_var_plot_list = krig_var_plot_list
 )
 
-
