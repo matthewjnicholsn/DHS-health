@@ -7,8 +7,10 @@ gps_file_list <- list()
 br_file_list <- list()
 hr_file_list <- list()
 wi_file_list <- list()
+pr_file_list <- list()
 chmort_file_list <- vector("list", 5)
 wealth_file_list <- vector("list", 5)
+gini_results_file_list <- vector('list', 5)
 outline_file_list <- c("/Users/matthewnicholson/Downloads/nigeria-lgas/new_lga_nigeria_2003.shp",
                        "/Users/matthewnicholson/Downloads/ethiopiaregion/Eth_Region_2013.shp",
                        "/Users/matthewnicholson/Downloads/cod_admbnda_rgc_itos_20190911_shp/cod_admbnda_adm0_rgc_itos_20190911.shp",
@@ -26,6 +28,7 @@ for(i in seq_along(countries)){
   br_file_list[[i]] <- get_file(countries = countries[[i]], years = c(years[[i]]),  surveys = "BR")
   hr_file_list[[i]] <- get_file(countries = countries[[i]], years = c(years[[i]]), surveys = "HR")
   wi_file_list[[i]] <- get_file(countries = countries[[i]], years = c(years[[i]]), surveys = "WI")
+  pr_file_list[[i]] <- get_file(countries = countries[[i]], years = c(years[[i]]), surveys = "PR")
 }
 
 #basic script structure will be
@@ -77,25 +80,28 @@ for(i in seq_along(countries)){
   #   }
   # )
 
+  #Calculate gini coefficients for clusters
+  source("/Users/matthewnicholson/DHS/dhs_final_outputs/gini_1990_2018.R")
+
   # #then run kriging models on chmort data
-  tryCatch({
-    source("dhs_final_outputs/kriging_ng_1990_2018.R")
-  },
-  error = function(e){
-      message("Error in chmort kriging script for", countries[[i]])
-      message("Message:", e$message)
-      cat(
-        "Country:", countries[[i]], "\n",
-        "Error:", e$message, "\n\n",
-        file = "chmort_krig_error_log.txt",
-        append = T
-      )
-    },
-    warning = function(w){
-      message("Warning in chmort kriging script for", countries[[i]])
-      messaeg("Message: ", w$message)
-    }
-  )
+  # tryCatch({
+  #   source("dhs_final_outputs/kriging_ng_1990_2018.R")
+  # },
+  # error = function(e){
+  #     message("Error in chmort kriging script for", countries[[i]])
+  #     message("Message:", e$message)
+  #     cat(
+  #       "Country:", countries[[i]], "\n",
+  #       "Error:", e$message, "\n\n",
+  #       file = "chmort_krig_error_log.txt",
+  #       append = T
+  #     )
+  #   },
+  #   warning = function(w){
+  #     message("Warning in chmort kriging script for", countries[[i]])
+  #     messaeg("Message: ", w$message)
+  #   }
+  # )
   # #then krige
   # source('dhs_final_outputs/kriging_wealth_ng_1990_2018.R')
   
