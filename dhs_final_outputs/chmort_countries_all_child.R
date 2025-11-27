@@ -40,32 +40,52 @@ chmortp_prepare <- function(BRdata){
     mutate(birth_size = factor(birth_size, levels = c(1,2,99,999), labels = c("Birth size: Small/very small","Birth size: Average or larger", "Birth size: Don't know/missing", "missing" )))
 return(BRdata)
             }  
-#start the j loop over years
-for(j in seq_along(years[[i]])){
-    BRdata <- readRDS(br_file_list[[i]][j])
-    BRdata <- chmortp_prepare(BRdata)
-    #prep for calculations
-    BRdata_CMORT <- (BRdata[, c("v001", "v021", "v022","v024", "v025", "v005", "v008","v011", 
-                                "b3", "b7", "v106", "child_sex", "mo_age_at_birth", "birth_order", "prev_bint","birth_size")]) # add v001 here for cluster level and rm v190
 
-    #get chmortp for cluster data and aggregate prob by cluster
-    res_clust <- as.data.frame(chmortp(BRdata_CMORT, Class = "v001", Period = 120)) |> 
-      group_by(Class) |> 
+for(j in seq_along(years[[i]])){
+
+  tryCatch({
+
+    message("Processing CHMORTP for ", countries[[i]],
+            " year ", years[[i]][j])
+
+    BRdata <- readRDS(br_file_list[[i]][j])
+
+    if(is.null(BRdata) || nrow(BRdata) == 0){
+      warning("BRdata is empty for ", countries[[i]], " ", years[[i]][j])
+    }
+
+    BRdata <- chmortp_prepare(BRdata)
+
+    BRdata_CMORT <- BRdata[, c("v001", "v021", "v022", "v024", "v025", "v005",
+                               "v008", "v011", "b3", "b7", "v106", "child_sex",
+                               "mo_age_at_birth", "birth_order", "prev_bint", "birth_size")]
+
+    res_clust <- as.data.frame(
+      chmortp(BRdata_CMORT, Class = "v001", Period = 120)
+    ) |>
+      group_by(Class) |>
       summarise(
         prob = sum(W.DEATHS) / sum(W.EXPOSURE),
-        .groups = 'drop'
-      ) |> 
-      mutate(Class = as.numeric(Class)) |> 
-      rename(cluster = Class)
+        .groups = "drop"
+      ) |>
+      mutate(Class = as.numeric(Class)) |>
+      rename(cluster = Class) |>
+      mutate(year = years[[i]][j],
+             country = countries[[i]])
 
-
-    #save results to a list
-    #save results as csv
-    file_name <- paste0("chmortp_clust_",countries[[i]],"_",years[[i]][j],"_",".csv")
+    file_name <- paste0("chmortp_clust_", countries[[i]], "_", years[[i]][j], "_.csv")
     chmort_file_list[[i]][j] <- file_name
-    write.csv(res_clust, file = file_name)
-    
-    # chmort_outputs_all[[i]][j] <- res_clust
-    #fails at this write step, cannot write a matrix at list location within the vector
-    # need to save as a matrix at each step then read it back in? will be memory intensive
+    write.csv(res_clust, file = file_name, row.names = FALSE)
+
+  }, error = function(e){
+
+    message("Error in CHMORTP for ", countries[[i]], " ", years[[i]][j])
+    message("Message: ", e$message)
+
+    cat("Country:", countries[[i]], "\n",
+        "Year:", years[[i]][j], "\n",
+        "Error:", e$message, "\n\n",
+        file = "chmortp_error_log.txt",
+        append = TRUE)
+  })
 }
