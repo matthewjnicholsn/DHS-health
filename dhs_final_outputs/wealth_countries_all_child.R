@@ -34,7 +34,8 @@ for(j in seq_along(years[[i]])){
         ) |>
         mutate(hv001 = as.numeric(hv001),
                year = years[[i]][j],
-               country = countries[[i]])
+               country = countries[[i]]) |> 
+        rename(cluster = hv001)
 
     } else {
 
@@ -57,7 +58,8 @@ for(j in seq_along(years[[i]])){
         ) |>
         mutate(hv001 = as.numeric(hv001),
                year = years[[i]][j],
-               country = countries[[i]])
+               country = countries[[i]])|> 
+        rename(cluster = hv001)
     }
 
     file_name <- paste0("wealth_clust_",countries[[i]],"_",years[[i]][j],".csv")

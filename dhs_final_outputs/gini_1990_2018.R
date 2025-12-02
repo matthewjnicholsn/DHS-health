@@ -142,9 +142,12 @@ for(j in seq_along(years[[i]])){
 
   }
 
-gini_results <- as.data.frame(rbind(calc_gini(gini_data,Class="hv001")
+gini_results <- as.data.frame(rbind(calc_gini(gini_data,Class="hv001") |> 
+  rename(cluster = Class)
   # ,calc_gini(gini_data,Class="hv024")
   ))
+
+  #write files to a file list
 
 file_name <- paste0("gini_clust_", countries[[i]], "_", years[[i]][j], "_.csv")
     gini_results_file_list[[i]][j] <- file_name

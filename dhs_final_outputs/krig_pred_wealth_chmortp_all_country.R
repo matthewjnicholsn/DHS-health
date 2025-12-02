@@ -44,6 +44,7 @@ outline_file_list <- c("/Users/matthewnicholson/Downloads/nigeria-lgas/new_lga_n
                        "/Users/matthewnicholson/Downloads/cod_admbnda_rgc_itos_20190911_shp/cod_admbnda_adm0_rgc_itos_20190911.shp",
                        "/Users/matthewnicholson/Downloads/cod_admbnda_rgc_itos_20190911_shp/cod_admbnda_adm0_rgc_itos_20190911.shp",
                        "/Users/matthewnicholson/Downloads/kenyan-counties/County.shp")
+combine_file_list <- vector('list', 5)
 vgm_fit_list <- vector("list", length(gps_file_list))
 vgm_emp_list <- vector("list", length(gps_file_list))
 krig_plot_list <- vector("list", length(gps_file_list))
@@ -62,72 +63,74 @@ for(i in seq_along(countries)){
 #basic script structure will be
 
 for(i in seq_along(countries)){
-  #first calculate cluster level chmort
+#   # first calculate cluster level chmort
 
-  # message("Running mortality script for:", countries[[i]],".")
+  message("Running mortality script for:", countries[[i]],".")
   
-  # tryCatch(
-  #   {
-  #     source('dhs_final_outputs/chmort_countries_all_child.R')
-  #   },
-  #   error = function(e){
-  #     message("Error in chmort script for", countries[[i]])
-  #     message("Message:", e$message)
-  #     cat(
-  #       "Country:", countries[[i]], "\n",
-  #       "Error:", e$message, "\n\n",
-  #       file = "wealth_error_log.txt",
-  #       append = T
-  #     )
-  #   },
-  #   warning = function(w){
-  #     message("Warning in chmort script for", countries[[i]])
-  #     messaeg("Message: ", w$message)
-  #   }
-  # )
+  tryCatch(
+    {
+      source('dhs_final_outputs/chmort_countries_all_child.R')
+    },
+    error = function(e){
+      message("Error in chmort script for", countries[[i]])
+      message("Message:", e$message)
+      cat(
+        "Country:", countries[[i]], "\n",
+        "Error:", e$message, "\n\n",
+        file = "wealth_error_log.txt",
+        append = T
+      )
+    },
+    warning = function(w){
+      message("Warning in chmort script for", countries[[i]])
+      messaeg("Message: ", w$message)
+    }
+  )
 
 
 #   #then calculate cluster level mean wealth
   
-#   tryCatch(
-#     {
-#       source('dhs_final_outputs/wealth_countries_all_child.R')
-#     },
-#     error = function(e){
-#       message("Error in wealth script for", countries[[i]])
-#       message("Message:", e$message)
-#       cat(
-#         "Country:", countries[[i]], "\n",
-#         "Error:", e$message, "\n\n",#add file arg
-#         file = "wealth_error_log.txt",
-#         append = T
-#       )
-#     },
-#     warning = function(w){
-#       message("Warning in wealth script for", countries[[i]])
-#       message("Message: ", w$message)
-#     }
-#   )
+  tryCatch(
+    {
+      source('dhs_final_outputs/wealth_countries_all_child.R')
+    },
+    error = function(e){
+      message("Error in wealth script for", countries[[i]])
+      message("Message:", e$message)
+      cat(
+        "Country:", countries[[i]], "\n",
+        "Error:", e$message, "\n\n",#add file arg
+        file = "wealth_error_log.txt",
+        append = T
+      )
+    },
+    warning = function(w){
+      message("Warning in wealth script for", countries[[i]])
+      message("Message: ", w$message)
+    }
+  )
 
 #   #Calculate gini coefficients for clusters
-#   tryCatch({
-#   source("/Users/matthewnicholson/DHS/dhs_final_outputs/gini_1990_2018.R")
-#   },
-#   error = function(e){
-#     message("Error in gini script for", countries[[i]])
-#     message("Message:", e$message)
-#     cat(
-#       "Country:", countries[[i]], "\n",
-#       "error:", e$message, "\n\n",
-#       file = "gini_error_log.txt",
-#       append = T)
-#   },
-#   warning = function(w){
-#     message("Warning in gini script for ", countries[[i]])
-#     message("Message: ", w$message)
-#   }
-# )
-   source('dhs_final_outputs/gini_chmort_modelling.R')
+  tryCatch({
+  source("/Users/matthewnicholson/DHS/dhs_final_outputs/gini_1990_2018.R")
+  },
+  error = function(e){
+    message("Error in gini script for", countries[[i]])
+    message("Message:", e$message)
+    cat(
+      "Country:", countries[[i]], "\n",
+      "error:", e$message, "\n\n",
+      file = "gini_error_log.txt",
+      append = T)
+  },
+  warning = function(w){
+    message("Warning in gini script for ", countries[[i]])
+    message("Message: ", w$message)
+  }
+)
+#   #then combine
+#    source('dhs_final_outputs/gini_chmort_modelling.R')
+  
 #   #then run kriging models on chmort data
 #   tryCatch({
 #     source("dhs_final_outputs/kriging_ng_1990_2018.R")
@@ -144,10 +147,33 @@ for(i in seq_along(countries)){
 #     },
 #     warning = function(w){
 #       message("Warning in chmort kriging script for", countries[[i]])
-#       messaeg("Message: ", w$message)
+#       message("Message: ", w$message)
 #     }
 #   )
 #   # #then krige
 #   # source('dhs_final_outputs/kriging_wealth_ng_1990_2018.R')
   
+}
+for(i in seq_along(countries)){
+    # combine data into a frame containing "clusterid","wealth_mean",
+  # "Child mortality","wealth gini","mortality gini","country",
+  # "year","urban/rural","geom/coordinate"
+  tryCatch({
+    source("dhs_final_outputs/combine_file.R") # replace with real file name
+  },
+  error = function(e){
+    message("Error in combination file for ", countries[[i]])
+    message("Message:", e$message)
+    cat(
+      "Country: ",countries[[i]], "\n|,
+      'Error: ", e$message, "\n\n",
+      file = 'combine_file-error_log.txt',
+      append = T
+    )
+  },
+  warning = function(w){
+    message("Warning in combination file for ", countries[[i]])
+    message("Message: ", w$message)
+  }
+  )
 }
