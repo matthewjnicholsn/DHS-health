@@ -141,14 +141,9 @@ for(j in seq_along(years[[i]])){
     message("hv001 is null")
 
   }
-shp_file <- st_read(gps_file_list[[i]][j]) |>
-        rename(cluster = DHSCLUST) |>
-        select(cluster, geometry) |> 
-        mutate(cluster = as.numeric(cluster))
+
 gini_results <- as.data.frame(rbind(calc_gini(gini_data,Class="hv001") |> 
-  rename(cluster = Class) |> 
-  mutate(cluster = as.numeric(cluster)) |> 
-  left_join(shp_file, by = "cluster")
+  rename(cluster = Class)
   # ,calc_gini(gini_data,Class="hv024")
   ))
 

@@ -3,6 +3,7 @@
 #depends on partent script
 gini_chmort_data <- vector("list", 5)
 for(j in seq_along(years[[i]])){
+  #
   gini_data_temp <- read.csv(gini_results_file_list[[i]][j])
   gini_data_temp <- gini_data_temp |> 
     rename(cluster = Class)

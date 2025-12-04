@@ -1,0 +1,80 @@
+Country:  Nigeria 
+|,
+      'Error:  Can't join `x$cluster` with `y$cluster` due to incompatible types. 
+
+Country:  Ethiopia 
+|,
+      'Error:  Can't join `x$cluster` with `y$cluster` due to incompatible types. 
+
+Country:  DRC 
+|,
+      'Error:  Can't join `x$cluster` with `y$cluster` due to incompatible types. 
+
+Country:  Ghana 
+|,
+      'Error:  Can't join `x$cluster` with `y$cluster` due to incompatible types. 
+
+Country:  Kenya 
+|,
+      'Error:  Can't join `x$cluster` with `y$cluster` due to incompatible types. 
+
+Country:  Nigeria 
+|,
+      'Error:  Can't join `x$cluster` with `y$cluster` due to incompatible types. 
+
+Country:  Ethiopia 
+|,
+      'Error:  Can't join `x$cluster` with `y$cluster` due to incompatible types. 
+
+Country:  DRC 
+|,
+      'Error:   
+
+Country:  Ghana 
+|,
+      'Error:  Can't join `x$cluster` with `y$cluster` due to incompatible types. 
+
+Country:  Kenya 
+|,
+      'Error:   
+
+Country:  Nigeria 
+|,
+      'Error:   
+
+Country:  Ethiopia 
+|,
+      'Error:   
+
+Country:  DRC 
+|,
+      'Error:   
+
+Country:  Ghana 
+|,
+      'Error:   
+
+Country:  Kenya 
+|,
+      'Error:   
+
+Country:  Nigeria 
+|,
+      'Error:  no applicable method for 'select' applied to an object of class "NULL" 
+
+Country:  Ethiopia 
+|,
+      'Error:  no applicable method for 'select' applied to an object of class "NULL" 
+
+Country:  DRC 
+|,
+      'Error:   
+
+Country:  Ghana 
+|,
+      'Error:  no applicable method for 'select' applied to an object of class "NULL" 
+
+Country:  Kenya 
+|,
+      'Error:   
+

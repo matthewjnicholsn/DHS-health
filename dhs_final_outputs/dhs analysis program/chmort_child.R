@@ -44,9 +44,7 @@ return(BRdata)
 for(j in seq_along(years[[i]])){
 
   tryCatch({
-shp_file <- st_read(gps_file_list[[i]][j]) |>
-        rename(cluster = DHSCLUST) |>
-        select(cluster, geometry) 
+
     message("Processing CHMORTP for ", countries[[i]],
             " year ", years[[i]][j])
 
@@ -73,8 +71,7 @@ shp_file <- st_read(gps_file_list[[i]][j]) |>
       mutate(Class = as.numeric(Class)) |>
       rename(cluster = Class) |>
       mutate(year = years[[i]][j],
-             country = countries[[i]]) |> 
-      left_join(shp_file, by = "cluster")
+             country = countries[[i]])
 
     file_name <- paste0("chmortp_clust_", countries[[i]], "_", years[[i]][j], "_.csv")
     chmort_file_list[[i]][j] <- file_name

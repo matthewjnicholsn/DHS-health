@@ -1,0 +1,15 @@
+Country: Nigeria 
+ error: Can't join `x$cluster` with `y$cluster` due to incompatible types. 
+
+Country: Ethiopia 
+ error: Can't join `x$cluster` with `y$cluster` due to incompatible types. 
+
+Country: DRC 
+ error: Can't join `x$cluster` with `y$cluster` due to incompatible types. 
+
+Country: Ghana 
+ error: Can't join `x$cluster` with `y$cluster` due to incompatible types. 
+
+Country: Kenya 
+ error: Can't join `x$cluster` with `y$cluster` due to incompatible types. 
+
