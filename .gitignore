@@ -11,3 +11,7 @@
 *.tif
 *.pdf
 *.rds
+*.dbf
+*.prj
+*.shp
+*.shx
