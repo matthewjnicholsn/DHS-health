@@ -40,13 +40,11 @@ chmortp_prepare <- function(BRdata){
     mutate(birth_size = factor(birth_size, levels = c(1,2,99,999), labels = c("Birth size: Small/very small","Birth size: Average or larger", "Birth size: Don't know/missing", "missing" )))
 return(BRdata)
             }  
+for(i in seq_along(countries)){
 
 for(j in seq_along(years[[i]])){
 
   tryCatch({
-shp_file <- st_read(gps_file_list[[i]][j]) |>
-        rename(cluster = DHSCLUST) |>
-        select(cluster, geometry) 
     message("Processing CHMORTP for ", countries[[i]],
             " year ", years[[i]][j])
 
@@ -92,4 +90,5 @@ shp_file <- st_read(gps_file_list[[i]][j]) |>
         file = "chmortp_error_log.txt",
         append = TRUE)
   })
+}
 }

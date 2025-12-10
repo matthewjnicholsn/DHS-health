@@ -1,3 +1,4 @@
+for(i in seq_along(countries)){
 wealth_res_list[[i]] <- vector("list", length(years[[i]]))
 wealth_file_list[[i]] <- vector("list", length(years[[i]]))
 
@@ -117,4 +118,5 @@ if(!"hv270" %in% names(hr_data)){
         file = "wealth_error_log.txt",
         append = TRUE)
   })
+}
 }

@@ -44,8 +44,8 @@ for (i in seq_along(countries)) {
         merged_year <- df_wealth %>%
           left_join(df_mort, by = c("cluster", "year", "country")) %>%
           left_join(df_gini, by = "cluster")
-        
-        # 3. 🚨 CRITICAL FIX: COLUMN STANDARDIZATION & ORDERING 🚨
+      
+        # 3.COLUMN STANDARDIZATION & ORDERING 
         # a) Check for missing final columns (Gini value or Mortality Prob might be missing)
         # b) Add any missing columns with NA values
         for (col in FINAL_COL_ORDER) {

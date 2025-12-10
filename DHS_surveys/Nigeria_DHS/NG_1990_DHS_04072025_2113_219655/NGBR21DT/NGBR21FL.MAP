@@ -93,7 +93,7 @@ V024                   Region                                            90    2
                                2  Southwest
                                3  Northwest
                                4  Northeast
-V025                   Type of place of residence                        92    1    N    I    1    0   No   No
+V012                   Type of place of residence                        92    1    N    I    1    0   No   No
                                1  Urban
                                2  Rural
 V026                   De facto place of residence                       93    1    N    I    1    0   No   No
