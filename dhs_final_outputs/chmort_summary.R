@@ -102,3 +102,4 @@ glm <- glm(b5 ~ b4 + v106 + v191, data = br,
 
 svyglm <- svyglm(b5 ~ b4 + v106 + v191, design = design_obj, family = stats::quasibinomial, na.action = na.omit)
 
+summary(svyglm)

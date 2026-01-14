@@ -17,26 +17,22 @@ for(i in seq_along(countries)){
   br_file_list[[i]] <- get_file(countries = countries[[i]], years = c(years[[i]]),  surveys = "BR")
   wi_file_list[[i]] <- get_file(countries = countries[[i]], years = c(years[[i]]), surveys = "WI")
 }
-
+#messed this chunk up, the first code block should check for v108, as that is the old name, the new name is v155 and it has the different scales
 for(i in seq_along(countries)){
   message("processing ",countries[[i]])
   for(j in seq_along(years[[i]])){
+    
     message(years[[i]][j])
     br <- readRDS(br_file_list[[i]][j])
-    if(!"v190" %in% names(br)){
+    if(!"v190" %in% names(br) | !"v108" %in% names(br) | "v155" %in% names(br) == T){#for case where no wealth index AND different literacy var
       message('wealth index not present, reading wealth index file ',years[[i]][j])
       wi <- readRDS(wi_file_list[[i]][j]) |> 
         rename(hhid = whhid,wealth = wlthind5,wealth_factor =wlthindf)
        br <- readRDS(br_file_list[[i]][j]) |> 
       mutate(hhid = substr(caseid,1,12)) |> 
-      left_join(wi, by = 'hhid', relationship = 'many-to-one')
-      if(!"v108" %in% names(br){
-# code for v150 literacy var
-      }
-        else{
-      br <- br |>  
-      select(b5,b4,bord,wealth,v107,v025,v024,v108,m18,b11,v012,v005,v021) |> 
-      rename(education = v107,
+      left_join(wi, by = 'hhid', relationship = 'many-to-one') |>  
+      select(b5,b4,bord,wealth,v155,v025,v024,v108,m18,b11,v012,v005,v021) |> 
+      rename(education = v150,
             birthint = b11,
             mat_age = v012) |> 
       mutate(child_alive = ifelse(b5 == 1,1,0),
@@ -50,7 +46,7 @@ for(i in seq_along(countries)){
             poor = ifelse(wealth <= 2, 1, 0),
             rural = ifelse(v025 == 2,1,0),
             south = ifelse(v024 == 1 | v024 == 2, 1, 0),
-            illiterate = ifelse(v108 == 3, 1, 0),
+            illiterate = ifelse(v155 == 0, 1, 0),
             small_at_birth = ifelse(m18 > 3, 1, 0),
             v005 = v005/1000000
             )
@@ -61,7 +57,6 @@ for(i in seq_along(countries)){
       fifth_born + later_than_fifth_born + poor + rural + south + illiterate + mat_age, design = survey_design, 
     family = stats::quasibinomial, na.action = na.exclude)
     }
-  }
     else{
     br <- readRDS(br_file_list[[i]][j]) |>  
       select(b5,b4,bord,v190,v107,v025,v024,v108,m18,b11,v012,v005,v021) |> 

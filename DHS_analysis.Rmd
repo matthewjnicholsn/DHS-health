@@ -1,0 +1,17 @@
+---
+title: "DHS analysis"
+output: pdf_document
+date: "2026-01-06"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Nigeria
+The DHS program has maintained regular surveys for Nigeria since 1990, with the latest available survey from 2024. Despite ongoing conflicts in Northern Nigeria, the DHS program continues to collect responses from these regions to the best of their abilities. Below are summary statistics representing Nigeria's DHS household and birth surveys for 1990, 2008, and 2024.
+
+```{Nigeria code, include = T}
+lapply(c("tidyverse","DHS.rates"),require,character.only = T)
+
+```

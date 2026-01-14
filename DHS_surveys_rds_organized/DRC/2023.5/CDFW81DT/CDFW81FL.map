@@ -1,0 +1,146 @@
+                                                   CDFW81FL                                                   
+                                                CDFW81FL_DICT                                                 
+
+                                             CDFW81FL.DCF                                                     
+                                    Last Modified:  3/11/2025  8:21:19 PM                                     
+
+--------------------------------------------------------------------------------------------------------------
+Level Name                    Level Label                                                  Type            Rec
+  Record Name                   Record Label                                              Value  Req  Max  Len
+--------------------------------------------------------------------------------------------------------------
+LEVEL_1                       Level 1                                                                         
+  FWRECORD                      Fieldworker record                                               Yes    1   45
+Level: Level 1                                         Record: Fieldworker record
+--------------------------------------------------------------------------------------------------------------
+                                                                                 Data Item            Dec Zero
+Item Name              Item Label                                     Start  Len Type Type  Occ  Dec Char Fill
+--------------------------------------------------------------------------------------------------------------
+FW101             (id) Fieldworker code|Codigo de trabajador de campo     1    4    N    I    1    0   No  Yes
+                         (record type)                                    0    0   AN    I    1    0   No   No
+FW000                  Country code and phase|Codigo de pais y fase       5    3   AN    I    1    0   No   No
+FW102                  Fieldworker region of residence|Region de resid    8    2    N    I    1    0   No   No
+                               1   Kinshasa
+                               2   Kongo Central
+                               3   Kwango
+                               4   Kwilu
+                               5   Mai-Ndombe
+                               6   Equateur
+                               7   Nord Ubangi
+                               8   Sud Ubangi
+                               9   Mongala
+                               10  Tshuapa
+                               11  Tshopo
+                               12  Bas-Uele
+                               13  Haut-Uele
+                               14  Ituri
+                               15  Nord-Kivu
+                               16  Sud-Kivu
+                               17  Maniema
+                               18  Haut-Katanga
+                               19  Haut Lomami
+                               20  Lualaba
+                               21  Tanganyika
+                               22  Lomami
+                               23  Sankuru
+                               24  Kasaï Oriental
+                               25  Kasaï
+                               26  Kasaï Central
+FW103                  Fieldworker type of place of residence            10    1    N    I    1    0   No   No
+                               1  City|Ciudad
+                               2  Town|Pueblo
+                               3  Rural|Rural
+FW104                  Fieldworker age|Edad del trabajador de campo      11    2    N    I    1    0   No   No
+                               15:65  
+FW105                  Fieldworker sex|Sexo del trabajador de campo      13    1    N    I    1    0   No   No
+                               1  Male|Hombre
+                               2  Female|Mujer
+FW106                  Fieldworker marital status|Estado civil del tra   14    1    N    I    1    0   No   No
+                               1  Currently married|Casada(o)
+                               2  Living with a man/woman|Union libre
+                               3  Widowed|Viuda(o)
+                               4  Divorced|Divorciada(o)
+                               5  Separated|Separada(o)
+                               6  Never married or lived with a man/woman|Nunca casada(o)/unida(o)
+FW107                  Fieldworker number of living children|Numero de   15    2    N    I    1    0   No   No
+                               0:24  
+FW108                  Fieldworker ever had a child who died|Trabajado   17    1    N    I    1    0   No   No
+                               1  Yes|Si
+                               2  No|No
+FW109                  Highest level of school attended by fieldworker   18    1    N    I    1    0   No   No
+                               1  Primary|Primaria
+                               2  Secondary|Secundaria
+                               3  Higher|Superior
+FW110                  Highest grade/form/year at that level completed   19    2    N    I    1    0   No   No
+                               0     Less than one year at level|Menos de un año a ese nivel
+                               1:15  
+FW111                  Fieldworker religion|Religion del trabajador de   21    2    N    I    1    0   No   No
+                               1   Catholic
+                               2   Protestant
+                               3   Salvation Army
+                               4   Kimbanguiste
+                               5   Muslim
+                               6   Non denominational/Charismatic/Apostolic
+                               7   Jehovah Witness
+                               8   Animist/Traditional religion
+                               9   Branhamism
+                               10  No religion
+                               96  Other
+                           (m) 99  Missing
+FW113A                 French|Idioma A                                   23    1   AN    I    1    0   No   No
+                               A  French|Idioma A
+FW113B                 Kikongo|Idioma B                                  24    1   AN    I    1    0   No   No
+                               B  Kikongo|Idioma B
+FW113C                 Lingala|Idioma C                                  25    1   AN    I    1    0   No   No
+                               C  Lingala|Idioma C
+FW113D                 Swahili|Idioma D                                  26    1   AN    I    1    0   No   No
+                               D  Swahili|Idioma D
+FW113E                 Tshiluba|Idioma E                                 27    1   AN    I    1    0   No   No
+                               E  Tshiluba|Idioma E
+FW113F                 Language F (not used)|Idioma F                    28    1   AN    I    1    0   No   No
+                               F  Language F|Idioma F
+FW113G                 Language G (not used)|Idioma G                    29    1   AN    I    1    0   No   No
+                               G  Language G|Idioma G
+FW113H                 Language H (not used)|Idioma H                    30    1   AN    I    1    0   No   No
+                               H  Language H|Idioma H
+FW113I                 Language I (not used)|Idioma I                    31    1   AN    I    1    0   No   No
+                               I  Language I|Idioma I
+FW113J                 Language J (not used)|Idioma J                    32    1   AN    I    1    0   No   No
+                               J  Language J|Idioma J
+FW113K                 Language K (not used)|Idioma K                    33    1   AN    I    1    0   No   No
+                               K  Language K|Idioma K
+FW113L                 Language L (not used)|Idioma L                    34    1   AN    I    1    0   No   No
+                               L  Language L|Idioma L
+FW113M                 Language M (not used)|Idioma M                    35    1   AN    I    1    0   No   No
+                               M  Language M|Idioma M
+FW113X                 Other language|Otro idioma                        36    1   AN    I    1    0   No   No
+                               X  Other language|Otro idioma
+FW113Y                 No other language|No habla otro idioma            37    1   AN    I    1    0   No   No
+                               Y  No other language|No habla otro idioma
+FW114                  Fieldworker's mother tongue/native language|Len   38    2    N    I    1    0   No   No
+                               1  French
+                               2  Kikongo
+                               3  Lingala
+                               4  Swahili
+                               5  Tshiluba
+FW115A                 Has fieldworker ever worked on a DHS prior to t   40    1    N    I    1    0   No   No
+                               1  Yes|Si
+                               2  No|No
+FW115B                 Has fieldworker ever worked on an MICS prior to   41    1    N    I    1    0   No   No
+                               1  Yes|Si
+                               2  No|No
+FW115C                 Has fieldworker ever worked on any other survey   42    1    N    I    1    0   No   No
+                               1  Yes|Si
+                               2  No|No
+FW116                  Was fieldworker working for implementing agency   43    1    N    I    1    0   No   No
+                               1  Yes, implementing agency 1|Si, institucion implementadora 1
+                               2  Yes, implementing agency 2|Si, institucion implementadora 2
+                               3  No|No
+FW117                  Is fieldworker a permanent or temporary employe   44    1    N    I    1    0   No   No
+                               1  Permanent|Permanente
+                               2  Temporary|Temporal
+FW118                  Does fieldworker has any comments|Tiene el trab   45    1    N    I    1    0   No   No
+                               1  Yes|Si
+                               2  No|No
+--------------------------------------------------------------------------------------------------------------
+Relation Name         Primary               Linked by             Secondary             Linked by
+--------------------------------------------------------------------------------------------------------------

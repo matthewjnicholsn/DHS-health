@@ -1,7 +1,10 @@
 library(sf)
 library(sp)
 library(gstat)
+library(dplyr)
+library(ggplot2)
 chmortp_clust_results <- vector("list", 5)
+countries <- c("Nigeria")
 chmort_files <- c("/Users/matthewnicholson/DHS/Tables_child_mort_by_cluster_year1990.csv",
                    "/Users/matthewnicholson/DHS/Tables_child_mort_by_cluster_year2003.csv",
                    "/Users/matthewnicholson/DHS/Tables_child_mort_by_cluster_year2008.csv",
@@ -20,7 +23,7 @@ gps_list <- c('/Users/matthewnicholson/DHS/GPS files/Nigeria/1990/NGGE23FL/NGGE2
               '/Users/matthewnicholson/DHS/GPS files/Nigeria/2008/NGGE52FL/NGGE52FL.shp',
               '/Users/matthewnicholson/DHS/GPS files/Nigeria/2013/NGGE6AFL/NGGE6AFL.shp',
               '/Users/matthewnicholson/DHS/GPS files/Nigeria/2018/NGGE7BFL/NGGE7BFL.shp')
-
+year_list <- c(1990,2003,2008,2013,2018)
 #need to re-write to sit in the j-loop over years
 #also pre-configure vectors with length so subscript [[i]] is in-bounds
 gps_mort <- list()

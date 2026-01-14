@@ -1,0 +1,36 @@
+infile dictionary using "C:\USERS\61097\ICF\DATA ARCHIVE - DOCUMENTS\EXPORT MENU\NG8B\NGFW8BFL.DAT" {
+_lines(1)
+              int       fw101     %4f 
+              str3      fw000     %3S 
+              byte      fw102     %2f 
+              byte      fw103     %1f 
+              byte      fw104     %2f 
+              byte      fw105     %1f 
+              byte      fw106     %1f 
+              byte      fw107     %2f 
+              byte      fw108     %1f 
+              byte      fw109     %1f 
+              byte      fw110     %2f 
+              byte      fw110a    %1f 
+              byte      fw110b    %2f 
+              byte      fw111     %2f 
+              int       fw112     %3f 
+              str1      fw113a    %1S 
+              str1      fw113b    %1S 
+              str1      fw113c    %1S 
+              str1      fw113d    %1S 
+              str1      fw113e    %1S 
+              str1      fw113f    %1S 
+              str1      fw113g    %1S 
+              str1      fw113h    %1S 
+              str1      fw113i    %1S 
+              str1      fw113x    %1S 
+              str1      fw113y    %1S 
+              byte      fw114     %2f 
+              byte      fw115a    %1f 
+              byte      fw115b    %1f 
+              byte      fw115c    %1f 
+              byte      fw116     %1f 
+              byte      fw117     %1f 
+              byte      fw118     %1f 
+}
