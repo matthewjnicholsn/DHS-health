@@ -1,0 +1,46 @@
+---
+title: "Modelling Health in DHS Data"
+author: "Matthew Nicholson"
+institute: McMaster University
+date: ""
+---
+```{r,setup chunk,include = F}
+setwd("~/DHS")
+lapply(c("dplyr","DHS.rates","haven","survey"), require, character.only = T)
+source("get_file_function.R")
+```
+
+# Introduction
+
+In this section we will outline some analysis of DHS data looking at modelling health and demographics in national and subnational samples. First, let's think about our data budget.
+
+## Data budget
+
+This is how we want to "spend" our data. We have a limited number of variables, across a limited number of country, across a limited number of years. Our goal is pretty simple: to get a picture of what pre-migration health looks like for people in these countries.
+
+# The Democratic Republic of the Congo
+
+For our model, we will likely want to look at the level of the household. This will mean aggregating our data to household level, rather than dealing with the hierarchical nature of the data, where household members are counted separately. For this reason, there are n (max number of household member) number of hemoglobin observations, maximum educational attainment, religious affilitation, etc. To remediate this, we will group the observations we are interested in modelling based on the appropriate summary statistics i.e., for hemoglobin count we would get the mean for the household, for education, we get the median, for age, we get the median as well (and we decide on our population as well, whether looking at adult or child health). Then, we combine the weights so that we have a weight value for each household (i.e., the household weight). Each household is in the same strata so we don't need to worry about that, or clusters, those can stay the same. For the svydesign call we will want to make sure everything is smoothed out before passing it, otherwise we might inflate the results of the model. Another way to do it would be to create the svy object then subset it based on conditional logic, but this will be tricky. 
+
+```{r, DHS, include = T}
+
+drc <- read_dta(list.files(path = "~/DHS/DHS_surveys_rds_organized/DRC/2023.5/CDPR81DT/",pattern = "\\.dta$", all.files = T, full.names = T)) 
+dat <- drc |> 
+    zap_labels() |> 
+    rename(wealth = hv270,
+            hem_lvl = ha53,
+            education = hv106) |> 
+     mutate(wealth = factor(wealth,levels = c(1:5), labels = c("Poorest", "Poor", "Neither Rich Nor Poor","Rich","Richest"),ordered = is.ordered(wealth)),
+            education = na_if(education,9),
+            hem_lvl = na_if(hem_lvl,994),
+            hem_lvl = na_if(hem_lvl,995),
+            hem_lvl = na_if(hem_lvl,996),
+            education = factor(education, levels = c(0,1,2,3,8,9), labels = c("No education, preschool/early childhood education","Primary","Secondary","Higher","Don't know","Missing"),ordered = is.ordered(education))
+            )  
+
+dstrat <- svydesign(ids = ~hv021, strata = ~hv023, weights = I(drc$hv005/1e6), data = dat)
+
+glm1 <- svyglm(~hem_lvl ~ wealth + education, design = dstrat, family = "gaussian")
+
+
+```

@@ -45,6 +45,15 @@ dstrat <- svydesign(ids = ~hv021, strata = ~hv023, weights = ~ hv005, data = drc
 
 weighted_wealth <- svyby(~hv270,~hv001, design = dstrat, svymean)
 
+drc_spatial <- st_read('/Users/matthewnicholson/DHS/GPS files/DRC/2023-2024/CDGE81FL/CDGE81FL.shp') |> 
+  rename(hv001 = "DHSCLUST") |> 
+  select(hv001,geometry) |> 
+  st_as_sf()
+
+weight_drc_dat <- left_join(weighted_wealth,drc_spatial, by = "hv001") |> 
+  st_as_sf() |> 
+  st_transform(st_crs(drc_outline))
+
 #Now we setup the kriging 
 drc_outline <- st_transform(drc_outline, 32734)
 # create grid inside bounding box

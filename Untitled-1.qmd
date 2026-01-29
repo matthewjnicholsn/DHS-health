@@ -1,0 +1,19 @@
+---
+title: "Making Datasets Talk to Each Other"
+author: "Matthew Nicholson"
+format: beamer
+---
+## My first slide
+This is my first slide
+```{r, setup block, include = FALSE}
+setwd("~/DHS")
+lapply(c("dplyr","haven","survey"),require,character.only = T)
+source("get_file_function.R")
+```
+
+## My second slide
+This is my second slide with a list
+- one
+- two
+- three
+

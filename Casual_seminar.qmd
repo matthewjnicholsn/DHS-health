@@ -1,0 +1,166 @@
+---
+title: "Making Datasets Talk to Each Other"
+author: "Matthew Nicholson"
+format: revealjs
+---
+```{r, setup block, include = FALSE}
+setwd("~/DHS")
+lapply(c("dplyr","haven","survey"),require,character.only = T)
+source("get_file_function.R")
+```
+## Notes
+# Background
+While 
+## Introduction
+
+- Who am I?
+- Why am I interested in Research?
+- Why did I choose geography?
+
+## Research Questions
+
+My interest in the intersection of place and health led me to some natural questions
+
+- How does migration influence health?
+- Why do immigrants often experience health decline after settling, and what factors might mediate this?
+- How can we look at health data before and after migration without linkages?
+
+## The Big Picture
+
+Migration is a complicated phenomena that we try to make simple.
+
+- Push/Pull model
+- Transnationalism
+- Return migration
+
+## Methods
+
+- Statistics
+    - Logistic regression i.e., how can this binary outcome (survival for example) be explained or predicted by these other variables? 
+    - Spatial interpolation i.e., what might the values be for this variable between sampled locations (where a survey wasn't administered or data was never collected)
+
+Putting two datasets into conversation with each other without data linkages is difficult.
+
+## Preliminary results:
+
+The African countries where many immigrants to Canada come from are undergoing substantial changes.
+
+- Mortality decreasing
+- Absolute wealth increasing
+- Inequality is being spatially re-configured
+
+## What does this mean for people coming to Canada from these places?
+
+- Their experiences with health may be very different 
+- Changes with each cohort that arrives
+- Need for place-based interventions and culutral competency at all levels (case-management, community, healthcare, government)
+
+## What I'm Working on Now
+
+Currently analyzing 11 cycles of the Stats Can CCHS
+
+Investigating:
+
+- Differences in post-settlement health between sub-populations from Ghana, Kenya, Nigeria, Ethiopia, and DRC 
+- Spatial patterns of resettlement in Ontario 
+- If source country health and wealth impact post-settlement health
+
+## Kriging - Loading data and prep
+
+First, we load some libraries and our data files
+```{r Kriging chunk 1, include = T,echo = T}
+lapply(c("gstat","sf","sp", "survey","ggplot2","viridis"), require, character.only = T)
+
+drc_dat <- readRDS("/Users/matthewnicholson/DHS/DHS_surveys_rds_organized/DRC/2023.5/CDHR81DT/DRC_DHS_CD_2023-24_DHS_01062026_1747_219655_CDHR81DT_CDHR81FL.rds") |> 
+    select(hv001,hv005,hv021,hv023,hv270)
+
+dstrat <- svydesign(ids = ~hv021, strata = ~hv023, weights = ~ hv005, data = drc_dat)
+
+dat <- svyby(~hv270, ~hv001, dstrat, svymean)
+
+drc_cov <- read.csv('/Users/matthewnicholson/DHS/GPS files/DRC/2023-2024/CDGC81FL/CDGC81FL.csv') |> 
+    rename(hv001 = DHSCLUST) |> 
+    select(-c((1:4),6)) |> 
+    left_join(dat, "hv001")
+
+drc_shp <- st_read('/Users/matthewnicholson/DHS/GPS files/DRC/2023-2024/CDGE81FL/CDGE81FL.shp') |> 
+  rename(hv001 = "DHSCLUST") |> 
+  select(hv001,geometry) |> 
+  left_join(drc_cov, by = "hv001") |> 
+  st_as_sf() |> 
+  st_transform(32734)
+
+drc_outline <- st_read("/Users/matthewnicholson/Downloads/cod_admin_boundaries.shp/cod_admin0.shp") |> 
+  st_union() |> st_make_valid() |> st_transform(32734)
+
+```
+
+## Kriging - Set the bounding box and create a surface for interpolation
+```{r, Kriging chunk 2, include = T, echo = T}
+
+bbox <- st_bbox(drc_outline)
+res <- 10000   # 10 km grid resolution (adjust as needed)
+
+x.range <- seq(bbox$xmin, bbox$xmax, by = res)
+y.range <- seq(bbox$ymin, bbox$ymax, by = res)
+grid <- expand.grid(x = x.range, y = y.range)
+
+grid_sf <- st_as_sf(grid, coords = c("x", "y"), crs = 32734)
+
+# keep only grid points inside DRC
+grid_sf <- grid_sf[drc_outline, ]
+
+# convert to Spatial for gstat
+dat_sp <- as(drc_shp, "Spatial") |> 
+  remove.duplicates()
+
+grid_sp <- as(grid_sf, "Spatial")
+
+# add coords
+dat_sp$X <- coordinates(dat_sp)[,1]
+dat_sp$Y <- coordinates(dat_sp)[,2]
+grid_sp$X <- coordinates(grid_sp)[,1]
+grid_sp$Y <- coordinates(grid_sp)[,2]
+
+```
+
+## Kriging - Modelling the semivariogram and kriging
+```{r, Kriging chunk 3, include = T ,echo = T}
+
+vgm_emp <- variogram(hv270 ~ 1, data = dat_sp)
+
+vgm_fit <- fit.variogram(vgm_emp, model = vgm(c("Exp"
+ ,"Mat","Gau","Sph"
+)))
+plot(vgm_emp,vgm_fit)
+
+dat_krige <- krige(hv270 ~ 1, locations=dat_sp, newdata=grid_sp, model=vgm_fit)
+
+
+dat_krige_sf <- st_as_sf(dat_krige) 
+dat_krige_coords <- as_tibble(st_coordinates(dat_krige_sf))
+dat_krige_sf <- dat_krige_sf |> 
+    mutate(x = dat_krige_coords$X,y = dat_krige_coords$Y)
+```
+
+## Kriging - Visualizing the output
+```{r, Kriging chunk 4, include = T, echo = T}
+
+ggplot()+
+  geom_tile(data = dat_krige_sf, aes(x = x ,y = y,fill = var1.pred)) +
+  geom_sf(data = drc_outline, fill = NA, color = "black", linewidth = 0.6) +
+  scale_fill_viridis_c(name = "Predicted Wealth", option = "A") +
+  coord_sf() +
+  theme_void() +
+  labs(title = "Wealth in DRC 2023-2024")
+
+ggplot()+
+    geom_tile(data = dat_krige_sf, aes(x = x, y = y, fill = var1.var))+
+    geom_sf(data = drc_outline, fill = NA, color = "black", linewidth = 0.6) +
+    scale_fill_viridis_c(name = "Prediction Variance", option = "A") +
+    coord_sf() + 
+    theme_void() +
+    labs(title = "Wealth in DRC 2023-2024")
+```
+
+
